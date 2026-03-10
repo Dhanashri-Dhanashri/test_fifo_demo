@@ -1,0 +1,132 @@
+will invoke: "/home/dhanas01/test_fifo_demo/simv +test1 +fsdbfile+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb +vc_zoix_enable_fsdb +fsdb+max_var_elem=9 +fsdb+packed_size=33 +fsdb+mda +fsdb+packedmda +fsdb+no_msg_in_file+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1_filter_messages.txt -tsim=limit_toggle:1 -reportstats -tsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test1:task1/task.json,job_id+3156162960"
+
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-1_Full64; Runtime version X-2025.06-1_Full64;  Feb 24 02:54 2026
+Reset
+ECC error detected at Data Index          6
+Check Flags - PASS
+
+Note-[FSIM-TSIM-INJECTION] Faults injection recorded.
+  Faults will be enabled at time 228ns during fault simulation.
+
+*Verdi* Loading libsscore_vcs202506.so
+*Verdi* : Max var size is set to 33.
+*Verdi* : Max element size is set to 9.
+*Verdi* WARNING: All FSDB ucli task is disabled
+FSDB Dumper for VCS, Release Verdi_X-2025.06-1, Linux x86_64/64bit, 07/19/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file '/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing.
+
+Note-[FSDB_DYN_ACTIVE] Reduction of value changes in the FSDB file active.
+  Switch '-tsim=limit_toggle*' has been given. Value changes in the FSDB file 
+  will be reduced, for example, scalar signals will appear flat-lined after 
+  the next few toggles.
+  Change runtime switch to '-tsim=limit_toggle:0' if you want a regular, 
+  unreduced FSDB file.
+
+Write 00
+Check Flags - PASS
+Write 01
+Check Flags - PASS
+Write 02
+Check Flags - PASS
+Write 03
+Check Flags - PASS
+Write 04
+Check Flags - PASS
+Write 05
+Check Flags - PASS
+Write 06
+Check Flags - PASS
+Write 07
+Check Flags - PASS
+Write 08
+Check Flags - PASS
+Read 00
+Check Flags - PASS
+Read 01
+Check Flags - PASS
+Read 02
+Check Flags - PASS
+Read 03
+Check Flags - PASS
+Read 04
+Check Flags - PASS
+Read 05
+Check Flags - PASS
+Read 06
+Check Flags - PASS
+Read 07
+Check Flags - PASS
+Read 07
+Check Flags - PASS
+Write 08
+Check Flags - PASS
+Write 09
+Read 08
+Check Flags - PASS
+Read 09
+Check Flags - PASS
+Write 0a
+Write 0b
+Write 0c
+Write 0d
+Check Flags - PASS
+Write 0e
+Read 0a
+Check Flags - PASS
+Write 0f
+Read 0b
+Check Flags - PASS
+Write 00
+Check Flags - PASS
+Test done
+
+$finish called from file "./testcases/test1.v", line 104.
+$finish at simulation time                 3110
+
+Note-[FSDB_DYN_SUMMARY] Reduction of value changes in the FSDB file summary.
+  Value changes in FSDB have been reduced.
+  Strobing points: excluded from filtering, fully recorded.
+  Signals: 63 (96.8%) instrumented, 2 not instrumented, 4 strobes.
+  Value changes: 113 (35.3%) blocked since fault injection, 207 forwarded 
+  during filtering + 0 from non-instrumented signals + 0 from mem accesses. 
+  Callbacks for 22 saturated signal(s) were disabled and corresponding value 
+  changes excluded from statistics.
+  Change runtime switch to '-tsim=limit_toggle:0' if you want a regular, 
+  unreduced FSDB file.
+
+
+Note-[DTL-LAST-STROBE_TIME-RECORDED] Last strobe time recorded.
+  Last strobe was recorded at time 3030 ns.
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3110 ns
+
+Simulation Performance Summary
+==============================
+Simulation started at :  Tue Feb 24 02:54:31 2026
+Elapsed Time          :  2 sec
+CPU Time              :  0.2 sec
+Virtual memory size   :  318.7 MB
+Resident set size     :  116.6 MB
+Shared memory size    :  78.0 MB
+Private memory size   :  38.5 MB
+Major page faults     :  1093
+Machine name          :  vscode-login4.nahpc2.arm.com
+==============================
+
+Tue Feb 24 02:54:32 2026
+
+command completed with exit code 0
+
+Exit:0

@@ -1,0 +1,37 @@
+Session Summary (FuSA Diagnostic Coverage Estimator)
+
+1) Design review and positioning
+- Reviewed RTL: baseline FIFO in src/fifo.v; safety design in src/fifo_sm.v.
+- Identified safety mechanisms: redundant control logic (flags/counters) + ECC-protected RAM.
+
+2) Fault injection hooks
+- Added minimal fault injection hooks in src/fifo_tb.v:
+  - Memory bit flip and stuck-at
+  - Read/Write pointer bit flip
+  - Flag counter bit flip
+- Fixed compile issue by forcing full memory word instead of variable bit select.
+
+3) Report parsing and coverage outputs
+- Added scripts to generate deliverables:
+  - scripts/parse_fsim_rpt.py -> results.csv
+  - scripts/fault_mapping.py -> mapping_summary.csv
+  - scripts/block_coverage.py -> block_coverage.csv
+  - scripts/latent_risk.py -> latent_risk.csv
+
+4) Environment-agnostic configuration
+- Added scripts/fusa_config.json to configure:
+  - regex rules for signal classification
+  - detected status codes
+  - block mapping and latent risk thresholds
+- Updated scripts to accept --config.
+- Fixed over-escaped regex in fusa_config.json.
+- Updated scripts for older Python compatibility.
+
+5) Deliverable alignment
+- Confirmed outputs cover:
+  - Fault class vs detection mechanism mapping summary
+  - Estimated diagnostic coverage per block
+  - High-risk latent fault exposure indicators
+
+6) Explanations for judges
+- Provided a judge-facing summary of safety mechanisms and a 30-second pitch.

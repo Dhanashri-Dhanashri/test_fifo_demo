@@ -1,0 +1,47 @@
+will invoke: "/home/dhanas01/test_fifo_demo/simv +test1 -fsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/dump:test1:DEFAULT:task7/task.json +fsdbfile+fm_fid130_test1.fsdb +vc_zoix_enable_fsdb -reportstats"
+
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-1_Full64; Runtime version X-2025.06-1_Full64;  Feb 24 02:54 2026
+Info: FailureMode DEFAULT specified by the task
+Info:	Fault Machine-130:
+  -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[2]"}
+*Verdi* Loading libsscore_vcs202506.so
+FSDB Dumper for VCS, Release Verdi_X-2025.06-1, Linux x86_64/64bit, 07/19/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'fm_fid130_test1.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+Info : Injecting 1 faults at simulation time 228ns.
+$finish called from file "./testcases/test1.v", line 104.
+$finish at simulation time                 3110
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3110 ns
+
+Simulation Performance Summary
+==============================
+Simulation started at :  Tue Feb 24 02:54:38 2026
+Elapsed Time          :  2 sec
+CPU Time              :  0.2 sec
+Virtual memory size   :  378.7 MB
+Resident set size     :  120.3 MB
+Shared memory size    :  4.9 MB
+Private memory size   :  115.4 MB
+Major page faults     :  3
+Machine name          :  vscode-login4.nahpc2.arm.com
+==============================
+
+Tue Feb 24 02:54:39 2026
+
+            Fault Simulation Summary            
+------------------------------------------------
+Faults Simulated                     0
+
+
+command completed with exit code 0
+
+Exit:0

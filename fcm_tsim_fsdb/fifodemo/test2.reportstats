@@ -1,0 +1,14 @@
+/home/dhanas01/test_fifo_demo/simv +test2 +fsdbfile+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsdb +vc_zoix_enable_fsdb +fsdb+max_var_elem=9 +fsdb+packed_size=33 +fsdb+mda +fsdb+packedmda +fsdb+no_msg_in_file+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2_filter_messages.txt -tsim=limit_toggle:1 -reportstats -tsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test2:task3/task.json,job_id+3156163008
+Simulation Performance Summary
+==============================
+Simulation started at :  Tue Feb 24 02:54:31 2026
+Elapsed Time          :  2 sec
+CPU Time              :  0.2 sec
+Virtual memory size   :  318.7 MB
+Resident set size     :  116.6 MB
+Shared memory size    :  78.0 MB
+Private memory size   :  38.6 MB
+Major page faults     :  1068
+Machine name          :  vscode-login4.nahpc2.arm.com
+
+Exit:0

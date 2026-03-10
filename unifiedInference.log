@@ -1,0 +1,15 @@
+src/fifo_sm.v:109 YES:AsyncFF
+src/fifo_sm.v:129 YES:AsyncFF
+src/8BIT_ECC.v:104 YES:SyncFF
+src/sdpram.v:85 YES:SyncFF
+src/sdpram.v:91 NO "Mixed synchronous and asynchronous flip-flop" 
+==================================================
+Unified Inference Statistics
+Number of always_ff:                   0
+Number of always_latch:                0
+Number of always @*:                   0
+Number of always_comb :                0
+Number of always :                     5
+Number of flip-flop candidates:        5
+Number of synchronous flops inferred:  2
+Number of Asynchronous flops inferred: 2

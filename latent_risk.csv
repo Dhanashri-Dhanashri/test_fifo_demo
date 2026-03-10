@@ -1,0 +1,15 @@
+indicator_type,name,undetected,total,undetected_rate_percent,high_risk
+fault_class,memory,42,80,52.5,Y
+fault_class,other,137,222,61.7,Y
+block,memory,42,80,52.5,Y
+block,other,137,222,61.7,Y
+location,test.DUT.DataOut[0],2,,,Y
+location,test.DUT.DataOut[1],2,,,Y
+location,test.DUT.DataOut[2],2,,,Y
+location,test.DUT.DataOut[3],2,,,Y
+location,test.DUT.DataOut[4],2,,,Y
+location,test.DUT.DataOut[5],2,,,Y
+location,test.DUT.DataOut[6],2,,,Y
+location,test.DUT.DataOut[7],2,,,Y
+location,test.DUT.Empty_,2,,,Y
+location,test.DUT.Full_,2,,,Y

@@ -1,0 +1,28 @@
+2026-02-24 02:54:26 [fdb_monitor:1364411] start monitor 
+2026-02-24 02:54:26 [fdb_monitor:1364411] =====================
+2026-02-24 02:54:26 [fdb_monitor:1364411] fdb_path: /home/dhanas01/test_fifo_demo/fdb
+2026-02-24 02:54:26 [fdb_monitor:1364411] SERVER_HOST=vscode-login4.nahpc2.arm.com
+2026-02-24 02:54:26 [fdb_monitor:1364411] SERVER_PORT=62272
+2026-02-24 02:54:26 [fdb_monitor:1364411] SERVER_PID=1364348
+2026-02-24 02:54:26 [fdb_monitor:1364411] auto_stop: 1
+2026-02-24 02:54:26 [fdb_monitor:1364411] auto_stop_timeout: 60
+2026-02-24 02:54:26 [fdb_monitor:1364411] monitor_period: 3
+2026-02-24 02:54:26 [fdb_monitor:1364411] kill_timeout: 15
+2026-02-24 02:54:26 [fdb_monitor:1364411] CONFIG_FILE=/home/dhanas01/test_fifo_demo/fdb/server/monitor.conf
+2026-02-24 02:54:26 [fdb_monitor:1364411] MONITOR_HEARTBEAT=/home/dhanas01/test_fifo_demo/fdb/server/monitor.tick
+2026-02-24 02:54:26 [fdb_monitor:1364411] bin_dir: /arm/tools/synopsys/vcs/2025.06-1/bin
+2026-02-24 02:54:26 [fdb_monitor:1364411] pg_home: /arm/tools/synopsys/vcs/2025.06-1/etc/fdb/PostgreSQL/linux64/pgsql/
+2026-02-24 02:54:26 [fdb_monitor:1364411] detach: 1
+2026-02-24 02:54:26 [fdb_monitor:1364411] verbose: 0
+2026-02-24 02:54:26 [fdb_monitor:1364411] Monitor started, server pid=1364348 host vscode-login4.nahpc2.arm.com
+2026-02-24 02:54:26 [fdb_monitor:1364411] Current server log file '/home/dhanas01/test_fifo_demo/fdb/log/server-2026-02-24_02:54:25.log'
+2026-02-24 02:54:26 [fdb_monitor:1364411] CURRENT_SERVER_LOG_TIME:1771923265
+2026-02-24 02:54:26 [fdb_monitor:1364411] setsid is available
+2026-02-24 02:54:26 [fdb_monitor:1364411] Started a detached child process PID 1364880
+2026-02-24 02:55:45 [fdb_monitor:1364880] Autostop timeout 60 reached, request a smart stop of the server
+2026-02-24 02:55:45 [fdb_monitor:1364880] waiting for server to shut down.... done
+server stopped
+2026-02-24 02:55:45 [fdb_monitor:1364880] Sent smart stop to server
+2026-02-24 02:55:48 [fdb_monitor:1364880] Error: Invalid server PID 1364348: process does not exist
+2026-02-24 02:55:48 [fdb_monitor:1364880] Server not found, exiting
+2026-02-24 02:55:48 [fdb_monitor:1364880] Cleaning temporary server's files

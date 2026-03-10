@@ -1,0 +1,16 @@
+Info about observation and detection points used for the test
+=============================================================
+
+Inactive strobes are marked with [NS] (not strobed) prefix.
+All other strobes are active.
+
+Observation Points
+------------------
+test.DUT.DataOut[7:0] (./src/strobe.sv, line 20)
+test.DUT.Empty_ (./src/strobe.sv, line 20)
+test.DUT.Error (./src/strobe.sv, line 36)
+test.DUT.Full_ (./src/strobe.sv, line 20)
+test.DUT.HalfFull_ (./src/strobe.sv, line 20)
+
+
+

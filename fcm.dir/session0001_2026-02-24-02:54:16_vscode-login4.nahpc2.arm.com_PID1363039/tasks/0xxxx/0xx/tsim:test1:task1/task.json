@@ -1,0 +1,25 @@
+{
+    "task": {
+        "state": "NEW",
+        "session_id": "1",
+        "task_id": "1",
+        "campaign_guid": "4755801206503243777",
+        "campaign_name": "fifodemo",
+        "testcase_guid": "5116089176692883456",
+        "testcase_name": "test1",
+        "command": "\/home\/dhanas01\/test_fifo_demo\/simv +test1 +fsdbfile+\/home\/dhanas01\/test_fifo_demo\/fcm_tsim_fsdb\/fifodemo\/test1.fsdb +vc_zoix_enable_fsdb +fsdb+max_var_elem=9 +fsdb+packed_size=33 +fsdb+mda +fsdb+packedmda +fsdb+no_msg_in_file+\/home\/dhanas01\/test_fifo_demo\/fcm_tsim_fsdb\/fifodemo\/test1_filter_messages.txt -tsim=limit_toggle:1 -reportstats -tsim=task:\/home\/dhanas01\/test_fifo_demo\/fcm.dir\/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039\/tasks\/0xxxx\/0xx\/tsim:test1:task1\/task.json,job_id+3156162960",
+        "work_dir": "\/home\/dhanas01\/test_fifo_demo\/fcm.dir\/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039\/tasks\/0xxxx\/0xx\/tsim:test1:task1",
+        "log_file": "\/home\/dhanas01\/test_fifo_demo\/fcm.dir\/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039\/tasks\/0xxxx\/0xx\/tsim:test1:task1\/out.log",
+        "fcm_run_count": "1",
+        "fcm_host_name": "vscode-login4.nahpc2.arm.com",
+        "fcm_start_timestamp": "1771923271",
+        "fcm_task_type": "tsim",
+        "attributes": {
+            "fcm_fsdb_file": "\/home\/dhanas01\/test_fifo_demo\/fcm_tsim_fsdb\/fifodemo\/test1.fsdb"
+        },
+        "faults": [
+            "1"
+        ]
+    }
+}
+4755801206503243777 0 0 0 0 2 NN 3 2 NA 2 NN 2 AN 41 0 0 2 DF 2    22 Detected $finish/$stop 2 DE 2    14 Detected Error 2 DT 2    8 Detected 2 DX 2 DD 11 Redefine DD 2 PT 2    16 Potential Detect 2 PX 2 PD 11 Redefine PD 2 OA 2    18 Oscillating Active 2 OZ 2    16 Oscillating Zero 2 HT 2    12 Hypertrophic 2 HM 2    11 Hypermemory 2 HA 2    11 Hyperactive 2 IX 2    18 Impossible x-state 2 IF 2    16 Illegal File I/O 2 IH 2    30 Illegal Hierarchical Reference 2 IP 2    16 Illegal User PLI 2 IA 2    14 Illegal Access 2 NS 2    11 Not Strobed 2 NI 2    12 Not Injected 2 NO 2    12 Not Observed 2 NC 2    14 Not Controlled 2 NT 2    10 Not Tested 2 UO 2    23 Untestable Unobservable 2 UI 2    19 Untestable Imported 2 UR 2    20 Untestable Redundant 2 UT 2    15 Untestable Tied 2 UB 2    18 Untestable Blocked 2 UU 2    17 Untestable Unused 2 UC 2    14 UnControllable 2 E0 2    10 Excluded 0 2 E1 2    10 Excluded 1 2 E2 2    10 Excluded 2 2 E3 2    10 Excluded 3 2 E4 2    10 Excluded 4 2 E5 2    10 Excluded 5 2 E6 2    10 Excluded 6 2 E7 2    10 Excluded 7 2 E8 2    10 Excluded 8 2 E9 2    10 Excluded 9 2 NA 2    13 Not Attempted 2 NX 2 ND 11 Redefine ND 2 -- 2    9 Collapsed 13 2 NN 2    26 Not Observed Not Diagnosed 2 NP 2    34 Not Observed Potentially Diagnosed 2 PD 2    30 Potentially Observed Diagnosed 2 ND 2    22 Not Observed Diagnosed 2 PN 2    34 Potentially Observed Not Diagnosed 2 PP 2    42 Potentially Observed Potentially Diagnosed 2 ON 2    22 Observed Not Diagnosed 2 OP 2    30 Observed Potentially Diagnosed 2 OD 2    18 Observed Diagnosed 2 AN 2    31 Assumed Dangerous Not Diagnosed 2 AD 2    27 Assumed Dangerous Diagnosed 2 AP 2    39 Assumed Dangerous Potentially Diagnosed 2 IS 2    24 Invalid Status Promotion 8 0 0 2 DG 8 Detected 4 2 DF 2 DE 2 DT 2 DX 2 PG 9 Potential 2 2 PT 2 PX 2 OG 11 Oscillating 0 2 HG 5 Hyper 0 2 IG 7 Illegal 1 2 IH 2 NG 10 Unselected 2 2 NS 2 NI 2 UG 10 Untestable 3 2 UO 2 UI 2 UC 2 EG 8 Excluded 10 2 E0 2 E1 2 E2 2 E3 2 E4 2 E5 2 E6 2 E7 2 E8 2 E9 5 2 SA 4 Safe 4 2 UT 2 UB 2 UR 2 UU 2 SU 15 Safe Unobserved 4 2 NN 2 NC 2 NO 2 NT 2 DA 17 Dangerous Assumed 9 2 HA 2 HM 2 HT 2 OA 2 OZ 2 IA 2 IP 2 IF 2 IX 2 DN 23 Dangerous Not Diagnosed 7 2 PN 2 ON 2 PP 2 OP 2 NP 2 AN 2 AP 2 DD 19 Dangerous Diagnosed 4 2 PD 2 OD 2 ND 2 AD 8 test.DUT 0 0 0 0 1 0 4827858800541171713 7 DEFAULT 0 0 5 0 18 test.DUT.HalfFull_ 14 test.DUT.Full_ 14 test.DUT.Error 15 test.DUT.Empty_ 16 test.DUT.DataOut 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

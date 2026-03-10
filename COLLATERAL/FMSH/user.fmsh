@@ -1,0 +1,8 @@
+set(var=[resources], messages=[all])
+set(var=[defines], format=[standard])
+set(var=[fdef], method=[fr], fr.fr=[./COLLATERAL/SFF/config.sff,COLLATERAL/SFF/faults.sff],abort=[error])
+design()
+addtst(test=[test1], stimtype=[tb], stim_options=[+test1])
+addtst(test=[test2], stimtype=[tb], stim_options=[+test2])
+fsim()
+coverage(file=[fsim_z.rpt])

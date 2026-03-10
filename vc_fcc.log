@@ -1,0 +1,86 @@
+
+                          VC Fault Campaign Compiler 
+
+                Version X-2025.06-1 for linux64 - Jul 16, 2025 
+
+                    Copyright (c) 2019 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Command: vc_fcc -full64 -daidir simv.daidir -sff ./COLLATERAL/SFF/config.sff,./COLLATERAL/SFF/faults.sff -campaign fifodemo -dut test.DUT -overwrite -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default 
+
+Loading design information...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 53Mb, peak: 86Mb).
+
+Warning-[FCC-PROMOTION-TABLE-MISSING-BUILT-IN-STATUSES] Missing noted built-in fault status interactions.
+./COLLATERAL/SFF/config.sff, 48
+  The defined promotion table does not account for resolution of the following
+  user-defined fault statuses in relation to their promotion to the noted 
+  built-in VC Z01X statuses.
+  These promotions will default to the built-in VC Z01X status unless their 
+  interaction is defined: 
+  NN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  NP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  ND-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  ON-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  OP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  OD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  IS-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  
+
+Generating faults...
+Done (422 faults generated, CPU time: 0s, elapsed time: 0s, memory increased by 5Mb, peak: 94Mb).
+Collecting design strobes...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 94Mb).
+Loading design details...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 94Mb).
+Constant propagation...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Static testability analysis...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Reconvergence check...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Pruning...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Collapsing...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 96Mb).
+Preparing to write to FDB...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 96Mb).
+Writing fault campaign to FDB...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 1Mb, peak: 98Mb).
+Total faults generated: 422.
+Collapsed faults:       120.
+Untestable faults:      88.
+Fault reduction:        49%.
+CPU time: 0s, elapsed time: 1s, peak memory: 102MB.

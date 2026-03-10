@@ -1,0 +1,25 @@
+{
+    "task": {
+        "state": "NEW",
+        "session_id": "1",
+        "task_id": "4",
+        "campaign_guid": "4755801206503243777",
+        "campaign_name": "fifodemo",
+        "testcase_guid": "5116089176692883457",
+        "testcase_name": "test2",
+        "command": "cd '\/home\/dhanas01\/test_fifo_demo\/fcm.dir\/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039\/tasks\/0xxxx\/0xx\/coats:test2:task4' && vc_coats -full64 -daidir '\/home\/dhanas01\/test_fifo_demo\/simv.daidir' -test test2 -fsdb '\/home\/dhanas01\/test_fifo_demo\/fcm_tsim_fsdb\/fifodemo\/test2.fsdb' -fdb_path \/home\/dhanas01\/test_fifo_demo\/fdb -fdb_project default -campaign fifodemo -l '\/home\/dhanas01\/test_fifo_demo\/fcm.dir\/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039\/tasks\/0xxxx\/0xx\/coats:test2:task4\/vc_coats.log' ",
+        "work_dir": "\/home\/dhanas01\/test_fifo_demo\/fcm.dir\/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039\/tasks\/0xxxx\/0xx\/coats:test2:task4",
+        "log_file": "\/home\/dhanas01\/test_fifo_demo\/fcm.dir\/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039\/tasks\/0xxxx\/0xx\/coats:test2:task4\/out.log",
+        "fcm_required_task_id": "3",
+        "fcm_run_count": "1",
+        "fcm_host_name": "vscode-login4.nahpc2.arm.com",
+        "fcm_start_timestamp": "1771923273",
+        "fcm_task_type": "coats",
+        "attributes": {
+            "fcm_fsdb_file": "\/home\/dhanas01\/test_fifo_demo\/fcm_tsim_fsdb\/fifodemo\/test2.fsdb"
+        },
+        "faults": [
+            "1"
+        ]
+    }
+}

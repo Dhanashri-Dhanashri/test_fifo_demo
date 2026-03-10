@@ -1,0 +1,241 @@
+1771923276.587639: 1365632-7fad5183eb80: cdpl_log.c:252: in cdpl_log_open(): info: @@start_of_log@@
+1771923276.587666: 1365632-7fad5183eb80: cdpl_log.c:893: in cdpl_log_dump_sysinfo(): info: time: 2026/02/24 02:54:36 CST -0600
+1771923276.587669: 1365632-7fad5183eb80: cdpl_log.c:895: in cdpl_log_dump_sysinfo(): info: version: V-2023.09-SP2 
+1771923276.587672: 1365632-7fad5183eb80: cdpl_log.c:897: in cdpl_log_dump_sysinfo(): info: system: Linux 4.18.0-553.el8_10.x86_64 #1 SMP Fri May 10 15:19:13 EDT 2024
+1771923276.587675: 1365632-7fad5183eb80: cdpl_log.c:902: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1771923276.587677: 1365632-7fad5183eb80: cdpl_log.c:906: in cdpl_log_dump_sysinfo(): info: hostname: vscode-login4.nahpc2.arm.com
+1771923276.587679: 1365632-7fad5183eb80: cdpl_log.c:254: in cdpl_log_open(): debug: path: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/worker.W2.vscode-login4.nahpc2.arm.com.1365632.log
+1771923276.587682: 1365632-7fad5183eb80: cdpl_log.c:255: in cdpl_log_open(): debug: dir: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl
+1771923276.587688: 1365632-7fad5183eb80: cdpl_worker.c:916: in cdpl_wk_new(): info: creating worker instance
+1771923276.587699: 1365632-7fad5183eb80: cdpl_ipc.c:3332: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1771923276.587983: 1365632-7fad5183eb80: cdpl_ipc.c:831: in _selectaddrfamily(): info: selected IPv4 protocol
+1771923276.588038: 1365632-7fad5183eb80: cdpl_monitor.c:1117: in cdpl_mn_new_server(): info: creating server monitor instance
+1771923276.588048: 1365632-7fad5183eb80: cdpl_worker.c:1150: in cdpl_wk_start(): debug: starting worker
+1771923276.588050: 1365632-7fad5183eb80: cdpl_worker.c:329: in cdpl_wk_setup(): info: CDPL_SERVER is "10.120.10.44:35337"
+1771923276.588054: 1365632-7fad5183eb80: cdpl_worker.c:351: in cdpl_wk_setup(): info: server 10.120.10.44, port 35337
+1771923276.588056: 1365632-7fad5183eb80: cdpl_worker.c:372: in cdpl_wk_setup(): info: CDPL_ID is "2:1:1:1:925332472"
+1771923276.588062: 1365632-7fad5183eb80: cdpl_worker.c:414: in cdpl_wk_setup(): info: we are W2-B1-J1-M1-S925332472
+1771923276.588064: 1365632-7fad5183eb80: cdpl_worker.c:422: in cdpl_wk_setup(): info: we are on host vscode-login4.nahpc2.arm.com
+1771923276.588067: 1365632-7fad5183eb80: cdpl_worker.c:448: in cdpl_wk_daemonize(): debug: will *not* daemonize
+1771923276.588070: 1365632-7fad5183eb80: cdpl_ipc.c:3646: in cdpl_ipc_connect(): info: connecting to 10.120.10.44:35337
+1771923276.588110: 1365632-7fad5183eb80: cdpl_ipc.c:3717: in cdpl_ipc_connect(): info: connected as `10.120.10.44:56194'
+1771923276.588118: 1365632-7fad5183eb80: cdpl_ipc.c:2457: in cdpl_ipc_host_accept(): debug: accepted host `10.120.10.44:35337'
+1771923276.588137: 1365632-7fad5183eb80: cdpl_ipc.c:3489: in cdpl_ipc_start(): debug: starting IPC server 10.120.10.44:37663
+1771923276.588338: 1365632-7fad5183eb80: cdpl_compat_worker.c:462: in cdplStartWorker(): info: SNPSLMD_LICENSE_FILE is 12700@nahpc-lic01.nahpc.arm.com:12700@nahpc-lic05.nahpc.arm.com:12700@nahpc-lic13.nahpc.arm.com:12700@nahpc-lic17.nahpc.arm.com:12700@nahpc-lic09.nahpc.arm.com:12700@euhpc-lic09.euhpc.arm.com:12700@euhpc-lic10.euhpc.arm.com:12700@e
+1771923276.588344: 1365632-7fad4fd4c700: cdpl_worker.c:716: in cdpl_wk_listen(): debug: ready
+1771923276.588419: 1365632-7fad4f54b700: cdpl_worker.c:844: in cdpl_wk_heartbeat(): debug: starting heartbeat
+1771923276.588432: 1365632-7fad4f54b700: cdpl_worker.c:853: in cdpl_wk_heartbeat(): info: setting heartbeat period to 300 sec
+1771923276.588436: 1365632-7fad4f54b700: cdpl_worker.c:861: in cdpl_wk_heartbeat(): info: first heartbeat in 1 sec
+1771923276.588774: 1365632-7fad4fd4c700: cdpl_worker.c:773: in cdpl_wk_listen(): debug: received ASSIGN message
+1771923276.588841: 1365632-7fad5183eb80: cdpl_worker.c:1317: in cdpl_wk_wait_timeout(): info: starting task T1
+1771923277.596681: 1365632-7fad5183eb80: cdpl_ipc.c:2547: in cdpl_ipc_host_timedsync(): debug: entering cdpl_ipc_host_timedsync() with no timeout
+1771923277.596690: 1365632-7fad5183eb80: cdpl_ipc.c:2573: in cdpl_ipc_host_timedsync(): debug: sync start #1
+1771923277.596999: 1365632-7fad4fd4c700: cdpl_ipc.c:2854: in cdpl_ipc_msg_wait(): debug: received ACK
+1771923277.597283: 1365632-7fad5183eb80: cdpl_ipc.c:2603: in cdpl_ipc_host_timedsync(): debug: sync end #1
+1771923277.597294: 1365632-7fad5183eb80: cdpl_ipc.c:2632: in cdpl_ipc_host_timedsync(): debug: leaving cdpl_ipc_host_timedsync()
+1771923277.597355: 1365632-7fad5183eb80: cdpl_worker.c:1433: in cdpl_wk_finalize(): info: finishing task T1
+1771923278.493642: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493665: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493669: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493672: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493675: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493677: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493680: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493683: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493686: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493688: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493711: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493714: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493716: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493719: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493721: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493774: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493778: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493781: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493784: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493786: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493789: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493791: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493794: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493796: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493817: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493819: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493821: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493824: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493826: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493830: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493867: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493870: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493876: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493879: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493881: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493885: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493887: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493890: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493919: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493922: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493924: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493927: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493929: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493940: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493943: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493950: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493953: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493972: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493976: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493979: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493995: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.493998: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494001: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494018: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494020: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494023: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494034: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494048: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494051: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494053: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494067: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494071: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494074: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494087: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494090: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494105: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494108: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494119: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494121: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494126: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494136: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494150: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494153: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494155: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494166: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494170: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494185: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494187: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494190: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494205: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494208: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494232: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494234: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494237: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494241: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494252: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494260: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494275: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494278: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494280: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494295: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494297: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494300: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494311: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494313: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494329: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494339: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494349: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494351: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494364: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494366: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494369: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494388: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494391: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494393: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494471: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494480: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494483: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494486: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494489: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494492: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.494683: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495077: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495082: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495085: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495088: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495090: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495093: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495096: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495099: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495102: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495105: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495108: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495110: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495113: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495116: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495119: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495122: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495125: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495128: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495131: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495134: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495136: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495139: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495142: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495145: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495148: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495151: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495153: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495156: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495159: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495162: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495165: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495172: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495175: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495177: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495180: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495183: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495186: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495188: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495191: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495194: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495197: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495200: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495204: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495582: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495599: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495602: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495605: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495608: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495611: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495615: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495618: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495621: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495624: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495628: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495631: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495635: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495638: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495641: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495644: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495648: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495651: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495654: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495657: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495661: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495664: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495667: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495670: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495673: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495680: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495683: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.495686: 1365632-7fad4fd4c700: cdpl_worker.c:804: in cdpl_wk_listen(): debug: received RELAY message
+1771923278.497054: 1365632-7fad5054d700: cdpl_ipc.c:769: in _readv(): warning: read(): EOF
+1771923278.497077: 1365632-7fad5054d700: cdpl_ipc.c:2054: in _epoll_recv(): debug: _readv(): Broken pipe
+1771923278.497081: 1365632-7fad5054d700: cdpl_ipc.c:2378: in _epoll_main(): debug: _epoll_recv(): Broken pipe
+1771923278.497090: 1365632-7fad5054d700: cdpl_ipc.c:1611: in _host_drop__UNSAFE(): debug: dropping host `10.120.10.44:35337'
+1771923278.497139: 1365632-7fad4fd4c700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received DROP notification
+1771923278.497152: 1365632-7fad4fd4c700: cdpl_worker.c:753: in cdpl_wk_listen(): debug: we were dropped by the server
+1771923278.497158: 1365632-7fad4fd4c700: cdpl_worker.c:568: in _wk_kill(): debug: killing worker
+1771923278.497164: 1365632-7fad4fd4c700: cdpl_ipc.c:3534: in cdpl_ipc_kill(): debug: stopping event server
+1771923278.497184: 1365632-7fad5054d700: cdpl_ipc.c:2414: in _epoll_main(): debug: server going down...
+1771923278.497189: 1365632-7fad4fd4c700: cdpl_worker.c:730: in cdpl_wk_listen(): debug: leaving now
+1771923278.497291: 1365632-7fad5183eb80: cdpl_ipc.c:1392: in _ipc_enqueue__UNSAFE(): error: host has been dropped
+1771923278.497306: 1365632-7fad5183eb80: cdpl_worker.c:1635: in cdpl_wk_msgsend(): error: cdpl_ipc_send(): Transport endpoint is not connected
+1771923278.497324: 1365632-7fad5183eb80: cdpl_worker.c:1049: in _wk_shutdown(): debug: waiting for heartbeat thread
+1771923278.497331: 1365632-7fad4f54b700: cdpl_worker.c:897: in cdpl_wk_heartbeat(): info: stopping heartbeat
+1771923278.497882: 1365632-7fad5183eb80: cdpl_ipc.c:2467: in cdpl_ipc_host_release(): debug: releasing host `10.120.10.44:35337'
+1771923278.497905: 1365632-7fad5183eb80: cdpl_monitor.c:1390: in cdpl_mn_free(): debug: freeing monitor server
+1771923278.497921: 1365632-7fad5183eb80: cdpl_ipc.c:3585: in cdpl_ipc_free(): debug: releasing IPC handle
+1771923278.497924: 1365632-7fad5183eb80: cdpl_ipc.c:1536: in _host_free__UNSAFE(): debug: freeing host `10.120.10.44:35337'
+1771923278.497927: 1365632-7fad5183eb80: cdpl_ipc.c:1575: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1771923278.497945: 1365632-7fad5183eb80: cdpl_ipc.c:3624: in cdpl_ipc_free(): debug: done
+1771923278.497947: 1365632-7fad5183eb80: cdpl_worker.c:1137: in cdpl_wk_free(): info: freed
+1771923278.497950: 1365632-7fad5183eb80: cdpl_log.c:395: in cdpl_log_close(): info: @@end_of_log@@

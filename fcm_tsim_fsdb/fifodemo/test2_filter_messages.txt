@@ -1,0 +1,6 @@
+will be ignored because its total element is larger than or equal to
+FSDB_MAX_VAR_ELEM
+
+will be ignored because its packed size is larger than or equal to
+FSDB_PACKED_SIZE
+

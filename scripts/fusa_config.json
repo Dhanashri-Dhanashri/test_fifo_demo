@@ -1,0 +1,41 @@
+{
+  "parse_fsim_rpt": {
+    "fault_line_regex": "<\\s*\\d+>\\s+([A-Z]{2})\\s+\\d+\\s+\\{PORT\\s+\\\"([^\\\"]+)\\\"\\}",
+    "detected_status": ["ND", "OD", "PD", "AD"],
+    "rules": [
+      {
+        "regex": "\\.sdpram_i1\\.|ECC_|R_DataOut|L_DataIn|DataOutEnc|DataInEnc",
+        "fault_class": "memory",
+        "detection_mechanism": "ecc_syndrome"
+      },
+      {
+        "regex": "\\.FL_|\\.RP_|\\.WP_",
+        "fault_class": "control",
+        "detection_mechanism": "redundant_compare"
+      },
+      {
+        "regex": "\\.ReadEn|\\.WriteEn|\\.ReadClk|\\.WriteClk|\\.DataIn\\[|\\.DataOut\\[",
+        "fault_class": "interconnect",
+        "detection_mechanism": "functional_check"
+      }
+    ],
+    "default_fault_class": "other",
+    "default_detection_mechanism": "unknown"
+  },
+  "block_coverage": {
+    "block_map": {
+      "control": "CPU",
+      "interconnect": "interconnect",
+      "memory": "memory"
+    }
+  },
+  "latent_risk": {
+    "block_map": {
+      "control": "CPU",
+      "interconnect": "interconnect",
+      "memory": "memory"
+    },
+    "threshold_percent": 20.0,
+    "top_locations": 10
+  }
+}

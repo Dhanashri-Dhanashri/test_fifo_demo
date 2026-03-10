@@ -1,0 +1,48 @@
+will invoke: "/home/dhanas01/test_fifo_demo/simv +test1 -fsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/fsim:test1:DEFAULT:task5/task.json,job_id+3156162966 -reportstats"
+
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-1_Full64; Runtime version X-2025.06-1_Full64;  Feb 24 02:54 2026
+Info: FailureMode DEFAULT specified by the task
+*Verdi* Loading libsscore_vcs202506.so
+*Verdi* WARNING: All FSDB design task is disabled
+*Verdi* WARNING: All FSDB ucli task is disabled
+FSDB Dumper for VCS, Release Verdi_X-2025.06-1, Linux x86_64/64bit, 07/19/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+Info : Injecting 184 faults at simulation time 228ns.
+$finish called from file "./testcases/test1.v", line 104.
+$finish at simulation time                 3110
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3110 ns
+
+Simulation Performance Summary
+==============================
+Simulation started at :  Tue Feb 24 02:54:36 2026
+Elapsed Time          :  2 sec
+CPU Time              :  0.2 sec
+Virtual memory size   :  365.1 MB
+Resident set size     :  114.1 MB
+Shared memory size    :  79.8 MB
+Private memory size   :  34.3 MB
+Major page faults     :  90
+Machine name          :  vscode-login4.nahpc2.arm.com
+==============================
+
+Tue Feb 24 02:54:37 2026
+
+            Fault Simulation Summary            
+------------------------------------------------
+Faults Simulated                   184
+
+Not Observed Not Diagnosed           1 (  0.54%)
+Not Observed Diagnosed              65 ( 35.33%)
+Potentially Observed Potentially Diagnosed       1 (  0.54%)
+Observed Not Diagnosed              59 ( 32.07%)
+Observed Diagnosed                  58 ( 31.52%)
+
+
+command completed with exit code 0
+
+Exit:0

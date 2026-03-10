@@ -1,0 +1,175 @@
+0
+50
++define+USE_SAFETY_DESIGN
++define+USE_SDPRAM_TOP
++itf+/arm/tools/synopsys/vcs/2025.06-1/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
++vpi
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/arm/tools/synopsys/vcs/2025.06-1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libvirsim.so /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/liberrorinf.so /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libsnpsmalloc.so /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/arm/tools/synopsys/vcs/2025.06-1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/arm/tools/synopsys/vcs/2025.06-1/include
+-Mxllcflags=
+-P
+-Xcheckfsim
+-Xcheckfsim
+-Xfile_begin_f=./rtl.f
+-Xfile_end
+-Xhdlxmropt
+-Xufe=2steps
+-debug_access
+-fsdb
+-fsim=dut:test.DUT
+-fsim=portfaults
+-full64
+-gen_obj
+-kdb
+-l
+-lca
+-picarchive
+-sverilog
+/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/vcs1fe
+comp_v.log
+/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/LINUX64/verdi.tab
+src/fifo_tb.v
+src/fifo_sm.v
+src/8BIT_ECC.v
+src/sdpram.v
+./src/strobe.sv
+100
+me=dhanas01
+luna=/home/dhanas01/luna_tutorial
+lf=/home/dhanas01/luna_tutorial/luna_flow
+formal=/home/dhanas01/luna_tutorial/fts
+_LMFILES__modshare=/arm/tools/modulefiles/eda:1:/arm/tools/modulefiles/.core/arm/license/validation:1:/arm/tools/modulefiles/util:1:/arm/tools/modulefiles/.eda/synopsys/license/production:4:/arm/tools/modulefiles/.core/platform/lsf/10.1_sp14:2:/arm/tools/modulefiles/swdev:1:/arm/tools/modulefiles/core:2
+_LMFILES_=/arm/tools/modulefiles/core:/arm/tools/modulefiles/util:/arm/tools/modulefiles/swdev:/arm/tools/modulefiles/.core/arm/license/validation:/arm/tools/modulefiles/.core/platform/lsf/10.1_sp14:/arm/tools/modulefiles/eda:/arm/tools/modulefiles/.eda/synopsys/license/production
+XLSF_UIDDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib/uid
+XDG_SESSION_ID=4861
+XDG_RUNTIME_DIR=/run/user/65749
+VSCODE_NONCE=5fd59b94-b61d-45cf-81dc-2f85029683b8
+VSCODE_IPC_HOOK_CLI=/run/user/65749/vscode-ipc-1dd7a17c-be97-42c0-91a5-e6b033b27ed7.sock
+VMR_MODE_FLAG=64
+VIRSIMHOME=/arm/tools/synopsys/vcs/2025.06-1/gui/virsim
+VERDI_HOME=/arm/tools/synopsys/verdi3/2025.06-1
+VERDI_FUSA_DUMP_FSDB_CMD=./COLLATERAL/VERDI/dumping_v.sh
+VERDI_FUSA_DEBUG=1
+VENDOR=unknown
+VCS_PYTHON3=/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/Python3/bin/python3
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=comp_v.log
+VCS_LCAMSG_PRINT_OFF=1
+VCS_INTERNAL_CONVERTEDLIBS=
+VCS_HOME=/arm/tools/synopsys/vcs/2025.06-1
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TURBO_LIBS=artisan_l artisan_u
+TOOL_HOME=/arm/tools/synopsys/vcs/2025.06-1/linux64
+TERM_PROGRAM_VERSION=1.108.2
+TERM_PROGRAM=vscode
+S_COLORS=auto
+SYNOPSYS_SI=/arm/tools/synopsys/vcs/2025.06-1
+SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+SSL_CERT_DIR=/etc/pki/tls/certs
+SSH_CONNECTION=10.164.19.75 53743 10.120.10.44 22
+SSH_CLIENT=10.164.19.75 53743 22
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPS_VCS_VHDL_WRAPPER_KDB=1
+SNPS_VCS_PYTHON3=/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/Python3/bin/python3
+SNPS_VCS_CLANG_PATH=/arm/tools/synopsys/vcs/2025.06-1/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SNPS_DISABLE_DCG_NEW_TECHNOLOGY=1
+SNPS_ANOMALY_DISABLE=1
+SNPSLMD_LICENSE_FILE_modshare=12700@nahpc-lic13.nahpc.arm.com:2:12700@nahpc-lic17.nahpc.arm.com:2:12700@euhpc-lic11.euhpc.arm.com:2:11762@euhpc-lic12.euhpc.arm.com:2:12700@nahpc-lic01.nahpc.arm.com:2:12700@nahpc-lic05.nahpc.arm.com:2:12700@nahpc-lic09.nahpc.arm.com:2:12700@euhpc-lic09.euhpc.arm.com:2:12700@euhpc-lic10.euhpc.arm.com:2:12700@eu03-lic08.server.eu03.arm.com:2
+SNPSLMD_DISABLE_DEBUG_LICENSE_CHECKS=1
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+PYTHON_BASIC_REPL=1
+PYTHONSTARTUP=/home/dhanas01/.vscode-server/data/User/workspaceStorage/2d0c82943420c788e865b445afdca553/ms-python.python/pythonrc.py
+PATH_modshare=/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:1:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:999999999:/usr/bin:1:/arm/tools/arm/cluster/2.0/prod/bin:1:/usr/X11R6/bin:1:/usr/local/bin:2:/arm/tools/synopsys/verdi3/2025.06-1/bin:1:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:2:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:1:/arm/tools/synopsys/vcs/2025.06-1/gui/virsim/bin:1:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:1:/bin:1:/opt/puppetlabs/bin:2:/arm/tools/synopsys/vcs/2025.06-1/bin:1:/usr/sbin:1:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:1:/home/dhanas01/.local/bin/x86_64:2:/usr/local/sbin:1:/arm/tools/synopsys/vcs/2025.06-1/cso/bin:1
+PATH_USER=/usr/local/bin:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/bin:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/opt/puppetlabs/bin
+OVA_UUM=0
+OSTYPE=linux
+NOVAS_VERSION=2025.06-1
+NOVAS_IDLE_LICENSE_CHECKBACK=30
+MODULESHOME=/arm/tools/setup
+MODULEPATH_modshare=/arm/tools/modulefiles/.swdev:1:/arm/tools/modulefiles/.core:2:/arm/tools/modulefiles/.eda:1:/arm/tools/modulefiles/.util:1:/arm/tools/modulefiles:1
+MODULEPATH=/arm/tools/modulefiles:/arm/tools/modulefiles:/arm/tools/modulefiles/.core:/arm/tools/modulefiles/.util:/arm/tools/modulefiles/.swdev:/arm/tools/modulefiles/.eda
+MFLAGS=
+MANPATH_modshare=/arm/tools/platform/lsf/10.1_sp14/man:1:/usr/local/share/man:1:/usr/X11R6/man:3:/usr/share/man:1:/arm/tools/synopsys/vcs/2025.06-1/doc/man:1
+MAKE_TERMOUT=/dev/pts/75
+MAKE_TERMERR=/dev/pts/75
+MAKELEVEL=1
+MAKEFLAGS=
+LSF_SERVERDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/etc
+LSF_LIBDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib
+LSF_ENVDIR=/arm/cluster/nahpc2/conf
+LSF_BINDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin
+LOADEDMODULES_modshare=synopsys/license/production:2:arm/cluster/2.0:1:arm/license/production:1:synopsys/vcs/2025.06-1:1:swdev:1:core:2:synopsys/verdi3/2025.06-1:1:eda:1:util:1:platform/lsf/10.1_sp14:1
+LOADEDMODULES=core:util:swdev:arm/license/production:platform/lsf/10.1_sp14:arm/cluster/2.0:eda:synopsys/license/production:synopsys/vcs/2025.06-1:synopsys/verdi3/2025.06-1
+LM_LICENSE_FILE_modshare=1661@eu03-lic05.server.eu03.arm.com:1
+LD_LIBRARY_PATH_modshare=/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/MODELSIM/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbWriter/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/linux64:1:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib:1:/lib:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/IUS/linux64:1:/usr/lib:1
+LD_LIBRARY_PATH_USER=
+LC_ALL=en_US.UTF-8
+KDEDIRS=/usr
+HOSTTYPE=x86_64-linux
+GROUP=dhanas01
+FSDB_FAULT_DUMP_MODE=fm
+FLEXLM_NO_CKOUT_INSTALL_LIC=1
+DUOLOG_LICENSE_FILE_modshare=1661@eu03-lic05.server.eu03.arm.com:1
+DUOLOG_LICENSE_FILE=1661@eu03-lic05.server.eu03.arm.com
+DEPOT_VERSION=depot-2.03-aus03
+DEPOT_AMQP=amqp.nahpc.arm.com
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/65749/bus
+CSO_HOME=/arm/tools/synopsys/vcs/2025.06-1/cso
+COLORTERM=truecolor
+CARBOND_LICENSE_FILE_modshare=7276@euhpc-lic20.euhpc.arm.com:1:7276@nahpc-lic15.nahpc.arm.com:1
+CARBOND_LICENSE_FILE=7276@euhpc-lic20.euhpc.arm.com:7276@nahpc-lic15.nahpc.arm.com
+ARM_SITE_LOAD=core
+ARM_MODULE_ROOT=/arm/tools/modulefiles
+ARM_CLUSTER_NAME=nahpc2
+ARM_CLUSTER_MODE=CPM
+ARMLM_ONDEMAND_ACTIVATION_modshare=//lls.arm.com:1:HWSKT-EAC0@https:1
+ARMLM_ONDEMAND_ACTIVATION=HWSKT-EAC0@https://lls.arm.com
+ARMLMD_LICENSE_FILE_modshare=17010@eu-armlmd.lic.arm.com:1:17010@armlmd.lic.arm.com:1:17010@na-armlmd.lic.arm.com:1
+ARMLMD_LICENSE_FILE=17010@armlmd.lic.arm.com:17010@eu-armlmd.lic.arm.com:17010@na-armlmd.lic.arm.com
+0
+0
+12
+1771921592 ./testcases/test2.v
+1771921592 ./testcases/test1.v
+1752732158 /arm/tools/synopsys/vcs/2025.06-1/linux64/packages/snps_msv_nettype_pkg/AN.DB
+1771921592 ./src/strobe.sv
+1771921592 src/sdpram.v
+1771921592 src/8BIT_ECC.v
+1771921592 src/fifo_sm.v
+1771923189 src/fifo_tb.v
+1752721622 /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/evcd_pli.tab
+1771923245 ./rtl.f
+1752984263 /arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/LINUX64/verdi.tab
+1752721624 /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/vcsdp_lite.tab
+4
+1752724038 /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libvirsim.so
+1752722876 /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/liberrorinf.so
+1752722871 /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libsnpsmalloc.so
+1752722863 /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libvfs.so
+1771923256 simv.daidir
+-1 partitionlib

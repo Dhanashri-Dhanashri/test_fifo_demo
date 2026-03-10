@@ -1,0 +1,14 @@
+
+# if not 0 then stop after auto_stop_timeout seconds
+auto_stop 1
+# delay after the last connection to activate a server shutdown
+auto_stop_timeout 60
+monitor_period 3
+# how long to try to gently kill before immediately killing the server
+kill_timeout 15
+fdb_storage_path /home/dhanas01/test_fifo_demo/fdb
+pg_home /arm/tools/synopsys/vcs/2025.06-1/etc/fdb/PostgreSQL/linux64/pgsql/
+bin_dir /arm/tools/synopsys/vcs/2025.06-1/bin
+server_host vscode-login4.nahpc2.arm.com
+server_port 62272
+verbose 0

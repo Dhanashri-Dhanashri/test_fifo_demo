@@ -1,0 +1,263 @@
+
+                           VC Fault Campaign Manager 
+
+                Version X-2025.06-1 for linux64 - Jul 16, 2025 
+
+                    Copyright (c) 2019 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+                            (TCL Interactive Shell)                             
+        Designed using: eltclsh 1.17 - Copyright (C) 2001-2018 LAAS-CNRS        
+
+vscode-login4.nahpc2.arm.com:62272 vc_fcm> create_campaign -args "-full64 -daidir simv.daidir -sff ./COLLATERAL/SFF/config.sff,./COLLATERAL/SFF/faults.sff -campaign fifodemo -dut test.DUT -overwrite"
+starting VC Fault Campaign Compiler
+
+will invoke: "/arm/tools/synopsys/vcs/2025.06-1/bin/vc_fcc -full64 -daidir simv.daidir -sff ./COLLATERAL/SFF/config.sff,./COLLATERAL/SFF/faults.sff -campaign fifodemo -dut test.DUT -overwrite -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default 2>&1"
+
+
+                          VC Fault Campaign Compiler 
+
+                Version X-2025.06-1 for linux64 - Jul 16, 2025 
+
+                    Copyright (c) 2019 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Command: vc_fcc -full64 -daidir simv.daidir -sff ./COLLATERAL/SFF/config.sff,./COLLATERAL/SFF/faults.sff -campaign fifodemo -dut test.DUT -overwrite -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default 
+
+Info: Connected to existing server
+Loading design information...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 53Mb, peak: 86Mb).
+
+Warning-[FCC-PROMOTION-TABLE-MISSING-BUILT-IN-STATUSES] Missing noted built-in fault status interactions.
+./COLLATERAL/SFF/config.sff, 48
+  The defined promotion table does not account for resolution of the following
+  user-defined fault statuses in relation to their promotion to the noted 
+  built-in VC Z01X statuses.
+  These promotions will default to the built-in VC Z01X status unless their 
+  interaction is defined: 
+  NN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  NP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  ND-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  ON-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  OP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  OD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  IS-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  
+
+Generating faults...
+Done (422 faults generated, CPU time: 0s, elapsed time: 0s, memory increased by 5Mb, peak: 94Mb).
+Collecting design strobes...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 94Mb).
+Loading design details...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 94Mb).
+Constant propagation...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Static testability analysis...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Reconvergence check...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Pruning...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Collapsing...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 96Mb).
+Preparing to write to FDB...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 96Mb).
+Writing fault campaign to FDB...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 1Mb, peak: 98Mb).
+Total faults generated: 422.
+Collapsed faults:       120.
+Untestable faults:      88.
+Fault reduction:        49%.
+1 warning
+CPU time: 0s, elapsed time: 1s, peak memory: 102MB.
+
+command completed with exit code 0
+
+Exit:0
+vscode-login4.nahpc2.arm.com:62272 (fifodemo) vc_fcm> set_config -global_max_jobs 2
+vscode-login4.nahpc2.arm.com:62272 (fifodemo) vc_fcm> create_testcases -name test1 -exec "$::env(PWD)/simv" -args "+test1" 
+vscode-login4.nahpc2.arm.com:62272 (fifodemo) vc_fcm> create_testcases -name test2 -exec "$::env(PWD)/simv" -args "+test2" 
+vscode-login4.nahpc2.arm.com:62272 (fifodemo) vc_fcm> fsim
+------------------------------------------------------------------------
+Testability Analysis
+
+Scanning database for testcases and previous results from testability analysis ...
+   Task 1 (tsim) created for testcase 'test1'
+   Task 2 (coats) created for testcase 'test1'
+   Task 3 (tsim) created for testcase 'test2'
+   Task 4 (coats) created for testcase 'test2'
+Preparation took 0s
+
+
+Starting execution of 2 tsim and 2 coats tasks using up to 2 concurrent workers 
+Will store resulting fsdb files in /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo
+
+Check progress of tasks by their output files stored in /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/*/out.log
+and by section 1 in /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/summary.csv
+
+  Time  | Workers |     Tasks        |  Time   Mem | results from completed task(s)
+        |act./req.|active    done    |   [s]   [MB]|                               
+--------+---------+------------------+-------------+-------------------------------
+02:54:30|   -/   2|    4     - (  0%)|     -      -|<START>
+02:54:31|   2/   2|    4     0 (  0%)|             |Worker2 started on host vscode-login4.nahpc2.arm.com
+02:54:32|   2/   2|    4     0 (  0%)|             |Worker1 started on host vscode-login4.nahpc2.arm.com
+02:54:32|   2/   2|    4     0 (  0%)|             |Task1(test1) started on worker2
+02:54:32|   2/   2|    4     0 (  0%)|             |Task3(test2) started on worker1
+02:54:34|   2/   2|    4     0 (  0%)|             |Task2(test1) started on worker2
+02:54:34|   2/   2|    4     0 (  0%)|             |Task4(test2) started on worker1
+02:54:34|   2/   2|    3     1 ( 25%)|     2    117|Task1(tsim,test1) done
+02:54:34|   2/   2|    2     2 ( 50%)|     2    117|Task3(tsim,test2) done
+02:54:36|   1/   1|    1     3 ( 75%)|     3    171|Task2(coats,test1) done, NC:30 
+02:54:36|   0/   0|    0     4 (100%)|     3    172|Task4(coats,test2) done, NC:30 
+02:54:36|   -/   -|    -     4 (100%)|     -      -|<FINISH>
+
+Testability analysis completed: 4 task(s) were run, all succeeded
+
+Info: Writing promoted coats results to FDB...
+Writing took 0s
+------------------------------------------------------------------------
+Fault Simulation
+
+Preparing...
+
+Selected fault status: NA NN AN 
+Failure modes: DEFAULT
+
+Scanning database for faults and results, keep only faults with selected status ...
+FM 'DEFAULT' has 302 prime faults (422 total faults), 184 selected for fault simulation
+   Testcase 'test1' (tsim: 2s): 184 testable prime faults that have no previous results
+   Testcase 'test2' (tsim: 2s): 184 testable prime faults that have no previous results
+Workload: 368 combinations of FM x testcase x prime FID
+
+
+Create initial set of tasks
+   Task 5 created with 184 prime faults for faultsim of FM 'DEFAULT' with testcase 'test1'
+   Task 6 created with 184 prime faults for faultsim of FM 'DEFAULT' with testcase 'test2'
+Preparation took 0s
+
+
+Starting execution of tasks using up to 2 concurrent workers 
+Check progress of tasks by their output files stored in /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/*/out.log
+and by section 1 in /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/summary.csv
+Note: Active workload might include the same fault several times, running in multiple tests.
+
+
+  Time  | Workers |          Workload               |  Time   Mem | results from completed task(s)
+        |act./req.|  queued   active     done       |   [s]   [MB]| (testable prime faults)       
+--------+---------+---------------------------------+-------------+-------------------------------
+02:54:36|   -/   2|       0      368        0 (  0%)|     -      -|<START>
+02:54:37|   2/   2|       0      368        0 (  0%)|             |Worker1 started on host vscode-login4.nahpc2.arm.com
+02:54:37|   2/   2|       0      368        0 (  0%)|             |Worker2 started on host vscode-login4.nahpc2.arm.com
+02:54:37|   2/   2|       0      368        0 (  0%)|             |Task6(test2) started on worker2
+02:54:37|   2/   2|       0      368        0 (  0%)|             |Task5(test1) started on worker1
+02:54:38|   1/   1|       0      184      184 ( 50%)|     1    114|Task5(test1) done, 184, ND:65 NN:1 OD:58 ON:59 PP:1
+02:54:38|   0/   0|       0        0      368 (100%)|     1    114|Task6(test2) done, 184, ND:65 NN:1 OD:58 ON:59 PP:1
+02:54:38|   -/   -|       -        -      368 (100%)|     -      -|<FINISH> total results: 368
+
+Fault simulation completed: 2 task(s) were run, all succeeded
+
+Preparing summary...
+
+
+Execution Summary
+=================================================================================
+
+Task               |Wall clock(hh:mm:ss)|Time in s              |Peak mem in MB  
+                   |(start->end)        |Wall         |CPU      |RSS     |Virtual
+                   |Host/Jobs           |             |         |        |       
+===================+====================+=============+=========+========+=======
+Fault Gen   ( 20%) |           00:00:02 |           0 |       0 |      0 |      -
+===================+====================+=============+=========+========+=======
+Combined    ( 60%) |           00:00:06 |          10 |       0 |    172 |    319
+-------------------+--------------------+-------------+---------+--------+-------
+Toggle Sim         |                  - |           6 |       0 |    117 |    319
+  setup            | vscod~hpc2.arm.com |           0 |       - |      - |      -
+  Total Queued     |                  - |           2 |       - |      - |      -
+  test1            | vscod~hpc2.arm.com |           2 |       0 |    117 |    319
+  test2            | vscod~hpc2.arm.com |           2 |       0 |    117 |    319
+-------------------+--------------------+-------------+---------+--------+-------
+Testability        |                  - |           4 |       0 |    172 |      -
+  test1            | vscod~hpc2.arm.com |           2 |       0 |    171 |      -
+  test2            | vscod~hpc2.arm.com |           2 |       0 |    172 |      -
+===================+====================+=============+=========+========+=======
+Fault Sim   ( 20%) |           00:00:02 |           4 |       0 |    114 |    365
+  setup            | vscod~hpc2.arm.com |           0 |       - |      - |      -
+  Total Queued     |                  - |           0 |       - |      - |      -
+  test1            |              1 job |           2 |       0 |    114 |    365
+  test2            |              1 job |           2 |       0 |    114 |    365
+===================+====================+=============+=========+========+=======
+Total       (100%) |           00:00:10 |          14 |       0 |    172 |    365
+=================================================================================
+
+vscode-login4.nahpc2.arm.com:62272 (fifodemo) vc_fcm> dump -fids "130" -mode fm -tc test1 -fsdb fm_fid130_test1.fsdb
+Preparation took 0s
+
+
+Starting execution of task7 using 1 worker 
+Dumping completed: 1 task(s) were run, all succeeded
+
+vscode-login4.nahpc2.arm.com:62272 (fifodemo) vc_fcm> report -report fsim_v.rpt -overwrite
+starting VC FDB Reporting
+
+will invoke: "/arm/tools/synopsys/vcs/2025.06-1/bin/vc_fdb_report  -report 'fsim_v.rpt' -overwrite -campaign fifodemo -xhidden "nobanner" -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default 2>&1"
+
+Info: Connected to existing server
+Loading fault campaign: 'fifodemo'...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 9Mb).
+Loading fault results...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 2Mb, peak: 21Mb).
+Writing report...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 21Mb).
+Info:	Wrote Standard Fault Format report to fsim_v.rpt
+CPU time: 0s, elapsed time: 1s, peak memory: 21MB.
+
+command completed with exit code 0
+
+Exit:0
+
+CPU time: 4s, elapsed time: 25s, peak memory: 113MB.

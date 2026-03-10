@@ -1,0 +1,5 @@
+FaultGenerate
+{
+    NA [0,1] { PORT "test.DUT.**" }
+}
+

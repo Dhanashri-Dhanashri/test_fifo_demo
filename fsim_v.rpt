@@ -1,0 +1,526 @@
+Date("02/24/26 02:54:41")
+User("dhanas01")
+Tool("REPORT")
+Info("  Type:    Fault Coverage Report")
+Info(" Version: X-2025.06-1")
+Info(" FDB Storage Path: /home/dhanas01/test_fifo_demo/fdb")
+Info(" FDB Server: vscode-login4.nahpc2.arm.com:62272")
+Info(" FDB Project: default")
+Info(" FDB Campaign: fifodemo")
+Info(" Command: vc_fdb_report -report fsim_v.rpt -overwrite -campaign fifodemo -xhidden nobanner -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default ")
+
+TestList {
+    1 test1 {Results:334 NC:53 NN:1 ND:94 PP:1 ON:111 OD:74}
+    2 test2 {Results:334 NC:53 NN:1 ND:94 PP:1 ON:111 OD:74}
+}
+
+FaultInfo {
+    TestNum;
+}
+
+StatusDefinitions {
+    Redefine DD DX "Redefine DD";
+    Redefine PD PX "Redefine PD";
+    Redefine ND NX "Redefine ND";
+    NN "Not Observed Not Diagnosed";
+    NP "Not Observed Potentially Diagnosed";
+    PD "Potentially Observed Diagnosed";
+    ND "Not Observed Diagnosed";
+    PN "Potentially Observed Not Diagnosed";
+    PP "Potentially Observed Potentially Diagnosed";
+    ON "Observed Not Diagnosed";
+    OP "Observed Potentially Diagnosed";
+    OD "Observed Diagnosed";
+    AN "Assumed Dangerous Not Diagnosed";
+    AD "Assumed Dangerous Diagnosed";
+    AP "Assumed Dangerous Potentially Diagnosed";
+    IS "Invalid Status Promotion";
+
+    DefaultStatus(NN)
+
+    Selected(NA, NN, AN)
+
+    PromotionTable {
+        StatusLabels (NN,NP,ND,PD,PN,PP,ON,OP,OD,AP,AN,AD,IS)
+        [
+            NN NN ND PD PN PP ON OP OD IS IS IS IS ;
+            NN NP ND PD PN PP ON OP OD IS IS IS IS ;
+            ND ND ND PD PD PD OD OD OD IS IS IS IS ;
+            PD PD PD PD PD PD OD OD OD IS IS IS IS ;
+            PN PN PD PD PN PP ON ON OD IS IS IS IS ;
+            PP PP PD PD PN PP ON OP OD IS IS IS IS ;
+            ON ON OD OD ON ON ON ON OD IS IS IS IS ;
+            OP OP OD OD ON OP ON OP OD IS IS IS IS ;
+            OD OD OD OD OD OD OD OD OD IS IS IS IS ;
+            IS IS IS IS IS IS IS IS IS AP AN AD IS ;
+            IS IS IS IS IS IS IS IS IS AN AN AD IS ;
+            IS IS IS IS IS IS IS IS IS AD AD AD IS ;
+            IS IS IS IS IS IS IS IS IS IS IS IS IS ;
+        ]
+    }
+
+    StatusGroups {
+        SA "Safe" (UT, UB, UR, UU);
+        SU "Safe Unobserved" (NN, NC, NO, NT);
+        DA "Dangerous Assumed" (HA, HM, HT, OA, OZ, IA, IP, IF, IX);
+        DN "Dangerous Not Diagnosed" (PN, ON, PP, OP, NP, AN, AP);
+        DD "Dangerous Diagnosed" (PD, OD, ND, AD);
+    }
+}
+
+Coverage {
+    "Diagnostic Coverage" = "DD/(NA + DA + DN + DD)";
+}
+
+FaultList { 
+    <  2> ON 0 {PORT "test.DUT.DataOut[0]"}
+    <  2> ON 1 {PORT "test.DUT.DataOut[0]"}
+    <  2> ON 0 {PORT "test.DUT.DataOut[1]"}
+    <  2> ON 1 {PORT "test.DUT.DataOut[1]"}
+    <  2> ON 0 {PORT "test.DUT.DataOut[2]"}
+    <  2> ON 1 {PORT "test.DUT.DataOut[2]"}
+    <  2> ON 0 {PORT "test.DUT.DataOut[3]"}
+    <  2> ON 1 {PORT "test.DUT.DataOut[3]"}
+    <  0> NC 0 {PORT "test.DUT.DataOut[4]"}
+    <  2> ON 1 {PORT "test.DUT.DataOut[4]"}
+    <  0> NC 0 {PORT "test.DUT.DataOut[5]"}
+    <  2> ON 1 {PORT "test.DUT.DataOut[5]"}
+    <  0> NC 0 {PORT "test.DUT.DataOut[6]"}
+    <  2> ON 1 {PORT "test.DUT.DataOut[6]"}
+    <  0> NC 0 {PORT "test.DUT.DataOut[7]"}
+    <  2> ON 1 {PORT "test.DUT.DataOut[7]"}
+    <  2> ON 0 {PORT "test.DUT.Empty_"}
+    <  2> ON 1 {PORT "test.DUT.Empty_"}
+    <  2> ND 0 {PORT "test.DUT.Error"}
+    <  2> ND 1 {PORT "test.DUT.Error"}
+    <  2> OD 0 {PORT "test.DUT.FL_IF.Clock"}
+    <  2> OD 1 {PORT "test.DUT.FL_IF.Clock"}
+    <  2> OD 0 {PORT "test.DUT.FL_IF.Empty_"}
+    <  2> OD 1 {PORT "test.DUT.FL_IF.Empty_"}
+    <  2> OD 0 {PORT "test.DUT.FL_IF.Full_"}
+    <  2> OD 1 {PORT "test.DUT.FL_IF.Full_"}
+    <  2> OD 0 {PORT "test.DUT.FL_IF.HalfFull_"}
+    <  2> OD 1 {PORT "test.DUT.FL_IF.HalfFull_"}
+    <  2> OD 0 {PORT "test.DUT.FL_IF.Read"}
+    <  2> OD 1 {PORT "test.DUT.FL_IF.Read"}
+    <  2> OD 0 {PORT "test.DUT.FL_IF.Reset_"}
+    <  0> NC 1 {PORT "test.DUT.FL_IF.Reset_"}
+    <  2> OD 0 {PORT "test.DUT.FL_IF.Write"}
+    <  2> OD 1 {PORT "test.DUT.FL_IF.Write"}
+    <  2> ND 0 {PORT "test.DUT.FL_SM.Clock"}
+    <  2> ND 1 {PORT "test.DUT.FL_SM.Clock"}
+    <  2> ND 0 {PORT "test.DUT.FL_SM.Empty_"}
+    <  2> ND 1 {PORT "test.DUT.FL_SM.Empty_"}
+    <  2> ND 0 {PORT "test.DUT.FL_SM.Full_"}
+    <  2> NN 1 {PORT "test.DUT.FL_SM.Full_"}
+    <  2> ND 0 {PORT "test.DUT.FL_SM.HalfFull_"}
+    <  2> ND 1 {PORT "test.DUT.FL_SM.HalfFull_"}
+    <  2> ND 0 {PORT "test.DUT.FL_SM.Read"}
+    <  2> ND 1 {PORT "test.DUT.FL_SM.Read"}
+    <  2> ND 0 {PORT "test.DUT.FL_SM.Reset_"}
+    <  0> NC 1 {PORT "test.DUT.FL_SM.Reset_"}
+    <  2> ND 0 {PORT "test.DUT.FL_SM.Write"}
+    <  2> ND 1 {PORT "test.DUT.FL_SM.Write"}
+    <  2> ON 0 {PORT "test.DUT.Full_"}
+    <  2> ON 1 {PORT "test.DUT.Full_"}
+    <  2> ON 0 {PORT "test.DUT.HalfFull_"}
+    <  2> ON 1 {PORT "test.DUT.HalfFull_"}
+    <  2> OD 0 {PORT "test.DUT.RP_IF.Clock"}
+    <  2> OD 1 {PORT "test.DUT.RP_IF.Clock"}
+    <  2> OD 0 {PORT "test.DUT.RP_IF.Count[0]"}
+    <  2> OD 1 {PORT "test.DUT.RP_IF.Count[0]"}
+    <  2> OD 0 {PORT "test.DUT.RP_IF.Count[1]"}
+    <  2> OD 1 {PORT "test.DUT.RP_IF.Count[1]"}
+    <  2> OD 0 {PORT "test.DUT.RP_IF.Count[2]"}
+    <  2> OD 1 {PORT "test.DUT.RP_IF.Count[2]"}
+    <  2> OD 0 {PORT "test.DUT.RP_IF.Enable"}
+    <  2> OD 1 {PORT "test.DUT.RP_IF.Enable"}
+    <  2> OD 0 {PORT "test.DUT.RP_IF.Reset_"}
+    <  0> NC 1 {PORT "test.DUT.RP_IF.Reset_"}
+    <  2> ND 0 {PORT "test.DUT.RP_SM.Clock"}
+    <  2> ND 1 {PORT "test.DUT.RP_SM.Clock"}
+    <  2> ND 0 {PORT "test.DUT.RP_SM.Count[0]"}
+    <  2> ND 1 {PORT "test.DUT.RP_SM.Count[0]"}
+    <  2> ND 0 {PORT "test.DUT.RP_SM.Count[1]"}
+    <  2> ND 1 {PORT "test.DUT.RP_SM.Count[1]"}
+    <  2> ND 0 {PORT "test.DUT.RP_SM.Count[2]"}
+    <  2> ND 1 {PORT "test.DUT.RP_SM.Count[2]"}
+    <  2> ND 0 {PORT "test.DUT.RP_SM.Enable"}
+    <  2> ND 1 {PORT "test.DUT.RP_SM.Enable"}
+    <  2> ND 0 {PORT "test.DUT.RP_SM.Reset_"}
+    <  0> NC 1 {PORT "test.DUT.RP_SM.Reset_"}
+    <  2> OD 0 {PORT "test.DUT.ReadClk"}
+    <  2> OD 1 {PORT "test.DUT.ReadClk"}
+    <  2> OD 0 {PORT "test.DUT.ReadEn"}
+    <  2> OD 1 {PORT "test.DUT.ReadEn"}
+    <  2> OD 0 {PORT "test.DUT.Reset_"}
+    <  0> NC 1 {PORT "test.DUT.Reset_"}
+    <  2> OD 0 {PORT "test.DUT.WP_IF.Clock"}
+    <  2> OD 1 {PORT "test.DUT.WP_IF.Clock"}
+    <  2> OD 0 {PORT "test.DUT.WP_IF.Count[0]"}
+    <  2> OD 1 {PORT "test.DUT.WP_IF.Count[0]"}
+    <  2> OD 0 {PORT "test.DUT.WP_IF.Count[1]"}
+    <  2> OD 1 {PORT "test.DUT.WP_IF.Count[1]"}
+    <  2> OD 0 {PORT "test.DUT.WP_IF.Count[2]"}
+    <  2> OD 1 {PORT "test.DUT.WP_IF.Count[2]"}
+    <  2> OD 0 {PORT "test.DUT.WP_IF.Enable"}
+    <  2> OD 1 {PORT "test.DUT.WP_IF.Enable"}
+    <  2> OD 0 {PORT "test.DUT.WP_IF.Reset_"}
+    <  0> NC 1 {PORT "test.DUT.WP_IF.Reset_"}
+    <  2> ND 0 {PORT "test.DUT.WP_SM.Clock"}
+    <  2> ND 1 {PORT "test.DUT.WP_SM.Clock"}
+    <  2> ND 0 {PORT "test.DUT.WP_SM.Count[0]"}
+    <  2> ND 1 {PORT "test.DUT.WP_SM.Count[0]"}
+    <  2> ND 0 {PORT "test.DUT.WP_SM.Count[1]"}
+    <  2> ND 1 {PORT "test.DUT.WP_SM.Count[1]"}
+    <  2> ND 0 {PORT "test.DUT.WP_SM.Count[2]"}
+    <  2> ND 1 {PORT "test.DUT.WP_SM.Count[2]"}
+    <  2> ND 0 {PORT "test.DUT.WP_SM.Enable"}
+    <  2> ND 1 {PORT "test.DUT.WP_SM.Enable"}
+    <  2> ND 0 {PORT "test.DUT.WP_SM.Reset_"}
+    <  0> NC 1 {PORT "test.DUT.WP_SM.Reset_"}
+    <  2> ON 0 {PORT "test.DUT.WriteClk"}
+    <  2> OD 1 {PORT "test.DUT.WriteClk"}
+    <  2> OD 0 {PORT "test.DUT.WriteEn"}
+    <  2> PP 1 {PORT "test.DUT.WriteEn"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[0]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[0]"}
+    <  2> OD 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[0]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[0]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[10]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[10]"}
+    <  2> OD 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[10]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[10]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[11]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[11]"}
+    <  2> OD 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[11]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[11]"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[1]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[1]"}
+    <  2> OD 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[1]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[1]"}
+    <  2> OD 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[2]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[2]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[2]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[2]"}
+    <  2> OD 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[3]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[3]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[3]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[3]"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[4]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[4]"}
+    <  2> OD 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[4]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[4]"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[5]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[5]"}
+    <  2> OD 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[5]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[5]"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[6]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[6]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[6]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[6]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[7]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[7]"}
+    <  2> OD 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[7]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[7]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[8]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[8]"}
+    <  2> OD 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[8]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[8]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[9]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[9]"}
+    <  2> OD 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOutEnc[9]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataOut[9]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[0]"}
+          -- 0 {PORT "test.DUT.DataIn[0]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_DataIn[0]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[0]"}
+          -- 1 {PORT "test.DUT.DataIn[0]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_DataIn[0]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[1]"}
+          -- 0 {PORT "test.DUT.DataIn[1]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_DataIn[1]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[1]"}
+          -- 1 {PORT "test.DUT.DataIn[1]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_DataIn[1]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[2]"}
+          -- 0 {PORT "test.DUT.DataIn[2]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_DataIn[2]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[2]"}
+          -- 1 {PORT "test.DUT.DataIn[2]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_DataIn[2]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[3]"}
+          -- 0 {PORT "test.DUT.DataIn[3]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_DataIn[3]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[3]"}
+          -- 1 {PORT "test.DUT.DataIn[3]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_DataIn[3]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[4]"}
+          -- 0 {PORT "test.DUT.DataIn[4]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_DataIn[4]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[4]"}
+          -- 1 {PORT "test.DUT.DataIn[4]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_DataIn[4]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[5]"}
+          -- 0 {PORT "test.DUT.DataIn[5]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_DataIn[5]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[5]"}
+          -- 1 {PORT "test.DUT.DataIn[5]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_DataIn[5]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[6]"}
+          -- 0 {PORT "test.DUT.DataIn[6]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_DataIn[6]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[6]"}
+          -- 1 {PORT "test.DUT.DataIn[6]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_DataIn[6]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[7]"}
+          -- 0 {PORT "test.DUT.DataIn[7]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_DataIn[7]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataIn[7]"}
+          -- 1 {PORT "test.DUT.DataIn[7]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_DataIn[7]"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.EccError"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.EccError"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.EccError"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.EccError"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.L_DataOut[0]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.L_DataOut[0]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.L_DataOut[1]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.L_DataOut[1]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.L_DataOut[2]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.L_DataOut[2]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.L_DataOut[3]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.L_DataOut[3]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.L_DataOut[4]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.L_DataOut[4]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.L_DataOut[5]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.L_DataOut[5]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.L_DataOut[6]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.L_DataOut[6]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.L_DataOut[7]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.L_DataOut[7]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.L_ReadEn"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.L_ReadEn"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.R_DataIn[0]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.R_DataIn[0]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.R_DataIn[1]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.R_DataIn[1]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.R_DataIn[2]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.R_DataIn[2]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.R_DataIn[3]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.R_DataIn[3]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.R_DataIn[4]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.R_DataIn[4]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.R_DataIn[5]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.R_DataIn[5]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.R_DataIn[6]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.R_DataIn[6]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.R_DataIn[7]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.R_DataIn[7]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.R_DataOut[0]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[0]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.R_DataOut[0]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[0]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.R_DataOut[1]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[1]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.R_DataOut[1]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[1]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.R_DataOut[2]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[2]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.R_DataOut[2]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[2]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.R_DataOut[3]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[3]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.R_DataOut[3]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[3]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.R_DataOut[4]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[4]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.R_DataOut[4]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[4]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.R_DataOut[5]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[5]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.R_DataOut[5]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[5]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.R_DataOut[6]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[6]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.R_DataOut[6]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[6]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.R_DataOut[7]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[7]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.R_DataOut[7]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Dec.DataOut[7]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.R_WriteEn"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.R_WriteEn"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_Address[0]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_Address[0]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_Address[0]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_Address[0]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_Address[1]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_Address[1]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_Address[1]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_Address[1]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_Address[2]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_Address[2]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_Address[2]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_Address[2]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_Clock"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_Clock"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_Clock"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_Clock"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[0]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[0]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[0]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[0]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[10]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[10]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[10]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[10]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[11]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[11]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[11]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[11]"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[1]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[1]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[1]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[1]"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[2]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[2]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[2]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[2]"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[3]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[3]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[3]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[3]"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[4]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[4]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[4]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[4]"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[5]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[5]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[5]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[5]"}
+    <  2> ND 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[6]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[6]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[6]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[6]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[7]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[7]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[7]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[7]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[8]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[8]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[8]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[8]"}
+    <  0> NC 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[9]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[9]"}
+    <  2> ND 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataIn[9]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.ECC_Enc.DataEnc[9]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[0]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[0]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[10]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[10]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[11]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[11]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[1]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[1]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[2]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[2]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[3]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[3]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[4]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[4]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[5]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[5]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[6]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[6]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[7]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[7]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[8]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[8]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[9]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_DataOut[9]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_ReadEn"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_ReadEn"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_WriteEn"}
+          -- 0 {PORT "test.DUT.sdpram_i1.L_WriteEn"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.L_WriteEn"}
+          -- 1 {PORT "test.DUT.sdpram_i1.L_WriteEn"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_Address[0]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.R_Address[0]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_Address[0]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.R_Address[0]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_Address[1]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.R_Address[1]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_Address[1]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.R_Address[1]"}
+    <  2> ON 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_Address[2]"}
+          -- 0 {PORT "test.DUT.sdpram_i1.R_Address[2]"}
+    <  2> ON 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_Address[2]"}
+          -- 1 {PORT "test.DUT.sdpram_i1.R_Address[2]"}
+    <  2> OD 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_Clock"}
+          -- 0 {PORT "test.DUT.sdpram_i1.R_Clock"}
+    <  2> OD 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_Clock"}
+          -- 1 {PORT "test.DUT.sdpram_i1.R_Clock"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[0]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[0]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[10]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[10]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[11]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[11]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[1]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[1]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[2]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[2]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[3]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[3]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[4]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[4]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[5]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[5]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[6]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[6]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[7]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[7]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[8]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[8]"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[9]"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_DataIn[9]"}
+    <  2> OD 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_ReadEn"}
+          -- 0 {PORT "test.DUT.sdpram_i1.R_ReadEn"}
+    <  2> OD 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_ReadEn"}
+          -- 1 {PORT "test.DUT.sdpram_i1.R_ReadEn"}
+    <  0> UU 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_WriteEn"}
+    <  0> UU 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.R_WriteEn"}
+    <  2> OD 0 {PORT "test.DUT.sdpram_i1.sdpram_i1.Reset"}
+          -- 0 {PORT "test.DUT.sdpram_i1.Reset"}
+    <  0> NC 1 {PORT "test.DUT.sdpram_i1.sdpram_i1.Reset"}
+          -- 1 {PORT "test.DUT.sdpram_i1.Reset"}
+}
+#------------------------------------------------------------------------
+# Fault Coverage Summary for Default List
+#
+#                                                  Total
+#------------------------------------------------------------------------
+# Number of Faults:                                  422 100.00%    
+#
+# Untestable Faults:                                  88  20.85%  100.00%  
+#   Untestable Unused                        UU       88  20.85%  100.00%
+#
+# Testable Faults:                                   334  79.15%  100.00% 
+#   Not Controlled                           NC       53  12.56%   15.87%
+#   Not Observed Not Diagnosed               NN        1   0.24%    0.30%
+#   Not Observed Diagnosed                   ND       94  22.27%   28.14%
+#   Potentially Observed Potentially Diagnosed PP        1   0.24%    0.30%
+#   Observed Not Diagnosed                   ON      111  26.30%   33.23%
+#   Observed Diagnosed                       OD       74  17.54%   22.16%
+#
+# Status Groups ---------------------------------------------------------
+#   Dangerous Diagnosed                      DD      168  39.81%
+#   Dangerous Not Diagnosed                  DN      112  26.54%
+#   Safe                                     SA       88  20.85%
+#   Safe Unobserved                          SU       54  12.80%
+#
+# Coverage --------------------------------------------------------------
+#   Diagnostic Coverage                                   60.00%
+#------------------------------------------------------------------------
+

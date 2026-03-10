@@ -1,0 +1,1622 @@
+
+2026-02-24 - 02:54:16.70 - ==================== New log session =======================
+
+2026-02-24 - 02:54:16.70 -                     Fault Campaign Manager
+
+2026-02-24 - 02:54:16.70 -     Release: X-2025.06-1; Built: Jul 16 2025, 20:48:07
+
+2026-02-24 - 02:54:16.70 - ================================================================================
+2026-02-24 - 02:54:16.70 - FCM command: /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/vc_fcm.exe -tcl_script ./COLLATERAL/FCM/fcm.tcl -connect 
+CWD: /home/dhanas01/test_fifo_demo
+Home: /home/dhanas01
+Log file: fcm_debug.log
+FCM Directory: fcm.dir/
+FCM Session Directory: fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039
+Screen output file: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/vc_fcm.log
+fdb_control path: /arm/tools/synopsys/vcs/2025.06-1/bin/fdb_control
+init_fdb.sql path: /arm/tools/synopsys/vcs/2025.06-1/etc/fdb/scripts/init_fdb.sql
+vc_fcc path: /arm/tools/synopsys/vcs/2025.06-1/bin/vc_fcc
+vc_fdb_report path: /arm/tools/synopsys/vcs/2025.06-1/bin/vc_fdb_report
+vc_coats path: /arm/tools/synopsys/vcs/2025.06-1/bin/vc_coats
+hostname: vscode-login4.nahpc2.arm.com
+
+
+All environment variables:
+LC_ALL=en_US.UTF-8
+LD_LIBRARY_PATH=/arm/tools/synopsys/verdi3/2025.06-1/share/NPI/lib/linux64/:/arm/tools/synopsys/vcs/2025.06-1/bin/fusa_cdpl_sdk/latest/lib/linux64/:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbWriter/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/IUS/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/MODELSIM/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/linux64:/lib:/usr/lib:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib
+LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+HOSTTYPE=x86_64-linux
+ARM_CLUSTER_NAME=nahpc2
+NOVAS_VERSION=2025.06-1
+PYTHON_BASIC_REPL=1
+SSH_CONNECTION=10.164.19.75 53743 10.120.10.44 22
+DEPOT_AMQP=amqp.nahpc.arm.com
+LANG=en_US.UTF-8
+VIRSIMHOME=/arm/tools/synopsys/vcs/2025.06-1/gui/virsim
+SNPSLMD_LICENSE_FILE_modshare=12700@nahpc-lic13.nahpc.arm.com:2:12700@nahpc-lic17.nahpc.arm.com:2:12700@euhpc-lic11.euhpc.arm.com:2:11762@euhpc-lic12.euhpc.arm.com:2:12700@nahpc-lic01.nahpc.arm.com:2:12700@nahpc-lic05.nahpc.arm.com:2:12700@nahpc-lic09.nahpc.arm.com:2:12700@euhpc-lic09.euhpc.arm.com:2:12700@euhpc-lic10.euhpc.arm.com:2:12700@eu03-lic08.server.eu03.arm.com:2
+DEPOT_VERSION=depot-2.03-aus03
+EDITOR=vim
+PATH_modshare=/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:1:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:999999999:/usr/bin:1:/arm/tools/arm/cluster/2.0/prod/bin:1:/usr/X11R6/bin:1:/usr/local/bin:2:/arm/tools/synopsys/verdi3/2025.06-1/bin:1:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:2:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:1:/arm/tools/synopsys/vcs/2025.06-1/gui/virsim/bin:1:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:1:/bin:1:/opt/puppetlabs/bin:2:/arm/tools/synopsys/vcs/2025.06-1/bin:1:/usr/sbin:1:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:1:/home/dhanas01/.local/bin/x86_64:2:/usr/local/sbin:1:/arm/tools/synopsys/vcs/2025.06-1/cso/bin:1
+LOADEDMODULES_modshare=synopsys/license/production:2:arm/cluster/2.0:1:arm/license/production:1:synopsys/vcs/2025.06-1:1:swdev:1:core:2:synopsys/verdi3/2025.06-1:1:eda:1:util:1:platform/lsf/10.1_sp14:1
+COLORTERM=truecolor
+DUOLOG_LICENSE_FILE=1661@eu03-lic05.server.eu03.arm.com
+ARM_MODULE_ROOT=/arm/tools/modulefiles
+MAKE_TERMOUT=/dev/pts/75
+SNPSLMD_LICENSE_FILE=12700@nahpc-lic01.nahpc.arm.com:12700@nahpc-lic05.nahpc.arm.com:12700@nahpc-lic13.nahpc.arm.com:12700@nahpc-lic17.nahpc.arm.com:12700@nahpc-lic09.nahpc.arm.com:12700@euhpc-lic09.euhpc.arm.com:12700@euhpc-lic10.euhpc.arm.com:12700@euhpc-lic11.euhpc.arm.com:11762@euhpc-lic12.euhpc.arm.com:12700@eu03-lic08.server.eu03.arm.com
+KDEDIRS=/usr
+CARBOND_LICENSE_FILE=7276@euhpc-lic20.euhpc.arm.com:7276@nahpc-lic15.nahpc.arm.com
+VENDOR=unknown
+MACHTYPE=x86_64
+VERDI_FUSA_DEBUG=1
+LSF_SERVERDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/etc
+MFLAGS=
+SNPSLMD_DISABLE_DEBUG_LICENSE_CHECKS=1
+S_COLORS=auto
+OSTYPE=linux
+LD_LIBRARY_PATH_modshare=/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/MODELSIM/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbWriter/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/linux64:1:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib:1:/lib:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/IUS/linux64:1:/usr/lib:1
+LSF_ENVDIR=/arm/cluster/nahpc2/conf
+XDG_SESSION_ID=4861
+USER=dhanas01
+PAGER=less
+SNPS_DISABLE_DCG_NEW_TECHNOLOGY=1
+GROUP=dhanas01
+PWD=/home/dhanas01/test_fifo_demo
+formal=/home/dhanas01/luna_tutorial/fts
+HOME=/home/dhanas01
+BROWSER=/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/helpers/browser.sh
+LM_LICENSE_FILE_modshare=1661@eu03-lic05.server.eu03.arm.com:1
+TERM_PROGRAM=vscode
+HOST=vscode-login4.nahpc2.arm.com
+SSH_CLIENT=10.164.19.75 53743 22
+TERM_PROGRAM_VERSION=1.108.2
+ARMLMD_LICENSE_FILE=17010@armlmd.lic.arm.com:17010@eu-armlmd.lic.arm.com:17010@na-armlmd.lic.arm.com
+VERDI_FUSA_DUMP_FSDB_CMD=./COLLATERAL/VERDI/dumping_v.sh
+SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+_LMFILES__modshare=/arm/tools/modulefiles/eda:1:/arm/tools/modulefiles/.core/arm/license/validation:1:/arm/tools/modulefiles/util:1:/arm/tools/modulefiles/.eda/synopsys/license/production:4:/arm/tools/modulefiles/.core/platform/lsf/10.1_sp14:2:/arm/tools/modulefiles/swdev:1:/arm/tools/modulefiles/core:2
+LSF_BINDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin
+VSCODE_IPC_HOOK_CLI=/run/user/65749/vscode-ipc-1dd7a17c-be97-42c0-91a5-e6b033b27ed7.sock
+ARM_CLUSTER_MODE=CPM
+lf=/home/dhanas01/luna_tutorial/luna_flow
+LOADEDMODULES=core:util:swdev:arm/license/production:platform/lsf/10.1_sp14:arm/cluster/2.0:eda:synopsys/license/production:synopsys/vcs/2025.06-1:synopsys/verdi3/2025.06-1
+ARMLM_ONDEMAND_ACTIVATION=HWSKT-EAC0@https://lls.arm.com
+luna=/home/dhanas01/luna_tutorial
+MAIL=/var/spool/mail/dhanas01
+TERM=xterm-256color
+SHELL=/bin/tcsh
+VSCODE_NONCE=5fd59b94-b61d-45cf-81dc-2f85029683b8
+LM_LICENSE_FILE=:1661@eu03-lic05.server.eu03.arm.com
+MANPATH_modshare=/arm/tools/platform/lsf/10.1_sp14/man:1:/usr/local/share/man:1:/usr/X11R6/man:3:/usr/share/man:1:/arm/tools/synopsys/vcs/2025.06-1/doc/man:1
+XLSF_UIDDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib/uid
+DUOLOG_LICENSE_FILE_modshare=1661@eu03-lic05.server.eu03.arm.com:1
+ARM_SITE_LOAD=core
+NOVAS_IDLE_LICENSE_CHECKBACK=30
+SNPS_ANOMALY_DISABLE=1
+MAKELEVEL=1
+VERDI_HOME=/arm/tools/synopsys/verdi3/2025.06-1
+PYTHONSTARTUP=/home/dhanas01/.vscode-server/data/User/workspaceStorage/2d0c82943420c788e865b445afdca553/ms-python.python/pythonrc.py
+SHLVL=6
+MAKE_TERMERR=/dev/pts/75
+ARMLM_ONDEMAND_ACTIVATION_modshare=//lls.arm.com:1:HWSKT-EAC0@https:1
+MANPATH=/arm/tools/platform/lsf/10.1_sp14/man:/usr/X11R6/man:/usr/share/man:/usr/local/share/man:/arm/tools/synopsys/vcs/2025.06-1/doc/man
+TURBO_LIBS=artisan_l artisan_u
+LSF_LIBDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib
+FSDB_FAULT_DUMP_MODE=fm
+SNPS_FUSA_OLD_CDPL_HOME=0
+MODULEPATH=/arm/tools/modulefiles:/arm/tools/modulefiles:/arm/tools/modulefiles/.core:/arm/tools/modulefiles/.util:/arm/tools/modulefiles/.swdev:/arm/tools/modulefiles/.eda
+SSL_CERT_DIR=/etc/pki/tls/certs
+LOGNAME=dhanas01
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/65749/bus
+LD_LIBRARY_PATH_USER=
+XDG_RUNTIME_DIR=/run/user/65749
+MODULEPATH_modshare=/arm/tools/modulefiles/.swdev:1:/arm/tools/modulefiles/.core:2:/arm/tools/modulefiles/.eda:1:/arm/tools/modulefiles/.util:1:/arm/tools/modulefiles:1
+PATH=/arm/tools/synopsys/verdi3/2025.06-1/bin:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:/arm/tools/arm/cluster/2.0/prod/bin:/bin:/usr/bin:/usr/X11R6/bin:/arm/tools/synopsys/vcs/2025.06-1/bin:/arm/tools/synopsys/vcs/2025.06-1/gui/virsim/bin:/arm/tools/synopsys/vcs/2025.06-1/cso/bin:/usr/local/bin:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin
+CSO_HOME=/arm/tools/synopsys/vcs/2025.06-1/cso
+_LMFILES_=/arm/tools/modulefiles/core:/arm/tools/modulefiles/util:/arm/tools/modulefiles/swdev:/arm/tools/modulefiles/.core/arm/license/validation:/arm/tools/modulefiles/.core/platform/lsf/10.1_sp14:/arm/tools/modulefiles/eda:/arm/tools/modulefiles/.eda/synopsys/license/production
+VCS_HOME=/arm/tools/synopsys/vcs/2025.06-1
+PATH_USER=/usr/local/bin:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/bin:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/opt/puppetlabs/bin
+ARMLMD_LICENSE_FILE_modshare=17010@eu-armlmd.lic.arm.com:1:17010@armlmd.lic.arm.com:1:17010@na-armlmd.lic.arm.com:1
+MODULESHOME=/arm/tools/setup
+CARBOND_LICENSE_FILE_modshare=7276@euhpc-lic20.euhpc.arm.com:1:7276@nahpc-lic15.nahpc.arm.com:1
+MAKEFLAGS=
+SYNOPSYS_SI=/arm/tools/synopsys/vcs/2025.06-1
+me=dhanas01
+FLEXLM_NO_CKOUT_INSTALL_LIC=1
+_=/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/vc_fcm.exe
+FLEXLM_BORROWFILE=/home/dhanas01/.vscode-login4.nahpc2.arm.com-borrow.txt
+SYS_INST_DIR=/arm/tools/synopsys/verdi3/2025.06-1
+NPI_DISABLE_TOOL_INDENT=1
+NO_DUMP_LOGDIR=1
+
+
+2026-02-24 - 02:54:16.70 - Command executed: fcm::fdb_connect -fdb_server "" -fdb_project "" -fdb_path ""
+2026-02-24 - 02:54:16.70 - (config: fdb_server = "", fdb_project = "", campaign = "", isCampaignConnected_ = false, fdb_storage_path = "")
+2026-02-24 - 02:54:16.70 - Prompt changed to: ""
+2026-02-24 - 02:54:28.13 - Connected to started server
+2026-02-24 - 02:54:28.17 - NEW HOSTNAME: vscode-login4.nahpc2.arm.com
+2026-02-24 - 02:54:28.17 - Prompt changed to: "vscode-login4.nahpc2.arm.com:62272"
+2026-02-24 - 02:54:28.17 - Prompt changed to: "vscode-login4.nahpc2.arm.com:62272"
+2026-02-24 - 02:54:28.17 - Prompt changed to: "vscode-login4.nahpc2.arm.com:62272"
+2026-02-24 - 02:54:28.35 - CPU+MEM usage: -----------------------------------------
+top - 02:54:28 up 7 days, 16:45,  1 user,  load average: 555.59, 550.16, 548.50
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu0  :  0.0 us, 78.6 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi, 21.4 si,  0.0 st
+%Cpu1  : 13.3 us, 33.3 sy,  0.0 ni, 26.7 id, 26.7 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu2  :  7.1 us, 28.6 sy,  0.0 ni, 21.4 id, 42.9 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu3  :  0.0 us, 13.3 sy,  0.0 ni, 80.0 id,  0.0 wa,  0.0 hi,  6.7 si,  0.0 st
+%Cpu4  : 12.5 us, 18.8 sy,  0.0 ni, 25.0 id, 37.5 wa,  0.0 hi,  6.2 si,  0.0 st
+%Cpu5  :  0.0 us, 35.7 sy,  0.0 ni, 57.1 id,  0.0 wa,  0.0 hi,  7.1 si,  0.0 st
+%Cpu6  :  6.2 us, 31.2 sy,  0.0 ni, 56.2 id,  0.0 wa,  6.2 hi,  0.0 si,  0.0 st
+%Cpu7  :  5.9 us, 11.8 sy,  0.0 ni, 70.6 id,  0.0 wa,  5.9 hi,  5.9 si,  0.0 st
+%Cpu8  :  0.0 us, 20.0 sy,  0.0 ni, 80.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu9  :  0.0 us, 42.9 sy,  0.0 ni, 57.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu10 :  6.7 us, 26.7 sy,  0.0 ni, 60.0 id,  0.0 wa,  6.7 hi,  0.0 si,  0.0 st
+%Cpu11 :  7.1 us, 21.4 sy,  0.0 ni,  0.0 id, 71.4 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu12 :  6.2 us, 25.0 sy,  0.0 ni, 68.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu13 : 18.8 us, 18.8 sy,  0.0 ni, 31.2 id, 31.2 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu14 :  6.2 us, 25.0 sy,  0.0 ni, 25.0 id, 43.8 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu15 :  0.0 us,  7.7 sy,  0.0 ni, 92.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  96113.6 total,  11218.4 free,  73907.9 used,  10987.2 buff/cache
+MiB Swap: 131072.0 total, 120234.8 free,  10837.2 used.  13949.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+1363039 dhanas01  20   0   80540  26540  20124 S   0.0   0.0   0:00.12 vc_fcm.exe
+
+2026-02-24 - 02:54:28.35 - -------------------------------------------
+
+2026-02-24 - 02:54:28.35 -  number of gridHostGroups: 1
+2026-02-24 - 02:54:28.35 -   entry for fcc group: no
+2026-02-24 - 02:54:28.35 -   entry for togglesim group: no
+2026-02-24 - 02:54:28.35 -   entry for coats group: no
+2026-02-24 - 02:54:28.35 -   entry for faultsim group: no
+2026-02-24 - 02:54:28.35 -   entry for report group: no
+
+2026-02-24 - 02:54:28.35 - Command executed: fcm::unset_campaign
+2026-02-24 - 02:54:28.35 - (config: fdb_server = "vscode-login4.nahpc2.arm.com:62272", fdb_project = "default", campaign = "", isCampaignConnected_ = false, fdb_storage_path = "/home/dhanas01/test_fifo_demo/fdb")
+2026-02-24 - 02:54:28.35 - [config] set fsim_save_path: /home/dhanas01/test_fifo_demo/fcm_fsim_save
+
+2026-02-24 - 02:54:28.35 - Command executed: fcm::create_campaign -args "-full64 -daidir simv.daidir -sff ./COLLATERAL/SFF/config.sff,./COLLATERAL/SFF/faults.sff -campaign fifodemo -dut test.DUT -overwrite" 
+2026-02-24 - 02:54:28.35 - System Command: /arm/tools/synopsys/vcs/2025.06-1/bin/vc_fcc -full64 -daidir simv.daidir -sff ./COLLATERAL/SFF/config.sff,./COLLATERAL/SFF/faults.sff -campaign fifodemo -dut test.DUT -overwrite -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default 2>&1
+2026-02-24 - 02:54:28.35 - + entering runSingleTaskWithCommand, line 1662
+2026-02-24 - 02:54:28.35 - + entering startCdplMaster, line 62
+2026-02-24 - 02:54:28.35 - ################################################################################
+2026-02-24 - 02:54:28.35 - default pool size: 1
+2026-02-24 - 02:54:28.35 - tsim/fsim_save pool size: 0
+2026-02-24 - 02:54:28.35 - coats pool size: 0
+2026-02-24 - 02:54:28.35 - fsim/dump pool size: 0
+2026-02-24 - 02:54:28.35 - need report pool: 0, need fcc pool: 0
+2026-02-24 - 02:54:28.35 - Setting submit timeout in seconds: 120
+2026-02-24 - 02:54:28.35 - Setting worker timeout in seconds: 21600
+2026-02-24 - 02:54:28.36 -  [CDPL] heartbeat timeout: 2s
+2026-02-24 - 02:54:28.36 -  [CDPL] heartbeat rate: 300
+2026-02-24 - 02:54:28.36 - + entering addHostToCdplMaster, line 330
+2026-02-24 - 02:54:28.36 - [CDPL] Adding default host to master
+2026-02-24 - 02:54:28.36 - [CDPL] ---------------------
+2026-02-24 - 02:54:28.36 - [CDPL]  --> grid type: SH
+2026-02-24 - 02:54:28.36 - [CDPL]  --> max workers: 1
+2026-02-24 - 02:54:28.36 - [CDPL]  --> submit command: sh
+2026-02-24 - 02:54:28.36 - + leaving addHostToCdplMaster
+2026-02-24 - 02:54:28.36 - + leaving startCdplMaster
+2026-02-24 - 02:54:28.36 - createCdplJob: stage = createCampaignStage
+2026-02-24 - 02:54:28.36 - [CDPL] will activate up to 1 workers
+2026-02-24 - 02:54:28.36 - [CDPL] worker executable: /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+2026-02-24 - 02:54:28.36 - + entering createCdplTask, line 720
+2026-02-24 - 02:54:28.36 - + entering prepareCdplTaskData, line 1155
+2026-02-24 - 02:54:28.36 - [Serialization] no fdef
+2026-02-24 - 02:54:28.36 - + entering startCdplJob, line 686
+2026-02-24 - 02:54:28.36 - [CDPL] ~~~~~~~ Job started ~~~~~~~~
+2026-02-24 - 02:54:28.36 - ~startCdplJob
+2026-02-24 - 02:54:28.36 - starting VC Fault Campaign Compiler
+
+2026-02-24 - 02:54:28.36 - 
+
+2026-02-24 - 02:54:28.36 - entering loop
+2026-02-24 - 02:54:28.52 - will invoke: "/arm/tools/synopsys/vcs/2025.06-1/bin/vc_fcc -full64 -daidir simv.daidir -sff ./COLLATERAL/SFF/config.sff,./COLLATERAL/SFF/faults.sff -campaign fifodemo -dut test.DUT -overwrite -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default 2>&1"
+
+
+2026-02-24 - 02:54:28.74 - 
+                          VC Fault Campaign Compiler 
+
+                Version X-2025.06-1 for linux64 - Jul 16, 2025 
+
+                    Copyright (c) 2019 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+     
+2026-02-24 - 02:54:28.74 -        Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Command: vc_fcc -full64 -daidir simv.daidir -sff ./COLLATERAL/SFF/config.sff,./COLLATERAL/SFF/faults.sff -campaign fifodemo -dut test.DUT -overwrite -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default 
+
+
+2026-02-24 - 02:54:29.02 - Info: Connected to existing server
+2026-02-24 - 02:54:29.02 - 
+
+2026-02-24 - 02:54:29.08 - Loading design information...
+
+2026-02-24 - 02:54:29.44 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 53Mb, peak: 86Mb).
+
+2026-02-24 - 02:54:29.46 - 
+Warning-[FCC-PROMOTION-TABLE-MISSING-BUILT-IN-STATUSES] Missing noted built-in fault status interactions.
+./COLLATERAL/SFF/config.sff, 48
+  The defined promotion table does not account for resolution of the following
+  user-defined fault statuses in relation to their promotion to the noted 
+  built-in VC Z01X statuses.
+  These promotions will default to the built-in VC Z01X status unless their 
+  interaction is defined: 
+  NN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  NP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  ND-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  ON-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA,
+2026-02-24 - 02:54:29.46 -  OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  OP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  OD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  IS-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  
+
+
+2026-02-24 - 02:54:29.46 - Generating faults...
+
+2026-02-24 - 02:54:29.51 - Done (422 faults generated, CPU time: 0s, elapsed time: 0s, memory increased by 5Mb, peak: 94Mb).
+
+2026-02-24 - 02:54:29.51 - Collecting design strobes...
+
+2026-02-24 - 02:54:29.51 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 94Mb).
+
+2026-02-24 - 02:54:29.53 - Loading design details...
+
+2026-02-24 - 02:54:29.53 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 94Mb).
+
+2026-02-24 - 02:54:29.53 - Constant propagation...
+
+2026-02-24 - 02:54:29.53 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+
+2026-02-24 - 02:54:29.53 - Static testability analysis...
+
+2026-02-24 - 02:54:29.53 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Reconvergence check...
+
+2026-02-24 - 02:54:29.53 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+
+2026-02-24 - 02:54:29.55 - Pruning...
+
+2026-02-24 - 02:54:29.55 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Collapsing...
+
+2026-02-24 - 02:54:29.55 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 96Mb).
+
+2026-02-24 - 02:54:29.59 - Preparing to write to FDB...
+
+2026-02-24 - 02:54:29.59 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 96Mb).
+Writing fault campaign to FDB...
+
+2026-02-24 - 02:54:29.83 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 1Mb, peak: 98Mb).
+
+2026-02-24 - 02:54:29.83 - Total faults generated: 422.
+Collapsed faults:       120.
+Untestable faults:      88.
+Fault reduction:        49%.
+
+2026-02-24 - 02:54:29.83 - 1 warning
+
+2026-02-24 - 02:54:29.89 - CPU time: 0s, elapsed time: 1s, peak memory: 102MB.
+
+2026-02-24 - 02:54:29.91 - 
+
+2026-02-24 - 02:54:29.91 - command completed with exit code 0
+
+2026-02-24 - 02:54:29.91 - 
+
+2026-02-24 - 02:54:29.91 - Exit:0
+
+2026-02-24 - 02:54:30.52 - ~loop
+2026-02-24 - 02:54:30.52 - + entering finishCdplTask, line 766
+2026-02-24 - 02:54:30.52 - -> finishing non-FDB task from worker 1
+2026-02-24 - 02:54:30.52 - [statusfin] taskExitData.size: 88, taskStatsData.size: 88
+2026-02-24 - 02:54:30.52 - [status] finished non-FDB task on worker 1 with CDPL exit code 0 and task exit code 0
+2026-02-24 - 02:54:30.52 - + entering shutdownCdplMaster, line 297
+
+2026-02-24 - 02:54:30.52 - Command executed: fcm::set_campaign -campaign "fifodemo"
+2026-02-24 - 02:54:30.52 - (config: fdb_server = "vscode-login4.nahpc2.arm.com:62272", fdb_project = "default", campaign = "", isCampaignConnected_ = false, fdb_storage_path = "/home/dhanas01/test_fifo_demo/fdb")
+2026-02-24 - 02:54:30.56 - Prompt changed to: "vscode-login4.nahpc2.arm.com:62272 (fifodemo)"
+2026-02-24 - 02:54:30.63 - [config] set fsim_save_path: /home/dhanas01/test_fifo_demo/fcm_fsim_save
+2026-02-24 - 02:54:30.63 - fault generation took 2s
+2026-02-24 - 02:54:30.79 - CPU+MEM usage: -----------------------------------------
+top - 02:54:30 up 7 days, 16:45,  1 user,  load average: 555.59, 550.16, 548.50
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu0  : 11.8 us, 35.3 sy,  0.0 ni,  0.0 id, 52.9 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu1  :  6.2 us, 12.5 sy,  0.0 ni, 75.0 id,  0.0 wa,  0.0 hi,  6.2 si,  0.0 st
+%Cpu2  : 12.5 us, 25.0 sy,  0.0 ni, 43.8 id, 18.8 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu3  :  6.2 us, 31.2 sy,  0.0 ni, 25.0 id, 25.0 wa,  6.2 hi,  6.2 si,  0.0 st
+%Cpu4  :  0.0 us, 38.5 sy,  0.0 ni, 61.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu5  :  6.7 us, 20.0 sy,  0.0 ni, 13.3 id, 46.7 wa,  6.7 hi,  6.7 si,  0.0 st
+%Cpu6  :  6.2 us, 12.5 sy,  0.0 ni, 75.0 id,  0.0 wa,  6.2 hi,  0.0 si,  0.0 st
+%Cpu7  : 60.0 us,  6.7 sy,  0.0 ni, 26.7 id,  0.0 wa,  0.0 hi,  6.7 si,  0.0 st
+%Cpu8  :  6.7 us, 20.0 sy,  0.0 ni, 66.7 id,  0.0 wa,  6.7 hi,  0.0 si,  0.0 st
+%Cpu9  : 40.0 us, 46.7 sy,  0.0 ni,  6.7 id,  0.0 wa,  0.0 hi,  6.7 si,  0.0 st
+%Cpu10 :  0.0 us, 26.7 sy,  0.0 ni, 66.7 id,  0.0 wa,  0.0 hi,  6.7 si,  0.0 st
+%Cpu11 :  6.7 us, 26.7 sy,  0.0 ni,  0.0 id, 66.7 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu12 :  7.7 us, 15.4 sy,  0.0 ni, 61.5 id, 15.4 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu13 :  7.1 us, 14.3 sy,  0.0 ni, 71.4 id,  0.0 wa,  7.1 hi,  0.0 si,  0.0 st
+%Cpu14 : 12.5 us, 31.2 sy,  0.0 ni, 18.8 id, 37.5 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu15 : 40.0 us,  6.7 sy,  0.0 ni, 53.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  96113.6 total,  11264.6 free,  73935.6 used,  10913.3 buff/cache
+MiB Swap: 131072.0 total, 120238.3 free,  10833.7 used.  13955.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+1363039 dhanas01  20   0  408244  28252  21748 S   0.0   0.0   0:00.14 vc_fcm.exe
+
+2026-02-24 - 02:54:30.79 - -------------------------------------------
+
+
+2026-02-24 - 02:54:30.79 - Command executed: fcm::set_config -global_max_jobs "2"
+
+2026-02-24 - 02:54:30.79 - Command executed: fcm::create_testcases -name test1 -path "" -stim_type {} -fc "" -exec "/home/dhanas01/test_fifo_demo/simv" -args "+test1" -daidir "" -fault_injection_time "" -fsdb "" -fsim_save_file "" -fsim_args = "" -tsim_args "" -setup_script "" -pre_script "" -post_script "" -desc "" -max_faults -1 -fsim_timeout -1 -user_attr {}
+2026-02-24 - 02:54:30.79 - System Command for verifying simulator executable path: readlink -e "/home/dhanas01/test_fifo_demo/simv" 2>&1
+2026-02-24 - 02:54:30.79 - Resolved -exec: /home/dhanas01/test_fifo_demo/simv
+2026-02-24 - 02:54:30.79 - Resolved -args: +test1
+2026-02-24 - 02:54:30.80 - + entering getTsimFsdbDir, line 4792
+
+2026-02-24 - 02:54:30.80 - Command executed: fcm::create_testcases -name test2 -path "" -stim_type {} -fc "" -exec "/home/dhanas01/test_fifo_demo/simv" -args "+test2" -daidir "" -fault_injection_time "" -fsdb "" -fsim_save_file "" -fsim_args = "" -tsim_args "" -setup_script "" -pre_script "" -post_script "" -desc "" -max_faults -1 -fsim_timeout -1 -user_attr {}
+2026-02-24 - 02:54:30.80 - System Command for verifying simulator executable path: readlink -e "/home/dhanas01/test_fifo_demo/simv" 2>&1
+2026-02-24 - 02:54:30.81 - Resolved -exec: /home/dhanas01/test_fifo_demo/simv
+2026-02-24 - 02:54:30.81 - Resolved -args: +test2
+2026-02-24 - 02:54:30.81 - + entering getTsimFsdbDir, line 4792
+2026-02-24 - 02:54:30.81 - + entering fcmFsim, line 5746
+2026-02-24 - 02:54:30.97 - CPU+MEM usage: -----------------------------------------
+top - 02:54:30 up 7 days, 16:45,  1 user,  load average: 555.59, 550.16, 548.50
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu0  :  7.1 us,  0.0 sy,  0.0 ni, 92.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu1  : 23.1 us, 15.4 sy,  0.0 ni, 30.8 id, 30.8 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu2  :  7.7 us, 15.4 sy,  0.0 ni, 69.2 id,  7.7 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu3  :  7.1 us, 35.7 sy,  0.0 ni, 35.7 id, 21.4 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu4  : 18.8 us, 12.5 sy,  0.0 ni, 31.2 id, 31.2 wa,  6.2 hi,  0.0 si,  0.0 st
+%Cpu5  :  6.7 us, 26.7 sy,  0.0 ni, 20.0 id, 33.3 wa,  0.0 hi, 13.3 si,  0.0 st
+%Cpu6  :  7.1 us, 14.3 sy,  0.0 ni, 78.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu7  :  0.0 us, 13.3 sy,  0.0 ni, 80.0 id,  0.0 wa,  0.0 hi,  6.7 si,  0.0 st
+%Cpu8  : 12.5 us, 31.2 sy,  0.0 ni, 56.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu9  : 50.0 us, 43.8 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi,  6.2 si,  0.0 st
+%Cpu10 : 13.3 us, 40.0 sy,  0.0 ni, 46.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu11 :  7.1 us, 28.6 sy,  0.0 ni,  7.1 id, 57.1 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu12 : 13.3 us,  6.7 sy,  0.0 ni, 40.0 id, 33.3 wa,  6.7 hi,  0.0 si,  0.0 st
+%Cpu13 :  6.7 us, 33.3 sy,  0.0 ni, 53.3 id,  6.7 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu14 : 11.1 us, 22.2 sy,  0.0 ni, 11.1 id, 50.0 wa,  5.6 hi,  0.0 si,  0.0 st
+%Cpu15 :  6.7 us, 13.3 sy,  0.0 ni, 66.7 id, 13.3 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  96113.6 total,  11250.7 free,  73935.8 used,  10927.2 buff/cache
+MiB Swap: 131072.0 total, 120237.7 free,  10834.3 used.  13948.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+1363039 dhanas01  20   0  408244  28516  22008 S   0.0   0.0   0:00.14 vc_fcm.exe
+
+2026-02-24 - 02:54:30.97 - -------------------------------------------
+
+2026-02-24 - 02:54:30.97 - + entering getTsimFsdbDir, line 4792
+2026-02-24 - 02:54:30.97 - + entering validateTestcases, line 825
+2026-02-24 - 02:54:30.98 - [serial_flow check] Found vcs fsim arg: dut:test.DUT
+2026-02-24 - 02:54:30.98 - [serial_flow check] Found vcs fsim arg: portfaults
+2026-02-24 - 02:54:30.98 - Command executed: fcm::fsim -fm {} -tc {} -selected_status {} -fids {} -max_faults_per_task -1 -post_fsim_task_proc  -fsim_args ""
+2026-02-24 - 02:54:30.98 - [MaxSimTime] defaultStatus: NN
+2026-02-24 - 02:54:30.98 - ################################################################################
+2026-02-24 - 02:54:30.98 - ------------------------------------------------------------------------
+2026-02-24 - 02:54:30.98 - 
+
+2026-02-24 - 02:54:30.98 - Testability Analysis
+
+2026-02-24 - 02:54:30.98 - 
+
+2026-02-24 - 02:54:30.98 - ################################################################################
+2026-02-24 - 02:54:30.98 -  number of gridHostGroups: 1
+2026-02-24 - 02:54:30.98 -   entry for fcc group: no
+2026-02-24 - 02:54:30.98 -   entry for togglesim group: no
+2026-02-24 - 02:54:30.98 -   entry for coats group: no
+2026-02-24 - 02:54:30.98 -   entry for faultsim group: no
+2026-02-24 - 02:54:30.98 -   entry for report group: no
+2026-02-24 - 02:54:30.98 - + entering createTasksFromReadyTestcases, line 4959
+2026-02-24 - 02:54:30.98 - Scanning database for testcases and previous results from testability analysis ...
+2026-02-24 - 02:54:30.98 - 
+
+2026-02-24 - 02:54:30.98 - testcase 0
+2026-02-24 - 02:54:30.98 - fsdb file path: /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb
+2026-02-24 - 02:54:30.98 - + entering taskFinishedSuccessfully, line 3042
+2026-02-24 - 02:54:30.98 -  > TC0 (test1) failed coats, or no attr 'fcm_coats_exit_code' ()
+2026-02-24 - 02:54:30.98 - + entering taskFinishedSuccessfully, line 3042
+2026-02-24 - 02:54:30.98 -  > File /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.reportstats not found
+2026-02-24 - 02:54:30.98 - + entering taskFinishedSuccessfully, line 3042
+2026-02-24 - 02:54:30.98 -  > TC0 (test1) failed tsim, or no attr 'fcm_tsim_exit_code' ()
+2026-02-24 - 02:54:30.98 - [SKIP_FAILED_TESTCASES] fsdbFileExists: 0, fsdbLockFileExists: 0
+2026-02-24 - 02:54:30.98 - FSDB file "/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb" not present, will run toggle simulation.
+2026-02-24 - 02:54:30.98 - + entering createTestabilityPhaseTask, line 5169
+2026-02-24 - 02:54:30.98 - tsim task 1 workdir set to: '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test1:task1'
+2026-02-24 - 02:54:30.98 - + entering createTsimTaskCommand, line 2625
+2026-02-24 - 02:54:30.98 - tsim task command: "/home/dhanas01/test_fifo_demo/simv +test1 +fsdbfile+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb +vc_zoix_enable_fsdb +fsdb+max_var_elem=9 +fsdb+packed_size=33 +fsdb+mda +fsdb+packedmda +fsdb+no_msg_in_file+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1_filter_messages.txt -tsim=limit_toggle:1 -reportstats -tsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test1:task1/task.json,job_id+3156162960"
+2026-02-24 - 02:54:30.98 - [Serialization] serialization finished. size: 2531
+2026-02-24 - 02:54:30.98 -    Task 
+2026-02-24 - 02:54:30.98 - 1
+2026-02-24 - 02:54:30.98 -  (
+2026-02-24 - 02:54:30.98 - tsim
+2026-02-24 - 02:54:30.98 - ) created for testcase '
+2026-02-24 - 02:54:30.98 - test1
+2026-02-24 - 02:54:30.98 - '
+2026-02-24 - 02:54:30.98 - 
+
+2026-02-24 - 02:54:30.98 - [SKIP_FAILED_TESTCASES] TC: test1, tsim started
+
+2026-02-24 - 02:54:30.98 - + entering createTestabilityPhaseTask, line 5169
+2026-02-24 - 02:54:30.98 - coats task 2 workdir set to: '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test1:task2'
+2026-02-24 - 02:54:30.98 - + entering createCoatsTaskCommand, line 2708
+2026-02-24 - 02:54:30.98 - coats task command: "cd '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test1:task2' && vc_coats -full64 -daidir '/home/dhanas01/test_fifo_demo/simv.daidir' -test test1 -fsdb '/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb' -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default -campaign fifodemo -l '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test1:task2/vc_coats.log' "
+2026-02-24 - 02:54:30.98 -    Task 
+2026-02-24 - 02:54:30.98 - 2
+2026-02-24 - 02:54:30.98 -  (
+2026-02-24 - 02:54:30.98 - coats
+2026-02-24 - 02:54:30.98 - ) created for testcase '
+2026-02-24 - 02:54:30.98 - test1
+2026-02-24 - 02:54:30.98 - '
+2026-02-24 - 02:54:30.98 - 
+
+2026-02-24 - 02:54:30.98 - [SKIP_FAILED_TESTCASES] TC: test1, coats started
+
+2026-02-24 - 02:54:30.98 - updated tc0
+2026-02-24 - 02:54:30.98 - testcase 1
+2026-02-24 - 02:54:30.98 - fsdb file path: /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsdb
+2026-02-24 - 02:54:30.98 - + entering taskFinishedSuccessfully, line 3042
+2026-02-24 - 02:54:30.98 -  > TC1 (test2) failed coats, or no attr 'fcm_coats_exit_code' ()
+2026-02-24 - 02:54:30.98 - + entering taskFinishedSuccessfully, line 3042
+2026-02-24 - 02:54:30.98 -  > File /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.reportstats not found
+2026-02-24 - 02:54:30.98 - + entering taskFinishedSuccessfully, line 3042
+2026-02-24 - 02:54:30.98 -  > TC1 (test2) failed tsim, or no attr 'fcm_tsim_exit_code' ()
+2026-02-24 - 02:54:30.99 - [SKIP_FAILED_TESTCASES] fsdbFileExists: 0, fsdbLockFileExists: 0
+2026-02-24 - 02:54:30.99 - FSDB file "/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsdb" not present, will run toggle simulation.
+2026-02-24 - 02:54:30.99 - + entering createTestabilityPhaseTask, line 5169
+2026-02-24 - 02:54:30.99 - tsim task 3 workdir set to: '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test2:task3'
+2026-02-24 - 02:54:30.99 - + entering createTsimTaskCommand, line 2625
+2026-02-24 - 02:54:30.99 - tsim task command: "/home/dhanas01/test_fifo_demo/simv +test2 +fsdbfile+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsdb +vc_zoix_enable_fsdb +fsdb+max_var_elem=9 +fsdb+packed_size=33 +fsdb+mda +fsdb+packedmda +fsdb+no_msg_in_file+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2_filter_messages.txt -tsim=limit_toggle:1 -reportstats -tsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test2:task3/task.json,job_id+3156163008"
+2026-02-24 - 02:54:30.99 - [Serialization] serialization finished. size: 2531
+2026-02-24 - 02:54:30.99 -    Task 
+2026-02-24 - 02:54:30.99 - 3
+2026-02-24 - 02:54:30.99 -  (
+2026-02-24 - 02:54:30.99 - tsim
+2026-02-24 - 02:54:30.99 - ) created for testcase '
+2026-02-24 - 02:54:30.99 - test2
+2026-02-24 - 02:54:30.99 - '
+2026-02-24 - 02:54:30.99 - 
+
+2026-02-24 - 02:54:30.99 - [SKIP_FAILED_TESTCASES] TC: test2, tsim started
+
+2026-02-24 - 02:54:30.99 - + entering createTestabilityPhaseTask, line 5169
+2026-02-24 - 02:54:30.99 - coats task 4 workdir set to: '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test2:task4'
+2026-02-24 - 02:54:30.99 - + entering createCoatsTaskCommand, line 2708
+2026-02-24 - 02:54:30.99 - coats task command: "cd '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test2:task4' && vc_coats -full64 -daidir '/home/dhanas01/test_fifo_demo/simv.daidir' -test test2 -fsdb '/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsdb' -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default -campaign fifodemo -l '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test2:task4/vc_coats.log' "
+2026-02-24 - 02:54:30.99 -    Task 
+2026-02-24 - 02:54:30.99 - 4
+2026-02-24 - 02:54:30.99 -  (
+2026-02-24 - 02:54:30.99 - coats
+2026-02-24 - 02:54:30.99 - ) created for testcase '
+2026-02-24 - 02:54:30.99 - test2
+2026-02-24 - 02:54:30.99 - '
+2026-02-24 - 02:54:30.99 - 
+
+2026-02-24 - 02:54:30.99 - [SKIP_FAILED_TESTCASES] TC: test2, coats started
+
+2026-02-24 - 02:54:30.99 - updated tc1
+2026-02-24 - 02:54:30.99 - Task Id 1
+--------------------------------------------------
+type:              tsim
+localTaskVec_ index: 0
+testcase:          test1
+faultId:           1 (hard coded)
+setup script:      ''
+pre script:        ''
+post script:       ''
+work dir:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test1:task1
+log file:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test1:task1/out.log
+attributes:
+     fcm_task_type tsim
+     fcm_run_count 1
+cmd:               '/home/dhanas01/test_fifo_demo/simv +test1 +fsdbfile+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb +vc_zoix_enable_fsdb +fsdb+max_var_elem=9 +fsdb+packed_size=33 +fsdb+mda +fsdb+packedmda +fsdb+no_msg_in_file+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1_filter_messages.txt -tsim=limit_toggle:1 -reportstats -tsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test1:task1/task.json,job_id+3156162960'
+
+Task Id 2
+--------------------------------------------------
+type:              coats
+localTaskVec_ index: 1
+testcase:          test1
+faultId:           1 (hard coded)
+setup script:      ''
+pre script:        ''
+post script:       ''
+work dir:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test1:task2
+log file:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test1:task2/out.log
+attributes:
+     fcm_task_type coats
+     fcm_run_count 1
+     fcm_required_task_id 1
+cmd:               'cd '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test1:task2' && vc_coats -full64 -daidir '/home/dhanas01/test_fifo_demo/simv.daidir' -test test1 -fsdb '/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb' -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default -campaign fifodemo -l '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test1:task2/vc_coats.log' '
+Task Id 3
+--------------------------------------------------
+type:              tsim
+localTaskVec_ index: 2
+testcase:          test2
+faultId:           1 (hard coded)
+setup script:      ''
+pre script:        ''
+post script:       ''
+work dir:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test2:task3
+log file:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test2:task3/out.log
+attributes:
+     fcm_task_type tsim
+     fcm_run_count 1
+cmd:               '/home/dhanas01/test_fifo_demo/simv +test2 +fsdbfile+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsdb +vc_zoix_enable_fsdb +fsdb+max_var_elem=9 +fsdb+packed_size=33 +fsdb+mda +fsdb+packedmda +fsdb+no_msg_in_file+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2_filter_messages.txt -tsim=limit_toggle:1 -reportstats -tsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test2:task3/task.json,job_id+3156163008'
+
+Task Id 4
+--------------------------------------------------
+type:              coats
+localTaskVec_ index: 3
+testcase:          test2
+faultId:           1 (hard coded)
+setup script:      ''
+pre script:        ''
+post script:       ''
+work dir:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test2:task4
+log file:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test2:task4/out.log
+attributes:
+     fcm_task_type coats
+     fcm_run_count 1
+     fcm_required_task_id 3
+cmd:               'cd '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test2:task4' && vc_coats -full64 -daidir '/home/dhanas01/test_fifo_demo/simv.daidir' -test test2 -fsdb '/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsdb' -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default -campaign fifodemo -l '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test2:task4/vc_coats.log' '
+
+2026-02-24 - 02:54:30.99 - created 2 tsim and 2 coats tasks
+2026-02-24 - 02:54:30.99 - + entering runCdplTasks, line 2323
+2026-02-24 - 02:54:30.99 - fine grained logging(0) is enabled for:
+2026-02-24 - 02:54:30.99 -  --- end list ---
+2026-02-24 - 02:54:30.99 - + entering startCdplMaster, line 62
+2026-02-24 - 02:54:30.99 - ################################################################################
+2026-02-24 - 02:54:30.99 - default pool size: 2
+2026-02-24 - 02:54:30.99 - tsim/fsim_save pool size: 0
+2026-02-24 - 02:54:30.99 - coats pool size: 0
+2026-02-24 - 02:54:30.99 - fsim/dump pool size: 0
+2026-02-24 - 02:54:30.99 - need report pool: 0, need fcc pool: 0
+2026-02-24 - 02:54:30.99 - Setting submit timeout in seconds: 120
+2026-02-24 - 02:54:30.99 - Setting worker timeout in seconds: 21600
+2026-02-24 - 02:54:30.99 -  [CDPL] heartbeat timeout: 2s
+2026-02-24 - 02:54:30.99 -  [CDPL] heartbeat rate: 300
+2026-02-24 - 02:54:30.99 - + entering addHostToCdplMaster, line 330
+2026-02-24 - 02:54:30.99 - [CDPL] Adding default host to master
+2026-02-24 - 02:54:30.99 - [CDPL] ---------------------
+2026-02-24 - 02:54:30.99 - [CDPL]  --> grid type: SH
+2026-02-24 - 02:54:30.99 - [CDPL]  --> max workers: 2
+2026-02-24 - 02:54:30.99 - [CDPL]  --> submit command: sh
+2026-02-24 - 02:54:30.99 - + leaving addHostToCdplMaster
+2026-02-24 - 02:54:30.99 - + leaving startCdplMaster
+2026-02-24 - 02:54:30.99 - createCdplJob: stage = togglesimStage
+2026-02-24 - 02:54:30.99 - [CDPL] will activate up to 2 workers
+2026-02-24 - 02:54:30.99 - [CDPL] worker executable: /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+2026-02-24 - 02:54:30.99 - + entering createCdplTask, line 720
+2026-02-24 - 02:54:30.99 - + entering prepareCdplTaskData, line 1155
+2026-02-24 - 02:54:30.99 - [Serialization] fdef size: 2531
+2026-02-24 - 02:54:30.99 - + entering createCdplTask, line 720
+2026-02-24 - 02:54:30.99 - + entering prepareCdplTaskData, line 1155
+2026-02-24 - 02:54:30.99 - [Serialization] fdef size: 0
+2026-02-24 - 02:54:30.99 - + entering createCdplTaskDependency, line 2633
+2026-02-24 - 02:54:30.99 - + entering createCdplTask, line 720
+2026-02-24 - 02:54:30.99 - + entering prepareCdplTaskData, line 1155
+2026-02-24 - 02:54:30.99 - [Serialization] fdef size: 2531
+2026-02-24 - 02:54:30.99 - + entering createCdplTask, line 720
+2026-02-24 - 02:54:30.99 - + entering prepareCdplTaskData, line 1155
+2026-02-24 - 02:54:30.99 - [Serialization] fdef size: 0
+2026-02-24 - 02:54:30.99 - + entering createCdplTaskDependency, line 2633
+2026-02-24 - 02:54:30.99 - + entering startCdplJob, line 686
+2026-02-24 - 02:54:30.99 - [CDPL] ~~~~~~~ Job started ~~~~~~~~
+2026-02-24 - 02:54:30.99 - ~startCdplJob
+2026-02-24 - 02:54:30.99 - Preparation took 
+2026-02-24 - 02:54:30.99 - 0
+2026-02-24 - 02:54:30.99 - s
+2026-02-24 - 02:54:30.99 - 
+
+2026-02-24 - 02:54:30.99 - 
+
+2026-02-24 - 02:54:30.99 - 
+
+2026-02-24 - 02:54:30.99 - ========== entering mainloop ==========
+2026-02-24 - 02:54:30.99 - default pool size: 2
+2026-02-24 - 02:54:30.99 - tsim/fsim_save pool size: 0
+2026-02-24 - 02:54:30.99 - coats pool size: 0
+2026-02-24 - 02:54:30.99 - fsim/dump pool size: 0
+2026-02-24 - 02:54:30.99 - initial tsim count 2
+2026-02-24 - 02:54:30.99 - + entering getTsimFsdbDir, line 4792
+2026-02-24 - 02:54:31.00 - Starting execution of 2 tsim and 2 coats tasks using up to 2 concurrent workers 
+Will store resulting fsdb files in /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo
+
+2026-02-24 - 02:54:31.00 - 
+
+2026-02-24 - 02:54:31.00 - Check progress of tasks by their output files stored in 
+2026-02-24 - 02:54:31.00 - /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039
+2026-02-24 - 02:54:31.00 - /tasks/*/out.log
+2026-02-24 - 02:54:31.00 - 
+
+2026-02-24 - 02:54:31.00 - and by 
+2026-02-24 - 02:54:31.00 - section 1
+2026-02-24 - 02:54:31.00 -  in 
+2026-02-24 - 02:54:31.00 - /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/summary.csv
+2026-02-24 - 02:54:31.00 - 
+
+2026-02-24 - 02:54:31.00 - + entering printFinishedMessageHeader, line 3969
+2026-02-24 - 02:54:31.00 - 
+  Time  | Workers |     Tasks        |  Time   Mem | results from completed task(s)
+        |act./req.|active    done    |   [s]   [MB]|                               
+--------+---------+------------------+-------------+-------------------------------
+02:54:30|   -/   2|    4     - (  0%)|     -      -|<START>
+2026-02-24 - 02:54:31.00 - 
+
+2026-02-24 - 02:54:32.00 - + entering handleCdplWorkerMessages, line 1294
+2026-02-24 - 02:54:32.00 - senderId: 2, msg: >STARTWORKER;0;1365230;vscode-login4.nahpc2.arm.com;1771923271;1771923271;<
+2026-02-24 - 02:54:32.00 - 02:54:31|   2/   2|    4     0 (  0%)|             |Worker2 started on host vscode-login4.nahpc2.arm.com
+2026-02-24 - 02:54:32.00 - 
+
+2026-02-24 - 02:54:32.00 - started worker 2 (hostname: vscode-login4.nahpc2.arm.com, worker PID 1365230) queued time is 1s
+2026-02-24 - 02:54:32.00 - senderId: 1, msg: >STARTWORKER;0;1365228;vscode-login4.nahpc2.arm.com;1771923271;1771923271;<
+2026-02-24 - 02:54:32.00 - 02:54:32|   2/   2|    4     0 (  0%)|             |Worker1 started on host vscode-login4.nahpc2.arm.com
+2026-02-24 - 02:54:32.00 - 
+
+2026-02-24 - 02:54:32.00 - started worker 1 (hostname: vscode-login4.nahpc2.arm.com, worker PID 1365228) queued time is 1s
+2026-02-24 - 02:54:32.00 - senderId: 2, task 1, msg: >STARTTASK;1;1365230;vscode-login4.nahpc2.arm.com;1771923271;1771923271;<
+2026-02-24 - 02:54:32.00 - 02:54:32|   2/   2|    4     0 (  0%)|             |Task1(test1) started on worker2
+2026-02-24 - 02:54:32.00 - 
+
+2026-02-24 - 02:54:32.00 - [status] started task 1 on worker 2 (hostname: 0, worker PID 1365230)
+2026-02-24 - 02:54:32.00 - senderId: 1, task 3, msg: >STARTTASK;3;1365228;vscode-login4.nahpc2.arm.com;1771923271;1771923271;<
+2026-02-24 - 02:54:32.00 - 02:54:32|   2/   2|    4     0 (  0%)|             |Task3(test2) started on worker1
+2026-02-24 - 02:54:32.00 - 
+
+2026-02-24 - 02:54:32.00 - [status] started task 3 on worker 1 (hostname: 0, worker PID 1365228)
+2026-02-24 - 02:54:33.00 - + entering handleCdplWorkerMessages, line 1294
+2026-02-24 - 02:54:33.00 - senderId: 2, task 1, msg: >ALIVE;1;1365230;vscode-login4.nahpc2.arm.com;1771923272;1771923272;<
+2026-02-24 - 02:54:33.00 - received alive message for task1 on worker 2 (hostname: vscode-login4.nahpc2.arm.com) process ID is 1365230 elapsed time since task start: 1
+2026-02-24 - 02:54:33.00 - senderId: 1, task 3, msg: >ALIVE;3;1365228;vscode-login4.nahpc2.arm.com;1771923272;1771923272;<
+2026-02-24 - 02:54:33.00 - received alive message for task3 on worker 1 (hostname: vscode-login4.nahpc2.arm.com) process ID is 1365228 elapsed time since task start: 1
+2026-02-24 - 02:54:34.00 - + entering handleCdplWorkerMessages, line 1294
+2026-02-24 - 02:54:34.00 - senderId: 1, task 3, msg: >INFO;3<
+2026-02-24 - 02:54:34.00 - received info message task3 finished on worker 1
+2026-02-24 - 02:54:34.00 - senderId: 2, task 1, msg: >INFO;1<
+2026-02-24 - 02:54:34.00 - received info message task1 finished on worker 2
+2026-02-24 - 02:54:34.00 - senderId: 2, task 2, msg: >STARTTASK;2;1365230;vscode-login4.nahpc2.arm.com;1771923273;1771923273;<
+2026-02-24 - 02:54:34.00 - 02:54:34|   2/   2|    4     0 (  0%)|             |Task2(test1) started on worker2
+2026-02-24 - 02:54:34.00 - 
+
+2026-02-24 - 02:54:34.00 - [status] started task 2 on worker 2 (hostname: 0, worker PID 1365230)
+2026-02-24 - 02:54:34.00 - senderId: 1, task 4, msg: >STARTTASK;4;1365228;vscode-login4.nahpc2.arm.com;1771923273;1771923273;<
+2026-02-24 - 02:54:34.00 - 02:54:34|   2/   2|    4     0 (  0%)|             |Task4(test2) started on worker1
+2026-02-24 - 02:54:34.00 - 
+
+2026-02-24 - 02:54:34.00 - [status] started task 4 on worker 1 (hostname: 0, worker PID 1365228)
+2026-02-24 - 02:54:34.00 - + entering finishCdplTask, line 766
+2026-02-24 - 02:54:34.00 - -> finishing task 1 from worker 2
+2026-02-24 - 02:54:34.00 - [statusfin] taskExitData.size: 15, taskStatsData.size: 1020
+2026-02-24 - 02:54:34.00 - stats data: STOPTASK;T;2;0;319;117;78;39;1093;F;0;0;0;<1 task results>;2;1;1365230;vscode-login4.nahpc2.arm.com;1771923273;/home/dhanas01/test_fifo_demo/simv +test1 +fsdbfile+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb +vc_zoix_enable_fsdb +fsdb+max_var_elem=9 +fsdb+packed_size=33 +fsdb+mda +fsdb+packedmda +fsdb+no_msg_in_file+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1_filter_messages.txt -tsim=limit_toggle:1 -reportstats -tsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test1:task1/task.json,job_id+3156162960
+Simulation Performance Summary
+==============================
+Simulation started at :  Tue Feb 24 02:54:31 2026
+Elapsed Time          :  2 sec
+CPU Time              :  0.2 sec
+Virtual memory size   :  318.7 MB
+Resident set size     :  116.6 MB
+Shared memory size    :  78.0 MB
+Private memory size   :  38.5 MB
+Major page faults     :  1093
+Machine name          :  vscode-login4.nahpc2.arm.com
+
+Exit:0
+;
+2026-02-24 - 02:54:34.00 - task 1 on worker 2 (hostname: vscode-login4.nahpc2.arm.com, process ID: 1365230) finished
+2026-02-24 - 02:54:34.00 - Creating reportstats file from fsdb file: /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb
+2026-02-24 - 02:54:34.00 - Info: Wrote tsim reportstats file @ /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.reportstats
+2026-02-24 - 02:54:34.00 - [status] finished task 1 on worker 2 with CDPL exit code 0 and task exit code 0
+2026-02-24 - 02:54:34.00 - + entering updateTripleData, line 7931
+2026-02-24 - 02:54:34.00 - ~updateTripleData
+2026-02-24 - 02:54:34.00 - + entering createAndScheduleNewTask, line 3655
+2026-02-24 - 02:54:34.00 - + entering cleanupAfterFinish, line 3367
+2026-02-24 - 02:54:34.00 - cdplTaskVec.size: 3 localTaskVec_.size: 3 index 0, poolSize: 2
+2026-02-24 - 02:54:34.00 - Currently 2 requested workers, cannot reduce workers to 1, remaining tasks: 3
+2026-02-24 - 02:54:34.00 - 02:54:34|   2/   2|    3     1 ( 25%)|     2    117|Task1(tsim,test1) done
+2026-02-24 - 02:54:34.00 - 
+
+2026-02-24 - 02:54:34.00 - [Task Manager] Releasing task 1 from memory
+2026-02-24 - 02:54:34.00 - + entering finishCdplTask, line 766
+2026-02-24 - 02:54:34.00 - -> finishing task 3 from worker 1
+2026-02-24 - 02:54:34.00 - [statusfin] taskExitData.size: 15, taskStatsData.size: 1020
+2026-02-24 - 02:54:34.00 - stats data: STOPTASK;T;2;0;319;117;78;39;1068;F;0;0;0;<1 task results>;2;3;1365228;vscode-login4.nahpc2.arm.com;1771923273;/home/dhanas01/test_fifo_demo/simv +test2 +fsdbfile+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsdb +vc_zoix_enable_fsdb +fsdb+max_var_elem=9 +fsdb+packed_size=33 +fsdb+mda +fsdb+packedmda +fsdb+no_msg_in_file+/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2_filter_messages.txt -tsim=limit_toggle:1 -reportstats -tsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/tsim:test2:task3/task.json,job_id+3156163008
+Simulation Performance Summary
+==============================
+Simulation started at :  Tue Feb 24 02:54:31 2026
+Elapsed Time          :  2 sec
+CPU Time              :  0.2 sec
+Virtual memory size   :  318.7 MB
+Resident set size     :  116.6 MB
+Shared memory size    :  78.0 MB
+Private memory size   :  38.6 MB
+Major page faults     :  1068
+Machine name          :  vscode-login4.nahpc2.arm.com
+
+Exit:0
+;
+2026-02-24 - 02:54:34.00 - task 3 on worker 1 (hostname: vscode-login4.nahpc2.arm.com, process ID: 1365228) finished
+2026-02-24 - 02:54:34.00 - Creating reportstats file from fsdb file: /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsdb
+2026-02-24 - 02:54:34.00 - Info: Wrote tsim reportstats file @ /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.reportstats
+2026-02-24 - 02:54:34.00 - [status] finished task 3 on worker 1 with CDPL exit code 0 and task exit code 0
+2026-02-24 - 02:54:34.00 - + entering updateTripleData, line 7931
+2026-02-24 - 02:54:34.00 - ~updateTripleData
+2026-02-24 - 02:54:34.00 - + entering createAndScheduleNewTask, line 3655
+2026-02-24 - 02:54:34.00 - + entering cleanupAfterFinish, line 3367
+2026-02-24 - 02:54:34.00 - cdplTaskVec.size: 2 localTaskVec_.size: 2 index 1, poolSize: 2
+2026-02-24 - 02:54:34.00 - Currently 2 requested workers, cannot reduce workers to 1, remaining tasks: 2
+2026-02-24 - 02:54:34.00 - 02:54:34|   2/   2|    2     2 ( 50%)|     2    117|Task3(tsim,test2) done
+2026-02-24 - 02:54:34.00 - 
+
+2026-02-24 - 02:54:34.00 - [Task Manager] Releasing task 3 from memory
+2026-02-24 - 02:54:35.17 - CPU+MEM usage: -----------------------------------------
+top - 02:54:35 up 7 days, 16:45,  1 user,  load average: 555.54, 550.25, 548.53
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu0  : 14.3 us, 50.0 sy,  0.0 ni, 35.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu1  : 11.8 us, 29.4 sy,  0.0 ni, 23.5 id,  5.9 wa,  5.9 hi, 23.5 si,  0.0 st
+%Cpu2  : 35.7 us, 28.6 sy,  0.0 ni, 28.6 id,  7.1 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu3  : 28.6 us, 21.4 sy,  0.0 ni, 35.7 id,  7.1 wa,  0.0 hi,  7.1 si,  0.0 st
+%Cpu4  : 14.3 us, 28.6 sy,  0.0 ni,  7.1 id, 50.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu5  :  6.7 us, 33.3 sy,  0.0 ni, 13.3 id, 26.7 wa,  6.7 hi, 13.3 si,  0.0 st
+%Cpu6  :  6.7 us, 33.3 sy,  0.0 ni, 53.3 id,  0.0 wa,  6.7 hi,  0.0 si,  0.0 st
+%Cpu7  : 14.3 us, 42.9 sy,  0.0 ni,  7.1 id, 35.7 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu8  :  7.1 us, 21.4 sy,  0.0 ni, 57.1 id,  7.1 wa,  7.1 hi,  0.0 si,  0.0 st
+%Cpu9  : 26.7 us, 33.3 sy,  0.0 ni, 40.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu10 : 15.4 us, 30.8 sy,  0.0 ni,  0.0 id, 53.8 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu11 :  7.1 us, 42.9 sy,  0.0 ni, 42.9 id,  0.0 wa,  0.0 hi,  7.1 si,  0.0 st
+%Cpu12 :  7.1 us, 35.7 sy,  0.0 ni, 14.3 id, 42.9 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu13 : 15.4 us, 46.2 sy,  0.0 ni, 38.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu14 :  6.2 us, 25.0 sy,  0.0 ni, 18.8 id, 43.8 wa,  6.2 hi,  0.0 si,  0.0 st
+%Cpu15 : 33.3 us, 33.3 sy,  0.0 ni, 33.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  96113.6 total,  10499.8 free,  74117.6 used,  11496.2 buff/cache
+MiB Swap: 131072.0 total, 120235.3 free,  10836.7 used.  13483.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+1363039 dhanas01  20   0  408244  28672  22164 S   0.0   0.0   0:00.15 vc_fcm.exe
+
+2026-02-24 - 02:54:35.17 - -------------------------------------------
+
+2026-02-24 - 02:54:36.17 - + entering handleCdplWorkerMessages, line 1294
+2026-02-24 - 02:54:36.17 - senderId: 1, task 4, msg: >INFO;4<
+2026-02-24 - 02:54:36.17 - received info message task4 finished on worker 1
+2026-02-24 - 02:54:36.17 - senderId: 2, task 2, msg: >INFO;2<
+2026-02-24 - 02:54:36.17 - received info message task2 finished on worker 2
+2026-02-24 - 02:54:36.17 - + entering finishCdplTask, line 766
+2026-02-24 - 02:54:36.17 - -> finishing task 2 from worker 2
+2026-02-24 - 02:54:36.17 - [statusfin] taskExitData.size: 15, taskStatsData.size: 94
+2026-02-24 - 02:54:36.17 - stats data: STOPTASK;F;0;0;0;0;0;0;0;T;2;0;171;<2 task results>;3;2;1365230;vscode-login4.nahpc2.arm.com;1771923276;
+2026-02-24 - 02:54:36.17 - task 2 on worker 2 (hostname: vscode-login4.nahpc2.arm.com, process ID: 1365230) finished
+2026-02-24 - 02:54:36.17 - [status] finished task 2 on worker 2 with CDPL exit code 0 and task exit code 0
+2026-02-24 - 02:54:36.17 - updated TC5116089176692883456: fcm_coats_exit_code to 0
+
+2026-02-24 - 02:54:36.17 - updated TC5116089176692883456: fcm_coats_elapsed_time to 2
+
+2026-02-24 - 02:54:36.17 - + entering updateTripleData, line 7931
+2026-02-24 - 02:54:36.17 - ~updateTripleData
+2026-02-24 - 02:54:36.17 - + entering createAndScheduleNewTask, line 3655
+2026-02-24 - 02:54:36.17 - + entering cleanupAfterFinish, line 3367
+2026-02-24 - 02:54:36.17 - cdplTaskVec.size: 1 localTaskVec_.size: 1 index 0, poolSize: 2
+2026-02-24 - 02:54:36.17 - [status] scheduled pool size adjustment - lastWorkerId: 2, taskType: undefined, poolSize: 1
+2026-02-24 - 02:54:36.17 - 02:54:36|   1/   1|    1     3 ( 75%)|     3    171|Task2(coats,test1) done, NC:30 
+2026-02-24 - 02:54:36.17 - 
+
+2026-02-24 - 02:54:36.17 - [Task Manager] Releasing task 2 from memory
+2026-02-24 - 02:54:36.17 - + entering finishCdplTask, line 766
+2026-02-24 - 02:54:36.17 - -> finishing task 4 from worker 1
+2026-02-24 - 02:54:36.17 - [statusfin] taskExitData.size: 15, taskStatsData.size: 94
+2026-02-24 - 02:54:36.17 - stats data: STOPTASK;F;0;0;0;0;0;0;0;T;2;0;172;<2 task results>;3;4;1365228;vscode-login4.nahpc2.arm.com;1771923276;
+2026-02-24 - 02:54:36.17 - task 4 on worker 1 (hostname: vscode-login4.nahpc2.arm.com, process ID: 1365228) finished
+2026-02-24 - 02:54:36.17 - [status] finished task 4 on worker 1 with CDPL exit code 0 and task exit code 0
+2026-02-24 - 02:54:36.17 - updated TC5116089176692883457: fcm_coats_exit_code to 0
+
+2026-02-24 - 02:54:36.17 - updated TC5116089176692883457: fcm_coats_elapsed_time to 2
+
+2026-02-24 - 02:54:36.17 - + entering updateTripleData, line 7931
+2026-02-24 - 02:54:36.17 - ~updateTripleData
+2026-02-24 - 02:54:36.17 - + entering createAndScheduleNewTask, line 3655
+2026-02-24 - 02:54:36.17 - + entering cleanupAfterFinish, line 3367
+2026-02-24 - 02:54:36.17 - cdplTaskVec.size: 0 localTaskVec_.size: 0 index 0, poolSize: 1
+2026-02-24 - 02:54:36.17 - [status] scheduled pool size adjustment - lastWorkerId: 1, taskType: undefined, poolSize: 0
+2026-02-24 - 02:54:36.17 - 02:54:36|   0/   0|    0     4 (100%)|     3    172|Task4(coats,test2) done, NC:30 
+2026-02-24 - 02:54:36.17 - 
+
+2026-02-24 - 02:54:36.17 - [Task Manager] Releasing task 4 from memory
+2026-02-24 - 02:54:36.17 - ========== leaving mainloop ==========
+2026-02-24 - 02:54:36.17 - ################################################################################
+2026-02-24 - 02:54:36.17 - + entering printFinishedMessageTrailer, line 4652
+2026-02-24 - 02:54:36.17 - 02:54:36|   -/   -|    -     4 (100%)|     -      -|<FINISH>
+2026-02-24 - 02:54:36.17 - 
+
+2026-02-24 - 02:54:36.17 - 
+Testability analysis completed: 4 task(s) were run, all succeeded
+2026-02-24 - 02:54:36.17 - 
+
+2026-02-24 - 02:54:36.17 - 
+
+2026-02-24 - 02:54:36.17 - ################################################################################
+2026-02-24 - 02:54:36.17 - + entering printRunStatisticsToLogFile, line 3872
+2026-02-24 - 02:54:36.17 - 
+
+Run statistics
+================================================================================
+total active workers: 2
+initially started tasks: 4
+restarted tasks: 0
+successfuly finished tasks: 4
+in total processed tasks: 4
+
+worker 1 on host "vscode-login4.nahpc2.arm.com" with pid 1365228
+--------------------------------------------------------------------------------
+queued time: 1s
+tasks processed: 2
+average time to process a task: 2.5s
+accumulated time to process all tasks: 5s
+overall worker run time: 6s
+
+worker 2 on host "vscode-login4.nahpc2.arm.com" with pid 1365230
+--------------------------------------------------------------------------------
+queued time: 1s
+tasks processed: 2
+average time to process a task: 2.5s
+accumulated time to process all tasks: 5s
+overall worker run time: 6s
+
+
+Overview:
+--------------------------------------------------------------------------------
+min/average/max of queued time: 1/1.0/1s
+min/average/max of total elapsed task time: 5/5.0/5s
+min/average/max of total worker run time: 6/6.0/6s
+
+
+2026-02-24 - 02:54:36.17 - + entering shutdownCdplMaster, line 297
+2026-02-24 - 02:54:36.18 -  > File /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.reportstats is found
+2026-02-24 - 02:54:36.18 -  > /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.reportstats = elapsed: 2, CPU t: 0, rmem: 117, exitCode: 0
+2026-02-24 - 02:54:36.18 - [SKIP_FAILED_TESTCASES] tsimStarted: 1, intermediate tsimSuccess = 1
+2026-02-24 - 02:54:36.18 - [SKIP_FAILED_TESTCASES] fsdbFileExists: 1, fsdbLockFileExists: 0
+2026-02-24 - 02:54:36.18 - + entering taskFinishedSuccessfully, line 3042
+2026-02-24 - 02:54:36.18 -  > TC0 (test1) passed coats
+2026-02-24 - 02:54:36.18 -  > File /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.reportstats is found
+2026-02-24 - 02:54:36.18 -  > /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.reportstats = elapsed: 2, CPU t: 0, rmem: 117, exitCode: 0
+2026-02-24 - 02:54:36.18 - [SKIP_FAILED_TESTCASES] tsimStarted: 1, intermediate tsimSuccess = 1
+2026-02-24 - 02:54:36.18 - [SKIP_FAILED_TESTCASES] fsdbFileExists: 1, fsdbLockFileExists: 0
+2026-02-24 - 02:54:36.18 - + entering taskFinishedSuccessfully, line 3042
+2026-02-24 - 02:54:36.18 -  > TC1 (test2) passed coats
+2026-02-24 - 02:54:36.18 - Info: Writing promoted coats results to FDB...
+2026-02-24 - 02:54:36.18 - 
+
+2026-02-24 - 02:54:36.20 - Writing took 
+2026-02-24 - 02:54:36.20 - 0
+2026-02-24 - 02:54:36.20 - s
+2026-02-24 - 02:54:36.20 - 
+
+2026-02-24 - 02:54:36.20 - + entering skipFailedTestcasesForFaultsim, line 8325
+2026-02-24 - 02:54:36.20 - [SKIP_FAILED_TESTCASES] readyTcs: 2
+2026-02-24 - 02:54:36.20 -  > File /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.reportstats is found
+2026-02-24 - 02:54:36.20 -  > /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.reportstats = elapsed: 2, CPU t: 0, rmem: 117, exitCode: 0
+2026-02-24 - 02:54:36.20 - [SKIP_FAILED_TESTCASES] tsimStarted: 1, intermediate tsimSuccess = 1
+2026-02-24 - 02:54:36.20 - [SKIP_FAILED_TESTCASES] fsdbFileExists: 1, fsdbLockFileExists: 0
+2026-02-24 - 02:54:36.20 - + entering taskFinishedSuccessfully, line 3042
+2026-02-24 - 02:54:36.20 -  > TC0 (test1) passed coats
+2026-02-24 - 02:54:36.20 -  > File /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.reportstats is found
+2026-02-24 - 02:54:36.20 -  > /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.reportstats = elapsed: 2, CPU t: 0, rmem: 117, exitCode: 0
+2026-02-24 - 02:54:36.20 - [SKIP_FAILED_TESTCASES] tsimStarted: 1, intermediate tsimSuccess = 1
+2026-02-24 - 02:54:36.20 - [SKIP_FAILED_TESTCASES] fsdbFileExists: 1, fsdbLockFileExists: 0
+2026-02-24 - 02:54:36.20 - + entering taskFinishedSuccessfully, line 3042
+2026-02-24 - 02:54:36.20 -  > TC1 (test2) passed coats
+2026-02-24 - 02:54:36.20 - ################################################################################
+2026-02-24 - 02:54:36.20 - ------------------------------------------------------------------------
+2026-02-24 - 02:54:36.20 - 
+
+2026-02-24 - 02:54:36.20 - Fault Simulation
+
+2026-02-24 - 02:54:36.20 - 
+
+2026-02-24 - 02:54:36.20 - ################################################################################
+2026-02-24 - 02:54:36.36 - CPU+MEM usage: -----------------------------------------
+top - 02:54:36 up 7 days, 16:45,  1 user,  load average: 555.54, 550.25, 548.53
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu0  :  7.1 us, 14.3 sy,  0.0 ni, 78.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu1  :  7.1 us, 14.3 sy,  0.0 ni, 71.4 id,  0.0 wa,  0.0 hi,  7.1 si,  0.0 st
+%Cpu2  :  6.7 us, 20.0 sy,  0.0 ni,  0.0 id, 66.7 wa,  0.0 hi,  6.7 si,  0.0 st
+%Cpu3  :  6.2 us, 18.8 sy,  0.0 ni, 68.8 id,  0.0 wa,  0.0 hi,  6.2 si,  0.0 st
+%Cpu4  :  6.7 us, 26.7 sy,  0.0 ni, 40.0 id, 26.7 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu5  :  6.7 us, 20.0 sy,  0.0 ni, 66.7 id,  0.0 wa,  0.0 hi,  6.7 si,  0.0 st
+%Cpu6  :  7.1 us, 28.6 sy,  0.0 ni, 57.1 id,  0.0 wa,  7.1 hi,  0.0 si,  0.0 st
+%Cpu7  :  6.2 us, 12.5 sy,  0.0 ni, 68.8 id,  0.0 wa,  6.2 hi,  6.2 si,  0.0 st
+%Cpu8  : 13.3 us, 20.0 sy,  0.0 ni, 66.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu9  :  7.1 us, 21.4 sy,  0.0 ni, 64.3 id,  0.0 wa,  7.1 hi,  0.0 si,  0.0 st
+%Cpu10 :  7.1 us, 21.4 sy,  0.0 ni, 71.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu11 :  6.7 us, 26.7 sy,  0.0 ni, 66.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu12 : 14.3 us, 28.6 sy,  0.0 ni, 50.0 id,  7.1 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu13 :  7.1 us, 14.3 sy,  0.0 ni, 78.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu14 :  6.7 us, 33.3 sy,  0.0 ni, 53.3 id,  0.0 wa,  6.7 hi,  0.0 si,  0.0 st
+%Cpu15 :  6.7 us, 26.7 sy,  0.0 ni, 66.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  96113.6 total,  10562.8 free,  73958.9 used,  11591.9 buff/cache
+MiB Swap: 131072.0 total, 120235.0 free,  10837.0 used.  13643.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+1363039 dhanas01  20   0  424632  28940  22408 S   0.0   0.0   0:00.15 vc_fcm.exe
+
+2026-02-24 - 02:54:36.36 - -------------------------------------------
+
+2026-02-24 - 02:54:36.36 -  number of gridHostGroups: 1
+2026-02-24 - 02:54:36.36 -   entry for fcc group: no
+2026-02-24 - 02:54:36.36 -   entry for togglesim group: no
+2026-02-24 - 02:54:36.36 -   entry for coats group: no
+2026-02-24 - 02:54:36.36 -   entry for faultsim group: no
+2026-02-24 - 02:54:36.36 -   entry for report group: no
+2026-02-24 - 02:54:36.36 - [MaxSimTime] now scan FSDB file: /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb
+2026-02-24 - 02:54:36.41 - [MaxSimTime] tc: test1, scaleUnit: 1ns, maxTime: 3110
+2026-02-24 - 02:54:36.41 - [SimTime] SimulationTime - value: 1, unit: ns
+2026-02-24 - 02:54:36.41 - [SimTime] SimulationTime - value: 3110, unit: 
+2026-02-24 - 02:54:36.41 - [SimTime] Unable to convert time unit: , value: 3110
+2026-02-24 - 02:54:36.41 - [MaxSimTime] Fixed with scale unit. maxfsimtime: 3110ns
+2026-02-24 - 02:54:36.41 - [MaxSimTime] now scan FSDB file: /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsdb
+2026-02-24 - 02:54:36.46 - [MaxSimTime] tc: test2, scaleUnit: 1ns, maxTime: 3110
+2026-02-24 - 02:54:36.46 - [SimTime] SimulationTime - value: 1, unit: ns
+2026-02-24 - 02:54:36.46 - [SimTime] SimulationTime - value: 3110, unit: 
+2026-02-24 - 02:54:36.46 - [SimTime] Unable to convert time unit: , value: 3110
+2026-02-24 - 02:54:36.46 - [MaxSimTime] Fixed with scale unit. maxfsimtime: 3110ns
+2026-02-24 - 02:54:36.46 - + entering createInitialFsimTasks, line 5359
+2026-02-24 - 02:54:36.46 - Preparing...
+2026-02-24 - 02:54:36.46 - 
+
+2026-02-24 - 02:54:36.46 - 
+
+2026-02-24 - 02:54:36.46 - Selected fault status: NA NN AN 
+2026-02-24 - 02:54:36.46 - 
+
+2026-02-24 - 02:54:36.46 - Failure modes: DEFAULT
+
+2026-02-24 - 02:54:36.46 - 
+
+2026-02-24 - 02:54:36.46 - Scanning database for faults and results, keep only faults with selected status ...
+2026-02-24 - 02:54:36.46 - 
+
+2026-02-24 - 02:54:36.46 - + entering createPrimeFaultIdsVector, line 5287
+2026-02-24 - 02:54:36.46 - [Serialization] Stored 422 faults
+2026-02-24 - 02:54:36.46 - + entering filterFaultIdsVecStage1, line 3082
+2026-02-24 - 02:54:36.47 - + entering createToBeRemovedFaultIds, line 3243
+2026-02-24 - 02:54:36.47 - FM 'DEFAULT' has 302 prime faults (422 total faults), 184 selected for fault simulation
+2026-02-24 - 02:54:36.47 - 
+
+2026-02-24 - 02:54:36.47 - + entering filterFaultIdsVecStage2a, line 3118
+2026-02-24 - 02:54:36.47 - + entering createToBeRemovedFaultIds, line 3243
+2026-02-24 - 02:54:36.47 - 53 FIDs with previous results found
+2026-02-24 - 02:54:36.47 - [filter] FM: 1, TC: 0 did not reduce number of faults
+2026-02-24 - 02:54:36.47 - [filter] did not reduce number of faults
+2026-02-24 - 02:54:36.47 - + entering filterFaultIdsVecStage2b, line 3175
+2026-02-24 - 02:54:36.47 - [filter] FM: 1, TC: 0 did not reduce number of faults
+2026-02-24 - 02:54:36.47 - TC test1: Fsdb file /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb
+2026-02-24 - 02:54:36.47 -  > File /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.reportstats is found
+2026-02-24 - 02:54:36.47 -  > /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.reportstats = elapsed: 2, CPU t: 0, rmem: 117, exitCode: 0
+2026-02-24 - 02:54:36.47 - [createSTask]  - created 184 runnable triples for FM 1 testcase 0=test1 tsim elapsed time: 2, no priority
+2026-02-24 - 02:54:36.47 - + entering getTsimFsdbDir, line 4792
+2026-02-24 - 02:54:36.47 - [setFsimStatsHistory] scan file=/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsimstats.csv:  not found
+2026-02-24 - 02:54:36.47 - + entering filterFaultIdsVecStage2a, line 3118
+2026-02-24 - 02:54:36.47 - + entering createToBeRemovedFaultIds, line 3243
+2026-02-24 - 02:54:36.47 - 53 FIDs with previous results found
+2026-02-24 - 02:54:36.47 - [filter] FM: 1, TC: 1 did not reduce number of faults
+2026-02-24 - 02:54:36.47 - [filter] did not reduce number of faults
+2026-02-24 - 02:54:36.47 - + entering filterFaultIdsVecStage2b, line 3175
+2026-02-24 - 02:54:36.47 - [filter] FM: 1, TC: 1 did not reduce number of faults
+2026-02-24 - 02:54:36.47 - TC test2: Fsdb file /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsdb
+2026-02-24 - 02:54:36.47 -  > File /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.reportstats is found
+2026-02-24 - 02:54:36.47 -  > /home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.reportstats = elapsed: 2, CPU t: 0, rmem: 117, exitCode: 0
+2026-02-24 - 02:54:36.47 - [createSTask]  - created 184 runnable triples for FM 1 testcase 1=test2 tsim elapsed time: 2, no priority
+2026-02-24 - 02:54:36.47 - + entering getTsimFsdbDir, line 4792
+2026-02-24 - 02:54:36.48 - [setFsimStatsHistory] scan file=/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test2.fsimstats.csv:  not found
+2026-02-24 - 02:54:36.48 -    Testcase 'test1' (tsim: 2s): 184 testable prime faults that have no previous results
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 -    Testcase 'test2' (tsim: 2s): 184 testable prime faults that have no previous results
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 -  in total: created 368 runnable triples, maxPossibleTaskCount is 4
+2026-02-24 - 02:54:36.48 - Workload: 
+2026-02-24 - 02:54:36.48 - 368
+2026-02-24 - 02:54:36.48 -  combinations of FM x testcase x prime FID
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - Create initial set of tasks
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 -  creating fdb task for worker with index: 0
+2026-02-24 - 02:54:36.48 - + entering createFsimTask, line 6111
+2026-02-24 - 02:54:36.48 - [createFTask] trying to fetch with limit: 2046
+2026-02-24 - 02:54:36.48 - [createFTask] search for best testcase with bucket_size 2046
+2026-02-24 - 02:54:36.48 - [triples] set_workers(0 requested, 0 active + 0 idle)
+2026-02-24 - 02:54:36.48 - [bucket_size] distribute 368 triples  onto 2 workers with min 100, max 2046 --> 184, increase by 45.75 to compensate partial buckets from 2 testcases, apply min/max --> 229.75
+2026-02-24 - 02:54:36.48 - [createFTask] scheduler not in FMSH mode, disable_same_fault_in_concurrent_testcases==false:
+2026-02-24 - 02:54:36.48 - [createFTask]   Total triples=368 ==> bucket_size=230
+2026-02-24 - 02:54:36.48 - [createFTask] fetched bucket FM "DEFAULT" (1), testcase "test1" (0) with 184 faults, without shuffling
+2026-02-24 - 02:54:36.48 - [createFTask] 2 re-estimate based on actual bucket size:  new estm('test1',184 faults)=38.8s
+2026-02-24 - 02:54:36.48 - + entering getTsimFsdbDir, line 4792
+2026-02-24 - 02:54:36.48 - [Serialization] serialization finished. size: 10767
+2026-02-24 - 02:54:36.48 - fsim task 5 workdir set to: '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/fsim:test1:DEFAULT:task5'
+2026-02-24 - 02:54:36.48 - + entering createFsimTaskCommand, line 2825
+2026-02-24 - 02:54:36.48 - fsim task command: "/home/dhanas01/test_fifo_demo/simv +test1 -fsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/fsim:test1:DEFAULT:task5/task.json,job_id+3156162966 -reportstats"
+2026-02-24 - 02:54:36.48 -    Task 5 created with 184 prime faults for faultsim of FM 'DEFAULT' with testcase 'test1'
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - fsim task 5 created (index 0)
+2026-02-24 - 02:54:36.48 -  creating fdb task for worker with index: 1
+2026-02-24 - 02:54:36.48 - + entering createFsimTask, line 6111
+2026-02-24 - 02:54:36.48 - [createFTask] trying to fetch with limit: 2046
+2026-02-24 - 02:54:36.48 - [createFTask] search for best testcase with bucket_size 2046
+2026-02-24 - 02:54:36.48 - [triples] set_workers(0 requested, 0 active + 0 idle)
+2026-02-24 - 02:54:36.48 - [bucket_size] distribute 368 triples  onto 2 workers with min 100, max 2046 --> 184, increase by 45.75 to compensate partial buckets from 2 testcases, apply min/max --> 229.75
+2026-02-24 - 02:54:36.48 - [createFTask] scheduler not in FMSH mode, disable_same_fault_in_concurrent_testcases==false:
+2026-02-24 - 02:54:36.48 - [createFTask]   Total triples=368 ==> bucket_size=230
+2026-02-24 - 02:54:36.48 - [createFTask] fetched bucket FM "DEFAULT" (1), testcase "test2" (1) with 184 faults, without shuffling
+2026-02-24 - 02:54:36.48 - [createFTask] 2 re-estimate based on actual bucket size:  new estm('test2',184 faults)=38.8s
+2026-02-24 - 02:54:36.48 - + entering getTsimFsdbDir, line 4792
+2026-02-24 - 02:54:36.48 - [Serialization] serialization finished. size: 10767
+2026-02-24 - 02:54:36.48 - fsim task 6 workdir set to: '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/fsim:test2:DEFAULT:task6'
+2026-02-24 - 02:54:36.48 - + entering createFsimTaskCommand, line 2825
+2026-02-24 - 02:54:36.48 - fsim task command: "/home/dhanas01/test_fifo_demo/simv +test2 -fsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/fsim:test2:DEFAULT:task6/task.json,job_id+3156162630 -reportstats"
+2026-02-24 - 02:54:36.48 -    Task 6 created with 184 prime faults for faultsim of FM 'DEFAULT' with testcase 'test2'
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - fsim task 6 created (index 1)
+2026-02-24 - 02:54:36.48 - 
+Task Id 5
+--------------------------------------------------
+type:              faultsim 
+localTaskVec_ index: 0
+failure mode:      DEFAULT - 1 (4827858800541171713)
+testcase:          test1 - 0 (5116089176692883456)
+faults:            184 (fetch limit 184)
+setup script:      ''
+pre script:        ''
+post script:       ''
+work dir:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/fsim:test1:DEFAULT:task5
+log file:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/fsim:test1:DEFAULT:task5/out.log
+cmd:               '/home/dhanas01/test_fifo_demo/simv +test1 -fsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/fsim:test1:DEFAULT:task5/task.json,job_id+3156162966 -reportstats'
+attributes:
+     fcm_task_type fsim
+     fcm_run_count: 1
+     fsim_mode: concurrent
+
+
+Task Id 6
+--------------------------------------------------
+type:              faultsim 
+localTaskVec_ index: 1
+failure mode:      DEFAULT - 1 (4827858800541171713)
+testcase:          test2 - 1 (5116089176692883457)
+faults:            184 (fetch limit 184)
+setup script:      ''
+pre script:        ''
+post script:       ''
+work dir:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/fsim:test2:DEFAULT:task6
+log file:          /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/fsim:test2:DEFAULT:task6/out.log
+cmd:               '/home/dhanas01/test_fifo_demo/simv +test2 -fsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/fsim:test2:DEFAULT:task6/task.json,job_id+3156162630 -reportstats'
+attributes:
+     fcm_task_type fsim
+     fcm_run_count: 1
+     fsim_mode: concurrent
+
+
+2026-02-24 - 02:54:36.48 - + entering runCdplTasks, line 2323
+2026-02-24 - 02:54:36.48 - fine grained logging(0) is enabled for:
+2026-02-24 - 02:54:36.48 -  --- end list ---
+2026-02-24 - 02:54:36.48 - + entering startCdplMaster, line 62
+2026-02-24 - 02:54:36.48 - ################################################################################
+2026-02-24 - 02:54:36.48 - default pool size: 2
+2026-02-24 - 02:54:36.48 - tsim/fsim_save pool size: 0
+2026-02-24 - 02:54:36.48 - coats pool size: 0
+2026-02-24 - 02:54:36.48 - fsim/dump pool size: 0
+2026-02-24 - 02:54:36.48 - need report pool: 0, need fcc pool: 0
+2026-02-24 - 02:54:36.48 - Setting submit timeout in seconds: 120
+2026-02-24 - 02:54:36.48 - Setting worker timeout in seconds: 21600
+2026-02-24 - 02:54:36.48 -  [CDPL] heartbeat timeout: 2s
+2026-02-24 - 02:54:36.48 -  [CDPL] heartbeat rate: 300
+2026-02-24 - 02:54:36.48 - + entering addHostToCdplMaster, line 330
+2026-02-24 - 02:54:36.48 - [CDPL] Adding default host to master
+2026-02-24 - 02:54:36.48 - [CDPL] ---------------------
+2026-02-24 - 02:54:36.48 - [CDPL]  --> grid type: SH
+2026-02-24 - 02:54:36.48 - [CDPL]  --> max workers: 2
+2026-02-24 - 02:54:36.48 - [CDPL]  --> submit command: sh
+2026-02-24 - 02:54:36.48 - + leaving addHostToCdplMaster
+2026-02-24 - 02:54:36.48 - + leaving startCdplMaster
+2026-02-24 - 02:54:36.48 - createCdplJob: stage = faultsimStage
+2026-02-24 - 02:54:36.48 - [CDPL] will activate up to 2 workers
+2026-02-24 - 02:54:36.48 - [CDPL] worker executable: /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+2026-02-24 - 02:54:36.48 - + entering createCdplTask, line 720
+2026-02-24 - 02:54:36.48 - + entering prepareCdplTaskData, line 1155
+2026-02-24 - 02:54:36.48 - [Serialization] fdef size: 10767
+2026-02-24 - 02:54:36.48 - + entering createCdplTask, line 720
+2026-02-24 - 02:54:36.48 - + entering prepareCdplTaskData, line 1155
+2026-02-24 - 02:54:36.48 - [Serialization] fdef size: 10767
+2026-02-24 - 02:54:36.48 - + entering startCdplJob, line 686
+2026-02-24 - 02:54:36.48 - [CDPL] ~~~~~~~ Job started ~~~~~~~~
+2026-02-24 - 02:54:36.48 - ~startCdplJob
+2026-02-24 - 02:54:36.48 - Preparation took 
+2026-02-24 - 02:54:36.48 - 0
+2026-02-24 - 02:54:36.48 - s
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - ========== entering mainloop ==========
+2026-02-24 - 02:54:36.48 - default pool size: 2
+2026-02-24 - 02:54:36.48 - tsim/fsim_save pool size: 0
+2026-02-24 - 02:54:36.48 - coats pool size: 0
+2026-02-24 - 02:54:36.48 - fsim/dump pool size: 0
+2026-02-24 - 02:54:36.48 - Starting execution of tasks using up to 2 concurrent workers 
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - Check progress of tasks by their output files stored in 
+2026-02-24 - 02:54:36.48 - /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039
+2026-02-24 - 02:54:36.48 - /tasks/*/out.log
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - and by 
+2026-02-24 - 02:54:36.48 - section 1
+2026-02-24 - 02:54:36.48 -  in 
+2026-02-24 - 02:54:36.48 - /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/summary.csv
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - Note: Active workload might include the same fault several times, running in multiple tests.
+
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - + entering printFinishedMessageHeader, line 3969
+2026-02-24 - 02:54:36.48 - 
+  Time  | Workers |          Workload               |  Time   Mem | results from completed task(s)
+        |act./req.|  queued   active     done       |   [s]   [MB]| (testable prime faults)       
+--------+---------+---------------------------------+-------------+-------------------------------
+02:54:36|   -/   2|       0      368        0 (  0%)|     -      -|<START>
+2026-02-24 - 02:54:36.48 - 
+
+2026-02-24 - 02:54:36.48 - [current status] 2 fdb/2 cdpl tasks (0 started, 0 restarted, 0 running, 0 finished [0 ok, 0 failed]) --- 0 runnableTriples (368 total, 0 queued, 368 running [368 active], 0 finished)
+2026-02-24 - 02:54:36.48 - [current status] 2 fdb/2 cdpl tasks (0 started, 0 restarted, 0 running, 0 finished [0 ok, 0 failed]) --- 0 runnableTriples (368 total, 0 queued, 368 running [368 active], 0 finished)
+2026-02-24 - 02:54:37.48 - + entering handleCdplWorkerMessages, line 1294
+2026-02-24 - 02:54:37.48 - senderId: 1, msg: >STARTWORKER;0;1365630;vscode-login4.nahpc2.arm.com;1771923276;1771923276;<
+2026-02-24 - 02:54:37.49 - 02:54:37|   2/   2|       0      368        0 (  0%)|             |Worker1 started on host vscode-login4.nahpc2.arm.com
+2026-02-24 - 02:54:37.49 - 
+
+2026-02-24 - 02:54:37.49 - started worker 1 (hostname: vscode-login4.nahpc2.arm.com, worker PID 1365630) queued time is 0s
+2026-02-24 - 02:54:37.49 - senderId: 2, msg: >STARTWORKER;0;1365632;vscode-login4.nahpc2.arm.com;1771923276;1771923276;<
+2026-02-24 - 02:54:37.49 - 02:54:37|   2/   2|       0      368        0 (  0%)|             |Worker2 started on host vscode-login4.nahpc2.arm.com
+2026-02-24 - 02:54:37.49 - 
+
+2026-02-24 - 02:54:37.49 - started worker 2 (hostname: vscode-login4.nahpc2.arm.com, worker PID 1365632) queued time is 0s
+2026-02-24 - 02:54:37.49 - senderId: 2, task 6, msg: >STARTTASK;6;1365632;vscode-login4.nahpc2.arm.com;1771923276;1771923276;<
+2026-02-24 - 02:54:37.49 - 02:54:37|   2/   2|       0      368        0 (  0%)|             |Task6(test2) started on worker2
+2026-02-24 - 02:54:37.49 - 
+
+2026-02-24 - 02:54:37.49 - [status] started task 6 on worker 2 (hostname: 0, worker PID 1365632)
+2026-02-24 - 02:54:37.49 - senderId: 1, task 5, msg: >STARTTASK;5;1365630;vscode-login4.nahpc2.arm.com;1771923276;1771923276;<
+2026-02-24 - 02:54:37.49 - 02:54:37|   2/   2|       0      368        0 (  0%)|             |Task5(test1) started on worker1
+2026-02-24 - 02:54:37.49 - 
+
+2026-02-24 - 02:54:37.49 - [status] started task 5 on worker 1 (hostname: 0, worker PID 1365630)
+2026-02-24 - 02:54:38.49 - + entering handleCdplWorkerMessages, line 1294
+2026-02-24 - 02:54:38.49 - senderId: 1, task 5, msg: >INFO;5<
+2026-02-24 - 02:54:38.49 - received info message task5 finished on worker 1
+2026-02-24 - 02:54:38.49 - senderId: 2, task 6, msg: >INFO;6<
+2026-02-24 - 02:54:38.49 - received info message task6 finished on worker 2
+2026-02-24 - 02:54:38.49 - + entering finishCdplTask, line 766
+2026-02-24 - 02:54:38.49 - -> finishing task 5 from worker 1
+2026-02-24 - 02:54:38.49 - [statusfin] taskExitData.size: 15, taskStatsData.size: 2561
+2026-02-24 - 02:54:38.49 - stats data: STOPTASK;T;2;0;365;114;80;34;90;F;3110 ns;0;0;<184 task results>;1;5;1365630;vscode-login4.nahpc2.arm.com;1771923277;
+2026-02-24 - 02:54:38.49 - task 5 on worker 1 (hostname: vscode-login4.nahpc2.arm.com, process ID: 1365630) finished
+2026-02-24 - 02:54:38.49 - [status] finished task 5 on worker 1 with CDPL exit code 0 and task exit code 0
+2026-02-24 - 02:54:38.49 - + entering updateTripleData, line 7931
+2026-02-24 - 02:54:38.49 - task 5 worker 1 FMxT: 1 0 mode: success
+2026-02-24 - 02:54:38.49 - task 5 with 184 faults and 184 results did final update: 0 extra triples removed for detected faults, 0 runnable triples remaining
+2026-02-24 - 02:54:38.49 - faultsim statistics: Faultsim statistics for task 5, testcase_id 0, FM_id 1 : kind Faultsim statistics for task, FM_id 1, T_id 0, numTasks 1, task_id 5,     hostname vscode-login4.nahpc2.arm.com, exitcode 0, Time_elapsed 2, Time_cpu 0, Mem_virt 365, Mem_rss 114, pageFaults 90,     numResults 184, numDetects 183, GMe_pre 182, GMe_post 1976, FMe_min 4, FMe_avg 151, FMe_max 522, FMe_total 27881, FMe/GMe 12.9198,     results F:184 ND:65 NN:1 OD:58 ON:59 PP:1, n1s 7, n10s 63, n100s 114, 
+
+2026-02-24 - 02:54:38.49 - ~updateTripleData
+2026-02-24 - 02:54:38.49 - + entering createAndScheduleNewTask, line 3655
+2026-02-24 - 02:54:38.49 - + entering createFsimTask, line 6111
+2026-02-24 - 02:54:38.49 - [createFTask] trying to fetch with limit: 2046
+2026-02-24 - 02:54:38.49 - [createFTask] search for best testcase with bucket_size 2046
+2026-02-24 - 02:54:38.49 - [createFTask] nothing left to fetch (for now). Runnable triples empty.
+2026-02-24 - 02:54:38.49 - 
+2026-02-24 - 02:54:38.49 - [status] scheduled pool size adjustment - lastWorkerId: 1, taskType: undefined, poolSize: 1
+2026-02-24 - 02:54:38.49 - Total workers:    1/   1, queued triples: 0
+2026-02-24 - 02:54:38.49 - 02:54:38|   1/   1|       0      184      184 ( 50%)|     1    114|Task5(test1) done, 184, ND:65 NN:1 OD:58 ON:59 PP:1
+2026-02-24 - 02:54:38.49 - 
+
+2026-02-24 - 02:54:38.49 - [SimTime] SimulationTime - value: 3110, unit: ns
+2026-02-24 - 02:54:38.49 - [MaxSimTime] tc 'test1' toggle sim time: 3110ns, scale unit: 1ns, fault sim time: 3110ns
+2026-02-24 - 02:54:38.49 - [Task Manager] Releasing task 5 from memory
+2026-02-24 - 02:54:38.49 - [current status] 1 fdb/1 cdpl tasks (2 started, 0 restarted, 1 running, 1 finished [1 ok, 0 failed]) --- 0 runnableTriples (368 total, 0 queued, 184 running [184 active], 184 finished)
+2026-02-24 - 02:54:38.49 - [current status] 1 fdb/1 cdpl tasks (2 started, 0 restarted, 1 running, 1 finished [1 ok, 0 failed]) --- 0 runnableTriples (368 total, 0 queued, 184 running [184 active], 184 finished)
+2026-02-24 - 02:54:38.49 - + entering finishCdplTask, line 766
+2026-02-24 - 02:54:38.49 - -> finishing task 6 from worker 2
+2026-02-24 - 02:54:38.49 - [statusfin] taskExitData.size: 15, taskStatsData.size: 2564
+2026-02-24 - 02:54:38.49 - stats data: STOPTASK;T;2;0;365;114;80;34;104;F;3110 ns;0;0;<184 task results>;1;6;1365632;vscode-login4.nahpc2.arm.com;1771923277;
+2026-02-24 - 02:54:38.49 - task 6 on worker 2 (hostname: vscode-login4.nahpc2.arm.com, process ID: 1365632) finished
+2026-02-24 - 02:54:38.49 - [status] finished task 6 on worker 2 with CDPL exit code 0 and task exit code 0
+2026-02-24 - 02:54:38.49 - + entering updateTripleData, line 7931
+2026-02-24 - 02:54:38.49 - task 6 worker 2 FMxT: 1 1 mode: success
+2026-02-24 - 02:54:38.49 - task 6 with 184 faults and 184 results did final update: 0 extra triples removed for detected faults, 0 runnable triples remaining
+2026-02-24 - 02:54:38.49 - faultsim statistics: Faultsim statistics for task 6, testcase_id 1, FM_id 1 : kind Faultsim statistics for task, FM_id 1, T_id 1, numTasks 1, task_id 6,     hostname vscode-login4.nahpc2.arm.com, exitcode 0, Time_elapsed 2, Time_cpu 0, Mem_virt 365, Mem_rss 114, pageFaults 104,     numResults 184, numDetects 183, GMe_pre 182, GMe_post 1983, FMe_min 4, FMe_avg 155, FMe_max 518, FMe_total 28534, FMe/GMe 13.1797,     results F:184 ND:65 NN:1 OD:58 ON:59 PP:1, n1s 7, n10s 61, n100s 116, 
+
+2026-02-24 - 02:54:38.49 - ~updateTripleData
+2026-02-24 - 02:54:38.49 - + entering createAndScheduleNewTask, line 3655
+2026-02-24 - 02:54:38.49 - + entering createFsimTask, line 6111
+2026-02-24 - 02:54:38.49 - [createFTask] trying to fetch with limit: 2046
+2026-02-24 - 02:54:38.49 - [createFTask] search for best testcase with bucket_size 2046
+2026-02-24 - 02:54:38.49 - [createFTask] nothing left to fetch (for now). Runnable triples empty.
+2026-02-24 - 02:54:38.49 - 
+2026-02-24 - 02:54:38.49 - [status] scheduled pool size adjustment - lastWorkerId: 2, taskType: undefined, poolSize: 0
+2026-02-24 - 02:54:38.49 - Total workers:    0/   0, queued triples: 0
+2026-02-24 - 02:54:38.49 - 02:54:38|   0/   0|       0        0      368 (100%)|     1    114|Task6(test2) done, 184, ND:65 NN:1 OD:58 ON:59 PP:1
+2026-02-24 - 02:54:38.49 - 
+
+2026-02-24 - 02:54:38.49 - [SimTime] SimulationTime - value: 3110, unit: ns
+2026-02-24 - 02:54:38.49 - [MaxSimTime] tc 'test2' toggle sim time: 3110ns, scale unit: 1ns, fault sim time: 3110ns
+2026-02-24 - 02:54:38.49 - [Task Manager] Releasing task 6 from memory
+2026-02-24 - 02:54:38.49 - [current status] 0 fdb/0 cdpl tasks (2 started, 0 restarted, 0 running, 2 finished [2 ok, 0 failed]) --- 0 runnableTriples (368 total, 0 queued, 0 running [0 active], 368 finished)
+2026-02-24 - 02:54:38.49 - [current status] 0 fdb/0 cdpl tasks (2 started, 0 restarted, 0 running, 2 finished [2 ok, 0 failed]) --- 0 runnableTriples (368 total, 0 queued, 0 running [0 active], 368 finished)
+2026-02-24 - 02:54:38.49 - ========== leaving mainloop ==========
+2026-02-24 - 02:54:38.49 - ################################################################################
+2026-02-24 - 02:54:38.49 - + entering printFinishedMessageTrailer, line 4652
+2026-02-24 - 02:54:38.49 - 02:54:38|   -/   -|       -        -      368 (100%)|     -      -|<FINISH> total results: 368
+2026-02-24 - 02:54:38.49 - 
+
+2026-02-24 - 02:54:38.49 - 
+Fault simulation completed: 2 task(s) were run, all succeeded
+2026-02-24 - 02:54:38.49 - 
+
+2026-02-24 - 02:54:38.49 - 
+
+2026-02-24 - 02:54:38.49 - ################################################################################
+2026-02-24 - 02:54:38.49 - + entering printRunStatisticsToLogFile, line 3872
+2026-02-24 - 02:54:38.49 - 
+
+Run statistics
+================================================================================
+total active workers: 2
+initially started tasks: 2
+restarted tasks: 0
+successfuly finished tasks: 2
+in total processed tasks: 2
+
+worker 1 on host "vscode-login4.nahpc2.arm.com" with pid 1365630
+--------------------------------------------------------------------------------
+queued time: 0s
+tasks processed: 1
+average time to process a task: 1.0s
+accumulated time to process all tasks: 1s
+overall worker run time: 1s
+
+worker 2 on host "vscode-login4.nahpc2.arm.com" with pid 1365632
+--------------------------------------------------------------------------------
+queued time: 0s
+tasks processed: 1
+average time to process a task: 1.0s
+accumulated time to process all tasks: 1s
+overall worker run time: 1s
+
+
+Overview:
+--------------------------------------------------------------------------------
+min/average/max of queued time: 0/0.0/0s
+min/average/max of total elapsed task time: 1/1.0/1s
+min/average/max of total worker run time: 1/1.0/1s
+
+
+2026-02-24 - 02:54:38.49 - + entering shutdownCdplMaster, line 297
+2026-02-24 - 02:54:38.49 - bulk write of 368 fault results received from fsim tasks begins
+2026-02-24 - 02:54:38.51 - bulk write of finished
+2026-02-24 - 02:54:38.51 - Preparing summary...
+
+
+2026-02-24 - 02:54:38.51 - 
+
+2026-02-24 - 02:54:38.51 - + entering getTable, line 58
+2026-02-24 - 02:54:38.51 - + entering collectFaultGenData, line 113
+2026-02-24 - 02:54:38.51 - + entering collectToggleSimData, line 180
+2026-02-24 - 02:54:38.51 - + entering collectTestabilityData, line 249
+2026-02-24 - 02:54:38.51 - + entering collectFsimSaveData, line 311
+2026-02-24 - 02:54:38.51 - + entering collectFaultSimData, line 376
+2026-02-24 - 02:54:38.51 - + entering calculateRuntimes, line 482
+2026-02-24 - 02:54:38.51 - + entering calculatePercentageValuesAndTotal, line 547
+2026-02-24 - 02:54:38.51 - + entering createHeader, line 589
+2026-02-24 - 02:54:38.51 - + entering createFaultGenPart, line 625
+2026-02-24 - 02:54:38.51 - + entering createToggleSimPart, line 647
+2026-02-24 - 02:54:38.51 - + entering createTestabilityPart, line 713
+2026-02-24 - 02:54:38.51 - + entering createFsimSavePart, line 752
+2026-02-24 - 02:54:38.51 - + entering createFaultSimPart, line 789
+2026-02-24 - 02:54:38.51 - + entering createTotalPart, line 861
+2026-02-24 - 02:54:38.51 - Execution Summary
+=================================================================================
+
+Task               |Wall clock(hh:mm:ss)|Time in s              |Peak mem in MB  
+                   |(start->end)        |Wall         |CPU      |RSS     |Virtual
+                   |Host/Jobs           |             |         |        |       
+===================+====================+=============+=========+========+=======
+Fault Gen   ( 20%) |           00:00:02 |           0 |       0 |      0 |      -
+===================+====================+=============+=========+========+=======
+Combined    ( 60%) |           00:00:06 |          10 |       0 |    172 |    319
+-------------------+--------------------+-------------+---------+--------+-------
+Toggle Sim         |                  - |           6 |       0 |    117 |    319
+  setup            | vscod~hpc2.arm.com |           0 |       - |      - |      -
+  Total Queued     |                  - |           2 |       - |      - |      -
+  test1            | vscod~hpc2.arm.com |           2 |       0 |    117 |    319
+  test2            | vscod~hpc2.arm.com |           2 |       0 |    117 |    319
+-------------------+--------------------+-------------+---------+--------+-------
+Testability        |                  - |           4 |       0 |    172 |      -
+  test1            | vscod~hpc2.arm.com |           2 |       0 |    171 |      -
+  test2            | vscod~hpc2.arm.com |           2 |       0 |    172 |      -
+===================+====================+=============+=========+========+=======
+Fault Sim   ( 20%) |           00:00:02 |           4 |       0 |    114 |    365
+  setup            | vscod~hpc2.arm.com |           0 |       - |      - |      -
+  Total Queued     |                  - |           0 |       - |      - |      -
+  test1            |              1 job |           2 |       0 |    114 |    365
+  test2            |              1 job |           2 |       0 |    114 |    365
+===================+====================+=============+=========+========+=======
+Total       (100%) |           00:00:10 |          14 |       0 |    172 |    365
+=================================================================================
+
+2026-02-24 - 02:54:38.51 - 
+
+2026-02-24 - 02:54:38.51 - table generation took 0s
+2026-02-24 - 02:54:38.67 - CPU+MEM usage: -----------------------------------------
+top - 02:54:38 up 7 days, 16:45,  1 user,  load average: 555.10, 550.24, 548.54
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu0  : 13.3 us, 20.0 sy,  0.0 ni, 66.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu1  :  0.0 us, 14.3 sy,  0.0 ni, 85.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu2  :  0.0 us, 26.7 sy,  0.0 ni, 73.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu3  :  6.7 us, 20.0 sy,  0.0 ni, 73.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu4  :  7.1 us, 21.4 sy,  0.0 ni, 64.3 id,  0.0 wa,  7.1 hi,  0.0 si,  0.0 st
+%Cpu5  :  6.7 us, 26.7 sy,  0.0 ni,  6.7 id, 46.7 wa,  0.0 hi, 13.3 si,  0.0 st
+%Cpu6  : 11.8 us, 11.8 sy,  0.0 ni, 58.8 id,  5.9 wa,  5.9 hi,  5.9 si,  0.0 st
+%Cpu7  :  6.2 us, 12.5 sy,  0.0 ni, 68.8 id,  0.0 wa,  6.2 hi,  6.2 si,  0.0 st
+%Cpu8  : 15.4 us, 15.4 sy,  0.0 ni, 69.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu9  :  6.7 us, 46.7 sy,  0.0 ni, 46.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu10 :  6.7 us, 20.0 sy,  0.0 ni, 60.0 id, 13.3 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu11 : 18.8 us, 43.8 sy,  0.0 ni, 37.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu12 :  5.9 us, 35.3 sy,  0.0 ni, 29.4 id, 17.6 wa,  5.9 hi,  5.9 si,  0.0 st
+%Cpu13 : 12.5 us, 37.5 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu14 :  6.2 us, 12.5 sy,  0.0 ni, 81.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu15 :  6.7 us, 13.3 sy,  0.0 ni, 73.3 id,  6.7 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  96113.6 total,  10344.7 free,  74003.2 used,  11765.7 buff/cache
+MiB Swap: 131072.0 total, 120234.2 free,  10837.8 used.  13596.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+1363039 dhanas01  20   0  603544 115196  64192 S   0.0   0.1   0:00.23 vc_fcm.exe
+
+2026-02-24 - 02:54:38.67 - -------------------------------------------
+
+2026-02-24 - 02:54:38.67 - + entering fcmDump, line 6406
+2026-02-24 - 02:54:38.67 - Command executed: fcm::dump -fids {130} -fm '' -tc 'test1' -dumperMode fm -fsdb 'fm_fid130_test1.fsdb' -args ''
+2026-02-24 - 02:54:38.67 - selected failuremode 'DEFAULT'
+2026-02-24 - 02:54:38.67 -  number of gridHostGroups: 1
+2026-02-24 - 02:54:38.67 -   entry for fcc group: no
+2026-02-24 - 02:54:38.67 -   entry for togglesim group: no
+2026-02-24 - 02:54:38.67 -   entry for coats group: no
+2026-02-24 - 02:54:38.67 -   entry for faultsim group: no
+2026-02-24 - 02:54:38.67 -   entry for report group: no
+2026-02-24 - 02:54:38.67 - + entering createDumpTask, line 6572
+2026-02-24 - 02:54:38.68 - + entering createDumpTaskInternal, line 6646
+2026-02-24 - 02:54:38.68 - + entering createDumpTaskCommand, line 2965
+2026-02-24 - 02:54:38.68 - dump fdb task command: "/home/dhanas01/test_fifo_demo/simv +test1 -fsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/dump:test1:DEFAULT:task7/task.json +fsdbfile+fm_fid130_test1.fsdb +vc_zoix_enable_fsdb -reportstats"
+2026-02-24 - 02:54:38.68 - [Serialization] serialization finished. size: 2593
+2026-02-24 - 02:54:38.68 - task 7 new state ACTIVE
+2026-02-24 - 02:54:38.68 - + entering runCdplTasks, line 2323
+2026-02-24 - 02:54:38.68 - fine grained logging(0) is enabled for:
+2026-02-24 - 02:54:38.68 -  --- end list ---
+2026-02-24 - 02:54:38.68 - + entering startCdplMaster, line 62
+2026-02-24 - 02:54:38.68 - ################################################################################
+2026-02-24 - 02:54:38.68 - default pool size: 1
+2026-02-24 - 02:54:38.68 - tsim/fsim_save pool size: 0
+2026-02-24 - 02:54:38.68 - coats pool size: 0
+2026-02-24 - 02:54:38.68 - fsim/dump pool size: 0
+2026-02-24 - 02:54:38.68 - need report pool: 0, need fcc pool: 0
+2026-02-24 - 02:54:38.68 - Setting submit timeout in seconds: 120
+2026-02-24 - 02:54:38.68 - Setting worker timeout in seconds: 21600
+2026-02-24 - 02:54:38.68 -  [CDPL] heartbeat timeout: 2s
+2026-02-24 - 02:54:38.68 -  [CDPL] heartbeat rate: 300
+2026-02-24 - 02:54:38.68 - + entering addHostToCdplMaster, line 330
+2026-02-24 - 02:54:38.68 - [CDPL] Adding default host to master
+2026-02-24 - 02:54:38.68 - [CDPL] ---------------------
+2026-02-24 - 02:54:38.68 - [CDPL]  --> grid type: SH
+2026-02-24 - 02:54:38.68 - [CDPL]  --> max workers: 1
+2026-02-24 - 02:54:38.68 - [CDPL]  --> submit command: sh
+2026-02-24 - 02:54:38.68 - + leaving addHostToCdplMaster
+2026-02-24 - 02:54:38.68 - + leaving startCdplMaster
+2026-02-24 - 02:54:38.68 - createCdplJob: stage = dumpStage
+2026-02-24 - 02:54:38.68 - [CDPL] will activate up to 1 workers
+2026-02-24 - 02:54:38.68 - [CDPL] worker executable: /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+2026-02-24 - 02:54:38.68 - + entering createCdplTask, line 720
+2026-02-24 - 02:54:38.68 - + entering prepareCdplTaskData, line 1155
+2026-02-24 - 02:54:38.68 - [Serialization] fdef size: 2593
+2026-02-24 - 02:54:38.68 - + entering startCdplJob, line 686
+2026-02-24 - 02:54:38.68 - [CDPL] ~~~~~~~ Job started ~~~~~~~~
+2026-02-24 - 02:54:38.68 - ~startCdplJob
+2026-02-24 - 02:54:38.68 - Preparation took 
+2026-02-24 - 02:54:38.68 - 0
+2026-02-24 - 02:54:38.68 - s
+2026-02-24 - 02:54:38.68 - 
+
+2026-02-24 - 02:54:38.69 - 
+
+2026-02-24 - 02:54:38.69 - 
+
+2026-02-24 - 02:54:38.69 - ========== entering mainloop ==========
+2026-02-24 - 02:54:38.69 - default pool size: 1
+2026-02-24 - 02:54:38.69 - tsim/fsim_save pool size: 0
+2026-02-24 - 02:54:38.69 - coats pool size: 0
+2026-02-24 - 02:54:38.69 - fsim/dump pool size: 0
+2026-02-24 - 02:54:38.69 - Starting execution of task7 using 1 worker 
+2026-02-24 - 02:54:38.69 - 
+
+2026-02-24 - 02:54:39.69 - + entering handleCdplWorkerMessages, line 1294
+2026-02-24 - 02:54:39.69 - senderId: 1, msg: >STARTWORKER;0;1365814;vscode-login4.nahpc2.arm.com;1771923278;1771923278;<
+2026-02-24 - 02:54:39.69 - started worker 1 (hostname: vscode-login4.nahpc2.arm.com, worker PID 1365814) queued time is 0s
+2026-02-24 - 02:54:39.69 - senderId: 1, task 7, msg: >STARTTASK;7;1365814;vscode-login4.nahpc2.arm.com;1771923278;1771923278;<
+2026-02-24 - 02:54:39.69 - [status] started task 7 on worker 1 (hostname: 0, worker PID 1365814)
+2026-02-24 - 02:54:40.69 - + entering handleCdplWorkerMessages, line 1294
+2026-02-24 - 02:54:40.69 - senderId: 1, task 7, msg: >INFO;7<
+2026-02-24 - 02:54:40.69 - received info message task7 finished on worker 1
+2026-02-24 - 02:54:40.69 - + entering finishCdplTask, line 766
+2026-02-24 - 02:54:40.69 - -> finishing task 7 from worker 1
+2026-02-24 - 02:54:40.69 - [statusfin] taskExitData.size: 15, taskStatsData.size: 87
+2026-02-24 - 02:54:40.69 - stats data: STOPTASK;F;0;0;0;0;0;0;0;F;0;0;0;<1 task results>;1;7;1365814;vscode-login4.nahpc2.arm.com;1771923279;
+2026-02-24 - 02:54:40.69 - task 7 on worker 1 (hostname: vscode-login4.nahpc2.arm.com, process ID: 1365814) finished
+2026-02-24 - 02:54:40.69 - [status] finished task 7 on worker 1 with CDPL exit code 0 and task exit code 0
+2026-02-24 - 02:54:40.69 - + entering updateTripleData, line 7931
+2026-02-24 - 02:54:40.69 - ~updateTripleData
+2026-02-24 - 02:54:40.69 - + entering createAndScheduleNewTask, line 3655
+2026-02-24 - 02:54:40.69 - [Task Manager] Releasing task 7 from memory
+2026-02-24 - 02:54:40.69 - ========== leaving mainloop ==========
+2026-02-24 - 02:54:40.69 - ################################################################################
+2026-02-24 - 02:54:40.69 - Dumping completed: 1 task(s) were run, all succeeded
+2026-02-24 - 02:54:40.69 - 
+
+2026-02-24 - 02:54:40.69 - 
+
+2026-02-24 - 02:54:40.69 - ################################################################################
+2026-02-24 - 02:54:40.69 - + entering printRunStatisticsToLogFile, line 3872
+2026-02-24 - 02:54:40.69 - 
+
+Run statistics
+================================================================================
+total active workers: 1
+initially started tasks: 1
+restarted tasks: 0
+successfuly finished tasks: 1
+in total processed tasks: 1
+
+worker 1 on host "vscode-login4.nahpc2.arm.com" with pid 1365814
+--------------------------------------------------------------------------------
+queued time: 0s
+tasks processed: 1
+average time to process a task: 1.0s
+accumulated time to process all tasks: 1s
+overall worker run time: 1s
+
+
+Overview:
+--------------------------------------------------------------------------------
+min/average/max of queued time: 0/0.0/0s
+min/average/max of total elapsed task time: 1/1.0/1s
+min/average/max of total worker run time: 1/1.0/1s
+
+
+2026-02-24 - 02:54:40.69 - + entering shutdownCdplMaster, line 297
+
+2026-02-24 - 02:54:40.69 - Command executed: fcm::report  -report 'fsim_v.rpt' -overwrite -campaign 
+2026-02-24 - 02:54:40.69 - (config: fdb_server = "vscode-login4.nahpc2.arm.com:62272", fdb_project = "default", campaign = "fifodemo", isCampaignConnected_ = true, fdb_storage_path = "/home/dhanas01/test_fifo_demo/fdb")
+2026-02-24 - 02:54:40.69 - campaign fifodemo is not compiled for iddq
+2026-02-24 - 02:54:40.69 - All arguments for vc_fdb_report:  -report 'fsim_v.rpt' -overwrite -campaign fifodemo -xhidden "nobanner" -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default
+2026-02-24 - 02:54:40.69 -  number of gridHostGroups: 1
+2026-02-24 - 02:54:40.69 -   entry for fcc group: no
+2026-02-24 - 02:54:40.69 -   entry for togglesim group: no
+2026-02-24 - 02:54:40.69 -   entry for coats group: no
+2026-02-24 - 02:54:40.69 -   entry for faultsim group: no
+2026-02-24 - 02:54:40.69 -   entry for report group: no
+2026-02-24 - 02:54:40.69 - System Command: /arm/tools/synopsys/vcs/2025.06-1/bin/vc_fdb_report  -report 'fsim_v.rpt' -overwrite -campaign fifodemo -xhidden "nobanner" -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default 2>&1
+2026-02-24 - 02:54:40.69 - + entering runSingleTaskWithCommand, line 1662
+2026-02-24 - 02:54:40.69 - + entering startCdplMaster, line 62
+2026-02-24 - 02:54:40.69 - ################################################################################
+2026-02-24 - 02:54:40.69 - default pool size: 0
+2026-02-24 - 02:54:40.69 - tsim/fsim_save pool size: 0
+2026-02-24 - 02:54:40.69 - coats pool size: 0
+2026-02-24 - 02:54:40.69 - fsim/dump pool size: 0
+2026-02-24 - 02:54:40.69 - need report pool: 0, need fcc pool: 0
+2026-02-24 - 02:54:40.69 - Setting submit timeout in seconds: 120
+2026-02-24 - 02:54:40.69 - Setting worker timeout in seconds: 21600
+2026-02-24 - 02:54:40.69 -  [CDPL] heartbeat timeout: 2s
+2026-02-24 - 02:54:40.69 -  [CDPL] heartbeat rate: 300
+2026-02-24 - 02:54:40.69 - + entering addHostToCdplMaster, line 330
+2026-02-24 - 02:54:40.69 - [CDPL] Adding default host to master
+2026-02-24 - 02:54:40.69 - [CDPL] ---------------------
+2026-02-24 - 02:54:40.69 - [CDPL]  --> grid type: SH
+2026-02-24 - 02:54:40.69 - [CDPL]  --> max workers: 1
+2026-02-24 - 02:54:40.69 - [CDPL]  --> submit command: sh
+2026-02-24 - 02:54:40.69 - + leaving addHostToCdplMaster
+2026-02-24 - 02:54:40.69 - + leaving startCdplMaster
+2026-02-24 - 02:54:40.69 - createCdplJob: stage = reportStage
+2026-02-24 - 02:54:40.69 - [CDPL] will activate up to 1 workers
+2026-02-24 - 02:54:40.69 - [CDPL] worker executable: /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+2026-02-24 - 02:54:40.69 - + entering createCdplTask, line 720
+2026-02-24 - 02:54:40.69 - + entering prepareCdplTaskData, line 1155
+2026-02-24 - 02:54:40.69 - [Serialization] no fdef
+2026-02-24 - 02:54:40.69 - + entering startCdplJob, line 686
+2026-02-24 - 02:54:40.69 - [CDPL] ~~~~~~~ Job started ~~~~~~~~
+2026-02-24 - 02:54:40.69 - ~startCdplJob
+2026-02-24 - 02:54:40.69 - starting VC FDB Reporting
+
+2026-02-24 - 02:54:40.69 - 
+
+2026-02-24 - 02:54:40.69 - entering loop
+2026-02-24 - 02:54:40.84 - will invoke: "/arm/tools/synopsys/vcs/2025.06-1/bin/vc_fdb_report  -report 'fsim_v.rpt' -overwrite -campaign fifodemo -xhidden "nobanner" -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default 2>&1"
+
+
+2026-02-24 - 02:54:40.97 - Info: Connected to existing server
+
+2026-02-24 - 02:54:41.01 - Loading fault campaign: 'fifodemo'...
+
+2026-02-24 - 02:54:41.01 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 9Mb).
+
+2026-02-24 - 02:54:41.27 - Loading fault results...
+
+2026-02-24 - 02:54:41.31 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 2Mb, peak: 21Mb).
+
+2026-02-24 - 02:54:41.33 - Writing report...
+
+2026-02-24 - 02:54:41.33 - Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 21Mb).
+Info:	Wrote Standard Fault Format report to fsim_v.rpt
+CPU time: 0s, elapsed time: 1s, peak memory: 21MB.
+
+2026-02-24 - 02:54:41.33 - 
+
+2026-02-24 - 02:54:41.33 - command completed with exit code 0
+
+2026-02-24 - 02:54:41.33 - 
+
+2026-02-24 - 02:54:41.33 - Exit:0
+
+2026-02-24 - 02:54:41.84 - ~loop
+2026-02-24 - 02:54:41.84 - + entering finishCdplTask, line 766
+2026-02-24 - 02:54:41.84 - -> finishing non-FDB task from worker 1
+2026-02-24 - 02:54:41.84 - [statusfin] taskExitData.size: 88, taskStatsData.size: 88
+2026-02-24 - 02:54:41.84 - [status] finished non-FDB task on worker 1 with CDPL exit code 0 and task exit code 0
+2026-02-24 - 02:54:41.84 - + entering shutdownCdplMaster, line 297
+2026-02-24 - 02:54:41.85 - shutting down

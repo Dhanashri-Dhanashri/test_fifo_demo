@@ -1,0 +1,7 @@
+./src/strobe.sv
+./testcases/test1.v
+./testcases/test2.v
+src/8BIT_ECC.v
+src/fifo_sm.v
+src/fifo_tb.v
+src/sdpram.v

@@ -1,0 +1,74 @@
+Purpose
+-------
+
+	1. To check fault simulation flow for both VC-Z01X and Z01X in which PERMANENT PORT faults are simulated
+
+	2. To dump fsdb for fault machine through
+			>> 	fcm.tcl approach
+			>>	VERDI approach
+
+FLOW
+----
+
+	VC-Z01X : make run_vc_zoix
+		>> Compile through VCS 
+		>> Fault generation through vc_fcc (inside fcm.tcl)
+		>> Fault simulation and fm fsdb dumping for a selected single fault (Fault ID:130 in this case)
+		>> Coverage report generation through vc_fcm
+
+	Z01X : make run_zoix
+		>> Compile through Z01X
+		>> Fault generation through fr2fdef (inside user.fmsh)
+		>> Fault simulation and Coverage report generation through fmsh in fdef flow
+
+	VC-Z01X (FM Dumping through VERDI) : make run_vc_fmdump 
+		>> Compile through VCS 
+		>> Fault generation and simulation (through fcm.tcl)
+		>> Open VERDI and dump waveform (steps explained under COLLATERAL/VERDI/dumping_note) 
+
+
+DIRECTORY STRUCTURE
+-------------------
+		
+		>>	Makefile	:	contains all run commands for both tools
+		
+		>>	README		: 	guide to demo
+
+		>>	rtl.f		:	list of source files to be compiled
+
+		>> 	COLLATERAL
+			SFF			:	contains SFF files config.sff & faults.sff
+			FMSH		:	contains user.fmsh 
+			FCM 		:	contains fcm.tcl
+			VERDI		: 	contains dumping script and info
+
+		>>	src			: 	contains source	files
+
+		>>	testcases	:	stimulus files
+	
+LOGS
+----
+
+	VC-Z01X
+		>> compile 	: 	comp_v.log
+		>> vc_fcc 	:	vc_fcc.log
+		>> toggle	:	fcm.dir/latest/tasks/*/*/tsim*/out.log
+		>> coats	:	fcm.dir/latest/tasks/*/*/coats*/out.log
+		>> fsim		:	fcm.dir/latest/tasks/*/*/fsim*/out.log
+		>> fm-dump	:	fcm.dir/latest/tasks/*/*/dump*/out.log
+		>> coverage	:	fsim_v.rpt
+
+	Z01X
+		>> compile 	: 	comp_z.log
+		>> fgen 	:	fr2fdef.log
+		>> toggle	:	__tests__/[test_id]/zoix_rt.log
+		>> coats	:	__fubs__/design/[test_id]/coats.log
+		>> fsim		:	__fubs__/design/[test_id]/simout-N0
+		>> coverage	:	fsim_z.rpt
+		>> fmsh		:	fmsh.log
+
+
+
+Notes
+-----
+	A suitable version of VERDI should be used to run

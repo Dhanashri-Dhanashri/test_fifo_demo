@@ -1,0 +1,51 @@
+/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/vcs1fe
+-Mcc=gcc
+-Mcplusplus=g++
+-Masflags=
+-Mcfl= -pipe -fPIC -O -I/arm/tools/synopsys/vcs/2025.06-1/include 
+-Mxllcflags=
+-Mxcflags= -pipe -fPIC -I/arm/tools/synopsys/vcs/2025.06-1/include
+-Mldflags= -rdynamic 
+-Mout=simv
+-Mamsrun=
+-Mvcsaceobjs=
+-Mobjects= /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libvirsim.so /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/liberrorinf.so /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libsnpsmalloc.so /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libvfs.so 
+-Mexternalobj=
+-Msaverestoreobj=/arm/tools/synopsys/vcs/2025.06-1/linux64/lib/vcs_save_restore_new.o
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Msyslibs=/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/LINUX64/pli.a -ldl 
+-l
+comp_v.log
+-Xcheckfsim
+-Xcheckfsim
+-fsim=dut:test.DUT
++vpi
+-kdb
+-Xufe=2steps
+-lca
+-fsim=portfaults
++vpi
+-debug_access
++vpi
++vcsd1
++itf+/arm/tools/synopsys/vcs/2025.06-1/linux64/lib/vcsdp_lite.tab
+-full64
+-Xhdlxmropt
+-picarchive
+-P
+/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/LINUX64/verdi.tab
+-fsdb
+-sverilog
+-gen_obj
+-Xfile_begin_f=./rtl.f
+src/fifo_tb.v
+src/fifo_sm.v
+src/8BIT_ECC.v
+src/sdpram.v
++define+USE_SAFETY_DESIGN
++define+USE_SDPRAM_TOP
+-Xfile_end
+./src/strobe.sv
+#global time precision magnitude=-9

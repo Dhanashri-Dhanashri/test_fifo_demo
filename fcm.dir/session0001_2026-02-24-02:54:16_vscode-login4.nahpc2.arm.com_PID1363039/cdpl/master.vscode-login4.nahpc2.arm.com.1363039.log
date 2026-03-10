@@ -1,0 +1,910 @@
+1771923268.361795: 1363039-7f8c11c4a800: cdpl_log.c:252: in cdpl_log_open(): info: @@start_of_log@@
+1771923268.361819: 1363039-7f8c11c4a800: cdpl_log.c:893: in cdpl_log_dump_sysinfo(): info: time: 2026/02/24 02:54:28 CST -0600
+1771923268.361823: 1363039-7f8c11c4a800: cdpl_log.c:895: in cdpl_log_dump_sysinfo(): info: version: V-2023.09-SP2 
+1771923268.361826: 1363039-7f8c11c4a800: cdpl_log.c:897: in cdpl_log_dump_sysinfo(): info: system: Linux 4.18.0-553.el8_10.x86_64 #1 SMP Fri May 10 15:19:13 EDT 2024
+1771923268.361829: 1363039-7f8c11c4a800: cdpl_log.c:902: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1771923268.361832: 1363039-7f8c11c4a800: cdpl_log.c:906: in cdpl_log_dump_sysinfo(): info: hostname: vscode-login4.nahpc2.arm.com
+1771923268.361837: 1363039-7f8c11c4a800: cdpl_log.c:254: in cdpl_log_open(): debug: path: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/master.vscode-login4.nahpc2.arm.com.1363039.log
+1771923268.361840: 1363039-7f8c11c4a800: cdpl_log.c:255: in cdpl_log_open(): debug: dir: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl
+1771923268.362403: 1363039-7f8c11c4a800: cdpl_server.c:524: in cdpl_sv_init(): info: new server S11694212
+1771923268.362415: 1363039-7f8c11c4a800: cdpl_ipc.c:3332: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1771923268.362988: 1363039-7f8c11c4a800: cdpl_ipc.c:831: in _selectaddrfamily(): info: selected IPv4 protocol
+1771923268.363095: 1363039-7f8c11c4a800: cdpl_monitor.c:1117: in cdpl_mn_new_server(): info: creating server monitor instance
+1771923268.363105: 1363039-7f8c11c4a800: cdpl_server.c:638: in cdpl_sv_new_master(): info: new master M1
+1771923268.363118: 1363039-7f8c11c4a800: cdpl_server.c:5593: in cdpl_sv_ctl_master(): info: farm submit command timeout set to 120
+1771923268.363121: 1363039-7f8c11c4a800: cdpl_server.c:5656: in cdpl_sv_ctl_master(): info: Setting worker heartbeat to 300 seconds
+1771923268.363123: 1363039-7f8c11c4a800: cdpl_server.c:5665: in cdpl_sv_ctl_master(): info: Setting worker heartbeat timeout to 2 heartbeats
+1771923268.363130: 1363039-7f8c11c4a800: cdpl_compat_master.c:2573: in cdplInitMaster(): info: bcast dir is `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl'
+1771923268.363844: 1363039-7f8c11c4a800: cdpl_server.c:5556: in cdpl_sv_ctl_master(): info: farm worker timeout set to 300
+1771923268.363849: 1363039-7f8c11c4a800: cdpl_server.c:5593: in cdpl_sv_ctl_master(): info: farm submit command timeout set to 120
+1771923268.363851: 1363039-7f8c11c4a800: cdpl_server.c:5609: in cdpl_sv_ctl_master(): info: maximum number of task execution attempts set to 1
+1771923268.363903: 1363039-7f8c11c4a800: cdpl_farm.c:2512: in cdpl_farm_new_sh(): info: creating SH farm on localhost
+1771923268.363909: 1363039-7f8c11c4a800: cdpl_compat_master.c:207: in _set_farm_env(): info: exporting CDPL_LOGDIR as `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl'
+1771923268.363913: 1363039-7f8c11c4a800: cdpl_compat_master.c:234: in _set_farm_env(): info: exporting SNPSLMD_LICENSE_FILE as `12700@nahpc-lic01.nahpc.arm.com:12700@nahpc-lic05.nahpc.arm.com:12700@nahpc-lic13.nahpc.arm.com:12700@nahpc-lic17.nahpc.arm.com:12700@nahpc-lic09.nahpc.arm.com:12700@euhpc-lic09.euhpc.arm.com:12700@euhpc-lic10.euhpc.arm.
+1771923268.363916: 1363039-7f8c11c4a800: cdpl_compat_master.c:269: in _set_farm_env(): info: exporting CDPL_HEARTBEAT as `300'
+1771923268.363921: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting VERDI_HOME as `/arm/tools/synopsys/verdi3/2025.06-1'
+1771923268.363924: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting PATH as `/arm/tools/synopsys/verdi3/2025.06-1/bin:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:/arm/tools/arm/cluster/2.0/prod/bin:/bin:/usr/bin:/usr/X11R6/bin:/arm/t
+1771923268.363930: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting LD_LIBRARY_PATH as `/arm/tools/synopsys/verdi3/2025.06-1/share/NPI/lib/linux64/:/arm/tools/synopsys/vcs/2025.06-1/bin/fusa_cdpl_sdk/latest/lib/linux64/:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:/arm/tools/synopsys/verdi3/2025
+1771923268.363933: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_INTERNAL_INTERMEDIATE_RESULTS_ACTIVE as `1'
+1771923268.363935: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting VCS_HOME as `/arm/tools/synopsys/vcs/2025.06-1'
+1771923268.363937: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_WORKER_LOG_DIR as `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker'
+1771923268.363940: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_START_DIR as `/home/dhanas01/test_fifo_demo'
+1771923268.363942: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting FSDB_DELTA as `0'
+1771923268.363944: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_WORKER_TIMEOUT as `21600'
+1771923268.363946: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting FSDB_PLI_EXIT_LOAD_FAIL as `1'
+1771923268.363953: 1363039-7f8c11c4a800: cdpl_farm.c:2930: in cdpl_farm_add_withcap(): debug: added `localhost' (capacity: 1)
+1771923268.363963: 1363039-7f8c11c4a800: cdpl_server.c:3103: in cdpl_sv_start(): debug: starting server
+1771923268.363966: 1363039-7f8c11c4a800: cdpl_ipc.c:3489: in cdpl_ipc_start(): debug: starting IPC server 10.120.10.44:34615
+1771923268.364110: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1082: in _sv_ipc_thread(): debug: ready
+1771923268.364145: 1363039-7f8c11c4a800: cdpl_server.c:719: in cdpl_sv_new_job(): info: new job J1 in M1
+1771923268.364162: 1363039-7f8c11c4a800: cdpl_compat_master.c:1368: in _add_worker(): info: new worker type 10, min:1, max:1, cmd:`/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker'
+1771923268.364167: 1363039-7f8c11c4a800: cdpl_server.c:881: in cdpl_sv_new_bin_withfarm(): info: new bin B1 in J1
+1771923268.364191: 1363039-7f8c11c4a800: cdpl_server.c:1811: in _sv_gen_task(): info: new task T0 in B1 (prio 0)
+1771923268.364200: 1363039-7f8c11c4a800: cdpl_compat_master.c:3659: in cdplScheduleTasks(): debug: scheduling tasks
+1771923268.364204: 1363039-7f8c11c4a800: cdpl_server.c:1215: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1771923268.364213: 1363039-7f8c11c4a800: cdpl_server.c:3157: in cdpl_sv_start_job(): info: starting job J1
+1771923268.364218: 1363039-7f8c11c4a800: cdpl_server.c:59: in _sv_start_bin(): debug: starting bin B1 (min: 0, max: 1)
+1771923268.364275: 1363039-7f8c0e346700: cdpl_server_sched.c:2454: in _sv_scheduler_thread(): debug: scheduler for bin B1 started
+1771923268.364297: 1363039-7f8c0e346700: cdpl_server_sched.c:2415: in _scheduler_run(): debug: will start a new worker
+1771923268.364653: 1363039-7f8c0e346700: cdpl_farm.c:3883: in cdpl_farm_submit(): debug: 1 running processes
+1771923268.364994: 1363039-7f8c0e346700: cdpl_farm.c:1972: in _pickahost(): debug: `localhost' now reaches maximum capacity
+1771923268.365000: 1363039-7f8c0e346700: cdpl_farm.c:3891: in cdpl_farm_submit(): debug: new command C1 in bin B1 assigned to host `localhost'
+1771923268.365052: 1363039-7f8c0e346700: cdpl_server_sched.c:711: in _sv_launch_worker(): info: started worker W1 (as C1) in bin B1
+1771923268.365058: 1363039-7f8c0db45700: cdpl_farm.c:2098: in _schedule(): debug: started
+1771923268.365071: 1363039-7f8c0db45700: cdpl_farm.c:2103: in _schedule(): info: worker submit command timeout set to 120 seconds
+1771923268.365075: 1363039-7f8c0db45700: cdpl_farm.c:2237: in _schedule(): debug: submitting command C1 in bin B1
+1771923268.365095: 1363039-7f8c0db45700: cdpl_sh.c:49: in _sh_detached_submit(): info: SH : /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+1771923268.365544: 1363039-7f8c0db45700: cdpl_farm.c:2277: in _schedule(): debug: C1 in bin B1 running on slot 0
+1771923268.365904: 1363039-7f8c0db45700: cdpl_farm.c:2118: in _schedule(): debug: idle
+1771923268.512772: 1363039-7f8c0f348700: cdpl_ipc.c:1816: in _epoll_accept(): debug: new connection from `10.120.10.44:44554'
+1771923268.512856: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1125: in _sv_ipc_thread(): debug: received ACCEPT notification
+1771923268.512872: 1363039-7f8c0eb47700: cdpl_ipc.c:2457: in cdpl_ipc_host_accept(): debug: accepted host `10.120.10.44:44554'
+1771923268.513187: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1146: in _sv_ipc_thread(): debug: received HELLO message
+1771923268.513195: 1363039-7f8c0eb47700: cdpl_server_ipc.c:367: in _sv_on_hello(): debug: looking up W1
+1771923268.513200: 1363039-7f8c0eb47700: cdpl_server_ipc.c:477: in _sv_on_hello(): info: W1 is `10.120.10.44:44554'
+1771923268.513203: 1363039-7f8c0eb47700: cdpl_server_ipc.c:478: in _sv_on_hello(): debug: hello W1 (B1)
+1771923268.513205: 1363039-7f8c0eb47700: cdpl_server_ipc.c:479: in _sv_on_hello(): info: W1 log file is /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/worker.W1.vscode-login4.nahpc2.arm.com.1365076.log
+1771923268.513237: 1363039-7f8c0eb47700: cdpl_server_ipc.c:506: in _sv_on_hello(): info: up to 1 alive workers in B1
+1771923268.513281: 1363039-7f8c0e346700: cdpl_server_sched.c:966: in _assign(): info: assigning task T0 to worker W1
+1771923268.514731: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923268.514745: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 74
+1771923268.514752: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = STARTWORKER;0;1365076;vscode-login4.nahpc2.arm.com;1771923268;1771923268;
+1771923268.514821: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923268.514827: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 73
+1771923268.514832: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = STARTTASK;-1;1365076;vscode-login4.nahpc2.arm.com;1771923268;1771923268;
+1771923268.524491: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923268.524510: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 324
+1771923268.524516: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923268;will invoke: "/arm/tools/synopsys/vcs/2025.06-1/bin/vc_fcc -full64 -daidir simv.daidir -sff ./COLLATERAL/SFF/config.sff,./COLLATERAL/SFF/faults.sff -campaign fifode
+1771923268.665979: 1363039-7f8c0db45700: cdpl_farm.c:2162: in _schedule(): debug: waking up
+1771923268.666021: 1363039-7f8c0db45700: cdpl_farm.c:1175: in _onexit(): debug: C1 in bin B1 exited normally on slot 0
+1771923268.666032: 1363039-7f8c0db45700: cdpl_farm.c:873: in _release_cmd(): debug: freeing command C1 in bin B1
+1771923268.666036: 1363039-7f8c0db45700: cdpl_farm.c:2118: in _schedule(): debug: idle
+1771923268.729524: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923268.729541: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 1083
+1771923268.729551: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923268;
+                          VC Fault Campaign Compiler 
+
+                Version X-2025.06-1 for linux64 - Jul 16, 2025 
+
+                    Copyright (c) 2019 - 20
+1771923268.729560: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923268.729570: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 400
+1771923268.729575: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923268;       Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Command: vc_fcc -full64 -daidir simv.dai
+1771923269.010113: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.010133: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 94
+1771923269.010137: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Info: Connected to existing server;
+1771923269.010143: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.010145: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 61
+1771923269.010148: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;
+;
+1771923269.067865: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.067881: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 90
+1771923269.067886: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Loading design information...
+;
+1771923269.443344: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.443365: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 137
+1771923269.443371: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 53Mb, peak: 86Mb).
+;
+1771923269.456533: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.456551: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 1083
+1771923269.456558: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;
+Warning-[FCC-PROMOTION-TABLE-MISSING-BUILT-IN-STATUSES] Missing noted built-in fault status interactions.
+./COLLATERAL/SFF/config.sff, 48
+  The defined promotion t
+1771923269.456565: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.456568: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 650
+1771923269.456572: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269; OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  OP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  OD-> [DE, DF, HA, HM, HT, IA, I
+1771923269.457130: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.457157: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 81
+1771923269.457160: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Generating faults...
+;
+1771923269.498567: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.498590: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 158
+1771923269.498596: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (422 faults generated, CPU time: 0s, elapsed time: 0s, memory increased by 5Mb, peak: 94Mb).
+;
+1771923269.499553: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.499595: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 89
+1771923269.499599: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Collecting design strobes...
+;
+1771923269.504046: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.504059: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 136
+1771923269.504063: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 94Mb).
+;
+1771923269.510328: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.510341: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 86
+1771923269.510345: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Loading design details...
+;
+1771923269.514255: 1363039-7f8c0eb47700: cdpl_server_ipc.c:280: in _sv_on_heartbeat(): debug: received HEARTBEAT from worker W1 at 10.120.10.44:44554
+1771923269.517345: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.517359: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 136
+1771923269.517362: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 94Mb).
+;
+1771923269.517367: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.517370: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 69
+1771923269.517373: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = ALIVE;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;1771923269;
+1771923269.518888: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.518899: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 84
+1771923269.518903: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Constant propagation...
+;
+1771923269.525237: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.525250: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 136
+1771923269.525254: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+;
+1771923269.525582: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.525813: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 91
+1771923269.525817: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Static testability analysis...
+;
+1771923269.533399: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.533419: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 159
+1771923269.533423: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Reconvergence check...
+;
+1771923269.534306: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.534318: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 136
+1771923269.534321: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+;
+1771923269.536276: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.536286: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 71
+1771923269.536290: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Pruning...
+;
+1771923269.539204: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.539218: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 150
+1771923269.539222: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Collapsing...
+;
+1771923269.548584: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.548602: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 136
+1771923269.548607: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 96Mb).
+;
+1771923269.584167: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.584195: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 89
+1771923269.584202: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Preparing to write to FDB...
+;
+1771923269.588407: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.588431: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 169
+1771923269.588437: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 96Mb).
+Writing fault campaign to FDB...
+;
+1771923269.825054: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.825069: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 136
+1771923269.825075: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 1Mb, peak: 98Mb).
+;
+1771923269.833838: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.833851: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 175
+1771923269.833857: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Total faults generated: 422.
+Collapsed faults:       120.
+Untestable faults:      88.
+Fault reduction:        49%.
+;
+1771923269.833865: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.833868: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 70
+1771923269.833871: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;1 warning
+;
+1771923269.897422: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.897437: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 112
+1771923269.897441: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;CPU time: 0s, elapsed time: 1s, peak memory: 102MB.
+;
+1771923269.907037: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.907052: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 61
+1771923269.907057: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;
+;
+1771923269.907065: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.907068: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 95
+1771923269.907071: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;command completed with exit code 0
+;
+1771923269.907076: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.907079: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 61
+1771923269.907083: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;
+;
+1771923269.907088: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923269.907091: 1363039-7f8c0eb47700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 67
+1771923269.907094: 1363039-7f8c0eb47700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Exit:0
+;
+1771923270.521029: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1151: in _sv_ipc_thread(): debug: received FINISH message
+1771923270.521044: 1363039-7f8c0eb47700: cdpl_server_ipc.c:883: in _sv_on_finish(): info: worker W1 completed task T0
+1771923270.521048: 1363039-7f8c0eb47700: cdpl_server_ipc.c:888: in _sv_on_finish(): debug: stat T0: utime=192 stime=150
+1771923270.521051: 1363039-7f8c0eb47700: cdpl_server_ipc.c:893: in _sv_on_finish(): debug: statm T0: vsize=256124 rss=6944 shared=6544 text=6916 data=33804
+1771923270.525492: 1363039-7f8c11c4a800: cdpl_server.c:217: in _sv_free_task_safe(): debug: freeing task T0
+1771923270.525519: 1363039-7f8c11c4a800: cdpl_server.c:2931: in cdpl_sv_halt_job_errno(): info: stopping job J1
+1771923270.525523: 1363039-7f8c11c4a800: cdpl_server.c:2952: in cdpl_sv_halt_job_errno(): debug: signal bin B1 scheduler to stop
+1771923270.525766: 1363039-7f8c0e346700: cdpl_server_sched.c:2456: in _sv_scheduler_thread(): debug: scheduler for bin B1 stopped
+1771923270.525811: 1363039-7f8c0e346700: cdpl_ipc.c:1611: in _host_drop__UNSAFE(): debug: dropping host `10.120.10.44:44554'
+1771923270.525851: 1363039-7f8c0e346700: cdpl_server_sched.c:2802: in _sv_drop_worker(): info: down to 0 alive workers in B1
+1771923270.525858: 1363039-7f8c0e346700: cdpl_farm.c:4058: in cdpl_farm_dismiss(): debug: down to 0 running processes
+1771923270.525862: 1363039-7f8c0e346700: cdpl_farm.c:2024: in _unpickhost(): debug: `localhost' is once again available
+1771923270.525867: 1363039-7f8c0e346700: cdpl_server_sched.c:121: in _free_worker_2(): debug: freeing worker W1
+1771923270.525873: 1363039-7f8c0e346700: cdpl_ipc.c:2467: in cdpl_ipc_host_release(): debug: releasing host `10.120.10.44:44554'
+1771923270.525878: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1136: in _sv_ipc_thread(): debug: received DROP notification
+1771923270.525901: 1363039-7f8c11c4a800: cdpl_server.c:282: in _sv_free_job(): info: freeing job J1
+1771923270.525910: 1363039-7f8c11c4a800: cdpl_server.c:89: in _sv_free_bin(): debug: freeing bin B1
+1771923270.525930: 1363039-7f8c11c4a800: cdpl_farm.c:2656: in cdpl_farm_free(): info: freeing farm
+1771923270.525953: 1363039-7f8c0db45700: cdpl_farm.c:2162: in _schedule(): debug: waking up
+1771923270.525968: 1363039-7f8c0db45700: cdpl_farm.c:2169: in _schedule(): debug: dying
+1771923270.526011: 1363039-7f8c11c4a800: cdpl_farm.c:903: in _killall(): debug: killing all remaining commands
+1771923270.526022: 1363039-7f8c11c4a800: cdpl_server.c:3052: in cdpl_sv_free(): info: freeing server S11694212
+1771923270.526028: 1363039-7f8c11c4a800: cdpl_server.c:3017: in cdpl_sv_kill_errno(): info: killing server
+1771923270.526032: 1363039-7f8c11c4a800: cdpl_ipc.c:3534: in cdpl_ipc_kill(): debug: stopping event server
+1771923270.526058: 1363039-7f8c0f348700: cdpl_ipc.c:2414: in _epoll_main(): debug: server going down...
+1771923270.526217: 1363039-7f8c0eb47700: cdpl_server_ipc.c:1100: in _sv_ipc_thread(): debug: leaving now
+1771923270.526684: 1363039-7f8c11c4a800: cdpl_server.c:322: in _sv_free_master(): info: freeing master M1
+1771923270.526698: 1363039-7f8c11c4a800: cdpl_hash.c:68: in cdpl_h_destroy(): debug: put operations: 1
+1771923270.526701: 1363039-7f8c11c4a800: cdpl_hash.c:69: in cdpl_h_destroy(): debug: put collisions: 0
+1771923270.526703: 1363039-7f8c11c4a800: cdpl_hash.c:70: in cdpl_h_destroy(): debug: get operations: 0
+1771923270.526705: 1363039-7f8c11c4a800: cdpl_hash.c:71: in cdpl_h_destroy(): debug: get iterations: 0
+1771923270.526712: 1363039-7f8c11c4a800: cdpl_monitor.c:1390: in cdpl_mn_free(): debug: freeing monitor server
+1771923270.526718: 1363039-7f8c11c4a800: cdpl_ipc.c:3585: in cdpl_ipc_free(): debug: releasing IPC handle
+1771923270.526721: 1363039-7f8c11c4a800: cdpl_ipc.c:1536: in _host_free__UNSAFE(): debug: freeing host `10.120.10.44:44554'
+1771923270.526723: 1363039-7f8c11c4a800: cdpl_ipc.c:1575: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1771923270.526738: 1363039-7f8c11c4a800: cdpl_ipc.c:3624: in cdpl_ipc_free(): debug: done
+1771923270.526741: 1363039-7f8c11c4a800: cdpl_log.c:395: in cdpl_log_close(): info: @@end_of_log@@
+1771923270.995324: 1363039-7f8c11c4a800: cdpl_log.c:252: in cdpl_log_open(): info: @@start_of_log@@
+1771923270.995337: 1363039-7f8c11c4a800: cdpl_log.c:893: in cdpl_log_dump_sysinfo(): info: time: 2026/02/24 02:54:30 CST -0600
+1771923270.995341: 1363039-7f8c11c4a800: cdpl_log.c:895: in cdpl_log_dump_sysinfo(): info: version: V-2023.09-SP2 
+1771923270.995343: 1363039-7f8c11c4a800: cdpl_log.c:897: in cdpl_log_dump_sysinfo(): info: system: Linux 4.18.0-553.el8_10.x86_64 #1 SMP Fri May 10 15:19:13 EDT 2024
+1771923270.995346: 1363039-7f8c11c4a800: cdpl_log.c:902: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1771923270.995349: 1363039-7f8c11c4a800: cdpl_log.c:906: in cdpl_log_dump_sysinfo(): info: hostname: vscode-login4.nahpc2.arm.com
+1771923270.995351: 1363039-7f8c11c4a800: cdpl_log.c:254: in cdpl_log_open(): debug: path: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/master.vscode-login4.nahpc2.arm.com.1363039.log
+1771923270.995356: 1363039-7f8c11c4a800: cdpl_log.c:255: in cdpl_log_open(): debug: dir: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl
+1771923270.995362: 1363039-7f8c11c4a800: cdpl_server.c:524: in cdpl_sv_init(): info: new server S1185933836
+1771923270.995365: 1363039-7f8c11c4a800: cdpl_ipc.c:3332: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1771923270.995619: 1363039-7f8c11c4a800: cdpl_ipc.c:831: in _selectaddrfamily(): info: selected IPv4 protocol
+1771923270.995670: 1363039-7f8c11c4a800: cdpl_monitor.c:1117: in cdpl_mn_new_server(): info: creating server monitor instance
+1771923270.995675: 1363039-7f8c11c4a800: cdpl_server.c:638: in cdpl_sv_new_master(): info: new master M1
+1771923270.995681: 1363039-7f8c11c4a800: cdpl_server.c:5593: in cdpl_sv_ctl_master(): info: farm submit command timeout set to 120
+1771923270.995684: 1363039-7f8c11c4a800: cdpl_server.c:5656: in cdpl_sv_ctl_master(): info: Setting worker heartbeat to 300 seconds
+1771923270.995686: 1363039-7f8c11c4a800: cdpl_server.c:5665: in cdpl_sv_ctl_master(): info: Setting worker heartbeat timeout to 2 heartbeats
+1771923270.995691: 1363039-7f8c11c4a800: cdpl_compat_master.c:2573: in cdplInitMaster(): info: bcast dir is `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl'
+1771923270.997043: 1363039-7f8c11c4a800: cdpl_server.c:5556: in cdpl_sv_ctl_master(): info: farm worker timeout set to 300
+1771923270.997047: 1363039-7f8c11c4a800: cdpl_server.c:5593: in cdpl_sv_ctl_master(): info: farm submit command timeout set to 120
+1771923270.997050: 1363039-7f8c11c4a800: cdpl_server.c:5609: in cdpl_sv_ctl_master(): info: maximum number of task execution attempts set to 1
+1771923270.997084: 1363039-7f8c11c4a800: cdpl_farm.c:2512: in cdpl_farm_new_sh(): info: creating SH farm on localhost
+1771923270.997090: 1363039-7f8c11c4a800: cdpl_compat_master.c:207: in _set_farm_env(): info: exporting CDPL_LOGDIR as `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl'
+1771923270.997094: 1363039-7f8c11c4a800: cdpl_compat_master.c:234: in _set_farm_env(): info: exporting SNPSLMD_LICENSE_FILE as `12700@nahpc-lic01.nahpc.arm.com:12700@nahpc-lic05.nahpc.arm.com:12700@nahpc-lic13.nahpc.arm.com:12700@nahpc-lic17.nahpc.arm.com:12700@nahpc-lic09.nahpc.arm.com:12700@euhpc-lic09.euhpc.arm.com:12700@euhpc-lic10.euhpc.arm.
+1771923270.997097: 1363039-7f8c11c4a800: cdpl_compat_master.c:269: in _set_farm_env(): info: exporting CDPL_HEARTBEAT as `300'
+1771923270.997101: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting VERDI_HOME as `/arm/tools/synopsys/verdi3/2025.06-1'
+1771923270.997105: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting PATH as `/arm/tools/synopsys/verdi3/2025.06-1/bin:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:/arm/tools/arm/cluster/2.0/prod/bin:/bin:/usr/bin:/usr/X11R6/bin:/arm/t
+1771923270.997108: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting LD_LIBRARY_PATH as `/arm/tools/synopsys/verdi3/2025.06-1/share/NPI/lib/linux64/:/arm/tools/synopsys/vcs/2025.06-1/bin/fusa_cdpl_sdk/latest/lib/linux64/:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:/arm/tools/synopsys/verdi3/2025
+1771923270.997110: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_INTERNAL_INTERMEDIATE_RESULTS_ACTIVE as `1'
+1771923270.997113: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting VCS_HOME as `/arm/tools/synopsys/vcs/2025.06-1'
+1771923270.997115: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_WORKER_LOG_DIR as `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker'
+1771923270.997119: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_START_DIR as `/home/dhanas01/test_fifo_demo'
+1771923270.997121: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting FSDB_DELTA as `0'
+1771923270.997124: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_WORKER_TIMEOUT as `21600'
+1771923270.997126: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting FSDB_PLI_EXIT_LOAD_FAIL as `1'
+1771923270.997131: 1363039-7f8c11c4a800: cdpl_farm.c:2930: in cdpl_farm_add_withcap(): debug: added `localhost' (capacity: 2)
+1771923270.997137: 1363039-7f8c11c4a800: cdpl_server.c:3103: in cdpl_sv_start(): debug: starting server
+1771923270.997140: 1363039-7f8c11c4a800: cdpl_ipc.c:3489: in cdpl_ipc_start(): debug: starting IPC server 10.120.10.44:43699
+1771923270.997260: 1363039-7f8c0f348700: cdpl_server_ipc.c:1082: in _sv_ipc_thread(): debug: ready
+1771923270.997566: 1363039-7f8c11c4a800: cdpl_server.c:719: in cdpl_sv_new_job(): info: new job J1 in M1
+1771923270.997582: 1363039-7f8c11c4a800: cdpl_compat_master.c:1368: in _add_worker(): info: new worker type 10, min:1, max:2, cmd:`/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker'
+1771923270.997587: 1363039-7f8c11c4a800: cdpl_server.c:881: in cdpl_sv_new_bin_withfarm(): info: new bin B1 in J1
+1771923270.997683: 1363039-7f8c11c4a800: cdpl_server.c:1811: in _sv_gen_task(): info: new task T0 in B1 (prio 0)
+1771923270.997736: 1363039-7f8c11c4a800: cdpl_server.c:1811: in _sv_gen_task(): info: new task T1 in B1 (prio 0)
+1771923270.997759: 1363039-7f8c11c4a800: cdpl_server.c:1446: in _sv_add_deps(): debug: T1 depends on upstream task T0
+1771923270.997808: 1363039-7f8c11c4a800: cdpl_server.c:1811: in _sv_gen_task(): info: new task T2 in B1 (prio 0)
+1771923270.998309: 1363039-7f8c11c4a800: cdpl_server.c:1811: in _sv_gen_task(): info: new task T3 in B1 (prio 0)
+1771923270.998317: 1363039-7f8c11c4a800: cdpl_server.c:1446: in _sv_add_deps(): debug: T3 depends on upstream task T2
+1771923270.998323: 1363039-7f8c11c4a800: cdpl_compat_master.c:3659: in cdplScheduleTasks(): debug: scheduling tasks
+1771923270.998326: 1363039-7f8c11c4a800: cdpl_server.c:1215: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1771923270.998331: 1363039-7f8c11c4a800: cdpl_server.c:3157: in cdpl_sv_start_job(): info: starting job J1
+1771923270.998336: 1363039-7f8c11c4a800: cdpl_server.c:59: in _sv_start_bin(): debug: starting bin B1 (min: 0, max: 2)
+1771923270.998397: 1363039-7f8c0db45700: cdpl_server_sched.c:2454: in _sv_scheduler_thread(): debug: scheduler for bin B1 started
+1771923270.998410: 1363039-7f8c0db45700: cdpl_server_sched.c:2415: in _scheduler_run(): debug: will start a new worker
+1771923270.998430: 1363039-7f8c0db45700: cdpl_farm.c:3883: in cdpl_farm_submit(): debug: 1 running processes
+1771923270.998445: 1363039-7f8c0db45700: cdpl_farm.c:3891: in cdpl_farm_submit(): debug: new command C1 in bin B1 assigned to host `localhost'
+1771923270.998476: 1363039-7f8c0db45700: cdpl_server_sched.c:711: in _sv_launch_worker(): info: started worker W1 (as C1) in bin B1
+1771923270.998479: 1363039-7f8c0db45700: cdpl_server_sched.c:2415: in _scheduler_run(): debug: will start a new worker
+1771923270.998484: 1363039-7f8c0e346700: cdpl_farm.c:2098: in _schedule(): debug: started
+1771923270.998503: 1363039-7f8c0e346700: cdpl_farm.c:2103: in _schedule(): info: worker submit command timeout set to 120 seconds
+1771923270.998507: 1363039-7f8c0db45700: cdpl_farm.c:3883: in cdpl_farm_submit(): debug: 2 running processes
+1771923270.998511: 1363039-7f8c0db45700: cdpl_farm.c:1972: in _pickahost(): debug: `localhost' now reaches maximum capacity
+1771923270.998514: 1363039-7f8c0db45700: cdpl_farm.c:3891: in cdpl_farm_submit(): debug: new command C2 in bin B1 assigned to host `localhost'
+1771923270.998521: 1363039-7f8c0db45700: cdpl_server_sched.c:711: in _sv_launch_worker(): info: started worker W2 (as C2) in bin B1
+1771923270.998530: 1363039-7f8c0e346700: cdpl_farm.c:2237: in _schedule(): debug: submitting command C1 in bin B1
+1771923270.998535: 1363039-7f8c0e346700: cdpl_sh.c:49: in _sh_detached_submit(): info: SH : /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+1771923270.998934: 1363039-7f8c0e346700: cdpl_farm.c:2277: in _schedule(): debug: C1 in bin B1 running on slot 0
+1771923270.999341: 1363039-7f8c0e346700: cdpl_farm.c:2237: in _schedule(): debug: submitting command C2 in bin B1
+1771923270.999348: 1363039-7f8c0e346700: cdpl_sh.c:49: in _sh_detached_submit(): info: SH : /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+1771923270.999697: 1363039-7f8c0e346700: cdpl_farm.c:2277: in _schedule(): debug: C2 in bin B1 running on slot 1
+1771923270.999744: 1363039-7f8c0e346700: cdpl_farm.c:2118: in _schedule(): debug: idle
+1771923271.095309: 1363039-7f8c0eb47700: cdpl_ipc.c:1816: in _epoll_accept(): debug: new connection from `10.120.10.44:60066'
+1771923271.095341: 1363039-7f8c0eb47700: cdpl_ipc.c:1816: in _epoll_accept(): debug: new connection from `10.120.10.44:60076'
+1771923271.095357: 1363039-7f8c0f348700: cdpl_server_ipc.c:1125: in _sv_ipc_thread(): debug: received ACCEPT notification
+1771923271.095378: 1363039-7f8c0f348700: cdpl_ipc.c:2457: in cdpl_ipc_host_accept(): debug: accepted host `10.120.10.44:60066'
+1771923271.095384: 1363039-7f8c0f348700: cdpl_server_ipc.c:1125: in _sv_ipc_thread(): debug: received ACCEPT notification
+1771923271.095389: 1363039-7f8c0f348700: cdpl_ipc.c:2457: in cdpl_ipc_host_accept(): debug: accepted host `10.120.10.44:60076'
+1771923271.095856: 1363039-7f8c0f348700: cdpl_server_ipc.c:1146: in _sv_ipc_thread(): debug: received HELLO message
+1771923271.095866: 1363039-7f8c0f348700: cdpl_server_ipc.c:367: in _sv_on_hello(): debug: looking up W2
+1771923271.095879: 1363039-7f8c0f348700: cdpl_server_ipc.c:477: in _sv_on_hello(): info: W2 is `10.120.10.44:60066'
+1771923271.095883: 1363039-7f8c0f348700: cdpl_server_ipc.c:478: in _sv_on_hello(): debug: hello W2 (B1)
+1771923271.095886: 1363039-7f8c0f348700: cdpl_server_ipc.c:479: in _sv_on_hello(): info: W2 log file is /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/worker.W2.vscode-login4.nahpc2.arm.com.1365230.log
+1771923271.095904: 1363039-7f8c0f348700: cdpl_server_ipc.c:506: in _sv_on_hello(): info: up to 1 alive workers in B1
+1771923271.095918: 1363039-7f8c0f348700: cdpl_server_ipc.c:1146: in _sv_ipc_thread(): debug: received HELLO message
+1771923271.095920: 1363039-7f8c0f348700: cdpl_server_ipc.c:367: in _sv_on_hello(): debug: looking up W1
+1771923271.095923: 1363039-7f8c0f348700: cdpl_server_ipc.c:477: in _sv_on_hello(): info: W1 is `10.120.10.44:60076'
+1771923271.095925: 1363039-7f8c0f348700: cdpl_server_ipc.c:478: in _sv_on_hello(): debug: hello W1 (B1)
+1771923271.095927: 1363039-7f8c0f348700: cdpl_server_ipc.c:479: in _sv_on_hello(): info: W1 log file is /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/worker.W1.vscode-login4.nahpc2.arm.com.1365228.log
+1771923271.096515: 1363039-7f8c0f348700: cdpl_server_ipc.c:506: in _sv_on_hello(): info: up to 2 alive workers in B1
+1771923271.096526: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923271.096529: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W2, size = 74
+1771923271.096532: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W2, content = STARTWORKER;0;1365230;vscode-login4.nahpc2.arm.com;1771923271;1771923271;
+1771923271.096535: 1363039-7f8c0db45700: cdpl_server_sched.c:966: in _assign(): info: assigning task T0 to worker W2
+1771923271.096556: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923271.096560: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 74
+1771923271.096566: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = STARTWORKER;0;1365228;vscode-login4.nahpc2.arm.com;1771923271;1771923271;
+1771923271.096571: 1363039-7f8c0db45700: cdpl_server_sched.c:966: in _assign(): info: assigning task T2 to worker W1
+1771923271.101127: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923271.101139: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W2, size = 72
+1771923271.101143: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W2, content = STARTTASK;1;1365230;vscode-login4.nahpc2.arm.com;1771923271;1771923271;
+1771923271.102132: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923271.102140: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 72
+1771923271.102143: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = STARTTASK;3;1365228;vscode-login4.nahpc2.arm.com;1771923271;1771923271;
+1771923271.299816: 1363039-7f8c0e346700: cdpl_farm.c:2162: in _schedule(): debug: waking up
+1771923271.299849: 1363039-7f8c0e346700: cdpl_farm.c:1175: in _onexit(): debug: C1 in bin B1 exited normally on slot 0
+1771923271.299854: 1363039-7f8c0e346700: cdpl_farm.c:873: in _release_cmd(): debug: freeing command C1 in bin B1
+1771923271.299862: 1363039-7f8c0e346700: cdpl_farm.c:1175: in _onexit(): debug: C2 in bin B1 exited normally on slot 1
+1771923271.299864: 1363039-7f8c0e346700: cdpl_farm.c:873: in _release_cmd(): debug: freeing command C2 in bin B1
+1771923271.299867: 1363039-7f8c0e346700: cdpl_farm.c:2118: in _schedule(): debug: idle
+1771923272.086191: 1363039-7f8c0f348700: cdpl_server_ipc.c:280: in _sv_on_heartbeat(): debug: received HEARTBEAT from worker W2 at 10.120.10.44:60066
+1771923272.086451: 1363039-7f8c0f348700: cdpl_server_ipc.c:280: in _sv_on_heartbeat(): debug: received HEARTBEAT from worker W1 at 10.120.10.44:60076
+1771923272.101520: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923272.101534: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W2, size = 68
+1771923272.101539: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W2, content = ALIVE;1;1365230;vscode-login4.nahpc2.arm.com;1771923272;1771923272;
+1771923272.102364: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923272.102528: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 68
+1771923272.102536: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = ALIVE;3;1365228;vscode-login4.nahpc2.arm.com;1771923272;1771923272;
+1771923273.110426: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923273.110442: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 7
+1771923273.110446: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = INFO;3
+1771923273.111236: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923273.111245: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W2, size = 7
+1771923273.111247: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W2, content = INFO;1
+1771923273.111533: 1363039-7f8c0f348700: cdpl_server_ipc.c:1151: in _sv_ipc_thread(): debug: received FINISH message
+1771923273.111546: 1363039-7f8c0f348700: cdpl_server_ipc.c:883: in _sv_on_finish(): info: worker W2 completed task T0
+1771923273.111549: 1363039-7f8c0f348700: cdpl_server_ipc.c:888: in _sv_on_finish(): debug: stat T0: utime=200 stime=138
+1771923273.111552: 1363039-7f8c0f348700: cdpl_server_ipc.c:893: in _sv_on_finish(): debug: statm T0: vsize=256124 rss=7424 shared=6968 text=6916 data=33804
+1771923273.111569: 1363039-7f8c0f348700: cdpl_server_ipc.c:761: in _schedule_deps(): debug: T1 is ready to run in B1
+1771923273.111591: 1363039-7f8c0db45700: cdpl_server_sched.c:966: in _assign(): info: assigning task T1 to worker W2
+1771923273.111709: 1363039-7f8c0f348700: cdpl_server_ipc.c:1151: in _sv_ipc_thread(): debug: received FINISH message
+1771923273.111948: 1363039-7f8c0f348700: cdpl_server_ipc.c:883: in _sv_on_finish(): info: worker W1 completed task T2
+1771923273.111951: 1363039-7f8c0f348700: cdpl_server_ipc.c:888: in _sv_on_finish(): debug: stat T2: utime=187 stime=142
+1771923273.111954: 1363039-7f8c0f348700: cdpl_server_ipc.c:893: in _sv_on_finish(): debug: statm T2: vsize=256124 rss=7536 shared=7080 text=6916 data=33804
+1771923273.111957: 1363039-7f8c0f348700: cdpl_server_ipc.c:761: in _schedule_deps(): debug: T3 is ready to run in B1
+1771923273.111971: 1363039-7f8c0db45700: cdpl_server_sched.c:966: in _assign(): info: assigning task T3 to worker W1
+1771923273.114815: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923273.114824: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W2, size = 72
+1771923273.114827: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W2, content = STARTTASK;2;1365230;vscode-login4.nahpc2.arm.com;1771923273;1771923273;
+1771923273.116266: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923273.116281: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 72
+1771923273.116292: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = STARTTASK;4;1365228;vscode-login4.nahpc2.arm.com;1771923273;1771923273;
+1771923274.003508: 1363039-7f8c11c4a800: cdpl_server.c:217: in _sv_free_task_safe(): debug: freeing task T0
+1771923274.003516: 1363039-7f8c11c4a800: cdpl_server.c:264: in _sv_free_task_safe(): debug: freeing dependencies for task T0
+1771923274.004849: 1363039-7f8c11c4a800: cdpl_server.c:217: in _sv_free_task_safe(): debug: freeing task T2
+1771923274.004855: 1363039-7f8c11c4a800: cdpl_server.c:264: in _sv_free_task_safe(): debug: freeing dependencies for task T2
+1771923276.123360: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923276.123393: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 7
+1771923276.123399: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = INFO;4
+1771923276.123575: 1363039-7f8c0f348700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923276.123588: 1363039-7f8c0f348700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W2, size = 7
+1771923276.123592: 1363039-7f8c0f348700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W2, content = INFO;2
+1771923276.124322: 1363039-7f8c0f348700: cdpl_server_ipc.c:1151: in _sv_ipc_thread(): debug: received FINISH message
+1771923276.124335: 1363039-7f8c0f348700: cdpl_server_ipc.c:883: in _sv_on_finish(): info: worker W2 completed task T1
+1771923276.124339: 1363039-7f8c0f348700: cdpl_server_ipc.c:888: in _sv_on_finish(): debug: stat T1: utime=224 stime=275
+1771923276.124343: 1363039-7f8c0f348700: cdpl_server_ipc.c:893: in _sv_on_finish(): debug: statm T1: vsize=321660 rss=7436 shared=6968 text=6916 data=33936
+1771923276.124582: 1363039-7f8c0f348700: cdpl_server_ipc.c:1151: in _sv_ipc_thread(): debug: received FINISH message
+1771923276.125126: 1363039-7f8c0f348700: cdpl_server_ipc.c:883: in _sv_on_finish(): info: worker W1 completed task T3
+1771923276.125130: 1363039-7f8c0f348700: cdpl_server_ipc.c:888: in _sv_on_finish(): debug: stat T3: utime=218 stime=286
+1771923276.125133: 1363039-7f8c0f348700: cdpl_server_ipc.c:893: in _sv_on_finish(): debug: statm T3: vsize=321660 rss=7548 shared=7080 text=6916 data=33936
+1771923276.172604: 1363039-7f8c11c4a800: cdpl_server.c:217: in _sv_free_task_safe(): debug: freeing task T1
+1771923276.173808: 1363039-7f8c11c4a800: cdpl_server.c:217: in _sv_free_task_safe(): debug: freeing task T3
+1771923276.175834: 1363039-7f8c11c4a800: cdpl_server.c:2931: in cdpl_sv_halt_job_errno(): info: stopping job J1
+1771923276.175843: 1363039-7f8c11c4a800: cdpl_server.c:2952: in cdpl_sv_halt_job_errno(): debug: signal bin B1 scheduler to stop
+1771923276.175872: 1363039-7f8c0db45700: cdpl_server_sched.c:2456: in _sv_scheduler_thread(): debug: scheduler for bin B1 stopped
+1771923276.175893: 1363039-7f8c0db45700: cdpl_ipc.c:1611: in _host_drop__UNSAFE(): debug: dropping host `10.120.10.44:60066'
+1771923276.175935: 1363039-7f8c0db45700: cdpl_server_sched.c:2802: in _sv_drop_worker(): info: down to 1 alive workers in B1
+1771923276.175940: 1363039-7f8c0db45700: cdpl_farm.c:4058: in cdpl_farm_dismiss(): debug: down to 1 running processes
+1771923276.175943: 1363039-7f8c0db45700: cdpl_farm.c:2024: in _unpickhost(): debug: `localhost' is once again available
+1771923276.175947: 1363039-7f8c0db45700: cdpl_ipc.c:1611: in _host_drop__UNSAFE(): debug: dropping host `10.120.10.44:60076'
+1771923276.175965: 1363039-7f8c0db45700: cdpl_server_sched.c:2802: in _sv_drop_worker(): info: down to 0 alive workers in B1
+1771923276.175968: 1363039-7f8c0db45700: cdpl_farm.c:4058: in cdpl_farm_dismiss(): debug: down to 0 running processes
+1771923276.175972: 1363039-7f8c0db45700: cdpl_server_sched.c:121: in _free_worker_2(): debug: freeing worker W2
+1771923276.175976: 1363039-7f8c0db45700: cdpl_ipc.c:2467: in cdpl_ipc_host_release(): debug: releasing host `10.120.10.44:60066'
+1771923276.175979: 1363039-7f8c0db45700: cdpl_server_sched.c:121: in _free_worker_2(): debug: freeing worker W1
+1771923276.175981: 1363039-7f8c0db45700: cdpl_ipc.c:2467: in cdpl_ipc_host_release(): debug: releasing host `10.120.10.44:60076'
+1771923276.176016: 1363039-7f8c11c4a800: cdpl_server.c:282: in _sv_free_job(): info: freeing job J1
+1771923276.176022: 1363039-7f8c11c4a800: cdpl_server.c:89: in _sv_free_bin(): debug: freeing bin B1
+1771923276.176037: 1363039-7f8c11c4a800: cdpl_farm.c:2656: in cdpl_farm_free(): info: freeing farm
+1771923276.176087: 1363039-7f8c0e346700: cdpl_farm.c:2162: in _schedule(): debug: waking up
+1771923276.176095: 1363039-7f8c0e346700: cdpl_farm.c:2169: in _schedule(): debug: dying
+1771923276.176234: 1363039-7f8c11c4a800: cdpl_farm.c:903: in _killall(): debug: killing all remaining commands
+1771923276.176247: 1363039-7f8c11c4a800: cdpl_server.c:3052: in cdpl_sv_free(): info: freeing server S1185933836
+1771923276.176252: 1363039-7f8c11c4a800: cdpl_server.c:3017: in cdpl_sv_kill_errno(): info: killing server
+1771923276.176256: 1363039-7f8c11c4a800: cdpl_ipc.c:3534: in cdpl_ipc_kill(): debug: stopping event server
+1771923276.176369: 1363039-7f8c0f348700: cdpl_server_ipc.c:1100: in _sv_ipc_thread(): debug: leaving now
+1771923276.176403: 1363039-7f8c0eb47700: cdpl_ipc.c:2414: in _epoll_main(): debug: server going down...
+1771923276.176433: 1363039-7f8c11c4a800: cdpl_server.c:322: in _sv_free_master(): info: freeing master M1
+1771923276.176441: 1363039-7f8c11c4a800: cdpl_hash.c:68: in cdpl_h_destroy(): debug: put operations: 2
+1771923276.176445: 1363039-7f8c11c4a800: cdpl_hash.c:69: in cdpl_h_destroy(): debug: put collisions: 0
+1771923276.176448: 1363039-7f8c11c4a800: cdpl_hash.c:70: in cdpl_h_destroy(): debug: get operations: 0
+1771923276.176451: 1363039-7f8c11c4a800: cdpl_hash.c:71: in cdpl_h_destroy(): debug: get iterations: 0
+1771923276.176457: 1363039-7f8c11c4a800: cdpl_monitor.c:1390: in cdpl_mn_free(): debug: freeing monitor server
+1771923276.176461: 1363039-7f8c11c4a800: cdpl_ipc.c:3585: in cdpl_ipc_free(): debug: releasing IPC handle
+1771923276.176464: 1363039-7f8c11c4a800: cdpl_ipc.c:3599: in cdpl_ipc_free(): debug: 2 unread messages
+1771923276.176470: 1363039-7f8c11c4a800: cdpl_ipc.c:1536: in _host_free__UNSAFE(): debug: freeing host `10.120.10.44:60076'
+1771923276.176477: 1363039-7f8c11c4a800: cdpl_ipc.c:1575: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1771923276.176480: 1363039-7f8c11c4a800: cdpl_ipc.c:1536: in _host_free__UNSAFE(): debug: freeing host `10.120.10.44:60066'
+1771923276.176483: 1363039-7f8c11c4a800: cdpl_ipc.c:1575: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1771923276.176499: 1363039-7f8c11c4a800: cdpl_ipc.c:3624: in cdpl_ipc_free(): debug: done
+1771923276.176502: 1363039-7f8c11c4a800: cdpl_log.c:395: in cdpl_log_close(): info: @@end_of_log@@
+1771923276.486776: 1363039-7f8c11c4a800: cdpl_log.c:252: in cdpl_log_open(): info: @@start_of_log@@
+1771923276.486791: 1363039-7f8c11c4a800: cdpl_log.c:893: in cdpl_log_dump_sysinfo(): info: time: 2026/02/24 02:54:36 CST -0600
+1771923276.486795: 1363039-7f8c11c4a800: cdpl_log.c:895: in cdpl_log_dump_sysinfo(): info: version: V-2023.09-SP2 
+1771923276.486799: 1363039-7f8c11c4a800: cdpl_log.c:897: in cdpl_log_dump_sysinfo(): info: system: Linux 4.18.0-553.el8_10.x86_64 #1 SMP Fri May 10 15:19:13 EDT 2024
+1771923276.486802: 1363039-7f8c11c4a800: cdpl_log.c:902: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1771923276.486804: 1363039-7f8c11c4a800: cdpl_log.c:906: in cdpl_log_dump_sysinfo(): info: hostname: vscode-login4.nahpc2.arm.com
+1771923276.486807: 1363039-7f8c11c4a800: cdpl_log.c:254: in cdpl_log_open(): debug: path: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/master.vscode-login4.nahpc2.arm.com.1363039.log
+1771923276.486810: 1363039-7f8c11c4a800: cdpl_log.c:255: in cdpl_log_open(): debug: dir: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl
+1771923276.486817: 1363039-7f8c11c4a800: cdpl_server.c:524: in cdpl_sv_init(): info: new server S925332472
+1771923276.486821: 1363039-7f8c11c4a800: cdpl_ipc.c:3332: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1771923276.487104: 1363039-7f8c11c4a800: cdpl_ipc.c:831: in _selectaddrfamily(): info: selected IPv4 protocol
+1771923276.487162: 1363039-7f8c11c4a800: cdpl_monitor.c:1117: in cdpl_mn_new_server(): info: creating server monitor instance
+1771923276.487169: 1363039-7f8c11c4a800: cdpl_server.c:638: in cdpl_sv_new_master(): info: new master M1
+1771923276.487177: 1363039-7f8c11c4a800: cdpl_server.c:5593: in cdpl_sv_ctl_master(): info: farm submit command timeout set to 120
+1771923276.487180: 1363039-7f8c11c4a800: cdpl_server.c:5656: in cdpl_sv_ctl_master(): info: Setting worker heartbeat to 300 seconds
+1771923276.487182: 1363039-7f8c11c4a800: cdpl_server.c:5665: in cdpl_sv_ctl_master(): info: Setting worker heartbeat timeout to 2 heartbeats
+1771923276.487188: 1363039-7f8c11c4a800: cdpl_compat_master.c:2573: in cdplInitMaster(): info: bcast dir is `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl'
+1771923276.487727: 1363039-7f8c11c4a800: cdpl_server.c:5556: in cdpl_sv_ctl_master(): info: farm worker timeout set to 300
+1771923276.487753: 1363039-7f8c11c4a800: cdpl_server.c:5593: in cdpl_sv_ctl_master(): info: farm submit command timeout set to 120
+1771923276.487757: 1363039-7f8c11c4a800: cdpl_server.c:5609: in cdpl_sv_ctl_master(): info: maximum number of task execution attempts set to 1
+1771923276.487796: 1363039-7f8c11c4a800: cdpl_farm.c:2512: in cdpl_farm_new_sh(): info: creating SH farm on localhost
+1771923276.487804: 1363039-7f8c11c4a800: cdpl_compat_master.c:207: in _set_farm_env(): info: exporting CDPL_LOGDIR as `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl'
+1771923276.487809: 1363039-7f8c11c4a800: cdpl_compat_master.c:234: in _set_farm_env(): info: exporting SNPSLMD_LICENSE_FILE as `12700@nahpc-lic01.nahpc.arm.com:12700@nahpc-lic05.nahpc.arm.com:12700@nahpc-lic13.nahpc.arm.com:12700@nahpc-lic17.nahpc.arm.com:12700@nahpc-lic09.nahpc.arm.com:12700@euhpc-lic09.euhpc.arm.com:12700@euhpc-lic10.euhpc.arm.
+1771923276.487813: 1363039-7f8c11c4a800: cdpl_compat_master.c:269: in _set_farm_env(): info: exporting CDPL_HEARTBEAT as `300'
+1771923276.487819: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting VERDI_HOME as `/arm/tools/synopsys/verdi3/2025.06-1'
+1771923276.487823: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting PATH as `/arm/tools/synopsys/verdi3/2025.06-1/bin:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:/arm/tools/arm/cluster/2.0/prod/bin:/bin:/usr/bin:/usr/X11R6/bin:/arm/t
+1771923276.487826: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting LD_LIBRARY_PATH as `/arm/tools/synopsys/verdi3/2025.06-1/share/NPI/lib/linux64/:/arm/tools/synopsys/vcs/2025.06-1/bin/fusa_cdpl_sdk/latest/lib/linux64/:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:/arm/tools/synopsys/verdi3/2025
+1771923276.488292: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_INTERNAL_INTERMEDIATE_RESULTS_ACTIVE as `1'
+1771923276.488294: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting VCS_HOME as `/arm/tools/synopsys/vcs/2025.06-1'
+1771923276.488297: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_WORKER_LOG_DIR as `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker'
+1771923276.488299: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_START_DIR as `/home/dhanas01/test_fifo_demo'
+1771923276.488301: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting FSDB_DELTA as `0'
+1771923276.488304: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_WORKER_TIMEOUT as `21600'
+1771923276.488306: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting FSDB_PLI_EXIT_LOAD_FAIL as `1'
+1771923276.488311: 1363039-7f8c11c4a800: cdpl_farm.c:2930: in cdpl_farm_add_withcap(): debug: added `localhost' (capacity: 2)
+1771923276.488319: 1363039-7f8c11c4a800: cdpl_server.c:3103: in cdpl_sv_start(): debug: starting server
+1771923276.488322: 1363039-7f8c11c4a800: cdpl_ipc.c:3489: in cdpl_ipc_start(): debug: starting IPC server 10.120.10.44:35337
+1771923276.488479: 1363039-7f8c0db45700: cdpl_server_ipc.c:1082: in _sv_ipc_thread(): debug: ready
+1771923276.488503: 1363039-7f8c11c4a800: cdpl_server.c:719: in cdpl_sv_new_job(): info: new job J1 in M1
+1771923276.488522: 1363039-7f8c11c4a800: cdpl_compat_master.c:1368: in _add_worker(): info: new worker type 10, min:1, max:2, cmd:`/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker'
+1771923276.488526: 1363039-7f8c11c4a800: cdpl_server.c:881: in cdpl_sv_new_bin_withfarm(): info: new bin B1 in J1
+1771923276.489041: 1363039-7f8c11c4a800: cdpl_server.c:1811: in _sv_gen_task(): info: new task T0 in B1 (prio 0)
+1771923276.489404: 1363039-7f8c11c4a800: cdpl_server.c:1811: in _sv_gen_task(): info: new task T1 in B1 (prio 0)
+1771923276.489484: 1363039-7f8c11c4a800: cdpl_compat_master.c:3659: in cdplScheduleTasks(): debug: scheduling tasks
+1771923276.489487: 1363039-7f8c11c4a800: cdpl_server.c:1215: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1771923276.489493: 1363039-7f8c11c4a800: cdpl_server.c:3157: in cdpl_sv_start_job(): info: starting job J1
+1771923276.489499: 1363039-7f8c11c4a800: cdpl_server.c:59: in _sv_start_bin(): debug: starting bin B1 (min: 0, max: 2)
+1771923276.489583: 1363039-7f8bfc9fb700: cdpl_server_sched.c:2454: in _sv_scheduler_thread(): debug: scheduler for bin B1 started
+1771923276.490086: 1363039-7f8bfc9fb700: cdpl_server_sched.c:2415: in _scheduler_run(): debug: will start a new worker
+1771923276.490120: 1363039-7f8bfc9fb700: cdpl_farm.c:3883: in cdpl_farm_submit(): debug: 1 running processes
+1771923276.490125: 1363039-7f8bfc9fb700: cdpl_farm.c:3891: in cdpl_farm_submit(): debug: new command C1 in bin B1 assigned to host `localhost'
+1771923276.490187: 1363039-7f8bfc9fb700: cdpl_server_sched.c:711: in _sv_launch_worker(): info: started worker W1 (as C1) in bin B1
+1771923276.490191: 1363039-7f8bfc9fb700: cdpl_server_sched.c:2415: in _scheduler_run(): debug: will start a new worker
+1771923276.490194: 1363039-7f8bf0b8e700: cdpl_farm.c:2098: in _schedule(): debug: started
+1771923276.490212: 1363039-7f8bf0b8e700: cdpl_farm.c:2103: in _schedule(): info: worker submit command timeout set to 120 seconds
+1771923276.490217: 1363039-7f8bfc9fb700: cdpl_farm.c:3883: in cdpl_farm_submit(): debug: 2 running processes
+1771923276.490223: 1363039-7f8bfc9fb700: cdpl_farm.c:1972: in _pickahost(): debug: `localhost' now reaches maximum capacity
+1771923276.490233: 1363039-7f8bfc9fb700: cdpl_farm.c:3891: in cdpl_farm_submit(): debug: new command C2 in bin B1 assigned to host `localhost'
+1771923276.490246: 1363039-7f8bfc9fb700: cdpl_server_sched.c:711: in _sv_launch_worker(): info: started worker W2 (as C2) in bin B1
+1771923276.490252: 1363039-7f8bf0b8e700: cdpl_farm.c:2237: in _schedule(): debug: submitting command C1 in bin B1
+1771923276.490265: 1363039-7f8bf0b8e700: cdpl_sh.c:49: in _sh_detached_submit(): info: SH : /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+1771923276.491669: 1363039-7f8bf0b8e700: cdpl_farm.c:2277: in _schedule(): debug: C1 in bin B1 running on slot 0
+1771923276.492117: 1363039-7f8bf0b8e700: cdpl_farm.c:2237: in _schedule(): debug: submitting command C2 in bin B1
+1771923276.492192: 1363039-7f8bf0b8e700: cdpl_sh.c:49: in _sh_detached_submit(): info: SH : /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+1771923276.493491: 1363039-7f8bf0b8e700: cdpl_farm.c:2277: in _schedule(): debug: C2 in bin B1 running on slot 1
+1771923276.493728: 1363039-7f8bf0b8e700: cdpl_farm.c:2118: in _schedule(): debug: idle
+1771923276.587461: 1363039-7f8c0e346700: cdpl_ipc.c:1816: in _epoll_accept(): debug: new connection from `10.120.10.44:56178'
+1771923276.587517: 1363039-7f8c0db45700: cdpl_server_ipc.c:1125: in _sv_ipc_thread(): debug: received ACCEPT notification
+1771923276.587539: 1363039-7f8c0db45700: cdpl_ipc.c:2457: in cdpl_ipc_host_accept(): debug: accepted host `10.120.10.44:56178'
+1771923276.587763: 1363039-7f8c0db45700: cdpl_server_ipc.c:1146: in _sv_ipc_thread(): debug: received HELLO message
+1771923276.587768: 1363039-7f8c0db45700: cdpl_server_ipc.c:367: in _sv_on_hello(): debug: looking up W1
+1771923276.587780: 1363039-7f8c0db45700: cdpl_server_ipc.c:477: in _sv_on_hello(): info: W1 is `10.120.10.44:56178'
+1771923276.587783: 1363039-7f8c0db45700: cdpl_server_ipc.c:478: in _sv_on_hello(): debug: hello W1 (B1)
+1771923276.587785: 1363039-7f8c0db45700: cdpl_server_ipc.c:479: in _sv_on_hello(): info: W1 log file is /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/worker.W1.vscode-login4.nahpc2.arm.com.1365630.log
+1771923276.587802: 1363039-7f8c0db45700: cdpl_server_ipc.c:506: in _sv_on_hello(): info: up to 1 alive workers in B1
+1771923276.587832: 1363039-7f8bfc9fb700: cdpl_server_sched.c:966: in _assign(): info: assigning task T0 to worker W1
+1771923276.588281: 1363039-7f8c0e346700: cdpl_ipc.c:1816: in _epoll_accept(): debug: new connection from `10.120.10.44:56194'
+1771923276.588348: 1363039-7f8c0db45700: cdpl_server_ipc.c:1125: in _sv_ipc_thread(): debug: received ACCEPT notification
+1771923276.588376: 1363039-7f8c0db45700: cdpl_ipc.c:2457: in cdpl_ipc_host_accept(): debug: accepted host `10.120.10.44:56194'
+1771923276.588379: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923276.588383: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 74
+1771923276.588386: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = STARTWORKER;0;1365630;vscode-login4.nahpc2.arm.com;1771923276;1771923276;
+1771923276.588626: 1363039-7f8c0db45700: cdpl_server_ipc.c:1146: in _sv_ipc_thread(): debug: received HELLO message
+1771923276.588635: 1363039-7f8c0db45700: cdpl_server_ipc.c:367: in _sv_on_hello(): debug: looking up W2
+1771923276.588638: 1363039-7f8c0db45700: cdpl_server_ipc.c:477: in _sv_on_hello(): info: W2 is `10.120.10.44:56194'
+1771923276.588641: 1363039-7f8c0db45700: cdpl_server_ipc.c:478: in _sv_on_hello(): debug: hello W2 (B1)
+1771923276.588643: 1363039-7f8c0db45700: cdpl_server_ipc.c:479: in _sv_on_hello(): info: W2 log file is /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/worker.W2.vscode-login4.nahpc2.arm.com.1365632.log
+1771923276.588652: 1363039-7f8c0db45700: cdpl_server_ipc.c:506: in _sv_on_hello(): info: up to 2 alive workers in B1
+1771923276.588669: 1363039-7f8bfc9fb700: cdpl_server_sched.c:966: in _assign(): info: assigning task T1 to worker W2
+1771923276.588688: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923276.588692: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W2, size = 74
+1771923276.588695: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W2, content = STARTWORKER;0;1365632;vscode-login4.nahpc2.arm.com;1771923276;1771923276;
+1771923276.592379: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923276.592395: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W2, size = 72
+1771923276.592400: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W2, content = STARTTASK;6;1365632;vscode-login4.nahpc2.arm.com;1771923276;1771923276;
+1771923276.592970: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923276.592983: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 72
+1771923276.593000: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = STARTTASK;5;1365630;vscode-login4.nahpc2.arm.com;1771923276;1771923276;
+1771923276.793818: 1363039-7f8bf0b8e700: cdpl_farm.c:2162: in _schedule(): debug: waking up
+1771923276.793880: 1363039-7f8bf0b8e700: cdpl_farm.c:1175: in _onexit(): debug: C1 in bin B1 exited normally on slot 0
+1771923276.793887: 1363039-7f8bf0b8e700: cdpl_farm.c:873: in _release_cmd(): debug: freeing command C1 in bin B1
+1771923276.793897: 1363039-7f8bf0b8e700: cdpl_farm.c:1175: in _onexit(): debug: C2 in bin B1 exited normally on slot 1
+1771923276.793901: 1363039-7f8bf0b8e700: cdpl_farm.c:873: in _release_cmd(): debug: freeing command C2 in bin B1
+1771923276.793905: 1363039-7f8bf0b8e700: cdpl_farm.c:2118: in _schedule(): debug: idle
+1771923277.588166: 1363039-7f8c0db45700: cdpl_server_ipc.c:280: in _sv_on_heartbeat(): debug: received HEARTBEAT from worker W1 at 10.120.10.44:56178
+1771923277.588633: 1363039-7f8c0db45700: cdpl_server_ipc.c:280: in _sv_on_heartbeat(): debug: received HEARTBEAT from worker W2 at 10.120.10.44:56194
+1771923277.596141: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923277.596162: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 7
+1771923277.596166: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = INFO;5
+1771923277.596803: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923277.596821: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W2, size = 7
+1771923277.596826: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W2, content = INFO;6
+1771923277.597425: 1363039-7f8c0db45700: cdpl_server_ipc.c:1151: in _sv_ipc_thread(): debug: received FINISH message
+1771923277.597433: 1363039-7f8c0db45700: cdpl_server_ipc.c:883: in _sv_on_finish(): info: worker W2 completed task T1
+1771923277.597436: 1363039-7f8c0db45700: cdpl_server_ipc.c:888: in _sv_on_finish(): debug: stat T1: utime=187 stime=139
+1771923277.597442: 1363039-7f8c0db45700: cdpl_server_ipc.c:893: in _sv_on_finish(): debug: statm T1: vsize=272776 rss=7340 shared=6640 text=6916 data=50456
+1771923277.598104: 1363039-7f8c0db45700: cdpl_server_ipc.c:1151: in _sv_ipc_thread(): debug: received FINISH message
+1771923277.598119: 1363039-7f8c0db45700: cdpl_server_ipc.c:883: in _sv_on_finish(): info: worker W1 completed task T0
+1771923277.598124: 1363039-7f8c0db45700: cdpl_server_ipc.c:888: in _sv_on_finish(): debug: stat T0: utime=199 stime=119
+1771923277.598127: 1363039-7f8c0db45700: cdpl_server_ipc.c:893: in _sv_on_finish(): debug: statm T0: vsize=272776 rss=7480 shared=6776 text=6916 data=50456
+1771923278.493062: 1363039-7f8c11c4a800: cdpl_server.c:217: in _sv_free_task_safe(): debug: freeing task T0
+1771923278.495727: 1363039-7f8c11c4a800: cdpl_server.c:217: in _sv_free_task_safe(): debug: freeing task T1
+1771923278.496918: 1363039-7f8c11c4a800: cdpl_server.c:2931: in cdpl_sv_halt_job_errno(): info: stopping job J1
+1771923278.496927: 1363039-7f8c11c4a800: cdpl_server.c:2952: in cdpl_sv_halt_job_errno(): debug: signal bin B1 scheduler to stop
+1771923278.496958: 1363039-7f8bfc9fb700: cdpl_server_sched.c:2456: in _sv_scheduler_thread(): debug: scheduler for bin B1 stopped
+1771923278.496985: 1363039-7f8bfc9fb700: cdpl_ipc.c:1611: in _host_drop__UNSAFE(): debug: dropping host `10.120.10.44:56194'
+1771923278.497067: 1363039-7f8bfc9fb700: cdpl_server_sched.c:2802: in _sv_drop_worker(): info: down to 1 alive workers in B1
+1771923278.497073: 1363039-7f8bfc9fb700: cdpl_farm.c:4058: in cdpl_farm_dismiss(): debug: down to 1 running processes
+1771923278.497078: 1363039-7f8bfc9fb700: cdpl_farm.c:2024: in _unpickhost(): debug: `localhost' is once again available
+1771923278.497083: 1363039-7f8bfc9fb700: cdpl_ipc.c:1611: in _host_drop__UNSAFE(): debug: dropping host `10.120.10.44:56178'
+1771923278.497122: 1363039-7f8bfc9fb700: cdpl_server_sched.c:2802: in _sv_drop_worker(): info: down to 0 alive workers in B1
+1771923278.497127: 1363039-7f8bfc9fb700: cdpl_farm.c:4058: in cdpl_farm_dismiss(): debug: down to 0 running processes
+1771923278.497134: 1363039-7f8bfc9fb700: cdpl_server_sched.c:121: in _free_worker_2(): debug: freeing worker W2
+1771923278.497149: 1363039-7f8bfc9fb700: cdpl_ipc.c:2467: in cdpl_ipc_host_release(): debug: releasing host `10.120.10.44:56194'
+1771923278.497158: 1363039-7f8bfc9fb700: cdpl_server_sched.c:121: in _free_worker_2(): debug: freeing worker W1
+1771923278.497162: 1363039-7f8bfc9fb700: cdpl_ipc.c:2467: in cdpl_ipc_host_release(): debug: releasing host `10.120.10.44:56178'
+1771923278.497432: 1363039-7f8c11c4a800: cdpl_server.c:282: in _sv_free_job(): info: freeing job J1
+1771923278.497443: 1363039-7f8c11c4a800: cdpl_server.c:89: in _sv_free_bin(): debug: freeing bin B1
+1771923278.497456: 1363039-7f8c11c4a800: cdpl_farm.c:2656: in cdpl_farm_free(): info: freeing farm
+1771923278.497479: 1363039-7f8bf0b8e700: cdpl_farm.c:2162: in _schedule(): debug: waking up
+1771923278.497493: 1363039-7f8bf0b8e700: cdpl_farm.c:2169: in _schedule(): debug: dying
+1771923278.497574: 1363039-7f8c11c4a800: cdpl_farm.c:903: in _killall(): debug: killing all remaining commands
+1771923278.497583: 1363039-7f8c11c4a800: cdpl_server.c:3052: in cdpl_sv_free(): info: freeing server S925332472
+1771923278.497589: 1363039-7f8c11c4a800: cdpl_server.c:3017: in cdpl_sv_kill_errno(): info: killing server
+1771923278.497592: 1363039-7f8c11c4a800: cdpl_ipc.c:3534: in cdpl_ipc_kill(): debug: stopping event server
+1771923278.497617: 1363039-7f8c0e346700: cdpl_ipc.c:2414: in _epoll_main(): debug: server going down...
+1771923278.497656: 1363039-7f8c0db45700: cdpl_server_ipc.c:1136: in _sv_ipc_thread(): debug: received DROP notification
+1771923278.497671: 1363039-7f8c0db45700: cdpl_server_ipc.c:1100: in _sv_ipc_thread(): debug: leaving now
+1771923278.497701: 1363039-7f8c11c4a800: cdpl_server.c:322: in _sv_free_master(): info: freeing master M1
+1771923278.497708: 1363039-7f8c11c4a800: cdpl_hash.c:68: in cdpl_h_destroy(): debug: put operations: 2
+1771923278.497719: 1363039-7f8c11c4a800: cdpl_hash.c:69: in cdpl_h_destroy(): debug: put collisions: 0
+1771923278.497724: 1363039-7f8c11c4a800: cdpl_hash.c:70: in cdpl_h_destroy(): debug: get operations: 183
+1771923278.497727: 1363039-7f8c11c4a800: cdpl_hash.c:71: in cdpl_h_destroy(): debug: get iterations: 183
+1771923278.497733: 1363039-7f8c11c4a800: cdpl_monitor.c:1390: in cdpl_mn_free(): debug: freeing monitor server
+1771923278.497736: 1363039-7f8c11c4a800: cdpl_ipc.c:3585: in cdpl_ipc_free(): debug: releasing IPC handle
+1771923278.497740: 1363039-7f8c11c4a800: cdpl_ipc.c:3599: in cdpl_ipc_free(): debug: 1 unread messages
+1771923278.497743: 1363039-7f8c11c4a800: cdpl_ipc.c:1536: in _host_free__UNSAFE(): debug: freeing host `10.120.10.44:56194'
+1771923278.497747: 1363039-7f8c11c4a800: cdpl_ipc.c:1575: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1771923278.497750: 1363039-7f8c11c4a800: cdpl_ipc.c:1536: in _host_free__UNSAFE(): debug: freeing host `10.120.10.44:56178'
+1771923278.497754: 1363039-7f8c11c4a800: cdpl_ipc.c:1575: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1771923278.497774: 1363039-7f8c11c4a800: cdpl_ipc.c:3624: in cdpl_ipc_free(): debug: done
+1771923278.497778: 1363039-7f8c11c4a800: cdpl_log.c:395: in cdpl_log_close(): info: @@end_of_log@@
+1771923278.684412: 1363039-7f8c11c4a800: cdpl_log.c:252: in cdpl_log_open(): info: @@start_of_log@@
+1771923278.684431: 1363039-7f8c11c4a800: cdpl_log.c:893: in cdpl_log_dump_sysinfo(): info: time: 2026/02/24 02:54:38 CST -0600
+1771923278.684435: 1363039-7f8c11c4a800: cdpl_log.c:895: in cdpl_log_dump_sysinfo(): info: version: V-2023.09-SP2 
+1771923278.684437: 1363039-7f8c11c4a800: cdpl_log.c:897: in cdpl_log_dump_sysinfo(): info: system: Linux 4.18.0-553.el8_10.x86_64 #1 SMP Fri May 10 15:19:13 EDT 2024
+1771923278.684440: 1363039-7f8c11c4a800: cdpl_log.c:902: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1771923278.684442: 1363039-7f8c11c4a800: cdpl_log.c:906: in cdpl_log_dump_sysinfo(): info: hostname: vscode-login4.nahpc2.arm.com
+1771923278.684445: 1363039-7f8c11c4a800: cdpl_log.c:254: in cdpl_log_open(): debug: path: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/master.vscode-login4.nahpc2.arm.com.1363039.log
+1771923278.684447: 1363039-7f8c11c4a800: cdpl_log.c:255: in cdpl_log_open(): debug: dir: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl
+1771923278.684455: 1363039-7f8c11c4a800: cdpl_server.c:524: in cdpl_sv_init(): info: new server S286852853
+1771923278.684460: 1363039-7f8c11c4a800: cdpl_ipc.c:3332: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1771923278.684779: 1363039-7f8c11c4a800: cdpl_ipc.c:831: in _selectaddrfamily(): info: selected IPv4 protocol
+1771923278.684838: 1363039-7f8c11c4a800: cdpl_monitor.c:1117: in cdpl_mn_new_server(): info: creating server monitor instance
+1771923278.684845: 1363039-7f8c11c4a800: cdpl_server.c:638: in cdpl_sv_new_master(): info: new master M1
+1771923278.684853: 1363039-7f8c11c4a800: cdpl_server.c:5593: in cdpl_sv_ctl_master(): info: farm submit command timeout set to 120
+1771923278.684856: 1363039-7f8c11c4a800: cdpl_server.c:5656: in cdpl_sv_ctl_master(): info: Setting worker heartbeat to 300 seconds
+1771923278.684858: 1363039-7f8c11c4a800: cdpl_server.c:5665: in cdpl_sv_ctl_master(): info: Setting worker heartbeat timeout to 2 heartbeats
+1771923278.684865: 1363039-7f8c11c4a800: cdpl_compat_master.c:2573: in cdplInitMaster(): info: bcast dir is `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl'
+1771923278.685820: 1363039-7f8c11c4a800: cdpl_server.c:5556: in cdpl_sv_ctl_master(): info: farm worker timeout set to 300
+1771923278.685826: 1363039-7f8c11c4a800: cdpl_server.c:5593: in cdpl_sv_ctl_master(): info: farm submit command timeout set to 120
+1771923278.685828: 1363039-7f8c11c4a800: cdpl_server.c:5609: in cdpl_sv_ctl_master(): info: maximum number of task execution attempts set to 1
+1771923278.685879: 1363039-7f8c11c4a800: cdpl_farm.c:2512: in cdpl_farm_new_sh(): info: creating SH farm on localhost
+1771923278.685894: 1363039-7f8c11c4a800: cdpl_compat_master.c:207: in _set_farm_env(): info: exporting CDPL_LOGDIR as `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl'
+1771923278.685899: 1363039-7f8c11c4a800: cdpl_compat_master.c:234: in _set_farm_env(): info: exporting SNPSLMD_LICENSE_FILE as `12700@nahpc-lic01.nahpc.arm.com:12700@nahpc-lic05.nahpc.arm.com:12700@nahpc-lic13.nahpc.arm.com:12700@nahpc-lic17.nahpc.arm.com:12700@nahpc-lic09.nahpc.arm.com:12700@euhpc-lic09.euhpc.arm.com:12700@euhpc-lic10.euhpc.arm.
+1771923278.685903: 1363039-7f8c11c4a800: cdpl_compat_master.c:269: in _set_farm_env(): info: exporting CDPL_HEARTBEAT as `300'
+1771923278.685908: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting VERDI_HOME as `/arm/tools/synopsys/verdi3/2025.06-1'
+1771923278.685912: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting PATH as `/arm/tools/synopsys/verdi3/2025.06-1/bin:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:/arm/tools/arm/cluster/2.0/prod/bin:/bin:/usr/bin:/usr/X11R6/bin:/arm/t
+1771923278.685915: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting LD_LIBRARY_PATH as `/arm/tools/synopsys/verdi3/2025.06-1/share/NPI/lib/linux64/:/arm/tools/synopsys/vcs/2025.06-1/bin/fusa_cdpl_sdk/latest/lib/linux64/:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:/arm/tools/synopsys/verdi3/2025
+1771923278.685923: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_INTERNAL_INTERMEDIATE_RESULTS_ACTIVE as `1'
+1771923278.685926: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting VCS_HOME as `/arm/tools/synopsys/vcs/2025.06-1'
+1771923278.685930: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_WORKER_LOG_DIR as `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker'
+1771923278.685934: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_START_DIR as `/home/dhanas01/test_fifo_demo'
+1771923278.685937: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting FSDB_DELTA as `0'
+1771923278.685939: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_WORKER_TIMEOUT as `21600'
+1771923278.685941: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting FSDB_PLI_EXIT_LOAD_FAIL as `1'
+1771923278.685947: 1363039-7f8c11c4a800: cdpl_farm.c:2930: in cdpl_farm_add_withcap(): debug: added `localhost' (capacity: 1)
+1771923278.685956: 1363039-7f8c11c4a800: cdpl_server.c:3103: in cdpl_sv_start(): debug: starting server
+1771923278.685961: 1363039-7f8c11c4a800: cdpl_ipc.c:3489: in cdpl_ipc_start(): debug: starting IPC server 10.120.10.44:40869
+1771923278.686106: 1363039-7f8c0e346700: cdpl_server_ipc.c:1082: in _sv_ipc_thread(): debug: ready
+1771923278.686462: 1363039-7f8c11c4a800: cdpl_server.c:719: in cdpl_sv_new_job(): info: new job J1 in M1
+1771923278.686826: 1363039-7f8c11c4a800: cdpl_compat_master.c:1368: in _add_worker(): info: new worker type 10, min:1, max:1, cmd:`/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker'
+1771923278.686833: 1363039-7f8c11c4a800: cdpl_server.c:881: in cdpl_sv_new_bin_withfarm(): info: new bin B1 in J1
+1771923278.686962: 1363039-7f8c11c4a800: cdpl_server.c:1811: in _sv_gen_task(): info: new task T0 in B1 (prio 0)
+1771923278.686973: 1363039-7f8c11c4a800: cdpl_compat_master.c:3659: in cdplScheduleTasks(): debug: scheduling tasks
+1771923278.686978: 1363039-7f8c11c4a800: cdpl_server.c:1215: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1771923278.686984: 1363039-7f8c11c4a800: cdpl_server.c:3157: in cdpl_sv_start_job(): info: starting job J1
+1771923278.686995: 1363039-7f8c11c4a800: cdpl_server.c:59: in _sv_start_bin(): debug: starting bin B1 (min: 0, max: 1)
+1771923278.687052: 1363039-7f8bf0b8e700: cdpl_server_sched.c:2454: in _sv_scheduler_thread(): debug: scheduler for bin B1 started
+1771923278.687066: 1363039-7f8bf0b8e700: cdpl_server_sched.c:2415: in _scheduler_run(): debug: will start a new worker
+1771923278.687090: 1363039-7f8bf0b8e700: cdpl_farm.c:3883: in cdpl_farm_submit(): debug: 1 running processes
+1771923278.687094: 1363039-7f8bf0b8e700: cdpl_farm.c:1972: in _pickahost(): debug: `localhost' now reaches maximum capacity
+1771923278.687098: 1363039-7f8bf0b8e700: cdpl_farm.c:3891: in cdpl_farm_submit(): debug: new command C1 in bin B1 assigned to host `localhost'
+1771923278.687133: 1363039-7f8bf0b8e700: cdpl_server_sched.c:711: in _sv_launch_worker(): info: started worker W1 (as C1) in bin B1
+1771923278.687141: 1363039-7f8bfc9fb700: cdpl_farm.c:2098: in _schedule(): debug: started
+1771923278.687148: 1363039-7f8bfc9fb700: cdpl_farm.c:2103: in _schedule(): info: worker submit command timeout set to 120 seconds
+1771923278.687152: 1363039-7f8bfc9fb700: cdpl_farm.c:2237: in _schedule(): debug: submitting command C1 in bin B1
+1771923278.687160: 1363039-7f8bfc9fb700: cdpl_sh.c:49: in _sh_detached_submit(): info: SH : /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+1771923278.688655: 1363039-7f8bfc9fb700: cdpl_farm.c:2277: in _schedule(): debug: C1 in bin B1 running on slot 0
+1771923278.689676: 1363039-7f8bfc9fb700: cdpl_farm.c:2118: in _schedule(): debug: idle
+1771923278.785043: 1363039-7f8c0db45700: cdpl_ipc.c:1816: in _epoll_accept(): debug: new connection from `10.120.10.44:54104'
+1771923278.785098: 1363039-7f8c0e346700: cdpl_server_ipc.c:1125: in _sv_ipc_thread(): debug: received ACCEPT notification
+1771923278.785116: 1363039-7f8c0e346700: cdpl_ipc.c:2457: in cdpl_ipc_host_accept(): debug: accepted host `10.120.10.44:54104'
+1771923278.785852: 1363039-7f8c0e346700: cdpl_server_ipc.c:1146: in _sv_ipc_thread(): debug: received HELLO message
+1771923278.785860: 1363039-7f8c0e346700: cdpl_server_ipc.c:367: in _sv_on_hello(): debug: looking up W1
+1771923278.785872: 1363039-7f8c0e346700: cdpl_server_ipc.c:477: in _sv_on_hello(): info: W1 is `10.120.10.44:54104'
+1771923278.785875: 1363039-7f8c0e346700: cdpl_server_ipc.c:478: in _sv_on_hello(): debug: hello W1 (B1)
+1771923278.785877: 1363039-7f8c0e346700: cdpl_server_ipc.c:479: in _sv_on_hello(): info: W1 log file is /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/worker.W1.vscode-login4.nahpc2.arm.com.1365814.log
+1771923278.785898: 1363039-7f8c0e346700: cdpl_server_ipc.c:506: in _sv_on_hello(): info: up to 1 alive workers in B1
+1771923278.785937: 1363039-7f8bf0b8e700: cdpl_server_sched.c:966: in _assign(): info: assigning task T0 to worker W1
+1771923278.788058: 1363039-7f8c0e346700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923278.788073: 1363039-7f8c0e346700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 74
+1771923278.788078: 1363039-7f8c0e346700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = STARTWORKER;0;1365814;vscode-login4.nahpc2.arm.com;1771923278;1771923278;
+1771923278.790348: 1363039-7f8c0e346700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923278.790362: 1363039-7f8c0e346700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 72
+1771923278.790369: 1363039-7f8c0e346700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = STARTTASK;7;1365814;vscode-login4.nahpc2.arm.com;1771923278;1771923278;
+1771923278.989766: 1363039-7f8bfc9fb700: cdpl_farm.c:2162: in _schedule(): debug: waking up
+1771923278.989816: 1363039-7f8bfc9fb700: cdpl_farm.c:1175: in _onexit(): debug: C1 in bin B1 exited normally on slot 0
+1771923278.989822: 1363039-7f8bfc9fb700: cdpl_farm.c:873: in _release_cmd(): debug: freeing command C1 in bin B1
+1771923278.989831: 1363039-7f8bfc9fb700: cdpl_farm.c:2118: in _schedule(): debug: idle
+1771923279.787565: 1363039-7f8c0e346700: cdpl_server_ipc.c:280: in _sv_on_heartbeat(): debug: received HEARTBEAT from worker W1 at 10.120.10.44:54104
+1771923279.791727: 1363039-7f8c0e346700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923279.791744: 1363039-7f8c0e346700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 7
+1771923279.791749: 1363039-7f8c0e346700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = INFO;7
+1771923279.791964: 1363039-7f8c0e346700: cdpl_server_ipc.c:1151: in _sv_ipc_thread(): debug: received FINISH message
+1771923279.791968: 1363039-7f8c0e346700: cdpl_server_ipc.c:883: in _sv_on_finish(): info: worker W1 completed task T0
+1771923279.791971: 1363039-7f8c0e346700: cdpl_server_ipc.c:888: in _sv_on_finish(): debug: stat T0: utime=203 stime=126
+1771923279.791974: 1363039-7f8c0e346700: cdpl_server_ipc.c:893: in _sv_on_finish(): debug: statm T0: vsize=256124 rss=7132 shared=6732 text=6916 data=33804
+1771923280.690688: 1363039-7f8c11c4a800: cdpl_server.c:217: in _sv_free_task_safe(): debug: freeing task T0
+1771923280.691520: 1363039-7f8c11c4a800: cdpl_server.c:2931: in cdpl_sv_halt_job_errno(): info: stopping job J1
+1771923280.691849: 1363039-7f8c11c4a800: cdpl_server.c:2952: in cdpl_sv_halt_job_errno(): debug: signal bin B1 scheduler to stop
+1771923280.691876: 1363039-7f8bf0b8e700: cdpl_server_sched.c:2456: in _sv_scheduler_thread(): debug: scheduler for bin B1 stopped
+1771923280.691898: 1363039-7f8bf0b8e700: cdpl_ipc.c:1611: in _host_drop__UNSAFE(): debug: dropping host `10.120.10.44:54104'
+1771923280.691935: 1363039-7f8bf0b8e700: cdpl_server_sched.c:2802: in _sv_drop_worker(): info: down to 0 alive workers in B1
+1771923280.691940: 1363039-7f8bf0b8e700: cdpl_farm.c:4058: in cdpl_farm_dismiss(): debug: down to 0 running processes
+1771923280.691943: 1363039-7f8bf0b8e700: cdpl_farm.c:2024: in _unpickhost(): debug: `localhost' is once again available
+1771923280.691955: 1363039-7f8c0e346700: cdpl_server_ipc.c:1136: in _sv_ipc_thread(): debug: received DROP notification
+1771923280.691992: 1363039-7f8bf0b8e700: cdpl_server_sched.c:121: in _free_worker_2(): debug: freeing worker W1
+1771923280.691996: 1363039-7f8bf0b8e700: cdpl_ipc.c:2467: in cdpl_ipc_host_release(): debug: releasing host `10.120.10.44:54104'
+1771923280.692013: 1363039-7f8c11c4a800: cdpl_server.c:282: in _sv_free_job(): info: freeing job J1
+1771923280.692018: 1363039-7f8c11c4a800: cdpl_server.c:89: in _sv_free_bin(): debug: freeing bin B1
+1771923280.692030: 1363039-7f8c11c4a800: cdpl_farm.c:2656: in cdpl_farm_free(): info: freeing farm
+1771923280.692043: 1363039-7f8bfc9fb700: cdpl_farm.c:2162: in _schedule(): debug: waking up
+1771923280.692047: 1363039-7f8bfc9fb700: cdpl_farm.c:2169: in _schedule(): debug: dying
+1771923280.692101: 1363039-7f8c11c4a800: cdpl_farm.c:903: in _killall(): debug: killing all remaining commands
+1771923280.692109: 1363039-7f8c11c4a800: cdpl_server.c:3052: in cdpl_sv_free(): info: freeing server S286852853
+1771923280.692114: 1363039-7f8c11c4a800: cdpl_server.c:3017: in cdpl_sv_kill_errno(): info: killing server
+1771923280.692120: 1363039-7f8c11c4a800: cdpl_ipc.c:3534: in cdpl_ipc_kill(): debug: stopping event server
+1771923280.692143: 1363039-7f8c0db45700: cdpl_ipc.c:2414: in _epoll_main(): debug: server going down...
+1771923280.692167: 1363039-7f8c0e346700: cdpl_server_ipc.c:1100: in _sv_ipc_thread(): debug: leaving now
+1771923280.692264: 1363039-7f8c11c4a800: cdpl_server.c:322: in _sv_free_master(): info: freeing master M1
+1771923280.692270: 1363039-7f8c11c4a800: cdpl_hash.c:68: in cdpl_h_destroy(): debug: put operations: 1
+1771923280.692272: 1363039-7f8c11c4a800: cdpl_hash.c:69: in cdpl_h_destroy(): debug: put collisions: 0
+1771923280.692275: 1363039-7f8c11c4a800: cdpl_hash.c:70: in cdpl_h_destroy(): debug: get operations: 0
+1771923280.692277: 1363039-7f8c11c4a800: cdpl_hash.c:71: in cdpl_h_destroy(): debug: get iterations: 0
+1771923280.692288: 1363039-7f8c11c4a800: cdpl_monitor.c:1390: in cdpl_mn_free(): debug: freeing monitor server
+1771923280.692291: 1363039-7f8c11c4a800: cdpl_ipc.c:3585: in cdpl_ipc_free(): debug: releasing IPC handle
+1771923280.692294: 1363039-7f8c11c4a800: cdpl_ipc.c:1536: in _host_free__UNSAFE(): debug: freeing host `10.120.10.44:54104'
+1771923280.692296: 1363039-7f8c11c4a800: cdpl_ipc.c:1575: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1771923280.692312: 1363039-7f8c11c4a800: cdpl_ipc.c:3624: in cdpl_ipc_free(): debug: done
+1771923280.692317: 1363039-7f8c11c4a800: cdpl_log.c:395: in cdpl_log_close(): info: @@end_of_log@@
+1771923280.697221: 1363039-7f8c11c4a800: cdpl_log.c:252: in cdpl_log_open(): info: @@start_of_log@@
+1771923280.697249: 1363039-7f8c11c4a800: cdpl_log.c:893: in cdpl_log_dump_sysinfo(): info: time: 2026/02/24 02:54:40 CST -0600
+1771923280.697252: 1363039-7f8c11c4a800: cdpl_log.c:895: in cdpl_log_dump_sysinfo(): info: version: V-2023.09-SP2 
+1771923280.697254: 1363039-7f8c11c4a800: cdpl_log.c:897: in cdpl_log_dump_sysinfo(): info: system: Linux 4.18.0-553.el8_10.x86_64 #1 SMP Fri May 10 15:19:13 EDT 2024
+1771923280.697257: 1363039-7f8c11c4a800: cdpl_log.c:902: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1771923280.697259: 1363039-7f8c11c4a800: cdpl_log.c:906: in cdpl_log_dump_sysinfo(): info: hostname: vscode-login4.nahpc2.arm.com
+1771923280.697262: 1363039-7f8c11c4a800: cdpl_log.c:254: in cdpl_log_open(): debug: path: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/master.vscode-login4.nahpc2.arm.com.1363039.log
+1771923280.697264: 1363039-7f8c11c4a800: cdpl_log.c:255: in cdpl_log_open(): debug: dir: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl
+1771923280.697270: 1363039-7f8c11c4a800: cdpl_server.c:524: in cdpl_sv_init(): info: new server S1399945070
+1771923280.697276: 1363039-7f8c11c4a800: cdpl_ipc.c:3332: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1771923280.697534: 1363039-7f8c11c4a800: cdpl_ipc.c:831: in _selectaddrfamily(): info: selected IPv4 protocol
+1771923280.697594: 1363039-7f8c11c4a800: cdpl_monitor.c:1117: in cdpl_mn_new_server(): info: creating server monitor instance
+1771923280.697602: 1363039-7f8c11c4a800: cdpl_server.c:638: in cdpl_sv_new_master(): info: new master M1
+1771923280.697615: 1363039-7f8c11c4a800: cdpl_server.c:5593: in cdpl_sv_ctl_master(): info: farm submit command timeout set to 120
+1771923280.697619: 1363039-7f8c11c4a800: cdpl_server.c:5656: in cdpl_sv_ctl_master(): info: Setting worker heartbeat to 300 seconds
+1771923280.697621: 1363039-7f8c11c4a800: cdpl_server.c:5665: in cdpl_sv_ctl_master(): info: Setting worker heartbeat timeout to 2 heartbeats
+1771923280.697627: 1363039-7f8c11c4a800: cdpl_compat_master.c:2573: in cdplInitMaster(): info: bcast dir is `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl'
+1771923280.698252: 1363039-7f8c11c4a800: cdpl_server.c:5556: in cdpl_sv_ctl_master(): info: farm worker timeout set to 300
+1771923280.698256: 1363039-7f8c11c4a800: cdpl_server.c:5593: in cdpl_sv_ctl_master(): info: farm submit command timeout set to 120
+1771923280.698259: 1363039-7f8c11c4a800: cdpl_server.c:5609: in cdpl_sv_ctl_master(): info: maximum number of task execution attempts set to 1
+1771923280.698296: 1363039-7f8c11c4a800: cdpl_farm.c:2512: in cdpl_farm_new_sh(): info: creating SH farm on localhost
+1771923280.698309: 1363039-7f8c11c4a800: cdpl_compat_master.c:207: in _set_farm_env(): info: exporting CDPL_LOGDIR as `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl'
+1771923280.698313: 1363039-7f8c11c4a800: cdpl_compat_master.c:234: in _set_farm_env(): info: exporting SNPSLMD_LICENSE_FILE as `12700@nahpc-lic01.nahpc.arm.com:12700@nahpc-lic05.nahpc.arm.com:12700@nahpc-lic13.nahpc.arm.com:12700@nahpc-lic17.nahpc.arm.com:12700@nahpc-lic09.nahpc.arm.com:12700@euhpc-lic09.euhpc.arm.com:12700@euhpc-lic10.euhpc.arm.
+1771923280.698319: 1363039-7f8c11c4a800: cdpl_compat_master.c:269: in _set_farm_env(): info: exporting CDPL_HEARTBEAT as `300'
+1771923280.698323: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting VERDI_HOME as `/arm/tools/synopsys/verdi3/2025.06-1'
+1771923280.698327: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting PATH as `/arm/tools/synopsys/verdi3/2025.06-1/bin:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:/arm/tools/arm/cluster/2.0/prod/bin:/bin:/usr/bin:/usr/X11R6/bin:/arm/t
+1771923280.698330: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting LD_LIBRARY_PATH as `/arm/tools/synopsys/verdi3/2025.06-1/share/NPI/lib/linux64/:/arm/tools/synopsys/vcs/2025.06-1/bin/fusa_cdpl_sdk/latest/lib/linux64/:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:/arm/tools/synopsys/verdi3/2025
+1771923280.698332: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_INTERNAL_INTERMEDIATE_RESULTS_ACTIVE as `1'
+1771923280.698335: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting VCS_HOME as `/arm/tools/synopsys/vcs/2025.06-1'
+1771923280.698337: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_WORKER_LOG_DIR as `/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker'
+1771923280.698339: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_START_DIR as `/home/dhanas01/test_fifo_demo'
+1771923280.698342: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting FSDB_DELTA as `0'
+1771923280.698344: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting SNPS_FUSA_FCM_WORKER_TIMEOUT as `21600'
+1771923280.698346: 1363039-7f8c11c4a800: cdpl_compat_master.c:355: in _set_farm_env(): info: exporting FSDB_PLI_EXIT_LOAD_FAIL as `1'
+1771923280.698351: 1363039-7f8c11c4a800: cdpl_farm.c:2930: in cdpl_farm_add_withcap(): debug: added `localhost' (capacity: 1)
+1771923280.698357: 1363039-7f8c11c4a800: cdpl_server.c:3103: in cdpl_sv_start(): debug: starting server
+1771923280.698360: 1363039-7f8c11c4a800: cdpl_ipc.c:3489: in cdpl_ipc_start(): debug: starting IPC server 10.120.10.44:43529
+1771923280.698428: 1363039-7f8c0db45700: cdpl_server_ipc.c:1082: in _sv_ipc_thread(): debug: ready
+1771923280.698548: 1363039-7f8c11c4a800: cdpl_server.c:719: in cdpl_sv_new_job(): info: new job J1 in M1
+1771923280.698562: 1363039-7f8c11c4a800: cdpl_compat_master.c:1368: in _add_worker(): info: new worker type 10, min:1, max:1, cmd:`/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker'
+1771923280.698568: 1363039-7f8c11c4a800: cdpl_server.c:881: in cdpl_sv_new_bin_withfarm(): info: new bin B1 in J1
+1771923280.698591: 1363039-7f8c11c4a800: cdpl_server.c:1811: in _sv_gen_task(): info: new task T0 in B1 (prio 0)
+1771923280.698598: 1363039-7f8c11c4a800: cdpl_compat_master.c:3659: in cdplScheduleTasks(): debug: scheduling tasks
+1771923280.698601: 1363039-7f8c11c4a800: cdpl_server.c:1215: in cdpl_sv_schedule_all_tasks(): debug: scheduling all tasks
+1771923280.698605: 1363039-7f8c11c4a800: cdpl_server.c:3157: in cdpl_sv_start_job(): info: starting job J1
+1771923280.698609: 1363039-7f8c11c4a800: cdpl_server.c:59: in _sv_start_bin(): debug: starting bin B1 (min: 0, max: 1)
+1771923280.698697: 1363039-7f8bfc9fb700: cdpl_server_sched.c:2454: in _sv_scheduler_thread(): debug: scheduler for bin B1 started
+1771923280.698711: 1363039-7f8bfc9fb700: cdpl_server_sched.c:2415: in _scheduler_run(): debug: will start a new worker
+1771923280.698730: 1363039-7f8bfc9fb700: cdpl_farm.c:3883: in cdpl_farm_submit(): debug: 1 running processes
+1771923280.698733: 1363039-7f8bfc9fb700: cdpl_farm.c:1972: in _pickahost(): debug: `localhost' now reaches maximum capacity
+1771923280.698737: 1363039-7f8bfc9fb700: cdpl_farm.c:3891: in cdpl_farm_submit(): debug: new command C1 in bin B1 assigned to host `localhost'
+1771923280.698773: 1363039-7f8bfc9fb700: cdpl_server_sched.c:711: in _sv_launch_worker(): info: started worker W1 (as C1) in bin B1
+1771923280.698782: 1363039-7f8bf0b8e700: cdpl_farm.c:2098: in _schedule(): debug: started
+1771923280.698795: 1363039-7f8bf0b8e700: cdpl_farm.c:2103: in _schedule(): info: worker submit command timeout set to 120 seconds
+1771923280.698800: 1363039-7f8bf0b8e700: cdpl_farm.c:2237: in _schedule(): debug: submitting command C1 in bin B1
+1771923280.698808: 1363039-7f8bf0b8e700: cdpl_sh.c:49: in _sh_detached_submit(): info: SH : /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker
+1771923280.699921: 1363039-7f8bf0b8e700: cdpl_farm.c:2277: in _schedule(): debug: C1 in bin B1 running on slot 0
+1771923280.700170: 1363039-7f8bf0b8e700: cdpl_farm.c:2118: in _schedule(): debug: idle
+1771923280.821608: 1363039-7f8c0e346700: cdpl_ipc.c:1816: in _epoll_accept(): debug: new connection from `10.120.10.44:39864'
+1771923280.821659: 1363039-7f8c0db45700: cdpl_server_ipc.c:1125: in _sv_ipc_thread(): debug: received ACCEPT notification
+1771923280.821675: 1363039-7f8c0db45700: cdpl_ipc.c:2457: in cdpl_ipc_host_accept(): debug: accepted host `10.120.10.44:39864'
+1771923280.821758: 1363039-7f8c0db45700: cdpl_server_ipc.c:1146: in _sv_ipc_thread(): debug: received HELLO message
+1771923280.821762: 1363039-7f8c0db45700: cdpl_server_ipc.c:367: in _sv_on_hello(): debug: looking up W1
+1771923280.821769: 1363039-7f8c0db45700: cdpl_server_ipc.c:477: in _sv_on_hello(): info: W1 is `10.120.10.44:39864'
+1771923280.821772: 1363039-7f8c0db45700: cdpl_server_ipc.c:478: in _sv_on_hello(): debug: hello W1 (B1)
+1771923280.821774: 1363039-7f8c0db45700: cdpl_server_ipc.c:479: in _sv_on_hello(): info: W1 log file is /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/worker.W1.vscode-login4.nahpc2.arm.com.1365936.log
+1771923280.821790: 1363039-7f8c0db45700: cdpl_server_ipc.c:506: in _sv_on_hello(): info: up to 1 alive workers in B1
+1771923280.821817: 1363039-7f8bfc9fb700: cdpl_server_sched.c:966: in _assign(): info: assigning task T0 to worker W1
+1771923280.822381: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923280.822389: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 74
+1771923280.822392: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = STARTWORKER;0;1365936;vscode-login4.nahpc2.arm.com;1771923280;1771923280;
+1771923280.822449: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923280.822452: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 73
+1771923280.822454: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = STARTTASK;-1;1365936;vscode-login4.nahpc2.arm.com;1771923280;1771923280;
+1771923280.831081: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923280.831098: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 270
+1771923280.831103: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923280;will invoke: "/arm/tools/synopsys/vcs/2025.06-1/bin/vc_fdb_report  -report 'fsim_v.rpt' -overwrite -campaign fifodemo -xhidden "nobanner" -fdb_path /home/dhanas01/t
+1771923280.951335: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923280.951357: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 95
+1771923280.951362: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923280;Info: Connected to existing server
+;
+1771923280.996943: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923280.996965: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 98
+1771923280.996971: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923280;Loading fault campaign: 'fifodemo'...
+;
+1771923281.000246: 1363039-7f8bf0b8e700: cdpl_farm.c:2162: in _schedule(): debug: waking up
+1771923281.000279: 1363039-7f8bf0b8e700: cdpl_farm.c:1175: in _onexit(): debug: C1 in bin B1 exited normally on slot 0
+1771923281.000284: 1363039-7f8bf0b8e700: cdpl_farm.c:873: in _release_cmd(): debug: freeing command C1 in bin B1
+1771923281.000288: 1363039-7f8bf0b8e700: cdpl_farm.c:2118: in _schedule(): debug: idle
+1771923281.001191: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923281.001213: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 135
+1771923281.001219: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923281;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 9Mb).
+;
+1771923281.272268: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923281.272285: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 85
+1771923281.272291: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923281;Loading fault results...
+;
+1771923281.312986: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923281.313006: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 136
+1771923281.313011: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923281;Done (CPU time: 0s, elapsed time: 0s, memory increased by 2Mb, peak: 21Mb).
+;
+1771923281.318175: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923281.318188: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 78
+1771923281.318192: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923281;Writing report...
+;
+1771923281.319322: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923281.319332: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 242
+1771923281.319335: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923281;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 21Mb).
+Info:	Wrote Standard Fault Format report to fsim_v.rpt
+CPU time: 0s, elapsed time: 1s, p
+1771923281.324358: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923281.324380: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 61
+1771923281.324386: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923281;
+;
+1771923281.324394: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923281.324400: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 95
+1771923281.324404: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923281;command completed with exit code 0
+;
+1771923281.324627: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923281.324966: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 61
+1771923281.324971: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923281;
+;
+1771923281.324976: 1363039-7f8c0db45700: cdpl_server_ipc.c:1168: in _sv_ipc_thread(): debug: received RELAY message
+1771923281.324978: 1363039-7f8c0db45700: cdpl_server_ipc.c:614: in _sv_on_relay(): debug: RELAY message from W1, size = 67
+1771923281.324981: 1363039-7f8c0db45700: cdpl_server_ipc.c:616: in _sv_on_relay(): debug: RELAY message from W1, content = OUTPUT;-1;1365936;vscode-login4.nahpc2.arm.com;1771923281;Exit:0
+;
+1771923281.821959: 1363039-7f8c0db45700: cdpl_server_ipc.c:280: in _sv_on_heartbeat(): debug: received HEARTBEAT from worker W1 at 10.120.10.44:39864
+1771923281.825378: 1363039-7f8c0db45700: cdpl_server_ipc.c:1151: in _sv_ipc_thread(): debug: received FINISH message
+1771923281.825391: 1363039-7f8c0db45700: cdpl_server_ipc.c:883: in _sv_on_finish(): info: worker W1 completed task T0
+1771923281.825395: 1363039-7f8c0db45700: cdpl_server_ipc.c:888: in _sv_on_finish(): debug: stat T0: utime=117 stime=67
+1771923281.825398: 1363039-7f8c0db45700: cdpl_server_ipc.c:893: in _sv_on_finish(): debug: statm T0: vsize=256124 rss=6988 shared=6588 text=6916 data=33804
+1771923281.847370: 1363039-7f8c11c4a800: cdpl_server.c:217: in _sv_free_task_safe(): debug: freeing task T0
+1771923281.847400: 1363039-7f8c11c4a800: cdpl_server.c:2931: in cdpl_sv_halt_job_errno(): info: stopping job J1
+1771923281.847403: 1363039-7f8c11c4a800: cdpl_server.c:2952: in cdpl_sv_halt_job_errno(): debug: signal bin B1 scheduler to stop
+1771923281.847417: 1363039-7f8bfc9fb700: cdpl_server_sched.c:2456: in _sv_scheduler_thread(): debug: scheduler for bin B1 stopped
+1771923281.847426: 1363039-7f8bfc9fb700: cdpl_ipc.c:1611: in _host_drop__UNSAFE(): debug: dropping host `10.120.10.44:39864'
+1771923281.847476: 1363039-7f8bfc9fb700: cdpl_server_sched.c:2802: in _sv_drop_worker(): info: down to 0 alive workers in B1
+1771923281.847480: 1363039-7f8bfc9fb700: cdpl_farm.c:4058: in cdpl_farm_dismiss(): debug: down to 0 running processes
+1771923281.847484: 1363039-7f8bfc9fb700: cdpl_farm.c:2024: in _unpickhost(): debug: `localhost' is once again available
+1771923281.847489: 1363039-7f8bfc9fb700: cdpl_server_sched.c:121: in _free_worker_2(): debug: freeing worker W1
+1771923281.847493: 1363039-7f8bfc9fb700: cdpl_ipc.c:2467: in cdpl_ipc_host_release(): debug: releasing host `10.120.10.44:39864'
+1771923281.847608: 1363039-7f8c0db45700: cdpl_server_ipc.c:1136: in _sv_ipc_thread(): debug: received DROP notification
+1771923281.847702: 1363039-7f8c11c4a800: cdpl_server.c:282: in _sv_free_job(): info: freeing job J1
+1771923281.847710: 1363039-7f8c11c4a800: cdpl_server.c:89: in _sv_free_bin(): debug: freeing bin B1
+1771923281.847719: 1363039-7f8c11c4a800: cdpl_farm.c:2656: in cdpl_farm_free(): info: freeing farm
+1771923281.847735: 1363039-7f8bf0b8e700: cdpl_farm.c:2162: in _schedule(): debug: waking up
+1771923281.847747: 1363039-7f8bf0b8e700: cdpl_farm.c:2169: in _schedule(): debug: dying
+1771923281.847954: 1363039-7f8c11c4a800: cdpl_farm.c:903: in _killall(): debug: killing all remaining commands
+1771923281.847964: 1363039-7f8c11c4a800: cdpl_server.c:3052: in cdpl_sv_free(): info: freeing server S1399945070
+1771923281.847967: 1363039-7f8c11c4a800: cdpl_server.c:3017: in cdpl_sv_kill_errno(): info: killing server
+1771923281.847970: 1363039-7f8c11c4a800: cdpl_ipc.c:3534: in cdpl_ipc_kill(): debug: stopping event server
+1771923281.847988: 1363039-7f8c0e346700: cdpl_ipc.c:2414: in _epoll_main(): debug: server going down...
+1771923281.848025: 1363039-7f8c0db45700: cdpl_server_ipc.c:1100: in _sv_ipc_thread(): debug: leaving now
+1771923281.848051: 1363039-7f8c11c4a800: cdpl_server.c:322: in _sv_free_master(): info: freeing master M1
+1771923281.848056: 1363039-7f8c11c4a800: cdpl_hash.c:68: in cdpl_h_destroy(): debug: put operations: 1
+1771923281.848059: 1363039-7f8c11c4a800: cdpl_hash.c:69: in cdpl_h_destroy(): debug: put collisions: 0
+1771923281.848061: 1363039-7f8c11c4a800: cdpl_hash.c:70: in cdpl_h_destroy(): debug: get operations: 0
+1771923281.848063: 1363039-7f8c11c4a800: cdpl_hash.c:71: in cdpl_h_destroy(): debug: get iterations: 0
+1771923281.848067: 1363039-7f8c11c4a800: cdpl_monitor.c:1390: in cdpl_mn_free(): debug: freeing monitor server
+1771923281.848072: 1363039-7f8c11c4a800: cdpl_ipc.c:3585: in cdpl_ipc_free(): debug: releasing IPC handle
+1771923281.848074: 1363039-7f8c11c4a800: cdpl_ipc.c:1536: in _host_free__UNSAFE(): debug: freeing host `10.120.10.44:39864'
+1771923281.848077: 1363039-7f8c11c4a800: cdpl_ipc.c:1575: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1771923281.848091: 1363039-7f8c11c4a800: cdpl_ipc.c:3624: in cdpl_ipc_free(): debug: done
+1771923281.848096: 1363039-7f8c11c4a800: cdpl_log.c:395: in cdpl_log_close(): info: @@end_of_log@@

@@ -1,0 +1,62 @@
+
+StatusDefinitions
+{
+    Redefine ND NX "Redefine ND";
+    Redefine PD PX "Redefine PD";
+    Redefine DD DX "Redefine DD";
+
+    # Character 1 = Observe Status, Character 2 = Diagnostic Status
+
+    NN "Not Observed Not Diagnosed";
+    NP "Not Observed Potentially Diagnosed";
+    PD "Potentially Observed Diagnosed";
+    ND "Not Observed Diagnosed";
+    PN "Potentially Observed Not Diagnosed";
+    PP "Potentially Observed Potentially Diagnosed";
+    ON "Observed Not Diagnosed";
+    OP "Observed Potentially Diagnosed";
+    OD "Observed Diagnosed";
+    AN "Assumed Dangerous Not Diagnosed";
+    AD "Assumed Dangerous Diagnosed";
+    AP "Assumed Dangerous Potentially Diagnosed";
+    IS "Invalid Status Promotion";
+
+    DefaultStatus(NN)
+    Selected (NA, NN, AN)
+
+    # Observe Status O+N=O, O+P=O, P+N=P
+    # Diagnostic Status D+N=D, D+P=D, P+N=N
+
+    PromotionTable
+    {
+        StatusLabels (NN,NP,ND,PD,PN,PP,ON,OP,OD,AP,AN,AD,IS)
+        #  NN  NP  ND  PD  PN  PP  ON  OP  OD  AP  AN  AD  IS 
+        [   |   -   |   |   |   |   |  OP   |  IS  IS  IS   | ;  # NN
+            |   |   |   |   |   |   |   |   |  IS  IS  IS   | ;  # NP
+            -   -   |   |  PD  PD  OD  OD   |  IS  IS  IS   | ;  # ND
+            -   -   -   |   -   -  OD  OD   |  IS  IS  IS   | ;  # PD
+            -   -  PD   |   |   |   |  ON   |  IS  IS  IS   | ;  # PN
+            -   -  PD   |   |   |   |   |   |  IS  IS  IS   | ;  # PP 
+            -   -  OD  OD   -   -   |   -   |  IS  IS  IS   | ;  # ON
+            -   -  OD  OD  ON   -   |   |   |  IS  IS  IS   | ;  # OP
+            -   -   -   -   -   -   -   -   |  IS  IS  IS   | ;  # OD
+           IS  IS  IS  IS  IS  IS  IS  IS  IS   |   |   |   | ;  # AP 
+           IS  IS  IS  IS  IS  IS  IS  IS  IS   -   |   |   | ;  # AN
+           IS  IS  IS  IS  IS  IS  IS  IS  IS   -   -   |   | ;  # AD
+            -   -   -   -   -   -   -   -   -   -   -   -   | ;  # IS 
+        ]
+    }
+
+    StatusGroups
+    {
+        SA "Safe" (UT, UB, UR, UU);
+        SU "Safe Unobserved" (NN, NC, NO, NT);
+        DA "Dangerous Assumed" (HA, HM, HT, OA, OZ, IA, IP, IF, IX);
+        DN "Dangerous Not Diagnosed" (PN, ON, PP, OP, NP, AN, AP);
+        DD "Dangerous Diagnosed" (PD, OD, ND, AD);
+    }
+}
+
+Coverage {
+    "Diagnostic Coverage" = "DD/(NA + DA + DN + DD)";
+}

@@ -1,0 +1,59 @@
+1771923278.783645: 1365814-7f0f045c7b80: cdpl_log.c:252: in cdpl_log_open(): info: @@start_of_log@@
+1771923278.783686: 1365814-7f0f045c7b80: cdpl_log.c:893: in cdpl_log_dump_sysinfo(): info: time: 2026/02/24 02:54:38 CST -0600
+1771923278.783691: 1365814-7f0f045c7b80: cdpl_log.c:895: in cdpl_log_dump_sysinfo(): info: version: V-2023.09-SP2 
+1771923278.783695: 1365814-7f0f045c7b80: cdpl_log.c:897: in cdpl_log_dump_sysinfo(): info: system: Linux 4.18.0-553.el8_10.x86_64 #1 SMP Fri May 10 15:19:13 EDT 2024
+1771923278.784015: 1365814-7f0f045c7b80: cdpl_log.c:902: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1771923278.784027: 1365814-7f0f045c7b80: cdpl_log.c:906: in cdpl_log_dump_sysinfo(): info: hostname: vscode-login4.nahpc2.arm.com
+1771923278.784029: 1365814-7f0f045c7b80: cdpl_log.c:254: in cdpl_log_open(): debug: path: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/worker.W1.vscode-login4.nahpc2.arm.com.1365814.log
+1771923278.784032: 1365814-7f0f045c7b80: cdpl_log.c:255: in cdpl_log_open(): debug: dir: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl
+1771923278.784042: 1365814-7f0f045c7b80: cdpl_worker.c:916: in cdpl_wk_new(): info: creating worker instance
+1771923278.784057: 1365814-7f0f045c7b80: cdpl_ipc.c:3332: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1771923278.784447: 1365814-7f0f045c7b80: cdpl_ipc.c:831: in _selectaddrfamily(): info: selected IPv4 protocol
+1771923278.784529: 1365814-7f0f045c7b80: cdpl_monitor.c:1117: in cdpl_mn_new_server(): info: creating server monitor instance
+1771923278.784904: 1365814-7f0f045c7b80: cdpl_worker.c:1150: in cdpl_wk_start(): debug: starting worker
+1771923278.784909: 1365814-7f0f045c7b80: cdpl_worker.c:329: in cdpl_wk_setup(): info: CDPL_SERVER is "10.120.10.44:40869"
+1771923278.784918: 1365814-7f0f045c7b80: cdpl_worker.c:351: in cdpl_wk_setup(): info: server 10.120.10.44, port 40869
+1771923278.784922: 1365814-7f0f045c7b80: cdpl_worker.c:372: in cdpl_wk_setup(): info: CDPL_ID is "1:1:1:1:286852853"
+1771923278.784933: 1365814-7f0f045c7b80: cdpl_worker.c:414: in cdpl_wk_setup(): info: we are W1-B1-J1-M1-S286852853
+1771923278.784935: 1365814-7f0f045c7b80: cdpl_worker.c:422: in cdpl_wk_setup(): info: we are on host vscode-login4.nahpc2.arm.com
+1771923278.784938: 1365814-7f0f045c7b80: cdpl_worker.c:448: in cdpl_wk_daemonize(): debug: will *not* daemonize
+1771923278.784942: 1365814-7f0f045c7b80: cdpl_ipc.c:3646: in cdpl_ipc_connect(): info: connecting to 10.120.10.44:40869
+1771923278.785000: 1365814-7f0f045c7b80: cdpl_ipc.c:3717: in cdpl_ipc_connect(): info: connected as `10.120.10.44:54104'
+1771923278.785011: 1365814-7f0f045c7b80: cdpl_ipc.c:2457: in cdpl_ipc_host_accept(): debug: accepted host `10.120.10.44:40869'
+1771923278.785518: 1365814-7f0f045c7b80: cdpl_ipc.c:3489: in cdpl_ipc_start(): debug: starting IPC server 10.120.10.44:42575
+1771923278.785717: 1365814-7f0f045c7b80: cdpl_compat_worker.c:462: in cdplStartWorker(): info: SNPSLMD_LICENSE_FILE is 12700@nahpc-lic01.nahpc.arm.com:12700@nahpc-lic05.nahpc.arm.com:12700@nahpc-lic13.nahpc.arm.com:12700@nahpc-lic17.nahpc.arm.com:12700@nahpc-lic09.nahpc.arm.com:12700@euhpc-lic09.euhpc.arm.com:12700@euhpc-lic10.euhpc.arm.com:12700@e
+1771923278.786063: 1365814-7f0f02ad5700: cdpl_worker.c:716: in cdpl_wk_listen(): debug: ready
+1771923278.786102: 1365814-7f0f022d4700: cdpl_worker.c:844: in cdpl_wk_heartbeat(): debug: starting heartbeat
+1771923278.786116: 1365814-7f0f022d4700: cdpl_worker.c:853: in cdpl_wk_heartbeat(): info: setting heartbeat period to 300 sec
+1771923278.786120: 1365814-7f0f022d4700: cdpl_worker.c:861: in cdpl_wk_heartbeat(): info: first heartbeat in 1 sec
+1771923278.786133: 1365814-7f0f02ad5700: cdpl_worker.c:773: in cdpl_wk_listen(): debug: received ASSIGN message
+1771923278.786291: 1365814-7f0f045c7b80: cdpl_worker.c:1317: in cdpl_wk_wait_timeout(): info: starting task T0
+1771923279.791651: 1365814-7f0f045c7b80: cdpl_ipc.c:2547: in cdpl_ipc_host_timedsync(): debug: entering cdpl_ipc_host_timedsync() with no timeout
+1771923279.791665: 1365814-7f0f045c7b80: cdpl_ipc.c:2573: in cdpl_ipc_host_timedsync(): debug: sync start #1
+1771923279.791824: 1365814-7f0f02ad5700: cdpl_ipc.c:2854: in cdpl_ipc_msg_wait(): debug: received ACK
+1771923279.791851: 1365814-7f0f045c7b80: cdpl_ipc.c:2603: in cdpl_ipc_host_timedsync(): debug: sync end #1
+1771923279.791859: 1365814-7f0f045c7b80: cdpl_ipc.c:2632: in cdpl_ipc_host_timedsync(): debug: leaving cdpl_ipc_host_timedsync()
+1771923279.791914: 1365814-7f0f045c7b80: cdpl_worker.c:1433: in cdpl_wk_finalize(): info: finishing task T0
+1771923280.691941: 1365814-7f0f032d6700: cdpl_ipc.c:769: in _readv(): warning: read(): EOF
+1771923280.691963: 1365814-7f0f032d6700: cdpl_ipc.c:2054: in _epoll_recv(): debug: _readv(): Broken pipe
+1771923280.691967: 1365814-7f0f032d6700: cdpl_ipc.c:2378: in _epoll_main(): debug: _epoll_recv(): Broken pipe
+1771923280.691975: 1365814-7f0f032d6700: cdpl_ipc.c:1611: in _host_drop__UNSAFE(): debug: dropping host `10.120.10.44:40869'
+1771923280.696565: 1365814-7f0f02ad5700: cdpl_worker.c:749: in cdpl_wk_listen(): debug: received DROP notification
+1771923280.696585: 1365814-7f0f02ad5700: cdpl_worker.c:753: in cdpl_wk_listen(): debug: we were dropped by the server
+1771923280.696595: 1365814-7f0f02ad5700: cdpl_worker.c:568: in _wk_kill(): debug: killing worker
+1771923280.696600: 1365814-7f0f02ad5700: cdpl_ipc.c:3534: in cdpl_ipc_kill(): debug: stopping event server
+1771923280.696626: 1365814-7f0f02ad5700: cdpl_worker.c:730: in cdpl_wk_listen(): debug: leaving now
+1771923280.696636: 1365814-7f0f032d6700: cdpl_ipc.c:2414: in _epoll_main(): debug: server going down...
+1771923280.696659: 1365814-7f0f045c7b80: cdpl_ipc.c:1392: in _ipc_enqueue__UNSAFE(): error: host has been dropped
+1771923280.696677: 1365814-7f0f045c7b80: cdpl_worker.c:1635: in cdpl_wk_msgsend(): error: cdpl_ipc_send(): Transport endpoint is not connected
+1771923280.696699: 1365814-7f0f045c7b80: cdpl_worker.c:1049: in _wk_shutdown(): debug: waiting for heartbeat thread
+1771923280.696748: 1365814-7f0f022d4700: cdpl_worker.c:897: in cdpl_wk_heartbeat(): info: stopping heartbeat
+1771923280.696773: 1365814-7f0f045c7b80: cdpl_ipc.c:2467: in cdpl_ipc_host_release(): debug: releasing host `10.120.10.44:40869'
+1771923280.696779: 1365814-7f0f045c7b80: cdpl_ipc.c:2483: in cdpl_ipc_host_release(): debug: scheduling for immediate release
+1771923280.696793: 1365814-7f0f045c7b80: cdpl_monitor.c:1390: in cdpl_mn_free(): debug: freeing monitor server
+1771923280.696799: 1365814-7f0f045c7b80: cdpl_ipc.c:3585: in cdpl_ipc_free(): debug: releasing IPC handle
+1771923280.696803: 1365814-7f0f045c7b80: cdpl_ipc.c:1536: in _host_free__UNSAFE(): debug: freeing host `10.120.10.44:40869'
+1771923280.696807: 1365814-7f0f045c7b80: cdpl_ipc.c:1575: in _host_free__UNSAFE(): debug: [0 outq, 0 spR, 0 spW]
+1771923280.696827: 1365814-7f0f045c7b80: cdpl_ipc.c:3624: in cdpl_ipc_free(): debug: done
+1771923280.696834: 1365814-7f0f045c7b80: cdpl_worker.c:1137: in cdpl_wk_free(): info: freed
+1771923280.696838: 1365814-7f0f045c7b80: cdpl_log.c:395: in cdpl_log_close(): info: @@end_of_log@@

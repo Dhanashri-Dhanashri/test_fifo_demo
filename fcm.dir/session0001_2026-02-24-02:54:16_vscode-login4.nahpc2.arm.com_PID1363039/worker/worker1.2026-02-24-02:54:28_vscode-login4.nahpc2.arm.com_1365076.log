@@ -1,0 +1,396 @@
+2026-02-24 - 02:54:28.45 - @@@ begin of log @@@
+
+
+================================================================================
+             Fault Campaign Manager Worker Log
+    Release: X-2025.06-1; Built: Jul 16 2025, 20:48:08
+================================================================================
+
+
+--------------------------------------------------------------------------------
+  Hostname: vscode-login4.nahpc2.arm.com
+  Linux version 4.18.0-553.el8_10.x86_64 (mockbuild@x86-vm-09.brew-001.prod.iad2.dc.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-21) (GCC)) #1 SMP Fri May 10 15:19:13 EDT 2024
+  Red Hat Enterprise Linux release 8.10 (Ootpa)
+  GNU bash, version 4.4.20(1)-release (x86_64-redhat-linux-gnu)
+--------------------------------------------------------------------------------
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              16
+On-line CPU(s) list: 0-15
+Thread(s) per core:  1
+Core(s) per socket:  1
+Socket(s):           16
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               85
+Model name:          Intel(R) Xeon(R) Gold 6342 CPU @ 2.80GHz
+Stepping:            0
+CPU MHz:             2793.437
+BogoMIPS:            5586.87
+Hypervisor vendor:   VMware
+Virtualization type: full
+L1d cache:           48K
+L1i cache:           32K
+L2 cache:            1280K
+L3 cache:            36864K
+NUMA node0 CPU(s):   0-15
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon nopl xtopology tsc_reliable nonstop_tsc cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 avx2 smep bmi2 invpcid avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xsaves arat pku ospke md_clear flush_l1d arch_capabilities
+--------------------------------------------------------------------------------
+OS imposed limits:
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 384289
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 2048
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+--------------------------------------------------------------------------------
+libc version:
+glibc
+#define __GLIBC__ 2
+#define __GLIBC_MINOR__ 28
+--------------------------------------------------------------------------------
+current working directory:    /home/dhanas01/test_fifo_demo
+SNPS_FUSA_FCM_START_DIR:      /home/dhanas01/test_fifo_demo
+SNPS_FUSA_TASK_PRIVATE_DIR:   <not set>
+SNPS_FUSA_FCM_WORKER_LOG_DIR: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker
+log file:                     /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker/worker1.2026-02-24-02:54:28_vscode-login4.nahpc2.arm.com_1365076.log
+PATH:                         /arm/tools/synopsys/verdi3/2025.06-1/bin:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:/arm/tools/arm/cluster/2.0/prod/bin:/bin:/usr/bin:/usr/X11R6/bin:/arm/tools/synopsys/vcs/2025.06-1/bin:/arm/tools/synopsys/vcs/2025.06-1/gui/virsim/bin:/arm/tools/synopsys/vcs/2025.06-1/cso/bin:/usr/local/bin:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin
+VCS_HOME:                     /arm/tools/synopsys/vcs/2025.06-1
+VERDI_HOME:                   /arm/tools/synopsys/verdi3/2025.06-1
+PGSQL_HOME:                   <not set>
+VC_FSM_HOME:                  <not set>
+--------------------------------------------------------------------------------
+All environment variables:
+   1 CDPL_LOGDIR=/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl
+   2 LC_ALL=en_US.UTF-8
+   3 LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+   4 LD_LIBRARY_PATH=/arm/tools/synopsys/verdi3/2025.06-1/share/NPI/lib/linux64/:/arm/tools/synopsys/vcs/2025.06-1/bin/fusa_cdpl_sdk/latest/lib/linux64/:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbWriter/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/IUS/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/MODELSIM/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/linux64:/lib:/usr/lib:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib
+   5 HOSTTYPE=x86_64-linux
+   6 ARM_CLUSTER_NAME=nahpc2
+   7 SYS_INST_DIR=/arm/tools/synopsys/verdi3/2025.06-1
+   8 NOVAS_VERSION=2025.06-1
+   9 PYTHON_BASIC_REPL=1
+   10 SSH_CONNECTION=10.164.19.75 53743 10.120.10.44 22
+   11 SNPS_FUSA_FCM_WORKER_TIMEOUT=21600
+   12 DEPOT_AMQP=amqp.nahpc.arm.com
+   13 LANG=en_US.UTF-8
+   14 VIRSIMHOME=/arm/tools/synopsys/vcs/2025.06-1/gui/virsim
+   15 NO_DUMP_LOGDIR=1
+   16 SNPSLMD_LICENSE_FILE_modshare=12700@nahpc-lic13.nahpc.arm.com:2:12700@nahpc-lic17.nahpc.arm.com:2:12700@euhpc-lic11.euhpc.arm.com:2:11762@euhpc-lic12.euhpc.arm.com:2:12700@nahpc-lic01.nahpc.arm.com:2:12700@nahpc-lic05.nahpc.arm.com:2:12700@nahpc-lic09.nahpc.arm.com:2:12700@euhpc-lic09.euhpc.arm.com:2:12700@euhpc-lic10.euhpc.arm.com:2:12700@eu03-lic08.server.eu03.arm.com:2
+   17 DEPOT_VERSION=depot-2.03-aus03
+   18 EDITOR=vim
+   19 PATH_modshare=/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:1:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:999999999:/usr/bin:1:/arm/tools/arm/cluster/2.0/prod/bin:1:/usr/X11R6/bin:1:/usr/local/bin:2:/arm/tools/synopsys/verdi3/2025.06-1/bin:1:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:2:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:1:/arm/tools/synopsys/vcs/2025.06-1/gui/virsim/bin:1:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:1:/bin:1:/opt/puppetlabs/bin:2:/arm/tools/synopsys/vcs/2025.06-1/bin:1:/usr/sbin:1:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:1:/home/dhanas01/.local/bin/x86_64:2:/usr/local/sbin:1:/arm/tools/synopsys/vcs/2025.06-1/cso/bin:1
+   20 CDPL_SERVER=10.120.10.44:34615
+   21 LOADEDMODULES_modshare=synopsys/license/production:2:arm/cluster/2.0:1:arm/license/production:1:synopsys/vcs/2025.06-1:1:swdev:1:core:2:synopsys/verdi3/2025.06-1:1:eda:1:util:1:platform/lsf/10.1_sp14:1
+   22 COLORTERM=truecolor
+   23 DUOLOG_LICENSE_FILE=1661@eu03-lic05.server.eu03.arm.com
+   24 ARM_MODULE_ROOT=/arm/tools/modulefiles
+   25 MAKE_TERMOUT=/dev/pts/75
+   26 SNPSLMD_LICENSE_FILE=12700@nahpc-lic01.nahpc.arm.com:12700@nahpc-lic05.nahpc.arm.com:12700@nahpc-lic13.nahpc.arm.com:12700@nahpc-lic17.nahpc.arm.com:12700@nahpc-lic09.nahpc.arm.com:12700@euhpc-lic09.euhpc.arm.com:12700@euhpc-lic10.euhpc.arm.com:12700@euhpc-lic11.euhpc.arm.com:11762@euhpc-lic12.euhpc.arm.com:12700@eu03-lic08.server.eu03.arm.com
+   27 FLEXLM_BORROWFILE=/home/dhanas01/.vscode-login4.nahpc2.arm.com-borrow.txt
+   28 KDEDIRS=/usr
+   29 CARBOND_LICENSE_FILE=7276@euhpc-lic20.euhpc.arm.com:7276@nahpc-lic15.nahpc.arm.com
+   30 VENDOR=unknown
+   31 MACHTYPE=x86_64
+   32 VERDI_FUSA_DEBUG=1
+   33 CDPL_HEARTBEAT=300
+   34 LSF_SERVERDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/etc
+   35 MFLAGS=
+   36 SNPSLMD_DISABLE_DEBUG_LICENSE_CHECKS=1
+   37 S_COLORS=auto
+   38 FSDB_DELTA=0
+   39 OSTYPE=linux
+   40 LD_LIBRARY_PATH_modshare=/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/MODELSIM/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbWriter/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/linux64:1:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib:1:/lib:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/IUS/linux64:1:/usr/lib:1
+   41 LSF_ENVDIR=/arm/cluster/nahpc2/conf
+   42 XDG_SESSION_ID=4861
+   43 USER=dhanas01
+   44 PAGER=less
+   45 SNPS_DISABLE_DCG_NEW_TECHNOLOGY=1
+   46 CDPL_DEBUG_SUBMIT_TIMEOUT=120
+   47 GROUP=dhanas01
+   48 PWD=/home/dhanas01/test_fifo_demo
+   49 formal=/home/dhanas01/luna_tutorial/fts
+   50 HOME=/home/dhanas01
+   51 BROWSER=/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/helpers/browser.sh
+   52 LM_LICENSE_FILE_modshare=1661@eu03-lic05.server.eu03.arm.com:1
+   53 TERM_PROGRAM=vscode
+   54 HOST=vscode-login4.nahpc2.arm.com
+   55 SSH_CLIENT=10.164.19.75 53743 22
+   56 TERM_PROGRAM_VERSION=1.108.2
+   57 ARMLMD_LICENSE_FILE=17010@armlmd.lic.arm.com:17010@eu-armlmd.lic.arm.com:17010@na-armlmd.lic.arm.com
+   58 VERDI_FUSA_DUMP_FSDB_CMD=./COLLATERAL/VERDI/dumping_v.sh
+   59 _LMFILES__modshare=/arm/tools/modulefiles/eda:1:/arm/tools/modulefiles/.core/arm/license/validation:1:/arm/tools/modulefiles/util:1:/arm/tools/modulefiles/.eda/synopsys/license/production:4:/arm/tools/modulefiles/.core/platform/lsf/10.1_sp14:2:/arm/tools/modulefiles/swdev:1:/arm/tools/modulefiles/core:2
+   60 SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+   61 LSF_BINDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin
+   62 VSCODE_IPC_HOOK_CLI=/run/user/65749/vscode-ipc-1dd7a17c-be97-42c0-91a5-e6b033b27ed7.sock
+   63 ARM_CLUSTER_MODE=CPM
+   64 lf=/home/dhanas01/luna_tutorial/luna_flow
+   65 LOADEDMODULES=core:util:swdev:arm/license/production:platform/lsf/10.1_sp14:arm/cluster/2.0:eda:synopsys/license/production:synopsys/vcs/2025.06-1:synopsys/verdi3/2025.06-1
+   66 ARMLM_ONDEMAND_ACTIVATION=HWSKT-EAC0@https://lls.arm.com
+   67 SNPS_FDB_SERVER_IP=10.120.10.44
+   68 NPI_DISABLE_TOOL_INDENT=1
+   69 luna=/home/dhanas01/luna_tutorial
+   70 MAIL=/var/spool/mail/dhanas01
+   71 SNPS_FDB_STORAGE_PATH=/home/dhanas01/test_fifo_demo/fdb
+   72 SNPS_FUSA_FCM_WORKER_STARTED_FILE=/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker/worker_started
+   73 SHELL=/bin/tcsh
+   74 TERM=xterm-256color
+   75 VSCODE_NONCE=5fd59b94-b61d-45cf-81dc-2f85029683b8
+   76 LM_LICENSE_FILE=:1661@eu03-lic05.server.eu03.arm.com
+   77 MANPATH_modshare=/arm/tools/platform/lsf/10.1_sp14/man:1:/usr/local/share/man:1:/usr/X11R6/man:3:/usr/share/man:1:/arm/tools/synopsys/vcs/2025.06-1/doc/man:1
+   78 XLSF_UIDDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib/uid
+   79 SNPS_FUSA_FCM_WORKER_LOG_DIR=/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker
+   80 ARM_SITE_LOAD=core
+   81 DUOLOG_LICENSE_FILE_modshare=1661@eu03-lic05.server.eu03.arm.com:1
+   82 NOVAS_IDLE_LICENSE_CHECKBACK=30
+   83 SNPS_ANOMALY_DISABLE=1
+   84 MAKELEVEL=1
+   85 VERDI_HOME=/arm/tools/synopsys/verdi3/2025.06-1
+   86 PYTHONSTARTUP=/home/dhanas01/.vscode-server/data/User/workspaceStorage/2d0c82943420c788e865b445afdca553/ms-python.python/pythonrc.py
+   87 SHLVL=7
+   88 MAKE_TERMERR=/dev/pts/75
+   89 ARMLM_ONDEMAND_ACTIVATION_modshare=//lls.arm.com:1:HWSKT-EAC0@https:1
+   90 FSDB_PLI_EXIT_LOAD_FAIL=1
+   91 SNPS_FDB_SERVER=localhost:62272
+   92 MANPATH=/arm/tools/platform/lsf/10.1_sp14/man:/usr/X11R6/man:/usr/share/man:/usr/local/share/man:/arm/tools/synopsys/vcs/2025.06-1/doc/man
+   93 TURBO_LIBS=artisan_l artisan_u
+   94 SNPS_FUSA_INTERNAL_INTERMEDIATE_RESULTS_ACTIVE=1
+   95 LSF_LIBDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib
+   96 FSDB_FAULT_DUMP_MODE=fm
+   97 SNPS_FUSA_OLD_CDPL_HOME=0
+   98 MODULEPATH=/arm/tools/modulefiles:/arm/tools/modulefiles:/arm/tools/modulefiles/.core:/arm/tools/modulefiles/.util:/arm/tools/modulefiles/.swdev:/arm/tools/modulefiles/.eda
+   99 SSL_CERT_DIR=/etc/pki/tls/certs
+   100 LOGNAME=dhanas01
+   101 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/65749/bus
+   102 LD_LIBRARY_PATH_USER=
+   103 XDG_RUNTIME_DIR=/run/user/65749
+   104 CDPL_ID=1:1:1:1:11694212
+   105 MODULEPATH_modshare=/arm/tools/modulefiles/.swdev:1:/arm/tools/modulefiles/.core:2:/arm/tools/modulefiles/.eda:1:/arm/tools/modulefiles/.util:1:/arm/tools/modulefiles:1
+   106 SNPS_FUSA_FCM_START_DIR=/home/dhanas01/test_fifo_demo
+   107 PATH=/arm/tools/synopsys/verdi3/2025.06-1/bin:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:/arm/tools/arm/cluster/2.0/prod/bin:/bin:/usr/bin:/usr/X11R6/bin:/arm/tools/synopsys/vcs/2025.06-1/bin:/arm/tools/synopsys/vcs/2025.06-1/gui/virsim/bin:/arm/tools/synopsys/vcs/2025.06-1/cso/bin:/usr/local/bin:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin
+   108 CSO_HOME=/arm/tools/synopsys/vcs/2025.06-1/cso
+   109 VCS_HOME=/arm/tools/synopsys/vcs/2025.06-1
+   110 _LMFILES_=/arm/tools/modulefiles/core:/arm/tools/modulefiles/util:/arm/tools/modulefiles/swdev:/arm/tools/modulefiles/.core/arm/license/validation:/arm/tools/modulefiles/.core/platform/lsf/10.1_sp14:/arm/tools/modulefiles/eda:/arm/tools/modulefiles/.eda/synopsys/license/production
+   111 PATH_USER=/usr/local/bin:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/bin:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/opt/puppetlabs/bin
+   112 ARMLMD_LICENSE_FILE_modshare=17010@eu-armlmd.lic.arm.com:1:17010@armlmd.lic.arm.com:1:17010@na-armlmd.lic.arm.com:1
+   113 MODULESHOME=/arm/tools/setup
+   114 CARBOND_LICENSE_FILE_modshare=7276@euhpc-lic20.euhpc.arm.com:1:7276@nahpc-lic15.nahpc.arm.com:1
+   115 MAKEFLAGS=
+   116 SYNOPSYS_SI=/arm/tools/synopsys/vcs/2025.06-1
+   117 CDPL_WORKERID=1
+   118 me=dhanas01
+   119 FLEXLM_NO_CKOUT_INSTALL_LIC=1
+   120 _=/bin/nohup
+================================================================================
+
+moved worker into independent process group
+worker timeout: 21600
+Heartbeat interval is 300 seconds
+Reading intermediate fault results is enabled, look for new results every 60 seconds
+worker ID: 1
++ entering initFdbApi
+2026-02-24 - 02:54:28.51 - <<<-----  worker initialization finished  ----->>>
+2026-02-24 - 02:54:28.51 - send message(73 bytes): 'STARTWORKER;0;1365076;vscode-login4.nahpc2.arm.com;1771923268;1771923268;'
+2026-02-24 - 02:54:28.51 - <<<-----  entering main loop  ----->>>
+
+2026-02-24 - 02:54:28.51 - <<<-----  retrieved new task  ----->>>
++ entering getStartScriptCommand
+worker start script: "/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker_start.sh"
+ new hasTaskData: 0
+
+ new fdef data size: 16
+ new task ID: 4294967295
+ new session ID: 1
+ new simulationExeDir: /home/dhanas01/test_fifo_demo
+ compress task logs: off
+ delete successful task logs: off
+ new workDir: /home/dhanas01/test_fifo_demo
+ENV: SNPS_FUSA_TASK_PRIVATE_DIR=
+ENV: SNPS_FUSA_FAILURE_MODE=
+ENV: SNPS_FUSA_TEST_NAME=
+ENV: SNPS_FUSA_FCM_WORK_DIR=
+ENV: SNPS_FUSA_TASK_TYPE=
+ENV: SNPS_FUSA_FSIM_MODE=
+ENV: SNPS_FUSA_DUMP_MODE=
+ENV: SNPS_FUSA_DUMP_FILE=
++ entering createWorkerScriptCommand
+task ID not specified, so assuming debug mode or vc_fcc or vc_fdb_report invocation
+2026-02-24 - 02:54:28.51 - send message(72 bytes): 'STARTTASK;-1;1365076;vscode-login4.nahpc2.arm.com;1771923268;1771923268;'
+2026-02-24 - 02:54:28.51 - <<<-----  starting task   ----->>>
+
+forking now to run command:
+"/arm/tools/synopsys/vcs/2025.06-1/linux64/bin/fcm_worker_start.sh -1  '/home/dhanas01/test_fifo_demo' '/home/dhanas01/test_fifo_demo'"
+
+2026-02-24 - 02:54:28.52 - send message(323 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923268;will invoke: "/arm/tools/synopsys/vcs/2025.06-1/bin/vc_fcc -full64 -daidir simv.daidir -sff ./COLLATERAL/SFF/config.sff,./COLLATERAL/SFF/faults.sff -campaign fifodemo -dut test.DUT -overwrite -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default 2>&1"
+
+;'
+2026-02-24 - 02:54:28.72 - send message(1082 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923268;
+                          VC Fault Campaign Compiler 
+
+                Version X-2025.06-1 for linux64 - Jul 16, 2025 
+
+                    Copyright (c) 2019 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+     ;'
+2026-02-24 - 02:54:28.72 - send message(399 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923268;       Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Command: vc_fcc -full64 -daidir simv.daidir -sff ./COLLATERAL/SFF/config.sff,./COLLATERAL/SFF/faults.sff -campaign fifodemo -dut test.DUT -overwrite -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default 
+
+;'
+2026-02-24 - 02:54:29.01 - send message(93 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Info: Connected to existing server;'
+2026-02-24 - 02:54:29.01 - send message(60 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;
+;'
+2026-02-24 - 02:54:29.06 - send message(89 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Loading design information...
+;'
+2026-02-24 - 02:54:29.44 - send message(136 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 53Mb, peak: 86Mb).
+;'
+2026-02-24 - 02:54:29.45 - send message(1082 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;
+Warning-[FCC-PROMOTION-TABLE-MISSING-BUILT-IN-STATUSES] Missing noted built-in fault status interactions.
+./COLLATERAL/SFF/config.sff, 48
+  The defined promotion table does not account for resolution of the following
+  user-defined fault statuses in relation to their promotion to the noted 
+  built-in VC Z01X statuses.
+  These promotions will default to the built-in VC Z01X status unless their 
+  interaction is defined: 
+  NN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  NP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  ND-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  PP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  ON-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA,;'
+2026-02-24 - 02:54:29.45 - send message(649 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269; OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  OP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  OD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AN-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AD-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  AP-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  IS-> [DE, DF, HA, HM, HT, IA, IF, IH, IP, IX, OA, OZ, UB, UC, UI, UO, UR, 
+  UT, UU, EN]
+  
+
+;'
+2026-02-24 - 02:54:29.45 - send message(80 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Generating faults...
+;'
+2026-02-24 - 02:54:29.49 - send message(157 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (422 faults generated, CPU time: 0s, elapsed time: 0s, memory increased by 5Mb, peak: 94Mb).
+;'
+2026-02-24 - 02:54:29.49 - send message(88 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Collecting design strobes...
+;'
+2026-02-24 - 02:54:29.50 - send message(135 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 94Mb).
+;'
+2026-02-24 - 02:54:29.50 - send message(85 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Loading design details...
+;'
+2026-02-24 - 02:54:29.51 - send message(135 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 94Mb).
+;'
+2026-02-24 - 02:54:29.51 - heart beat thread: 1771923269 alive, worker process pid: 1365094
+2026-02-24 - 02:54:29.51 - send message(68 bytes): 'ALIVE;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;1771923269;'
+skip tryReadingMoreFaultResults() because SNPS_FUSA_TASK_PRIVATE_DIR is not set
+2026-02-24 - 02:54:29.51 - send message(83 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Constant propagation...
+;'
+2026-02-24 - 02:54:29.52 - send message(135 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+;'
+2026-02-24 - 02:54:29.52 - send message(90 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Static testability analysis...
+;'
+2026-02-24 - 02:54:29.53 - send message(158 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Reconvergence check...
+;'
+2026-02-24 - 02:54:29.53 - send message(135 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+;'
+2026-02-24 - 02:54:29.53 - send message(70 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Pruning...
+;'
+2026-02-24 - 02:54:29.53 - send message(149 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 95Mb).
+Collapsing...
+;'
+2026-02-24 - 02:54:29.54 - send message(135 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 96Mb).
+;'
+2026-02-24 - 02:54:29.58 - send message(88 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Preparing to write to FDB...
+;'
+2026-02-24 - 02:54:29.58 - send message(168 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 96Mb).
+Writing fault campaign to FDB...
+;'
+2026-02-24 - 02:54:29.82 - send message(135 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Done (CPU time: 0s, elapsed time: 0s, memory increased by 1Mb, peak: 98Mb).
+;'
+2026-02-24 - 02:54:29.83 - send message(174 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Total faults generated: 422.
+Collapsed faults:       120.
+Untestable faults:      88.
+Fault reduction:        49%.
+;'
+2026-02-24 - 02:54:29.83 - send message(69 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;1 warning
+;'
+2026-02-24 - 02:54:29.89 - send message(111 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;CPU time: 0s, elapsed time: 1s, peak memory: 102MB.
+;'
+2026-02-24 - 02:54:29.90 - send message(60 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;
+;'
+2026-02-24 - 02:54:29.90 - send message(94 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;command completed with exit code 0
+;'
+2026-02-24 - 02:54:29.90 - send message(60 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;
+;'
+2026-02-24 - 02:54:29.90 - send message(66 bytes): 'OUTPUT;-1;1365076;vscode-login4.nahpc2.arm.com;1771923269;Exit:0
+;'
+2026-02-24 - 02:54:29.90 - <<<-----  finished task   ----->>>
+exit code: 0, failed reason: EXITED
+2026-02-24 - 02:54:30.51 - ~heartbeat
+2026-02-24 - 02:54:30.52 - heartbeat thread joined
+
+REPORT STATS DATA
+------------------------------------------------------------------------
+  valid:             no
+total time spent: 2
+
+updating taskdata (88 bytes): "STOPTASK,F,0,0,0,0,0,0,0,F,0,0,0,-,2,-1,1365076,vscode-login4.nahpc2.arm.com,1771923270"
+2026-02-24 - 02:54:30.52 - <<<-----  task finished  ----->>>
+
+
+--------------------------------------------------------------------------------
+
+
+no further tasks from FCM
+timeout not reached: 2s/21600s
+Note: FCM disconnected this worker after all task results had been safely transferred
+1 tasks processed
+CDPL worker shutdown ok
+2026-02-24 - 02:54:30.53 - <<<-----  leaving main loop  ----->>>
+================================================================================
++ entering ~WorkerFlow
++ entering shutdownFdbApi
++ entering createStoppedFile
+stop file name: /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker/worker1.stopped_pid1365076
+stop file successfully created
+2026-02-24 - 02:54:30.53 - terminating worker
+2026-02-24 - 02:54:30.53 - @@@ end of log @@@

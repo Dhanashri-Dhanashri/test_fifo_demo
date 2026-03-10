@@ -1,0 +1,15 @@
+2026-02-24 02:54:25 [fdb_start:1363063]  Start server for /home/dhanas01/test_fifo_demo/fdb
+2026-02-24 02:54:25 [fdb_start:1363063]  Info: Starting the PostgreSQL server as 'dhanas01'.
+Info: Using port '62272' for the PostgreSQL connection.
+Info: PostgreSQL server is ready.
+2026-02-24 02:54:25 [fdb_start:1363063]  Server host vscode-login4.nahpc2.arm.com is 10.120.10.44, use IP when possible
+2026-02-24 02:54:25 [fdb_start:1363063]  Found a server on vscode-login4.nahpc2.arm.com:62272 pid=1364348 for fdb_path /home/dhanas01/test_fifo_demo/fdb
+2026-02-24 02:54:25 [fdb_start:1363063]  Server host vscode-login4.nahpc2.arm.com is 10.120.10.44, use IP when possible
+2026-02-24 02:54:25 [fdb_start:1363063]  Started server vscode-login4.nahpc2.arm.com:62272 pid=1364348 fdb_path /home/dhanas01/test_fifo_demo/fdb
+2026-02-24 02:54:25 [fdb_start:1363063]  Create fdb_monitor config file /home/dhanas01/test_fifo_demo/fdb/server/monitor.conf
+2026-02-24 02:54:25 [fdb_start:1363063]  Starting fdb_monitor
+2026-02-24 02:54:26 [fdb_start:1363063]  FDB fdb_monitor started
+2026-02-24 02:54:26 [fdb_start:1363063]  Create the project 'default'
+2026-02-24 02:54:28 [fdb_start:1363063]  Info: Creating an FDB with name default.
+Info: Successfully created an FDB. Clients can now access the FDB for project 'default' on vscode-login4.nahpc2.arm.com:62272 (as long as the server is running).
+2026-02-24 02:54:28 [fdb_start:1363063]  Project 'default' created

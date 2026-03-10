@@ -1,0 +1,424 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_dump_var_vpdg('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vcsd_dump_var_vpdg')
+ANF: vcsd_begin_no_value_var_info('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vhpi_get_cb_info('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: scsd_fgp_get_is_cpu_affinity_disabled('/home/dhanas01/test_fifo_demo/simv: undefined symbol: scsd_fgp_get_is_cpu_affinity_disabled')
+ANF: vdi_dbg_set_client_control('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vdi_dbg_set_client_control')
+ANF: vhdi_dt_get_type('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_dt_get_vhdl_integer_range_info('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_dt_get_vhdl_integer_range_info')
+ANF: vhdi_def_traverse_module('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_set_int_subtype('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_set_int_subtype')
+ANF: vhdi_set_fixed_point('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_set_fixed_point')
+ANF: vhdi_get_fsdb_option('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_node_ist_get_value_addr')
+ANF: vhdi_enc_def_traverse_module('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_enc_def_traverse_module')
+ANF: vhdi_enc_def_traverse_scope('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_enc_def_traverse_scope')
+ANF: vhdi_enc_def_traverse_variable('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_enc_def_traverse_variable')
+ANF: vhdi_enc_ist_traverse_scope('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_enc_ist_traverse_scope')
+ANF: vhdi_enc_ist_traverse_variable('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_enc_ist_traverse_variable')
+ANF: vhdi_enc_ist_get_module_id('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_enc_ist_get_module_id')
+ANF: vhdi_enc_def_get_handle_by_module_id('/home/dhanas01/test_fifo_demo/simv: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
+VCS compile option:
+ option[0]: /home/dhanas01/test_fifo_demo/simv
+ option[1]: +test1
+ option[2]: -fsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/dump:test1:DEFAULT:task7/task.json
+ option[3]: +fsdbfile+fm_fid130_test1.fsdb
+ option[4]: +vc_zoix_enable_fsdb
+ option[5]: -reportstats
+ option[6]: /arm/tools/synopsys/vcs/2025.06-1/linux64/bin/vcs1fe
+ option[7]: -Mcc=gcc
+ option[8]: -Mcplusplus=g++
+ option[9]: -Masflags=
+ option[10]: -Mcfl= -pipe -fPIC -O -I/arm/tools/synopsys/vcs/2025.06-1/include 
+ option[11]: -Mxllcflags=
+ option[12]: -Mxcflags= -pipe -fPIC -I/arm/tools/synopsys/vcs/2025.06-1/include
+ option[13]: -Mldflags= -rdynamic 
+ option[14]: -Mout=simv
+ option[15]: -Mamsrun=
+ option[16]: -Mvcsaceobjs=
+ option[17]: -Mobjects= /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libvirsim.so /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/liberrorinf.so /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libsnpsmalloc.so /arm/tools/synopsys/vcs/2025.06-1/linux64/lib/libvfs.so 
+ option[18]: -Mexternalobj=
+ option[19]: -Msaverestoreobj=/arm/tools/synopsys/vcs/2025.06-1/linux64/lib/vcs_save_restore_new.o
+ option[20]: -Mcrt0=
+ option[21]: -Mcrtn=
+ option[22]: -Mcsrc=
+ option[23]: -Msyslibs=/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/LINUX64/pli.a -ldl 
+ option[24]: -l
+ option[25]: comp_v.log
+ option[26]: -Xcheckfsim
+ option[27]: -Xcheckfsim
+ option[28]: -fsim=dut:test.DUT
+ option[29]: +vpi
+ option[30]: -kdb
+ option[31]: -Xufe=2steps
+ option[32]: -lca
+ option[33]: -fsim=portfaults
+ option[34]: -debug_access
+ option[35]: +vcsd1
+ option[36]: +itf+/arm/tools/synopsys/vcs/2025.06-1/linux64/lib/vcsdp_lite.tab
+ option[37]: -full64
+ option[38]: -Xhdlxmropt
+ option[39]: -picarchive
+ option[40]: -P
+ option[41]: /arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/LINUX64/verdi.tab
+ option[42]: -fsdb
+ option[43]: -sverilog
+ option[44]: -gen_obj
+ option[45]: -Xfile_begin_f=./rtl.f
+ option[46]: src/fifo_tb.v
+ option[47]: +define+USE_SAFETY_DESIGN
+ option[48]: +define+USE_SDPRAM_TOP
+ option[49]: -Xfile_end
+ option[50]: ./src/strobe.sv
+ option[51]: -load
+ option[52]: /arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+ option[53]: nusym_mode
+Chronologic Simulation VCS Release X-2025.06-1_Full64
+Linux 4.18.0-553.el8_10.x86_64 #1 SMP Fri May 10 15:19:13 EDT 2024 x86_64
+CPU cores: 16
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize		0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked		64 kbytes
+maxproc		2048
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+CDPL_LOGDIR=/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl
+LC_ALL=en_US.UTF-8
+LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+LD_LIBRARY_PATH=/arm/tools/synopsys/verdi3/2025.06-1/share/NPI/lib/linux64/:/arm/tools/synopsys/vcs/2025.06-1/bin/fusa_cdpl_sdk/latest/lib/linux64/:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbWriter/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/IUS/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/MODELSIM/linux64:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/linux64:/lib:/usr/lib:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib
+HOSTTYPE=x86_64-linux
+ARM_CLUSTER_NAME=nahpc2
+SYS_INST_DIR=/arm/tools/synopsys/verdi3/2025.06-1
+NOVAS_VERSION=2025.06-1
+PYTHON_BASIC_REPL=1
+SSH_CONNECTION=10.164.19.75 53743 10.120.10.44 22
+SNPS_FUSA_FCM_WORK_DIR=/home/dhanas01/test_fifo_demo
+SNPS_FUSA_FCM_WORKER_TIMEOUT=21600
+DEPOT_AMQP=amqp.nahpc.arm.com
+LANG=en_US.UTF-8
+VIRSIMHOME=/arm/tools/synopsys/vcs/2025.06-1/gui/virsim
+NO_DUMP_LOGDIR=1
+SNPSLMD_LICENSE_FILE_modshare=12700@nahpc-lic13.nahpc.arm.com:2:12700@nahpc-lic17.nahpc.arm.com:2:12700@euhpc-lic11.euhpc.arm.com:2:11762@euhpc-lic12.euhpc.arm.com:2:12700@nahpc-lic01.nahpc.arm.com:2:12700@nahpc-lic05.nahpc.arm.com:2:12700@nahpc-lic09.nahpc.arm.com:2:12700@euhpc-lic09.euhpc.arm.com:2:12700@euhpc-lic10.euhpc.arm.com:2:12700@eu03-lic08.server.eu03.arm.com:2
+DEPOT_VERSION=depot-2.03-aus03
+EDITOR=vim
+PATH_modshare=/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:1:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:999999999:/usr/bin:1:/arm/tools/arm/cluster/2.0/prod/bin:1:/usr/X11R6/bin:1:/usr/local/bin:2:/arm/tools/synopsys/verdi3/2025.06-1/bin:1:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:2:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:1:/arm/tools/synopsys/vcs/2025.06-1/gui/virsim/bin:1:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:1:/bin:1:/opt/puppetlabs/bin:2:/arm/tools/synopsys/vcs/2025.06-1/bin:1:/usr/sbin:1:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:1:/home/dhanas01/.local/bin/x86_64:2:/usr/local/sbin:1:/arm/tools/synopsys/vcs/2025.06-1/cso/bin:1
+CDPL_SERVER=10.120.10.44:40869
+LOADEDMODULES_modshare=synopsys/license/production:2:arm/cluster/2.0:1:arm/license/production:1:synopsys/vcs/2025.06-1:1:swdev:1:core:2:synopsys/verdi3/2025.06-1:1:eda:1:util:1:platform/lsf/10.1_sp14:1
+COLORTERM=truecolor
+DUOLOG_LICENSE_FILE=1661@eu03-lic05.server.eu03.arm.com
+ARM_MODULE_ROOT=/arm/tools/modulefiles
+MAKE_TERMOUT=/dev/pts/75
+SNPSLMD_LICENSE_FILE=12700@nahpc-lic01.nahpc.arm.com:12700@nahpc-lic05.nahpc.arm.com:12700@nahpc-lic13.nahpc.arm.com:12700@nahpc-lic17.nahpc.arm.com:12700@nahpc-lic09.nahpc.arm.com:12700@euhpc-lic09.euhpc.arm.com:12700@euhpc-lic10.euhpc.arm.com:12700@euhpc-lic11.euhpc.arm.com:11762@euhpc-lic12.euhpc.arm.com:12700@eu03-lic08.server.eu03.arm.com
+KDEDIRS=/usr
+CARBOND_LICENSE_FILE=7276@euhpc-lic20.euhpc.arm.com:7276@nahpc-lic15.nahpc.arm.com
+VENDOR=unknown
+MACHTYPE=x86_64
+VERDI_FUSA_DEBUG=1
+CDPL_HEARTBEAT=300
+LSF_SERVERDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/etc
+MFLAGS=
+SNPS_FUSA_TASK_TYPE=dump
+SNPSLMD_DISABLE_DEBUG_LICENSE_CHECKS=1
+S_COLORS=auto
+FSDB_DELTA=0
+SNPS_FUSA_FAILURE_MODE=DEFAULT
+OSTYPE=linux
+LD_LIBRARY_PATH_modshare=/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbReader/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/MODELSIM/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/FsdbWriter/linux64:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/VCS/linux64:1:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib:1:/lib:1:/arm/tools/synopsys/verdi3/2025.06-1/share/PLI/IUS/linux64:1:/usr/lib:1
+LSF_ENVDIR=/arm/cluster/nahpc2/conf
+XDG_SESSION_ID=4861
+USER=dhanas01
+PAGER=less
+SNPS_DISABLE_DCG_NEW_TECHNOLOGY=1
+CDPL_DEBUG_SUBMIT_TIMEOUT=120
+GROUP=dhanas01
+PWD=/home/dhanas01/test_fifo_demo
+formal=/home/dhanas01/luna_tutorial/fts
+HOME=/home/dhanas01
+BROWSER=/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/helpers/browser.sh
+LM_LICENSE_FILE_modshare=1661@eu03-lic05.server.eu03.arm.com:1
+TERM_PROGRAM=vscode
+HOST=vscode-login4.nahpc2.arm.com
+SSH_CLIENT=10.164.19.75 53743 22
+TERM_PROGRAM_VERSION=1.108.2
+ARMLMD_LICENSE_FILE=17010@armlmd.lic.arm.com:17010@eu-armlmd.lic.arm.com:17010@na-armlmd.lic.arm.com
+SNPS_FUSA_FSIM_MODE=concurrent
+VERDI_FUSA_DUMP_FSDB_CMD=./COLLATERAL/VERDI/dumping_v.sh
+_LMFILES__modshare=/arm/tools/modulefiles/eda:1:/arm/tools/modulefiles/.core/arm/license/validation:1:/arm/tools/modulefiles/util:1:/arm/tools/modulefiles/.eda/synopsys/license/production:4:/arm/tools/modulefiles/.core/platform/lsf/10.1_sp14:2:/arm/tools/modulefiles/swdev:1:/arm/tools/modulefiles/core:2
+SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+SNPS_FUSA_TASK_PRIVATE_DIR=/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/dump:test1:DEFAULT:task7
+SNPS_FUSA_TEST_NAME=test1
+LSF_BINDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin
+VSCODE_IPC_HOOK_CLI=/run/user/65749/vscode-ipc-1dd7a17c-be97-42c0-91a5-e6b033b27ed7.sock
+SNPS_FUSA_DUMP_MODE=fm
+ARM_CLUSTER_MODE=CPM
+lf=/home/dhanas01/luna_tutorial/luna_flow
+LOADEDMODULES=core:util:swdev:arm/license/production:platform/lsf/10.1_sp14:arm/cluster/2.0:eda:synopsys/license/production:synopsys/vcs/2025.06-1:synopsys/verdi3/2025.06-1
+ARMLM_ONDEMAND_ACTIVATION=HWSKT-EAC0@https://lls.arm.com
+SNPS_FDB_SERVER_IP=10.120.10.44
+NPI_DISABLE_TOOL_INDENT=1
+luna=/home/dhanas01/luna_tutorial
+MAIL=/var/spool/mail/dhanas01
+SNPS_FDB_STORAGE_PATH=/home/dhanas01/test_fifo_demo/fdb
+SNPS_FUSA_FCM_WORKER_STARTED_FILE=/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker/worker_started
+SHELL=/bin/tcsh
+TERM=xterm-256color
+VSCODE_NONCE=5fd59b94-b61d-45cf-81dc-2f85029683b8
+LM_LICENSE_FILE=:1661@eu03-lic05.server.eu03.arm.com
+MANPATH_modshare=/arm/tools/platform/lsf/10.1_sp14/man:1:/usr/local/share/man:1:/usr/X11R6/man:3:/usr/share/man:1:/arm/tools/synopsys/vcs/2025.06-1/doc/man:1
+XLSF_UIDDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib/uid
+SNPS_FUSA_FCM_WORKER_LOG_DIR=/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/worker
+ARM_SITE_LOAD=core
+DUOLOG_LICENSE_FILE_modshare=1661@eu03-lic05.server.eu03.arm.com:1
+NOVAS_IDLE_LICENSE_CHECKBACK=30
+SNPS_ANOMALY_DISABLE=1
+MAKELEVEL=1
+VERDI_HOME=/arm/tools/synopsys/verdi3/2025.06-1
+PYTHONSTARTUP=/home/dhanas01/.vscode-server/data/User/workspaceStorage/2d0c82943420c788e865b445afdca553/ms-python.python/pythonrc.py
+SHLVL=9
+MAKE_TERMERR=/dev/pts/75
+ARMLM_ONDEMAND_ACTIVATION_modshare=//lls.arm.com:1:HWSKT-EAC0@https:1
+FSDB_PLI_EXIT_LOAD_FAIL=1
+SNPS_FDB_SERVER=localhost:62272
+MANPATH=/arm/tools/platform/lsf/10.1_sp14/man:/usr/X11R6/man:/usr/share/man:/usr/local/share/man:/arm/tools/synopsys/vcs/2025.06-1/doc/man
+TURBO_LIBS=artisan_l artisan_u
+SNPS_FUSA_INTERNAL_INTERMEDIATE_RESULTS_ACTIVE=1
+LSF_LIBDIR=/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/lib
+FSDB_FAULT_DUMP_MODE=fm
+SNPS_FUSA_OLD_CDPL_HOME=0
+MODULEPATH=/arm/tools/modulefiles:/arm/tools/modulefiles:/arm/tools/modulefiles/.core:/arm/tools/modulefiles/.util:/arm/tools/modulefiles/.swdev:/arm/tools/modulefiles/.eda
+SSL_CERT_DIR=/etc/pki/tls/certs
+LOGNAME=dhanas01
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/65749/bus
+LD_LIBRARY_PATH_USER=
+XDG_RUNTIME_DIR=/run/user/65749
+CDPL_ID=1:1:1:1:286852853
+MODULEPATH_modshare=/arm/tools/modulefiles/.swdev:1:/arm/tools/modulefiles/.core:2:/arm/tools/modulefiles/.eda:1:/arm/tools/modulefiles/.util:1:/arm/tools/modulefiles:1
+SNPS_FUSA_DUMP_FILE=fm_fid130_test1.fsdb
+SNPS_FUSA_FCM_START_DIR=/home/dhanas01/test_fifo_demo
+PATH=/arm/tools/synopsys/verdi3/2025.06-1/bin:/arm/tools/visualstudio/vscode/1.96.2/VSCode-linux-x64/bin:/arm/tools/platform/lsf/10.1_sp14/linux3.10-glibc2.17-x86_64/bin:/arm/tools/arm/cluster/2.0/prod/bin:/bin:/usr/bin:/usr/X11R6/bin:/arm/tools/synopsys/vcs/2025.06-1/bin:/arm/tools/synopsys/vcs/2025.06-1/gui/virsim/bin:/arm/tools/synopsys/vcs/2025.06-1/cso/bin:/usr/local/bin:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin
+CSO_HOME=/arm/tools/synopsys/vcs/2025.06-1/cso
+VCS_HOME=/arm/tools/synopsys/vcs/2025.06-1
+_LMFILES_=/arm/tools/modulefiles/core:/arm/tools/modulefiles/util:/arm/tools/modulefiles/swdev:/arm/tools/modulefiles/.core/arm/license/validation:/arm/tools/modulefiles/.core/platform/lsf/10.1_sp14:/arm/tools/modulefiles/eda:/arm/tools/modulefiles/.eda/synopsys/license/production
+PATH_USER=/usr/local/bin:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/dhanas01/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/dhanas01/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/bin:/home/dhanas01/.local/bin/x86_64:/pkg/OSS-geany-/1.37.1/x86_64-linux3.10-glibc2.17/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin:/opt/puppetlabs/bin
+ARMLMD_LICENSE_FILE_modshare=17010@eu-armlmd.lic.arm.com:1:17010@armlmd.lic.arm.com:1:17010@na-armlmd.lic.arm.com:1
+MODULESHOME=/arm/tools/setup
+CARBOND_LICENSE_FILE_modshare=7276@euhpc-lic20.euhpc.arm.com:1:7276@nahpc-lic15.nahpc.arm.com:1
+MAKEFLAGS=
+SYNOPSYS_SI=/arm/tools/synopsys/vcs/2025.06-1
+CDPL_WORKERID=1
+SNPS_COMMAND=/home/dhanas01/test_fifo_demo/simv +test1 -fsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/dump:test1:DEFAULT:task7/task.json +fsdbfile+fm_fid130_test1.fsdb +vc_zoix_enable_fsdb -reportstats
+me=dhanas01
+FLEXLM_NO_CKOUT_INSTALL_LIC=1
+OLDPWD=/home/dhanas01/test_fifo_demo
+_=/home/dhanas01/test_fifo_demo/simv
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_STACK_EXEC=true
+VCS_EXEC_DONE=1
+VCS_STOP_SAFE=1
+DVE=/arm/tools/synopsys/vcs/2025.06-1/gui/dve
+SPECMAN_OUTPUT_TO_TTY=1
+FLEXLM_BORROWFILE=/home/dhanas01/.vscode-login4.nahpc2.arm.com-borrow.txt
+Runtime command line arguments:
+argv[0]=/home/dhanas01/test_fifo_demo/simv
+argv[1]=+test1
+argv[2]=-fsim=task:/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/dump:test1:DEFAULT:task7/task.json
+argv[3]=+fsdbfile+fm_fid130_test1.fsdb
+argv[4]=+vc_zoix_enable_fsdb
+argv[5]=-reportstats
+**********Message Rewind**************
+305 profile - 100
+          CPU/Mem usage: 0.060 sys,  0.160 user,  315.31M mem
+306 Elapsed time:    0:00:01    Tue Feb 24 02:54:39 2026
+307 User CPU time used: 0 seconds
+308 System CPU time used: 0 seconds
+309 pliAppInit
+310 ndpGetenv(FSDB_DELTA): 0
+311 FSDB_GATE & FSDB_RTL is disabled.
+312 FSDB_DYNAMIC_ALIAS is enabled.
+313 _numa_functions open successfully.
+314 FSDB NUMA optimize not available.
+315 FSDB_PACKED_MODE is enabled.
+316 FSDB_GATE_PACKED is enabled.
+317 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+318 FSDB_REDUCE_VC_MEM is enabled.
+319 Enable Parallel Dumping.
+320 pliAppMiscSet: New Sim Round
+321 pliEntryInit
+322 LIBSSCORE=found /arm/tools/synopsys/verdi3/2025.06-1/share/PLI/lib/LINUXAMD64/libsscore_vcs202506.so through $NOVAS_HOME setting.
+323 FSDB Dumper for VCS, Release Verdi_X-2025.06-1, Linux x86_64/64bit, 07/19/2025
+324 (C) 1996 - 2025 by Synopsys, Inc.
+325 DVDI_is_vir_unload_enabled is enable
+326 FSDB_VCS_ENABLE_NATIVE_VC is enable
+327 FSDB_VCS_ENABLE_MEMORY_NATIVE_VC is enabled
+328 sps_call_fsdbDumpvars_vd_main at 0 : Unknown source file(0)
+329 *Verdi* : Create FSDB file 'fm_fid130_test1.fsdb'
+330 [spi_vcs_vd_ppi_create_root]: no upf option
+331 DUMPER_MEMORY_REDUCTION is enabled.
+332 compile option from '/home/dhanas01/test_fifo_demo/simv.daidir/vcs_rebuild'.
+333   "vcs '-f' './rtl.f' './src/strobe.sv' '-fsim=dut:test.DUT' '-kdb' '-lca' '-fsim=portfaults' '-debug_access' '-sverilog' '-full64' '-l' 'comp_v.log' 2>&1"
+334 *Verdi* : Begin traversing the scopes, layer (0).
+335 *Verdi* : End of traversing.
+336 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.070 sys,  0.160 user,  415.28M mem
+                   incr: 0.010 sys,  0.000 user,  9.10M mem
+                   accu: 0.010 sys,  0.000 user,  9.10M mem
+              accu incr: 0.010 sys,  0.000 user,  9.10M mem
+
+          Count usage: 115 var,  63 idcode,  62 callback
+                 incr: 115 var,  63 idcode,  62 callback
+                 accu: 115 var,  63 idcode,  62 callback
+            accu incr: 115 var,  63 idcode,  62 callback
+337 Idcode  0 - bc1:0  mda:0
+338 Elapsed time:    0:00:01    Tue Feb 24 02:54:39 2026
+339 User CPU time used: 0 seconds
+340 System CPU time used: 0 seconds
+341 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.070 sys,  0.160 user,  415.28M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.010 sys,  0.000 user,  9.10M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 115 var,  63 idcode,  62 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 115 var,  63 idcode,  62 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+342 Idcode  0 - bc1:0  mda:0
+343 Elapsed time:    0:00:01    Tue Feb 24 02:54:39 2026
+344 User CPU time used: 0 seconds
+345 System CPU time used: 0 seconds
+346 sps_call_fsdbDumpvars_vd_main at 0 : ./src/strobe.sv(7)
+347 *Verdi* : Begin traversing the scopes, layer (0).
+348 *Verdi* : End of traversing.
+349 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.070 sys,  0.160 user,  415.28M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 230 var,  63 idcode,  62 callback
+                 incr: 115 var,  0 idcode,  0 callback
+                 accu: 115 var,  0 idcode,  0 callback
+            accu incr: 115 var,  0 idcode,  0 callback
+350 Idcode  0 - bc1:0  mda:0
+351 Elapsed time:    0:00:01    Tue Feb 24 02:54:39 2026
+352 User CPU time used: 0 seconds
+353 System CPU time used: 0 seconds
+354 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.070 sys,  0.160 user,  415.28M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 230 var,  63 idcode,  62 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 115 var,  0 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+355 Idcode  0 - bc1:0  mda:0
+356 Elapsed time:    0:00:01    Tue Feb 24 02:54:39 2026
+357 User CPU time used: 0 seconds
+358 System CPU time used: 0 seconds
+359 End of simulation at 3110
+360 Memory usage: 415.277 M
+361 Maximum resident set size: 122 MB
+362 Hard page faults: 3
+363 Soft page faults: 16757
+364 Elapsed time:    0:00:01    Tue Feb 24 02:54:39 2026
+365 User CPU time used: 0 seconds
+366 System CPU time used: 0 seconds
+367 Begin FSDB profile info:
+368 FSDB Writer : bc1(408) bcn(342) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.007575) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+369 End FSDB profile info
+370 FSDB closed. Name: fm_fid130_test1.fsdb Size: 11545
+371 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+372                      - BlockUsed:1 Acquire:0 BufferUsed:11454
+373                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:0
+374                      - MainProducerTime:0.246552242 TotalConsumerTime:0.000000000
+375                      - ElapsedTime:0.063381000
+376 Producer   0 profile - BlockUsed:3 Acquire:0 BufferUsed:11454
+377 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
+378                      - BlockUsed:3 Acquire:0 BufferUsed:11454
+379 SimExit
+380 Elapsed time:    0:00:01    Tue Feb 24 02:54:39 2026
+381 User CPU time used: 0 seconds
+382 System CPU time used: 0 seconds
+383 Sim process exit

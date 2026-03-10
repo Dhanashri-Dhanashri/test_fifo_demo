@@ -1,0 +1,1 @@
+/arm/tools/synopsys/vcs/2025.06-1/etc/fdb/PostgreSQL/linux64/pgsql/bin/postgres "-D" "/home/dhanas01/test_fifo_demo/fdb" "-p" "62272" "-c" "log_line_prefix=%m [user=%u]" "-c" "log_hostname=true"

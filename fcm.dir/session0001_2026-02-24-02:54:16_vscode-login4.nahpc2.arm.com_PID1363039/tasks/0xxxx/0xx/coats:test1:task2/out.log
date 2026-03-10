@@ -1,0 +1,56 @@
+will invoke: "cd '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test1:task2' && vc_coats -full64 -daidir '/home/dhanas01/test_fifo_demo/simv.daidir' -test test1 -fsdb '/home/dhanas01/test_fifo_demo/fcm_tsim_fsdb/fifodemo/test1.fsdb' -fdb_path /home/dhanas01/test_fifo_demo/fdb -fdb_project default -campaign fifodemo -l '/home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/tasks/0xxxx/0xx/coats:test1:task2/vc_coats.log' "
+
+
+        VC COATS (Controllability Observability And Testability System) 
+
+                Version X-2025.06-1 for linux64 - Jul 16, 2025 
+
+                    Copyright (c) 2019 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Loading design...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 51Mb, peak: 74Mb).
+Loading FSDB...
+Done (CPU time: 0s, elapsed time: 2s, memory increased by 84Mb, peak: 158Mb).
+Last strobe occured at time: 3030. Ignoring all toggle data after this time.
+Loading design details...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 1Mb, peak: 161Mb).
+Info: Connected to existing server
+Observability analysis for test1...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 166Mb).
+Reconvergence check...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 166Mb).
+Info: Connected to existing server
+Reading faults from FDB...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 167Mb).
+Processing faults...
+Done (214 faults processed, CPU time: 0s, elapsed time: 0s, memory increased by 1Mb, peak: 167Mb).
+Info: Connected to existing server
+Writing results to FDB...
+Done (CPU time: 0s, elapsed time: 0s, memory increased by 0Mb, peak: 169Mb).
+
+##### Testability results for test1 #####
+Analyzed prime NA faults: 214 (from total 422)
+Not strobed:              0
+Not observable:           0
+Not controllable:         30
+Fault reduction:          14% 
+
+CPU time: 0s, elapsed time: 2s, peak memory: 171MB.
+
+command completed with exit code 0
+
+Exit:0

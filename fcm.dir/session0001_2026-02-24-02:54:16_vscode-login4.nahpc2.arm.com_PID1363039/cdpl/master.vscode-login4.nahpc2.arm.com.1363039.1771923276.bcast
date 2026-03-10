@@ -1,0 +1,8 @@
+# Master Broadcast File
+time 1771923276
+pid 1363039
+log /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/master.vscode-login4.nahpc2.arm.com.1363039.log
+tcp 10.120.10.44:35337
+wlog /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/worker.W1.vscode-login4.nahpc2.arm.com.1365630.log
+wlog /home/dhanas01/test_fifo_demo/fcm.dir/session0001_2026-02-24-02:54:16_vscode-login4.nahpc2.arm.com_PID1363039/cdpl/worker.W2.vscode-login4.nahpc2.arm.com.1365632.log
+status done

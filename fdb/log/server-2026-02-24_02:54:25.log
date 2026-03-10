@@ -1,0 +1,137 @@
+2026-02-24 02:54:25.651 CST [user=]LOG:  database system was shut down at 2026-02-24 02:54:21 CST
+2026-02-24 02:54:25.661 CST [user=]LOG:  database system is ready to accept connections
+2026-02-24 02:54:25.763 CST [user=[unknown]]LOG:  connection received: host=[local]
+2026-02-24 02:54:25.765 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=pg_isready
+2026-02-24 02:54:25.784 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.021 user=dhanas01 database=postgres host=[local]
+2026-02-24 02:54:25.822 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=40604
+2026-02-24 02:54:25.824 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=pg_isready
+2026-02-24 02:54:25.829 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.007 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=40604
+2026-02-24 02:54:26.681 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=40616
+2026-02-24 02:54:26.682 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=pg_isready
+2026-02-24 02:54:26.684 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.003 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=40616
+2026-02-24 02:54:26.713 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=40622
+2026-02-24 02:54:26.715 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:26.732 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=40638
+2026-02-24 02:54:26.734 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:26.735 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.021 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=40622
+2026-02-24 02:54:26.739 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=40648
+2026-02-24 02:54:26.743 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:26.751 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.012 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=40648
+2026-02-24 02:54:26.757 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.026 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=40638
+2026-02-24 02:54:26.805 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=40656
+2026-02-24 02:54:26.807 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=vc_fcm.exe
+2026-02-24 02:54:26.815 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.010 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=40656
+2026-02-24 02:54:26.816 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=40668
+2026-02-24 02:54:26.817 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=vc_fcm.exe
+2026-02-24 02:54:27.508 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=40672
+2026-02-24 02:54:27.509 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=default application_name=vc_fcm.exe
+2026-02-24 02:54:28.098 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.590 user=dhanas01 database=default host=vscode-login4.nahpc2.arm.com port=40672
+2026-02-24 02:54:28.099 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:01.283 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=40668
+2026-02-24 02:54:28.127 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=40676
+2026-02-24 02:54:28.129 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=default application_name=vc_fcm.exe
+2026-02-24 02:54:29.006 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=40680
+2026-02-24 02:54:29.007 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=default application_name=fault_compiler
+2026-02-24 02:54:29.836 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.830 user=dhanas01 database=default host=vscode-login4.nahpc2.arm.com port=40680
+2026-02-24 02:54:29.887 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=40690
+2026-02-24 02:54:29.889 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:29.896 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.010 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=40690
+2026-02-24 02:54:33.030 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=46346
+2026-02-24 02:54:33.031 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:33.037 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.007 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=46346
+2026-02-24 02:54:35.037 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=46350
+2026-02-24 02:54:35.039 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=default application_name=vc_coats.exe
+2026-02-24 02:54:35.048 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=46356
+2026-02-24 02:54:35.049 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=default application_name=vc_coats.exe
+2026-02-24 02:54:35.152 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.115 user=dhanas01 database=default host=vscode-login4.nahpc2.arm.com port=46350
+2026-02-24 02:54:35.175 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.127 user=dhanas01 database=default host=vscode-login4.nahpc2.arm.com port=46356
+2026-02-24 02:54:35.176 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=46372
+2026-02-24 02:54:35.178 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=default application_name=vc_coats.exe
+2026-02-24 02:54:35.203 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=46374
+2026-02-24 02:54:35.205 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=default application_name=vc_coats.exe
+2026-02-24 02:54:35.344 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.168 user=dhanas01 database=default host=vscode-login4.nahpc2.arm.com port=46372
+2026-02-24 02:54:35.365 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=46386
+2026-02-24 02:54:35.367 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=default application_name=vc_coats.exe
+2026-02-24 02:54:35.371 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.169 user=dhanas01 database=default host=vscode-login4.nahpc2.arm.com port=46374
+2026-02-24 02:54:35.386 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=46392
+2026-02-24 02:54:35.387 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=default application_name=vc_coats.exe
+2026-02-24 02:54:35.446 CST [user=dhanas01]ERROR:  could not serialize access due to concurrent update
+2026-02-24 02:54:35.446 CST [user=dhanas01]STATEMENT:  INSERT INTO test_result_files_control (fc_guid, tool, dir_counter, file_counter) VALUES ($1, $2, 1, 0) ON CONFLICT (fc_guid, tool) DO NOTHING 
+2026-02-24 02:54:35.462 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.096 user=dhanas01 database=default host=vscode-login4.nahpc2.arm.com port=46386
+2026-02-24 02:54:35.719 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.333 user=dhanas01 database=default host=vscode-login4.nahpc2.arm.com port=46392
+2026-02-24 02:54:36.172 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=46396
+2026-02-24 02:54:36.174 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:36.181 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.009 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=46396
+2026-02-24 02:54:39.345 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=46402
+2026-02-24 02:54:39.346 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:39.351 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.007 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=46402
+2026-02-24 02:54:40.935 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=46408
+2026-02-24 02:54:40.937 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=default application_name=vc_fdb_report.exe
+2026-02-24 02:54:41.319 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.384 user=dhanas01 database=default host=vscode-login4.nahpc2.arm.com port=46408
+2026-02-24 02:54:41.851 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:13.725 user=dhanas01 database=default host=vscode-login4.nahpc2.arm.com port=40676
+2026-02-24 02:54:42.510 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=56658
+2026-02-24 02:54:42.512 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:42.518 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.008 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=56658
+2026-02-24 02:54:45.639 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=56674
+2026-02-24 02:54:45.641 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:45.649 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.010 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=56674
+2026-02-24 02:54:48.780 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=56678
+2026-02-24 02:54:48.781 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:48.787 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.007 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=56678
+2026-02-24 02:54:51.919 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=56688
+2026-02-24 02:54:51.920 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:51.927 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.008 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=56688
+2026-02-24 02:54:55.039 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=41200
+2026-02-24 02:54:55.040 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:55.046 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.007 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=41200
+2026-02-24 02:54:58.162 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=41214
+2026-02-24 02:54:58.165 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:54:58.171 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.009 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=41214
+2026-02-24 02:55:01.336 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=41230
+2026-02-24 02:55:01.337 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:01.351 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.015 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=41230
+2026-02-24 02:55:04.481 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=54842
+2026-02-24 02:55:04.483 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:04.490 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.010 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=54842
+2026-02-24 02:55:07.616 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=54856
+2026-02-24 02:55:07.618 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:07.624 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.008 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=54856
+2026-02-24 02:55:10.744 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=54870
+2026-02-24 02:55:10.745 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:10.756 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.012 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=54870
+2026-02-24 02:55:13.873 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=57498
+2026-02-24 02:55:13.874 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:13.879 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.006 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=57498
+2026-02-24 02:55:16.995 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=57512
+2026-02-24 02:55:16.996 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:17.002 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.007 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=57512
+2026-02-24 02:55:20.133 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=57524
+2026-02-24 02:55:20.135 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:20.145 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.011 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=57524
+2026-02-24 02:55:23.282 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=36296
+2026-02-24 02:55:23.283 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:23.289 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.008 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=36296
+2026-02-24 02:55:26.414 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=36300
+2026-02-24 02:55:26.415 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:26.421 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.007 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=36300
+2026-02-24 02:55:29.527 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=36308
+2026-02-24 02:55:29.528 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:29.533 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.006 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=36308
+2026-02-24 02:55:32.668 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=57904
+2026-02-24 02:55:32.670 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:32.675 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.007 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=57904
+2026-02-24 02:55:35.800 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=57908
+2026-02-24 02:55:35.801 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:35.806 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.006 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=57908
+2026-02-24 02:55:38.938 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=57920
+2026-02-24 02:55:38.940 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:38.946 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.008 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=57920
+2026-02-24 02:55:42.076 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=57934
+2026-02-24 02:55:42.077 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:42.083 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.007 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=57934
+2026-02-24 02:55:45.213 CST [user=[unknown]]LOG:  connection received: host=vscode-login4.nahpc2.arm.com port=44932
+2026-02-24 02:55:45.214 CST [user=dhanas01]LOG:  connection authorized: user=dhanas01 database=postgres application_name=psql
+2026-02-24 02:55:45.220 CST [user=dhanas01]LOG:  disconnection: session time: 0:00:00.007 user=dhanas01 database=postgres host=vscode-login4.nahpc2.arm.com port=44932
+2026-02-24 02:55:45.235 CST [user=]LOG:  received smart shutdown request
+2026-02-24 02:55:45.236 CST [user=]LOG:  background worker "logical replication launcher" (PID 1364356) exited with exit code 1
+2026-02-24 02:55:45.241 CST [user=]LOG:  shutting down
+2026-02-24 02:55:45.397 CST [user=]LOG:  database system is shut down
