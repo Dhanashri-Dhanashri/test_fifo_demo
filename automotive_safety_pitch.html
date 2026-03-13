@@ -1,0 +1,1064 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Automotive Safety Validation Cockpit | FIFO Fault Injection Demo</title>
+  <meta name="description" content="Hackathon demo page for automotive safety validation using fault injection on a FIFO design." />
+  <style>
+    :root {
+      --bg-0: #060b14;
+      --bg-1: #0d1728;
+      --bg-2: #13233a;
+      --panel: rgba(18, 32, 52, 0.58);
+      --panel-solid: #12233a;
+      --line: rgba(106, 145, 191, 0.42);
+      --text: #ecf4ff;
+      --muted: #98afcc;
+      --accent: #4ec8ff;
+      --accent-2: #35e0bb;
+      --warn: #ffd37a;
+      --bad: #ff8c8c;
+      --good: #63e9a8;
+      --shadow: 0 22px 48px rgba(0, 0, 0, 0.42);
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Rajdhani", "Segoe UI", "Trebuchet MS", sans-serif;
+      background:
+        radial-gradient(circle at 12% 14%, rgba(78, 200, 255, 0.16), transparent 34%),
+        radial-gradient(circle at 88% 2%, rgba(53, 224, 187, 0.15), transparent 36%),
+        repeating-linear-gradient(
+          -38deg,
+          rgba(255,255,255,0.018) 0px,
+          rgba(255,255,255,0.018) 1px,
+          transparent 1px,
+          transparent 24px
+        ),
+        linear-gradient(165deg, var(--bg-0), var(--bg-1) 52%, #0f2238);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .scroll-meter {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      z-index: 999;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 14px rgba(78, 200, 255, 0.8);
+    }
+
+    .topnav {
+      position: sticky;
+      top: 0;
+      z-index: 998;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(7, 14, 25, 0.84);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .brand small {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: none;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #d7e7ff;
+      border: 1px solid rgba(90, 124, 164, 0.48);
+      background: rgba(23, 39, 62, 0.65);
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      transition: all 180ms ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: #fff;
+      border-color: var(--accent);
+      transform: translateY(-1px);
+      box-shadow: 0 0 0 1px rgba(78, 200, 255, 0.25) inset;
+    }
+
+    .wrap {
+      width: min(1320px, 95vw);
+      margin: 18px auto 38px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero {
+      position: relative;
+      border-radius: calc(var(--radius) + 4px);
+      padding: 22px;
+      border: 1px solid rgba(98, 141, 190, 0.46);
+      background:
+        linear-gradient(122deg, rgba(78, 200, 255, 0.10), transparent 48%),
+        linear-gradient(180deg, rgba(16, 29, 48, 0.92), rgba(10, 18, 30, 0.92));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+      transform: translateX(-100%);
+      animation: sheen 4.2s linear infinite;
+      opacity: 0.45;
+    }
+
+    @keyframes sheen {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    .eyebrow {
+      color: var(--accent-2);
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+      font-size: 12px;
+      margin: 0;
+    }
+
+    .hero h1 {
+      margin: 8px 0 10px;
+      font-size: clamp(28px, 3vw, 45px);
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 900px;
+      font-size: 17px;
+      line-height: 1.42;
+    }
+
+    .hero-kpis {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(140px, 1fr));
+      gap: 10px;
+    }
+
+    .kpi {
+      border-radius: 12px;
+      padding: 10px 12px;
+      border: 1px solid rgba(96, 141, 194, 0.45);
+      background: rgba(19, 36, 59, 0.72);
+    }
+
+    .kpi .k {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .kpi .v {
+      margin-top: 4px;
+      font-size: 29px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .good { color: var(--good); }
+    .warn { color: var(--warn); }
+    .bad { color: var(--bad); }
+
+    .section {
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(7px);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 520ms ease, transform 520ms ease;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(93, 133, 181, 0.40);
+      background: linear-gradient(90deg, rgba(78, 200, 255, 0.17), transparent);
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: 0.03em;
+    }
+
+    .section-head p {
+      margin: 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .section-body {
+      padding: 16px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(180px, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      border-radius: 12px;
+      border: 1px solid rgba(91, 130, 176, 0.45);
+      background: rgba(19, 35, 57, 0.72);
+      padding: 12px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 17px;
+      letter-spacing: 0.02em;
+    }
+
+    .card p {
+      margin: 8px 0 0;
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .pill {
+      border: 1px solid rgba(95, 136, 186, 0.42);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: #d9e9ff;
+      background: rgba(25, 45, 72, 0.58);
+    }
+
+    .term {
+      position: relative;
+      border-bottom: 1px dashed rgba(157, 204, 255, 0.62);
+      color: #d9ebff;
+      cursor: help;
+      white-space: nowrap;
+    }
+
+    .term::after {
+      content: attr(data-tip);
+      position: absolute;
+      left: 50%;
+      bottom: calc(100% + 8px);
+      transform: translateX(-50%) scale(0.96);
+      width: min(300px, 65vw);
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(110, 154, 208, 0.5);
+      background: rgba(10, 20, 33, 0.96);
+      color: #eaf4ff;
+      font-size: 12px;
+      line-height: 1.35;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 160ms ease, transform 160ms ease;
+      z-index: 5;
+    }
+
+    .term:hover::after,
+    .term:focus-visible::after {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+
+    .architecture {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(170px, 1fr));
+      gap: 10px;
+    }
+
+    .arch-node {
+      padding: 11px;
+      border: 1px solid rgba(93, 136, 189, 0.42);
+      border-radius: 12px;
+      background: rgba(18, 34, 56, 0.75);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      min-height: 126px;
+    }
+
+    .arch-node:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(78, 200, 255, 0.25) inset;
+    }
+
+    .arch-node h4 {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .arch-node p {
+      margin: 7px 0 0;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+
+    .pipeline-wrap {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 12px;
+    }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      gap: 8px;
+      align-items: center;
+    }
+
+    .step {
+      grid-column: span 2;
+      border-radius: 10px;
+      border: 1px solid rgba(92, 132, 181, 0.46);
+      background: rgba(18, 34, 56, 0.74);
+      padding: 10px;
+      min-height: 78px;
+      cursor: pointer;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+      font-size: 13px;
+      line-height: 1.3;
+      display: grid;
+      align-content: center;
+      text-align: center;
+    }
+
+    .step:hover { transform: translateY(-2px); }
+
+    .step.active {
+      border-color: var(--accent-2);
+      background: rgba(28, 63, 74, 0.6);
+      box-shadow: 0 0 0 1px rgba(53, 224, 187, 0.3) inset;
+    }
+
+    .arrow {
+      height: 3px;
+      background: linear-gradient(90deg, rgba(95, 132, 181, 0.5), var(--accent), rgba(95, 132, 181, 0.5));
+      border-radius: 999px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .arrow::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -16px;
+      width: 14px;
+      height: 7px;
+      border-radius: 99px;
+      background: #99e7ff;
+      box-shadow: 0 0 12px #99e7ff;
+      animation: travel 2.1s linear infinite;
+    }
+
+    @keyframes travel {
+      from { left: -16px; }
+      to { left: calc(100% + 16px); }
+    }
+
+    .step-detail {
+      border: 1px solid rgba(93, 134, 181, 0.45);
+      border-radius: 12px;
+      background: rgba(18, 33, 53, 0.78);
+      padding: 12px;
+      min-height: 148px;
+    }
+
+    .step-detail h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #def2ff;
+    }
+
+    .step-detail p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      line-height: 1.36;
+      font-size: 14px;
+    }
+
+    .code-block {
+      margin: 0;
+      border-radius: 12px;
+      border: 1px solid rgba(94, 135, 183, 0.45);
+      background: linear-gradient(180deg, rgba(12, 22, 35, 0.94), rgba(7, 14, 24, 0.94));
+      color: #dbedff;
+      font-family: "Consolas", "Menlo", monospace;
+      padding: 12px;
+      font-size: 13px;
+      line-height: 1.5;
+      overflow-x: auto;
+    }
+
+    .mech-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .mech {
+      border-radius: 12px;
+      border: 1px solid rgba(95, 137, 187, 0.45);
+      background: rgba(18, 35, 58, 0.75);
+      padding: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mech::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(130deg, rgba(255,255,255,0.08), transparent 42%);
+      pointer-events: none;
+    }
+
+    .mech h3 { margin: 0; font-size: 17px; }
+    .mech p { margin: 8px 0 0; color: var(--muted); font-size: 14px; line-height: 1.35; }
+    .mech .metric { margin-top: 10px; font-size: 13px; color: #d5eaff; }
+
+    .charts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(260px, 1fr));
+      gap: 12px;
+    }
+
+    .chart-card {
+      border-radius: 12px;
+      border: 1px solid rgba(95, 136, 186, 0.45);
+      background: rgba(17, 32, 52, 0.75);
+      padding: 12px;
+      min-height: 320px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .chart-title {
+      font-size: 15px;
+      letter-spacing: 0.02em;
+      color: #dff1ff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .chart-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .risk-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(180px, 1fr));
+      gap: 12px;
+    }
+
+    .risk {
+      border-radius: 12px;
+      border: 1px solid rgba(95, 136, 186, 0.45);
+      background: rgba(18, 35, 58, 0.74);
+      padding: 12px;
+    }
+
+    .risk .label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    .risk .value {
+      margin-top: 6px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .bar {
+      margin-top: 8px;
+      height: 10px;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid rgba(99, 140, 190, 0.48);
+      background: rgba(15, 27, 44, 0.82);
+    }
+
+    .fill {
+      height: 100%;
+      width: 0%;
+      transition: width 900ms cubic-bezier(.2,.9,.2,1);
+      background: linear-gradient(90deg, #ff8c8c, #ffc08e);
+    }
+
+    .hotspots {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .hotspots ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      color: #d8e8ff;
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .foot {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 8px 12px 2px;
+    }
+
+    @media (max-width: 1120px) {
+      .hero-kpis, .grid-3, .architecture, .mech-grid, .charts, .risk-grid, .hotspots {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+      }
+      .pipeline-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .nav-links { display: none; }
+      .hero-kpis, .grid-3, .architecture, .mech-grid, .charts, .risk-grid, .hotspots {
+        grid-template-columns: 1fr;
+      }
+      .pipeline {
+        grid-template-columns: 1fr;
+      }
+      .step, .arrow {
+        grid-column: span 1;
+      }
+      .arrow { height: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-meter" id="scrollMeter"></div>
+
+  <header class="topnav">
+    <div class="brand">
+      Automotive Safety Validation Cockpit
+      <small>FIFO Fault Injection Demo | Hackathon Presentation</small>
+    </div>
+    <nav class="nav-links" aria-label="Section Navigation">
+      <a href="#problem">Problem</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#mechanisms">Detection</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#latent">Latent Risk</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero reveal" id="top">
+      <p class="eyebrow">Safety Analytics for Automotive-Grade Reliability</p>
+      <h1>Fault Injection to Safety Insight in One Scroll</h1>
+      <p>
+        This page explains how we validate a safety-enhanced FIFO design using fault injection, fault simulation,
+        mechanism-aware detection mapping, and diagnostic coverage analytics. Judges can follow the full technical
+        story from raw simulation artifacts to actionable risk prioritization.
+      </p>
+      <div class="hero-kpis">
+        <article class="kpi">
+          <div class="k">Total Faults</div>
+          <div class="v" data-counter="302">0</div>
+        </article>
+        <article class="kpi">
+          <div class="k">CPU Diagnostic Coverage</div>
+          <div class="v good" data-counter="75" data-suffix="%">0%</div>
+        </article>
+        <article class="kpi">
+          <div class="k">Memory Diagnostic Coverage</div>
+          <div class="v bad" data-counter="23.44" data-suffix="%" data-decimals="2">0%</div>
+        </article>
+        <article class="kpi">
+          <div class="k">High-Risk Blocks (Threshold 20%)</div>
+          <div class="v warn" data-counter="3">0</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="problem">
+      <div class="section-head">
+        <h2>Problem Statement</h2>
+        <p>Why this project matters for functional safety closure</p>
+      </div>
+      <div class="section-body">
+        <div class="grid-3">
+          <article class="card">
+            <h3>Challenge</h3>
+            <p>
+              Fault simulation logs are large and status-heavy. Translating them into clear safety actions is slow
+              without automation.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Risk</h3>
+            <p>
+              Latent-fault hotspots remain hidden, causing mitigation effort to drift to low-impact areas and delaying safety signoff.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Project Goal</h3>
+            <p>
+              Produce repeatable, evidence-backed outputs: fault class vs mechanism mapping, block-level diagnostic coverage,
+              and latent risk indicators.
+            </p>
+          </article>
+        </div>
+        <div class="pill-list">
+          <span class="pill"><span class="term" tabindex="0" data-tip="Fraction of faults detected by safety mechanisms; higher is better.">Diagnostic Coverage (DC)</span></span>
+          <span class="pill"><span class="term" tabindex="0" data-tip="Faults that evade current detection mechanisms and can persist undetected.">Latent Fault Exposure</span></span>
+          <span class="pill"><span class="term" tabindex="0" data-tip="Single faults were injected and simulated using permanent PORT fault configuration.">Fault Injection Campaign</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="architecture">
+      <div class="section-head">
+        <h2>System Architecture</h2>
+        <p>Safety-enhanced FIFO design under analysis</p>
+      </div>
+      <div class="section-body">
+        <div class="architecture">
+          <article class="arch-node">
+            <h4>Stimulus Layer</h4>
+            <p>
+              <code>fifo_tb.v</code> drives <code>+test1 / +test2</code> and optional FI plusargs for targeted injections.
+            </p>
+          </article>
+          <article class="arch-node">
+            <h4>Control Redundancy</h4>
+            <p>
+              Duplicate flags and pointers in <code>fifo_sm.v</code>: <code>FL_IF/FL_SM</code>, <code>RP_IF/RP_SM</code>, <code>WP_IF/WP_SM</code>.
+            </p>
+          </article>
+          <article class="arch-node">
+            <h4>ECC Memory Path</h4>
+            <p>
+              <code>SDPRAM_TOP</code> uses <code>ECC_8BIT_ENC</code> and <code>ECC_8BIT_DEC</code> to detect/correct memory corruption.
+            </p>
+          </article>
+          <article class="arch-node">
+            <h4>Error Aggregation</h4>
+            <p>
+              <code>Error = FlagError | ReadError | WriteError | EccError</code> provides top-level safety signaling.
+            </p>
+          </article>
+        </div>
+        <pre class="code-block"><code># Build flow flags (rtl.f)
++define+USE_SAFETY_DESIGN
++define+USE_SDPRAM_TOP</code></pre>
+      </div>
+    </section>
+
+    <section class="section reveal" id="workflow">
+      <div class="section-head">
+        <h2>Fault Injection Workflow</h2>
+        <p>Interactive pipeline: click each stage</p>
+      </div>
+      <div class="section-body">
+        <div class="pipeline-wrap">
+          <div class="pipeline" id="pipeline">
+            <button class="step active" data-step="compile">Compile RTL + TB</button>
+            <div class="arrow"></div>
+            <button class="step" data-step="campaign">Fault Campaign Setup</button>
+            <div class="arrow"></div>
+            <button class="step" data-step="fsim">Run Fault Simulation</button>
+            <div class="arrow"></div>
+            <button class="step" data-step="report">Generate fsim_v.rpt</button>
+            <div class="arrow"></div>
+            <button class="step" data-step="analyze">Analyze and Prioritize</button>
+          </div>
+          <aside class="step-detail" id="stepDetail" aria-live="polite">
+            <h3>Compile RTL + TB</h3>
+            <p>VCS compiles the FIFO safety design and testbench with fault simulation support enabled.</p>
+          </aside>
+        </div>
+        <pre class="code-block"><code>make run_vc_zoix
+python3 analyze_report.py --report fsim_v.rpt --config scripts/fusa_config.json --outdir fsim_analysis_out</code></pre>
+      </div>
+    </section>
+
+    <section class="section reveal" id="mechanisms">
+      <div class="section-head">
+        <h2>Detection Mechanisms</h2>
+        <p>CPU redundancy, ECC memory protection, and interconnect monitoring intent</p>
+      </div>
+      <div class="section-body">
+        <div class="mech-grid">
+          <article class="mech">
+            <h3>CPU Redundancy Compare</h3>
+            <p>
+              Duplicate control paths detect mismatches in flags and pointer states, generating immediate error signals.
+            </p>
+            <div class="metric">Observed campaign DC: <strong class="good">90.79%</strong> for <code>redundant_compare</code> classed faults.</div>
+          </article>
+          <article class="mech">
+            <h3>ECC Memory Protection</h3>
+            <p>
+              ECC encode/decode with syndrome-based detection secures data path integrity in dual-port RAM access.
+            </p>
+            <div class="metric">Observed campaign DC: <strong class="warn">23.44%</strong> for <code>ecc_syndrome</code> mapped faults.</div>
+          </article>
+          <article class="mech">
+            <h3>Interconnect Monitoring</h3>
+            <p>
+              Functional signal checks (<code>ReadEn/WriteEn/Clock/Data</code>) and rule-based mapping support interface-level anomaly detection.
+            </p>
+            <div class="metric">Current run emphasis: control + memory dominant fault exposure.</div>
+          </article>
+        </div>
+        <div class="pill-list">
+          <span class="pill">Detected statuses: <code>ND, OD, PD, AD</code></span>
+          <span class="pill">Top non-detected statuses observed: <code>UU, ON, NC</code></span>
+          <span class="pill">Threshold for high risk: <code>20%</code> latent</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="coverage">
+      <div class="section-head">
+        <h2>Diagnostic Coverage Results</h2>
+        <p>Charts generated from measured campaign values</p>
+      </div>
+      <div class="section-body">
+        <div class="charts">
+          <article class="chart-card">
+            <div class="chart-title">Fault Class Distribution <span class="pill">302 faults</span></div>
+            <canvas id="faultClassChart" height="230"></canvas>
+            <p class="chart-note">Control: 100, Memory: 192, Other: 10</p>
+          </article>
+          <article class="chart-card">
+            <div class="chart-title">Detection Mechanism DC (%) <span class="pill">Mechanism View</span></div>
+            <canvas id="mechanismChart" height="230"></canvas>
+            <p class="chart-note">redundant_compare leads; memory ECC remains primary improvement area.</p>
+          </article>
+          <article class="chart-card">
+            <div class="chart-title">Block Coverage: Detected vs Latent <span class="pill">Block View</span></div>
+            <canvas id="blockStackChart" height="230"></canvas>
+            <p class="chart-note">CPU: 75/25, Memory: 45/147, Other: 3/7</p>
+          </article>
+          <article class="chart-card">
+            <div class="chart-title">Status Mix in Parsed Faults <span class="pill">Raw Evidence</span></div>
+            <canvas id="statusChart" height="230"></canvas>
+            <p class="chart-note">ND 65, OD 58, ON 59, UU 88, NC 30, NN 1, PP 1</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="latent">
+      <div class="section-head">
+        <h2>Latent Fault Risk Indicators</h2>
+        <p>High-risk blocks and top hotspot locations</p>
+      </div>
+      <div class="section-body">
+        <div class="risk-grid">
+          <article class="risk">
+            <div class="label">Memory Latent Exposure</div>
+            <div class="value bad" data-counter="76.56" data-suffix="%" data-decimals="2">0%</div>
+            <div class="bar"><div class="fill" data-fill="76.56"></div></div>
+          </article>
+          <article class="risk">
+            <div class="label">CPU Latent Exposure</div>
+            <div class="value warn" data-counter="25" data-suffix="%">0%</div>
+            <div class="bar"><div class="fill" data-fill="25"></div></div>
+          </article>
+          <article class="risk">
+            <div class="label">Other Latent Exposure</div>
+            <div class="value bad" data-counter="70" data-suffix="%">0%</div>
+            <div class="bar"><div class="fill" data-fill="70"></div></div>
+          </article>
+        </div>
+
+        <div class="hotspots">
+          <article class="card">
+            <h3>Top Latent Hotspots (CPU)</h3>
+            <ul>
+              <li><code>test.DUT.DataOut[0]</code> (2)</li>
+              <li><code>test.DUT.DataOut[1]</code> (2)</li>
+              <li><code>test.DUT.DataOut[2]</code> (2)</li>
+              <li><code>test.DUT.DataOut[3]</code> (2)</li>
+              <li><code>test.DUT.DataOut[4..7]</code> also present in campaign output</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Top Latent Hotspots (Memory) and Actions</h3>
+            <ul>
+              <li><code>test.DUT.sdpram_i1.ECC_Enc.DataIn[0..3]</code> hotspots</li>
+              <li>Increase memory-path observability and diagnostics</li>
+              <li>Add targeted checks for output/control edge cases</li>
+              <li>Retune thresholds and rerun campaign before closure</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <p class="foot">Data sources: <code>fsim_v.rpt</code> and <code>fsim_analysis_out/*.csv</code> via <code>analyze_report.py</code>. Page is standalone and presentation-ready.</p>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script>
+    const stepDetails = {
+      compile: {
+        title: "Compile RTL + TB",
+        desc: "Compile with VCS and fault-simulation flags. Safety macros enable redundant logic and ECC memory path."
+      },
+      campaign: {
+        title: "Fault Campaign Setup",
+        desc: "Use SFF collateral and fcm.tcl to configure permanent PORT fault injection across target locations."
+      },
+      fsim: {
+        title: "Run Fault Simulation",
+        desc: "Execute testcases under injected faults to capture observed behavior and detection outcomes."
+      },
+      report: {
+        title: "Generate fsim_v.rpt",
+        desc: "Collect campaign-level statuses and fault locations into the raw simulation report artifact."
+      },
+      analyze: {
+        title: "Analyze and Prioritize",
+        desc: "Map faults to classes and detection mechanisms, estimate diagnostic coverage, and extract latent risk hotspots."
+      }
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal, .section').forEach(el => observer.observe(el));
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting || entry.target.dataset.animated === "1") return;
+        entry.target.dataset.animated = "1";
+        animateCounter(entry.target);
+      });
+    }, { threshold: 0.4 });
+
+    function animateCounter(el) {
+      const target = Number(el.dataset.counter || "0");
+      const decimals = Number(el.dataset.decimals || (String(target).includes('.') ? 2 : 0));
+      const suffix = el.dataset.suffix || "";
+      const duration = 1300;
+      const start = performance.now();
+
+      function frame(t) {
+        const p = Math.min(1, (t - start) / duration);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const val = target * eased;
+        el.textContent = val.toFixed(decimals) + suffix;
+        if (p < 1) requestAnimationFrame(frame);
+      }
+
+      requestAnimationFrame(frame);
+    }
+
+    document.querySelectorAll('[data-counter]').forEach(el => counterObserver.observe(el));
+
+    const fillObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting || entry.target.dataset.filled === "1") return;
+        entry.target.dataset.filled = "1";
+        entry.target.style.width = `${entry.target.dataset.fill}%`;
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.fill[data-fill]').forEach(el => fillObserver.observe(el));
+
+    const pipeline = document.getElementById('pipeline');
+    const stepDetail = document.getElementById('stepDetail');
+    pipeline.querySelectorAll('.step').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        pipeline.querySelectorAll('.step').forEach((x) => x.classList.remove('active'));
+        btn.classList.add('active');
+        const item = stepDetails[btn.dataset.step];
+        stepDetail.innerHTML = `<h3>${item.title}</h3><p>${item.desc}</p>`;
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const progress = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+      document.getElementById('scrollMeter').style.width = `${Math.max(0, Math.min(100, progress))}%`;
+    });
+
+    function chartFallback(canvasId, msg) {
+      const cv = document.getElementById(canvasId);
+      const ctx = cv.getContext('2d');
+      ctx.fillStyle = '#9bb2cf';
+      ctx.font = '14px sans-serif';
+      ctx.fillText(msg, 12, 28);
+      ctx.fillText('Chart.js not available in this runtime.', 12, 48);
+    }
+
+    function buildCharts() {
+      if (typeof Chart === 'undefined') {
+        chartFallback('faultClassChart', 'Fault Class Distribution');
+        chartFallback('mechanismChart', 'Detection Mechanism DC');
+        chartFallback('blockStackChart', 'Detected vs Latent by Block');
+        chartFallback('statusChart', 'Fault Status Mix');
+        return;
+      }
+
+      Chart.defaults.color = '#d6e8ff';
+      Chart.defaults.borderColor = 'rgba(118, 156, 198, 0.28)';
+      Chart.defaults.font.family = 'Rajdhani, Segoe UI, sans-serif';
+
+      new Chart(document.getElementById('faultClassChart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['Control', 'Memory', 'Other'],
+          datasets: [{
+            data: [100, 192, 10],
+            backgroundColor: ['#4ec8ff', '#35e0bb', '#ffd37a'],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          plugins: { legend: { position: 'bottom' } },
+          animation: { duration: 1200 }
+        }
+      });
+
+      new Chart(document.getElementById('mechanismChart'), {
+        type: 'bar',
+        data: {
+          labels: ['functional_check', 'redundant_compare', 'ecc_syndrome', 'unknown'],
+          datasets: [{
+            label: 'Estimated DC %',
+            data: [25.0, 90.79, 23.44, 30.0],
+            backgroundColor: ['#ffd37a', '#63e9a8', '#35e0bb', '#ff8c8c']
+          }]
+        },
+        options: {
+          scales: { y: { beginAtZero: true, max: 100, ticks: { callback: (v) => v + '%' } } },
+          plugins: { legend: { display: false } },
+          animation: { duration: 1200 }
+        }
+      });
+
+      new Chart(document.getElementById('blockStackChart'), {
+        type: 'bar',
+        data: {
+          labels: ['CPU', 'Memory', 'Other'],
+          datasets: [
+            { label: 'Detected', data: [75, 45, 3], backgroundColor: '#63e9a8' },
+            { label: 'Latent', data: [25, 147, 7], backgroundColor: '#ff8c8c' }
+          ]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            x: { stacked: true },
+            y: { stacked: true, beginAtZero: true }
+          },
+          animation: { duration: 1200 }
+        }
+      });
+
+      new Chart(document.getElementById('statusChart'), {
+        type: 'line',
+        data: {
+          labels: ['ND', 'OD', 'ON', 'UU', 'NC', 'NN', 'PP'],
+          datasets: [{
+            label: 'Count',
+            data: [65, 58, 59, 88, 30, 1, 1],
+            borderColor: '#4ec8ff',
+            backgroundColor: 'rgba(78, 200, 255, 0.20)',
+            fill: true,
+            tension: 0.28,
+            pointRadius: 4
+          }]
+        },
+        options: {
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true } },
+          animation: { duration: 1200 }
+        }
+      });
+    }
+
+    buildCharts();
+  </script>
+</body>
+</html>
