@@ -636,7 +636,7 @@
           <div class="v" data-counter="302">0</div>
         </article>
         <article class="kpi">
-          <div class="k">CPU Diagnostic Coverage</div>
+          <div class="k">Control Diagnostic Coverage</div>
           <div class="v good" data-counter="75" data-suffix="%">0%</div>
         </article>
         <article class="kpi">
@@ -755,12 +755,12 @@ python3 analyze_report.py --report fsim_v.rpt --config scripts/fusa_config.json 
     <section class="section reveal" id="mechanisms">
       <div class="section-head">
         <h2>Detection Mechanisms</h2>
-        <p>CPU redundancy, ECC memory protection, and interconnect monitoring intent</p>
+        <p>Control redundancy, ECC memory protection, and signal monitoring intent</p>
       </div>
       <div class="section-body">
         <div class="mech-grid">
           <article class="mech">
-            <h3>CPU Redundancy Compare</h3>
+            <h3>Redundancy Compare</h3>
             <p>
               Duplicate control paths detect mismatches in flags and pointer states, generating immediate error signals.
             </p>
@@ -774,7 +774,7 @@ python3 analyze_report.py --report fsim_v.rpt --config scripts/fusa_config.json 
             <div class="metric">Observed campaign DC: <strong class="warn">23.44%</strong> for <code>ecc_syndrome</code> mapped faults.</div>
           </article>
           <article class="mech">
-            <h3>Interconnect Monitoring</h3>
+            <h3>Signal Monitoring</h3>
             <p>
               Functional signal checks (<code>ReadEn/WriteEn/Clock/Data</code>) and rule-based mapping support interface-level anomaly detection.
             </p>
@@ -809,7 +809,7 @@ python3 analyze_report.py --report fsim_v.rpt --config scripts/fusa_config.json 
           <article class="chart-card">
             <div class="chart-title">Block Coverage: Detected vs Latent <span class="pill">Block View</span></div>
             <canvas id="blockStackChart" height="230"></canvas>
-            <p class="chart-note">CPU: 75/25, Memory: 45/147, Other: 3/7</p>
+            <p class="chart-note">Control: 75/25, Memory: 45/147, Other: 3/7</p>
           </article>
           <article class="chart-card">
             <div class="chart-title">Status Mix in Parsed Faults <span class="pill">Raw Evidence</span></div>
@@ -833,7 +833,7 @@ python3 analyze_report.py --report fsim_v.rpt --config scripts/fusa_config.json 
             <div class="bar"><div class="fill" data-fill="76.56"></div></div>
           </article>
           <article class="risk">
-            <div class="label">CPU Latent Exposure</div>
+            <div class="label">Control Latent Exposure</div>
             <div class="value warn" data-counter="25" data-suffix="%">0%</div>
             <div class="bar"><div class="fill" data-fill="25"></div></div>
           </article>
@@ -846,7 +846,7 @@ python3 analyze_report.py --report fsim_v.rpt --config scripts/fusa_config.json 
 
         <div class="hotspots">
           <article class="card">
-            <h3>Top Latent Hotspots (CPU)</h3>
+            <h3>Top Latent Hotspots (Control)</h3>
             <ul>
               <li><code>test.DUT.DataOut[0]</code> (2)</li>
               <li><code>test.DUT.DataOut[1]</code> (2)</li>
@@ -1019,7 +1019,7 @@ python3 analyze_report.py --report fsim_v.rpt --config scripts/fusa_config.json 
       new Chart(document.getElementById('blockStackChart'), {
         type: 'bar',
         data: {
-          labels: ['CPU', 'Memory', 'Other'],
+          labels: ['Control', 'Memory', 'Other'],
           datasets: [
             { label: 'Detected', data: [75, 45, 3], backgroundColor: '#63e9a8' },
             { label: 'Latent', data: [25, 147, 7], backgroundColor: '#ff8c8c' }
