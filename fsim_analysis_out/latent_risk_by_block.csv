@@ -1,0 +1,4 @@
+block,total_faults,latent_faults,latent_percent,high_risk
+memory,192,147,76.56,True
+other,10,7,70.0,True
+CPU,100,25,25.0,True

@@ -1,0 +1,233 @@
+%!PS-Adobe-3.0
+%%Title: FIFO Safety Demo Block Diagram
+%%BoundingBox: 0 0 1920 1080
+%%Pages: 1
+%%EndComments
+<< /PageSize [1920 1080] >> setpagedevice
+
+% ---------- Helpers ----------
+/box {
+  % x y w h r g b
+  /b exch def /g exch def /r exch def
+  /h exch def /w exch def /y exch def /x exch def
+  gsave
+  r g b setrgbcolor
+  newpath x y moveto w 0 rlineto 0 h rlineto w neg 0 rlineto closepath fill
+  grestore
+} def
+
+/border {
+  % x y w h lw r g b
+  /b exch def /g exch def /r exch def /lw exch def
+  /h exch def /w exch def /y exch def /x exch def
+  gsave
+  lw setlinewidth
+  r g b setrgbcolor
+  newpath x y moveto w 0 rlineto 0 h rlineto w neg 0 rlineto closepath stroke
+  grestore
+} def
+
+/node {
+  % x y w h fillR fillG fillB borderR borderG borderB
+  /bb exch def /bg exch def /br exch def
+  /fb exch def /fg exch def /fr exch def
+  /h exch def /w exch def /y exch def /x exch def
+  x y w h fr fg fb box
+  x y w h 2 br bg bb border
+} def
+
+/txt {
+  % x y size r g b (text)
+  /t exch def /b exch def /g exch def /r exch def /sz exch def /y exch def /x exch def
+  gsave
+  /Helvetica findfont sz scalefont setfont
+  r g b setrgbcolor
+  x y moveto t show
+  grestore
+} def
+
+/txtb {
+  % x y size r g b (text)
+  /t exch def /b exch def /g exch def /r exch def /sz exch def /y exch def /x exch def
+  gsave
+  /Helvetica-Bold findfont sz scalefont setfont
+  r g b setrgbcolor
+  x y moveto t show
+  grestore
+} def
+
+/arrow {
+  % x1 y1 x2 y2 lw r g b
+  /b exch def /g exch def /r exch def /lw exch def
+  /y2 exch def /x2 exch def /y1 exch def /x1 exch def
+  gsave
+  lw setlinewidth
+  r g b setrgbcolor
+  newpath x1 y1 moveto x2 y2 lineto stroke
+  /dx x2 x1 sub def
+  /dy y2 y1 sub def
+  /ang dy dx atan def
+  x2 y2 translate ang rotate
+  newpath 0 0 moveto -12 6 lineto -12 -6 lineto closepath fill
+  grestore
+} def
+
+/linklbl {
+  % x y (text)
+  /t exch def /y exch def /x exch def
+  x y 10 0.73 0.77 0.83 t txt
+} def
+
+% ---------- Canvas ----------
+0 0 1920 1080 0.06 0.08 0.12 box
+
+% Header bar
+30 1000 1860 58 0.10 0.14 0.21 box
+30 1000 1860 58 2 0.25 0.33 0.47 border
+60 1033 24 0.95 0.97 1.00 (FIFO Functional Safety Demo) txtb
+620 1009 12 0.73 0.77 0.83 (Design plus Fault Injection plus Simulation plus Safety Coverage) txt
+
+% Section lanes
+35 680 1850 295 0.09 0.12 0.18 box
+35 680 1850 295 2 0.19 0.25 0.37 border
+35 365 1850 295 0.09 0.12 0.18 box
+35 365 1850 295 2 0.19 0.25 0.37 border
+35 50 1850 295 0.09 0.12 0.18 box
+35 50 1850 295 2 0.19 0.25 0.37 border
+
+60 942 16 0.52 0.89 0.84 (1. Complete RTL Design with Safety Enabled) txtb
+60 627 16 0.95 0.78 0.45 (2. Fault Injection and Simulation Flow) txtb
+60 312 16 0.86 0.72 0.98 (3. Safety Mechanisms and Observed Coverage) txtb
+
+% ---------- Section 1 ----------
+90 760 220 140 0.18 0.33 0.53 0.31 0.66 0.98 node
+125 860 14 1 1 1 (fifo_tb.v) txtb
+108 838 11 0.92 0.96 1.0 (Stimulus: plusargs test1 test2) txt
+108 818 11 0.92 0.96 1.0 (Fault hooks for mem ptr flags) txt
+
+390 760 240 140 0.16 0.40 0.30 0.38 0.83 0.61 node
+455 860 14 1 1 1 (FIFO DUT) txtb
+452 838 11 0.92 1.0 0.94 (fifo_sm.v top) txt
+420 818 11 0.92 1.0 0.94 (DoRead DoWrite Error combine) txt
+
+710 835 220 65 0.37 0.30 0.14 0.97 0.76 0.37 node
+768 872 12 1 1 1 (Control path) txtb
+755 852 10 0.99 0.96 0.88 (Read Write pointer logic) txt
+
+710 760 220 65 0.37 0.30 0.14 0.97 0.76 0.37 node
+742 797 12 1 1 1 (Redundant monitors) txtb
+728 777 10 0.99 0.96 0.88 (FL IF/SM RP IF/SM WP IF/SM) txt
+
+1020 760 260 140 0.33 0.20 0.44 0.84 0.63 0.97 node
+1085 860 14 1 1 1 (SDPRAM_TOP) txtb
+1042 838 11 0.96 0.92 1.0 (ECC encode RAM decode wrapper) txt
+1048 818 11 0.96 0.92 1.0 (EccError exported to FIFO) txt
+
+1360 845 180 55 0.35 0.36 0.15 0.90 0.93 0.44 node
+1416 876 11 1 1 1 (ECC_8BIT_ENC) txtb
+1405 858 10 0.97 0.99 0.88 (8 bit to 12 bit) txt
+
+1360 775 180 55 0.30 0.31 0.13 0.90 0.93 0.44 node
+1420 806 11 1 1 1 (SDPRAM) txtb
+1398 788 10 0.97 0.99 0.88 (mem_array stores codeword) txt
+
+1360 705 180 55 0.35 0.36 0.15 0.90 0.93 0.44 node
+1416 736 11 1 1 1 (ECC_8BIT_DEC) txtb
+1392 718 10 0.97 0.99 0.88 (syndrome detect and fix) txt
+
+710 695 260 50 0.45 0.18 0.18 0.97 0.50 0.50 node
+752 723 12 1 1 1 (Error aggregation output) txtb
+724 705 10 1.0 0.90 0.90 (FlagError ReadError WriteError EccError) txt
+
+310 830 390 830 2 0.68 0.90 1.00 arrow
+630 830 710 867 2 0.68 0.90 1.00 arrow
+630 830 710 792 2 0.68 0.90 1.00 arrow
+630 830 1020 830 2 0.68 0.90 1.00 arrow
+1280 830 1360 872 2 0.68 0.90 1.00 arrow
+1450 845 1450 830 2 0.68 0.90 1.00 arrow
+1450 775 1450 760 2 0.68 0.90 1.00 arrow
+1360 730 970 720 2 0.68 0.90 1.00 arrow
+930 760 930 745 2 0.68 0.90 1.00 arrow
+
+970 744 (Error signal) linklbl
+
+% ---------- Section 2 ----------
+90 455 210 120 0.18 0.33 0.53 0.31 0.66 0.98 node
+130 530 13 1 1 1 (Compile RTL and TB) txtb
+110 508 10 0.92 0.96 1.0 (VCS with rtl.f defines) txt
+108 491 10 0.92 0.96 1.0 (USE SAFETY DESIGN) txt
+
+360 455 260 120 0.16 0.40 0.30 0.38 0.83 0.61 node
+420 530 13 1 1 1 (Create campaign) txtb
+378 508 10 0.92 1.0 0.94 (fcm.tcl plus SFF files) txt
+392 491 10 0.92 1.0 0.94 (target DUT test.DUT) txt
+
+680 455 220 120 0.33 0.20 0.44 0.84 0.63 0.97 node
+748 530 13 1 1 1 (Run fsim) txtb
+698 508 10 0.96 0.92 1.0 (Inject permanent PORT faults) txt
+722 491 10 0.96 0.92 1.0 (execute test1 and test2) txt
+
+960 455 240 120 0.37 0.30 0.14 0.97 0.76 0.37 node
+1008 530 13 1 1 1 (Generate fsim_v.rpt) txtb
+978 508 10 0.99 0.96 0.88 (fault status and location list) txt
+
+1260 455 280 120 0.35 0.36 0.15 0.90 0.93 0.44 node
+1304 530 13 0.12 0.14 0.19 (Analyze report in Python) txtb
+1284 508 10 0.15 0.18 0.25 (analyze_report.py plus fusa_config) txt
+1284 491 10 0.15 0.18 0.25 (classify coverage latent risk) txt
+
+1600 455 250 120 0.20 0.39 0.24 0.48 0.90 0.58 node
+1634 530 13 1 1 1 (Export CSV artifacts) txtb
+1618 508 10 0.92 1.0 0.94 (mapping summary block DC) txt
+1620 491 10 0.92 1.0 0.94 (latent by block top locations) txt
+
+200 420 200 392 2 0.95 0.78 0.45 arrow
+300 515 360 515 2 0.95 0.78 0.45 arrow
+620 515 680 515 2 0.95 0.78 0.45 arrow
+900 515 960 515 2 0.95 0.78 0.45 arrow
+1200 515 1260 515 2 0.95 0.78 0.45 arrow
+1540 515 1600 515 2 0.95 0.78 0.45 arrow
+
+740 420 520 392 2 0.95 0.78 0.45 arrow
+500 374 10 0.73 0.77 0.83 (optional FM dump FID 130 to fsdb) txt
+
+% ---------- Section 3 ----------
+90 125 280 160 0.18 0.33 0.53 0.31 0.66 0.98 node
+130 252 13 1 1 1 (Memory fault class) txtb
+112 232 10 0.92 0.96 1.0 (Locations in sdpram and ECC nets) txt
+112 215 10 0.92 0.96 1.0 (Mechanism: ecc_syndrome) txt
+112 198 10 0.92 0.96 1.0 (Observed DC: 23.44 percent) txt
+
+430 125 300 160 0.16 0.40 0.30 0.38 0.83 0.61 node
+482 252 13 1 1 1 (Control fault class) txtb
+455 232 10 0.92 1.0 0.94 (Mechanism A: redundant_compare) txt
+455 215 10 0.92 1.0 0.94 (Observed DC: 90.79 percent) txt
+455 198 10 0.92 1.0 0.94 (Mechanism B: functional_check 25.00) txt
+
+790 125 260 160 0.33 0.20 0.44 0.84 0.63 0.97 node
+830 252 13 1 1 1 (Other fault class) txtb
+818 232 10 0.96 0.92 1.0 (Mechanism: unknown) txt
+818 215 10 0.96 0.92 1.0 (Observed DC: 30.00 percent) txt
+818 198 10 0.96 0.92 1.0 (review for mapping gaps) txt
+
+1110 125 360 160 0.37 0.30 0.14 0.97 0.76 0.37 node
+1152 252 13 1 1 1 (Risk interpretation from analysis) txtb
+1134 232 10 0.99 0.96 0.88 (Latent faults = total minus detected) txt
+1134 215 10 0.99 0.96 0.88 (latent percent by block, high risk flag) txt
+1134 198 10 0.99 0.96 0.88 (top latent locations for mitigation) txt
+
+1530 125 320 160 0.45 0.18 0.18 0.97 0.50 0.50 node
+1560 252 13 1 1 1 (Engineering value solved) txtb
+1550 232 10 1.0 0.90 0.90 (Repeatable evidence for safety reviews) txt
+1550 215 10 1.0 0.90 0.90 (Focuses debug where detection is weak) txt
+1550 198 10 1.0 0.90 0.90 (Speeds closure of latent fault hotspots) txt
+
+370 205 430 205 2 0.86 0.72 0.98 arrow
+730 205 790 205 2 0.86 0.72 0.98 arrow
+1050 205 1110 205 2 0.86 0.72 0.98 arrow
+1470 205 1530 205 2 0.86 0.72 0.98 arrow
+
+% Footer
+60 18 10 0.55 0.62 0.73 (Source: test_fifo_demo RTL, fusa_config.json, fsim_analysis_out CSVs) txt
+
+showpage

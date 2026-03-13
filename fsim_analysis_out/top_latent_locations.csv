@@ -1,0 +1,11 @@
+location,block,fault_class,detection_mechanism,latent_count,statuses
+test.DUT.DataOut[0],CPU,control,functional_check,2,ON
+test.DUT.DataOut[1],CPU,control,functional_check,2,ON
+test.DUT.DataOut[2],CPU,control,functional_check,2,ON
+test.DUT.DataOut[3],CPU,control,functional_check,2,ON
+test.DUT.DataOut[4],CPU,control,functional_check,2,"NC,ON"
+test.DUT.DataOut[5],CPU,control,functional_check,2,"NC,ON"
+test.DUT.DataOut[6],CPU,control,functional_check,2,"NC,ON"
+test.DUT.DataOut[7],CPU,control,functional_check,2,"NC,ON"
+test.DUT.sdpram_i1.ECC_Enc.DataIn[0],memory,memory,ecc_syndrome,2,ON
+test.DUT.sdpram_i1.ECC_Enc.DataIn[1],memory,memory,ecc_syndrome,2,ON

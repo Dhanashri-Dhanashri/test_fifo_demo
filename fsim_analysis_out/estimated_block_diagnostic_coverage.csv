@@ -1,0 +1,4 @@
+block,total_faults,detected_faults,latent_faults,estimated_dc_percent
+CPU,100,75,25,75.0
+memory,192,45,147,23.44
+other,10,3,7,30.0

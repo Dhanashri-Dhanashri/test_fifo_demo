@@ -15,7 +15,7 @@
       },
       {
         "regex": "\\.ReadEn|\\.WriteEn|\\.ReadClk|\\.WriteClk|\\.DataIn\\[|\\.DataOut\\[",
-        "fault_class": "interconnect",
+        "fault_class": "control",
         "detection_mechanism": "functional_check"
       }
     ],

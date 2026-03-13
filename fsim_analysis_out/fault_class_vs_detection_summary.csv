@@ -1,0 +1,5 @@
+fault_class,block,detection_mechanism,total_faults,detected_faults,latent_faults,estimated_dc_percent
+control,CPU,functional_check,24,6,18,25.0
+control,CPU,redundant_compare,76,69,7,90.79
+memory,memory,ecc_syndrome,192,45,147,23.44
+other,other,unknown,10,3,7,30.0
