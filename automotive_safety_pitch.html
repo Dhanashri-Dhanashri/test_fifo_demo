@@ -686,44 +686,6 @@
       </div>
     </section>
 
-    <section class="section reveal" id="architecture">
-      <div class="section-head">
-        <h2>System Architecture</h2>
-        <p>Safety-enhanced FIFO design under analysis</p>
-      </div>
-      <div class="section-body">
-        <div class="architecture">
-          <article class="arch-node">
-            <h4>Stimulus Layer</h4>
-            <p>
-              <code>fifo_tb.v</code> drives <code>+test1 / +test2</code> and optional FI plusargs for targeted injections.
-            </p>
-          </article>
-          <article class="arch-node">
-            <h4>Control Redundancy</h4>
-            <p>
-              Duplicate flags and pointers in <code>fifo_sm.v</code>: <code>FL_IF/FL_SM</code>, <code>RP_IF/RP_SM</code>, <code>WP_IF/WP_SM</code>.
-            </p>
-          </article>
-          <article class="arch-node">
-            <h4>ECC Memory Path</h4>
-            <p>
-              <code>SDPRAM_TOP</code> uses <code>ECC_8BIT_ENC</code> and <code>ECC_8BIT_DEC</code> to detect/correct memory corruption.
-            </p>
-          </article>
-          <article class="arch-node">
-            <h4>Error Aggregation</h4>
-            <p>
-              <code>Error = FlagError | ReadError | WriteError | EccError</code> provides top-level safety signaling.
-            </p>
-          </article>
-        </div>
-        <pre class="code-block"><code># Build flow flags (rtl.f)
-+define+USE_SAFETY_DESIGN
-+define+USE_SDPRAM_TOP</code></pre>
-      </div>
-    </section>
-
     <section class="section reveal" id="workflow">
       <div class="section-head">
         <h2>Fault Injection Workflow</h2>
